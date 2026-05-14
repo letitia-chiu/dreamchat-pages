@@ -1,0 +1,10 @@
+# Claude Code local workspace settings (per-machine, not for the repo)
+.claude/
+
+# macOS Finder metadata
+.DS_Store
+
+# OS / editor noise
+Thumbs.db
+*.swp
+*.swo
