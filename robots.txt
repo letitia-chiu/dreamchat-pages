@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://letitia-chiu.github.io/dreamchat-pages/sitemap.xml
