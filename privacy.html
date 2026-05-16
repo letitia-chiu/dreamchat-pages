@@ -72,6 +72,7 @@
           <li>聊天訊息</li>
           <li>角色與群組設定</li>
           <li>角色設定</li>
+          <li>角色來源、匯入更新紀錄與本機原創紀錄等角色中繼資料</li>
           <li>字卡與觸發內容</li>
           <li>智慧輔助診斷紀錄</li>
           <li>定時來訊設定</li>
@@ -107,10 +108,10 @@
         <p>此處理用於本機分類選擇，不用來產生對話內容，也不會將聊天訊息、字卡內容或分類結果上傳至開發者伺服器。若裝置或系統不支援此功能，DreamChat 會改用本機文字比對或一般字卡選擇方式。</p>
 
         <h2>7. 智慧輔助診斷資料</h2>
-        <p>自 v2.6.0 起，DreamChat 可能會在您的裝置本機保存智慧輔助診斷紀錄，用於排查智慧輔助分類、候選字卡縮減、逾時、排隊或略過等問題。</p>
+        <p>DreamChat 可能會在您的裝置本機保存智慧輔助診斷紀錄，用於排查智慧輔助分類、候選字卡縮減、逾時、排隊或略過等問題。</p>
         <p>診斷資料可能包含分類名稱或識別碼、比對分數、信心程度、候選數量、資料大小、處理時間、逾時設定、隨機選擇模式、佇列或略過狀態，以及觸發文字的短雜湊值等中繼資料。</p>
         <p>DreamChat 不會在診斷紀錄中記錄原始使用者訊息文字，也不會預設記錄完整觸發文字。診斷資料主要記錄數量、大小、狀態與去識別化線索，以協助排查問題並降低暴露私人內容的風險。</p>
-        <p>診斷資料保存在此裝置，採用滾動紀錄並限制大小；第一版上限約為 1 MB，達到上限時會優先移除較舊紀錄以保留近期脈絡。您可以在 App 設定中查看診斷資料大小、匯出智慧輔助診斷，或手動清除診斷資料。匯出前請確認願意分享其中的分類資訊。</p>
+        <p>診斷資料保存在此裝置，採用滾動紀錄並限制大小；大小上限約為 1 MB，達到上限時會優先移除較舊紀錄以保留近期脈絡。您可以在 App 設定中查看診斷資料大小、匯出智慧輔助診斷，或手動清除診斷資料。匯出前請確認願意分享其中的分類資訊。</p>
         <p>DreamChat 不會自動將智慧輔助診斷資料上傳至開發者伺服器；只有在您主動匯出並分享時，接收方才會取得該檔案內容。</p>
 
         <h2>8. 通知</h2>
@@ -121,6 +122,8 @@
         <h2>9. 匯入、匯出與備份檔案</h2>
         <p>DreamChat 支援由您主動操作的本機資料匯入與匯出，例如完整備份、角色分享檔、角色設定文字或聊天紀錄文字。</p>
         <p>匯出的檔案可能包含聊天訊息、角色設定、頭像、背景、字卡、字卡分類、觸發內容、貼圖、表情符號、定時來訊設定、音樂推薦排除清單、智慧輔助診斷資料與其他 App 內資料。這些檔案會由您選擇儲存或分享的位置管理，請妥善保管。</p>
+        <p>角色分享檔可能包含角色模板 ID、來源角色 ID、衍生來源 ID、最後更新時間或其他用於判斷匯入更新候選角色的中繼資料。這些 ID 用於識別角色模板或資料來源，不代表您的真人身分，也不作為原創者證明。</p>
+        <p>一般角色分享檔不包含本機使用者 ID。若未來 DreamChat 提供原創自證資訊匯出，只有在您主動選擇並確認分享內容後，接收方才會取得該資訊。</p>
         <p>DreamChat 不會因為您匯出或匯入檔案而自動將內容上傳至開發者伺服器。</p>
 
         <h2>10. 本網站的語言偏好</h2>
@@ -182,6 +185,7 @@
           <li>聊天消息</li>
           <li>角色与群组设置</li>
           <li>角色设置</li>
+          <li>角色来源、导入更新记录与本地原创记录等角色元数据</li>
           <li>字卡与触发内容</li>
           <li>智能辅助诊断记录</li>
           <li>定时来信设置</li>
@@ -217,10 +221,10 @@
         <p>此处理用于本地分类选择，不用于生成对话内容，也不会将聊天消息、字卡内容或分类结果上传至开发者服务器。若设备或系统不支持此功能，DreamChat 会改用本地文字匹配或一般字卡选择方式。</p>
 
         <h2>7. 智能辅助诊断数据</h2>
-        <p>自 v2.6.0 起，DreamChat 可能会在您的设备本地保存智能辅助诊断记录，用于排查智能辅助分类、候选字卡缩减、超时、排队或跳过等问题。</p>
+        <p>DreamChat 可能会在您的设备本地保存智能辅助诊断记录，用于排查智能辅助分类、候选字卡缩减、超时、排队或跳过等问题。</p>
         <p>诊断数据可能包含分类名称或标识符、匹配分数、置信程度、候选数量、数据大小、处理时间、超时设置、随机选择模式、队列或跳过状态，以及触发文字的短哈希值等元数据。</p>
         <p>DreamChat 不会在诊断记录中记录原始用户消息文字，也不会默认记录完整触发文字。诊断数据主要记录数量、大小、状态与去标识化线索，以协助排查问题并降低暴露私人内容的风险。</p>
-        <p>诊断数据保存在此设备，采用滚动记录并限制大小；第一版上限约为 1 MB，达到上限时会优先移除较旧记录以保留近期上下文。您可以在 App 设置中查看诊断数据大小、导出智能辅助诊断，或手动清除诊断数据。导出前请确认愿意分享其中的分类信息。</p>
+        <p>诊断数据保存在此设备，采用滚动记录并限制大小；大小上限约为 1 MB，达到上限时会优先移除较旧记录以保留近期上下文。您可以在 App 设置中查看诊断数据大小、导出智能辅助诊断，或手动清除诊断数据。导出前请确认愿意分享其中的分类信息。</p>
         <p>DreamChat 不会自动将智能辅助诊断数据上传至开发者服务器；只有在您主动导出并分享时，接收方才会取得该文件内容。</p>
 
         <h2>8. 通知</h2>
@@ -231,6 +235,8 @@
         <h2>9. 导入、导出与备份文件</h2>
         <p>DreamChat 支持由您主动操作的本地数据导入与导出，例如完整备份、角色分享文件、角色设置文字或聊天记录文字。</p>
         <p>导出的文件可能包含聊天消息、角色设置、头像、背景、字卡、字卡分类、触发内容、表情包、表情符号、定时来信设置、音乐推荐排除清单、智能辅助诊断数据与其他 App 内数据。这些文件会由您选择保存或分享的位置管理，请妥善保管。</p>
+        <p>角色分享文件可能包含角色模板 ID、来源角色 ID、衍生来源 ID、最后更新时间或其他用于判断导入更新候选角色的元数据。这些 ID 用于识别角色模板或数据来源，不代表您的真人身份，也不作为原创者证明。</p>
+        <p>一般角色分享文件不包含本地用户 ID。若未来 DreamChat 提供原创自证信息导出，只有在您主动选择并确认分享内容后，接收方才会取得该信息。</p>
         <p>DreamChat 不会因为您导出或导入文件而自动将内容上传至开发者服务器。</p>
 
         <h2>10. 本网站的语言偏好</h2>
@@ -292,6 +298,7 @@
           <li>チャットメッセージ</li>
           <li>キャラクター・グループ設定</li>
           <li>キャラクターや会話相手の設定</li>
+          <li>キャラクターの由来、読み込み更新記録、ローカルのオリジナル記録などのキャラクターメタデータ</li>
           <li>定型文・トリガー内容</li>
           <li>スマートアシストの診断記録</li>
           <li>予約受信設定</li>
@@ -327,10 +334,10 @@
         <p>この処理はローカルでの分類選択のために使用され、会話内容を生成するものではありません。また、チャットメッセージ、定型文の内容、分類結果を開発者のサーバーへアップロードすることはありません。端末またはシステムがこの機能に対応していない場合、DreamChat はローカルの文字照合または通常の定型文選択を使用します。</p>
 
         <h2>7. スマートアシストの診断データについて</h2>
-        <p>v2.6.0 以降、DreamChat はスマートアシストの分類、候補となる定型文の絞り込み、タイムアウト、待機中またはスキップされた処理などの問題調査のため、スマートアシストの診断記録をお使いの端末内に保存する場合があります。</p>
+        <p>DreamChat はスマートアシストの分類、候補となる定型文の絞り込み、タイムアウト、待機中またはスキップされた処理などの問題調査のため、スマートアシストの診断記録をお使いの端末内に保存する場合があります。</p>
         <p>診断データには、カテゴリ名または識別子、照合スコア、信頼度、候補数、データサイズ、処理時間、タイムアウト設定、ランダム選択モード、待機中またはスキップされた状態、トリガー文字列の短いハッシュ値などのメタデータが含まれる場合があります。</p>
         <p>DreamChat は、診断記録にユーザーの元のメッセージ本文を記録せず、既定では完全なトリガー文字列も記録しません。診断データは主に件数、サイズ、状態、識別しにくい手がかりを記録し、問題調査を助けながら個人的な内容が露出するリスクを下げるためのものです。</p>
-        <p>診断データはこの端末に保存され、サイズ制限付きのローリングログとして管理されます。最初のリリースでは上限を約 1 MB とし、上限に達した場合は最近の状況を残すため古い記録から削除します。アプリの設定で診断データのサイズを確認し、スマートアシスト診断を書き出すことや、手動で診断データを消去することができます。書き出す前に、含まれる分類情報を共有してよいかご確認ください。</p>
+        <p>診断データはこの端末に保存され、サイズ制限付きのローリングログとして管理されます。上限は約 1 MB で、上限に達した場合は最近の状況を残すため古い記録から削除します。アプリの設定で診断データのサイズを確認し、スマートアシスト診断を書き出すことや、手動で診断データを消去することができます。書き出す前に、含まれる分類情報を共有してよいかご確認ください。</p>
         <p>DreamChat がスマートアシスト診断データを開発者のサーバーへ自動的にアップロードすることはありません。ユーザーが明示的に書き出して共有した場合にのみ、受信者がそのファイルの内容を取得します。</p>
 
         <h2>8. 通知について</h2>
@@ -341,6 +348,8 @@
         <h2>9. 読み込み・書き出し・バックアップファイルについて</h2>
         <p>DreamChat では、ユーザー操作によるローカルデータの読み込み・書き出しに対応しています。たとえば、完全バックアップ、キャラクター共有ファイル、キャラクター設定のテキスト、チャット履歴のテキストを書き出すことができます。</p>
         <p>書き出されたファイルには、チャットメッセージ、キャラクター設定、アバター、背景、定型文、定型文カテゴリ、トリガー内容、スタンプ、絵文字、予約受信設定、音楽おすすめの除外リスト、スマートアシストの診断データ、その他アプリ内データが含まれる場合があります。これらのファイルは、ユーザーが選択した保存先または共有先で管理されますので、適切に保管してください。</p>
+        <p>キャラクター共有ファイルには、キャラクターテンプレート ID、元となったキャラクター ID、派生元 ID、最終更新日時、読み込み時の更新候補を判断するためのその他のメタデータが含まれる場合があります。これらの ID はキャラクターテンプレートまたはデータの由来を識別するためのものであり、実在のユーザー本人を示すものでも、オリジナル作成者の証明でもありません。</p>
+        <p>通常のキャラクター共有ファイルには、ローカルユーザー ID は含まれません。今後 DreamChat がオリジナル性の自己証明情報の書き出しに対応する場合、その情報はユーザーが明示的に選択し、共有内容を確認した場合にのみ受信者へ渡されます。</p>
         <p>DreamChat は、ファイルの読み込み・書き出しを行ったことを理由に、内容を開発者のサーバーへ自動的にアップロードすることはありません。</p>
 
         <h2>10. 本ウェブサイトの言語設定について</h2>
@@ -402,6 +411,7 @@
           <li>Chat messages</li>
           <li>Character and group settings</li>
           <li>Character settings</li>
+          <li>Character metadata such as source information, import update records, and local originality records</li>
           <li>Chat phrases and trigger content</li>
           <li>Smart Assist diagnostic logs</li>
           <li>Scheduled message settings</li>
@@ -437,10 +447,10 @@
         <p>This processing is used for local classification selection. It does not generate conversation content, and it does not upload chat messages, chat phrase content, or classification results to the developer's servers. If your device or system does not support this feature, DreamChat uses local text matching or the regular phrase selection behavior instead.</p>
 
         <h2>7. Smart Assist Diagnostic Data</h2>
-        <p>Starting in v2.6.0, DreamChat may store Smart Assist diagnostic logs locally on your device to help troubleshoot Smart Assist classification, candidate reduction, timeout, queued work, or skipped work issues.</p>
+        <p>DreamChat may store Smart Assist diagnostic logs locally on your device to help troubleshoot Smart Assist classification, candidate reduction, timeout, queued work, or skipped work issues.</p>
         <p>Diagnostic data may include metadata such as category names or identifiers, matching scores, confidence levels, candidate counts, data sizes, processing time, timeout settings, random selection mode, queued or skipped status, and short hash values for matched trigger text.</p>
         <p>DreamChat does not log raw user message text in diagnostic records and does not log full trigger text by default. Diagnostic data primarily records counts, sizes, states, and de-identified clues so issues can be investigated while reducing the risk of exposing private content.</p>
-        <p>Diagnostic data is stored on this device as a rolling log with a size limit. In the first release, the limit is approximately 1 MB; when the limit is reached, older records are trimmed first so recent context remains available. In the app settings, you can view the diagnostic data size, export Smart Assist diagnostics, or manually clear diagnostic data. Before exporting, please confirm that you are willing to share the classification information it contains.</p>
+        <p>Diagnostic data is stored on this device as a rolling log with a size limit of approximately 1 MB. When the limit is reached, older records are trimmed first so recent context remains available. In the app settings, you can view the diagnostic data size, export Smart Assist diagnostics, or manually clear diagnostic data. Before exporting, please confirm that you are willing to share the classification information it contains.</p>
         <p>DreamChat does not automatically upload Smart Assist diagnostic data to the developer's servers. The recipient only receives the file contents if you actively export and share them.</p>
 
         <h2>8. Notifications</h2>
@@ -451,6 +461,8 @@
         <h2>9. Import, Export, and Backup Files</h2>
         <p>DreamChat supports local data import and export actions that you initiate, such as complete backups, character sharing files, character settings text, or chat history text.</p>
         <p>Exported files may include chat messages, character settings, avatars, backgrounds, chat phrases, phrase categories, trigger content, stickers, emoji, scheduled message settings, music recommendation exclusions, Smart Assist diagnostic data, and other in-app data. These files are managed wherever you choose to save or share them, so please keep them secure.</p>
+        <p>Character sharing files may include character template IDs, source character IDs, derived source IDs, last updated times, or other metadata used to determine import update candidates. These IDs are used to identify character templates or data sources; they do not represent your real-world identity and are not proof of original authorship.</p>
+        <p>Regular character sharing files do not include a local user ID. If DreamChat supports exporting originality self-attestation information in the future, the recipient will receive that information only if you actively choose to export it and confirm what will be shared.</p>
         <p>DreamChat does not automatically upload file contents to the developer's servers when you import or export files.</p>
 
         <h2>10. Website Language Preference</h2>
