@@ -105,6 +105,27 @@
       }
     },
     {
+      url: 'chat-modes.html',
+      title: {
+        'zh-Hant': '聊天模式詳細說明',
+        'zh-Hans': '聊天模式详细说明',
+        ja: 'チャットモードの詳しい説明',
+        en: 'Chat Modes Guide'
+      },
+      description: {
+        'zh-Hant': '了解聊天模式、是否模式與「幫我選」適合什麼情境。',
+        'zh-Hans': '了解聊天模式、是否模式与「帮我选」适合什么情境。',
+        ja: 'チャットモード、はい/いいえモード、「選んで」の使いどころを確認できます。',
+        en: 'Understand when to use Chat Mode, Yes/No Mode, and Choose for Me.'
+      },
+      text: {
+        'zh-Hant': '聊天模式 是否模式 幫我選 字卡庫 套用預設範本 三種回覆 隱藏回覆',
+        'zh-Hans': '聊天模式 是否模式 帮我选 字卡库 应用预设模板 三种回复 隐藏回复',
+        ja: 'チャットモード はい いいえ 選んで 定型文集 サンプルテンプレート 隠し返信',
+        en: 'chat mode yes no mode choose for me chat phrases apply default template hidden reply'
+      }
+    },
+    {
       url: 'card-library-converter.html',
       title: {
         'zh-Hant': '字卡庫格式轉換器',

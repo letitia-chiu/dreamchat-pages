@@ -8,6 +8,7 @@ Live site:
 
 - Home: https://letitia-chiu.github.io/dreamchat-pages/
 - User Guide: https://letitia-chiu.github.io/dreamchat-pages/guide.html
+- Chat Modes Guide: https://letitia-chiu.github.io/dreamchat-pages/chat-modes.html
 - Phrase Library Format Converter: https://letitia-chiu.github.io/dreamchat-pages/card-library-converter.html
 - Privacy Policy: https://letitia-chiu.github.io/dreamchat-pages/privacy.html
 - Support: https://letitia-chiu.github.io/dreamchat-pages/support.html
@@ -16,6 +17,7 @@ Live site:
 
 - `index.html` - DreamChat overview and links to support/privacy pages
 - `guide.html` - public user guide for first-time users
+- `chat-modes.html` - detailed guide for Chat Mode, Yes/No Mode, and Choose for Me
 - `card-library-converter.html` - browser-local converter for supported phrase backups
 - `card-library-converter.js` - converter logic for DreamChat phrase library JSON
 - `privacy.html` - privacy policy in Traditional Chinese, Simplified Chinese, Japanese, and English

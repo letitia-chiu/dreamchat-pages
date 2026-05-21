@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>聊天模式詳細說明 | DreamChat</title>
+  <meta name="description" content="How DreamChat chat modes work: Chat Mode, Yes/No Mode, and Choose for Me.">
+
+  <!-- Hreflang: language-specific entry URLs. -->
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/chat-modes.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/chat-modes.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/chat-modes.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/chat-modes.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/chat-modes.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/chat-modes.html">
+  <meta property="og:title" content="聊天模式詳細說明 | DreamChat">
+  <meta property="og:description" content="Understand when to use Chat Mode, Yes/No Mode, and Choose for Me in DreamChat.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="聊天模式詳細說明 | DreamChat">
+  <meta name="twitter:description" content="Understand when to use Chat Mode, Yes/No Mode, and Choose for Me in DreamChat.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="assets/DreamChat_app_icon.png" alt="">
+        <a href="index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page guide-page">
+      <article data-lang="zh-Hant">
+        <h1>聊天模式詳細說明</h1>
+        <p class="meta">對應版本：v2.7.0</p>
+        <p class="lead">聊天模式決定角色收到訊息後會用哪一種方式回覆。你可以依照對話目的，在一般聊天、簡短判斷與隨機選項之間切換。</p>
+
+        <nav class="guide-toc" aria-label="聊天模式目錄">
+          <a href="#zh-modes">模式總覽</a>
+          <a href="#zh-chat-mode">聊天模式</a>
+          <a href="#zh-yes-no">是否模式</a>
+          <a href="#zh-choice">幫我選</a>
+          <a href="#zh-switch">切換位置</a>
+        </nav>
+
+        <h2 id="zh-modes">1. 三種常見用法</h2>
+        <ul>
+          <li>聊天模式：從角色的字卡庫抽取回覆，適合日常聊天、角色語氣與較完整的互動。</li>
+          <li>是否模式：固定回覆簡短判斷，適合問「要不要」「可不可以」「是不是」這類問題。</li>
+          <li>幫我選：你輸入題目與選項，DreamChat 會從選項中抽一個作為角色回覆。</li>
+        </ul>
+
+        <h2 id="zh-chat-mode">2. 聊天模式</h2>
+        <p>聊天模式會從目前角色的字卡庫中選擇回覆。字卡內容、字卡組設定、情境標籤與智慧輔助設定，都會影響角色回覆時更容易選到哪一組字卡。</p>
+        <ul>
+          <li>至少需要一張可用字卡；字卡庫是空的時候，角色不會自動產生文字回覆。</li>
+          <li>想快速開始，可以先到字卡庫的「匯出／匯入」選單套用預設範本。</li>
+          <li>想讓角色更像你設定的個性，請把常見語氣、日常回覆與情境回覆整理成字卡。</li>
+        </ul>
+
+        <h2 id="zh-yes-no">3. 是否模式</h2>
+        <p>是否模式不會從字卡庫抽句子，而是用固定答案組回覆。主要有三種回覆方向：</p>
+        <ul>
+          <li>肯定：是、好、要、在、有、可以這類答案。</li>
+          <li>否定：不是、不好、不要、不在、沒有、不可以這類答案。</li>
+          <li>不確定：不好說、不能回答、保留意見這類答案。</li>
+        </ul>
+        <p class="guide-note guide-note-subtle">另外還有一個低機率的隱藏回覆，留給你在聊天時慢慢發掘。</p>
+
+        <h2 id="zh-choice">4. 幫我選</h2>
+        <p>「幫我選」適合讓角色從你提供的選項中挑一個。它不會永久改變聊天模式，只會把這次題目與選項送進聊天室，再安排角色回覆其中一個選項。</p>
+        <ol class="guide-steps">
+          <li>在聊天室右上角選單按「幫我選」。</li>
+          <li>輸入題目，例如「今晚要吃什麼？」</li>
+          <li>輸入至少兩個選項後送出。</li>
+        </ol>
+
+        <h2 id="zh-switch">5. 在哪裡切換</h2>
+        <p>路徑：<span class="guide-path">聊天 → 開啟對話 → 右上角選單 → 聊天模式</span></p>
+        <p>你也可以到角色設定中調整角色的預設聊天模式。若只是想臨時做選擇題，使用「幫我選」通常更直接。</p>
+      </article>
+
+      <article data-lang="zh-Hans">
+        <h1>聊天模式详细说明</h1>
+        <p class="meta">对应版本：v2.7.0</p>
+        <p class="lead">聊天模式决定角色收到消息后会用哪一种方式回复。你可以依照对话目的，在一般聊天、简短判断与随机选项之间切换。</p>
+
+        <nav class="guide-toc" aria-label="聊天模式目录">
+          <a href="#zh-hans-modes">模式总览</a>
+          <a href="#zh-hans-chat-mode">聊天模式</a>
+          <a href="#zh-hans-yes-no">是否模式</a>
+          <a href="#zh-hans-choice">帮我选</a>
+          <a href="#zh-hans-switch">切换位置</a>
+        </nav>
+
+        <h2 id="zh-hans-modes">1. 三种常见用法</h2>
+        <ul>
+          <li>聊天模式：从角色的字卡库抽取回复，适合日常聊天、角色语气与较完整的互动。</li>
+          <li>是否模式：固定回复简短判断，适合问「要不要」「可不可以」「是不是」这类问题。</li>
+          <li>帮我选：你输入题目与选项，DreamChat 会从选项中抽一个作为角色回复。</li>
+        </ul>
+
+        <h2 id="zh-hans-chat-mode">2. 聊天模式</h2>
+        <p>聊天模式会从当前角色的字卡库中选择回复。字卡内容、字卡组设置、情境标签与智能辅助设置，都会影响角色回复时更容易选到哪一组字卡。</p>
+        <ul>
+          <li>至少需要一张可用字卡；字卡库为空时，角色不会自动生成文字回复。</li>
+          <li>想快速开始，可以先到字卡库的「导出／导入」菜单应用预设模板。</li>
+          <li>想让角色更像你设置的个性，请把常见语气、日常回复与情境回复整理成字卡。</li>
+        </ul>
+
+        <h2 id="zh-hans-yes-no">3. 是否模式</h2>
+        <p>是否模式不会从字卡库抽句子，而是用固定答案组回复。主要有三种回复方向：</p>
+        <ul>
+          <li>肯定：是、好、要、在、有、可以这类答案。</li>
+          <li>否定：不是、不好、不要、不在、没有、不可以这类答案。</li>
+          <li>不确定：不好说、不能回答、保留意见这类答案。</li>
+        </ul>
+        <p class="guide-note guide-note-subtle">另外还有一个低概率的隐藏回复，留给你在聊天时慢慢发掘。</p>
+
+        <h2 id="zh-hans-choice">4. 帮我选</h2>
+        <p>「帮我选」适合让角色从你提供的选项中挑一个。它不会永久改变聊天模式，只会把这次题目与选项送进聊天室，再安排角色回复其中一个选项。</p>
+        <ol class="guide-steps">
+          <li>在聊天室右上角菜单按「帮我选」。</li>
+          <li>输入题目，例如「今晚要吃什么？」</li>
+          <li>输入至少两个选项后发送。</li>
+        </ol>
+
+        <h2 id="zh-hans-switch">5. 在哪里切换</h2>
+        <p>路径：<span class="guide-path">聊天 → 打开对话 → 右上角菜单 → 聊天模式</span></p>
+        <p>你也可以到角色设置中调整角色的默认聊天模式。若只是想临时做选择题，使用「帮我选」通常更直接。</p>
+      </article>
+
+      <article data-lang="ja">
+        <h1>チャットモードの詳しい説明</h1>
+        <p class="meta">対応バージョン：v2.7.0</p>
+        <p class="lead">チャットモードは、キャラクターがメッセージを受け取ったあと、どの方法で返事をするかを決める設定です。会話の目的に合わせて、通常の会話、短い判断、ランダムな選択を使い分けられます。</p>
+
+        <nav class="guide-toc" aria-label="チャットモード目次">
+          <a href="#ja-modes">概要</a>
+          <a href="#ja-chat-mode">チャットモード</a>
+          <a href="#ja-yes-no">はい/いいえ</a>
+          <a href="#ja-choice">選んで</a>
+          <a href="#ja-switch">切り替え場所</a>
+        </nav>
+
+        <h2 id="ja-modes">1. よく使う3つの使い方</h2>
+        <ul>
+          <li>チャットモード：キャラクターの定型文集から返信を選びます。日常会話、キャラクターらしい口調、長めのやり取りに向いています。</li>
+          <li>はい/いいえモード：短い判断で返信します。「する？」「できる？」「そうなの？」のような質問に向いています。</li>
+          <li>選んで：質問と選択肢を入力すると、DreamChat が選択肢から1つをキャラクターの返信として選びます。</li>
+        </ul>
+
+        <h2 id="ja-chat-mode">2. チャットモード</h2>
+        <p>チャットモードでは、現在のキャラクターの定型文集から返信が選ばれます。定型文の内容、定型文セットの設定、コンテキストタグ、スマートアシスト設定が、どのセットから選ばれやすいかに影響します。</p>
+        <ul>
+          <li>少なくとも1件の使用可能な定型文が必要です。定型文集が空の場合、キャラクターは文字の自動返信を行いません。</li>
+          <li>すぐ始めたい場合は、定型文集の「書き出し／読み込み」メニューからサンプルテンプレートを適用できます。</li>
+          <li>キャラクターらしさを出したい場合は、よく使う口調、日常返信、状況別の返信を定型文として整理します。</li>
+        </ul>
+
+        <h2 id="ja-yes-no">3. はい/いいえモード</h2>
+        <p>はい/いいえモードは定型文集から文章を選ばず、固定の回答グループで返信します。主な返信方向は3つです。</p>
+        <ul>
+          <li>肯定：はい、いいよ、いる、ある、できる、など。</li>
+          <li>否定：いいえ、よくない、いらない、いない、ない、できない、など。</li>
+          <li>保留：わからない、なんとも言えない、答えられない、保留、など。</li>
+        </ul>
+        <p class="guide-note guide-note-subtle">ほかにも低い確率で出る隠し返信があります。チャットの中で見つけてみてください。</p>
+
+        <h2 id="ja-choice">4. 選んで</h2>
+        <p>「選んで」は、あなたが用意した選択肢からキャラクターに1つ選ばせたいときに使います。チャットモードを恒久的に変更するものではなく、その質問と選択肢をチャットに送り、キャラクターがその中から返信します。</p>
+        <ol class="guide-steps">
+          <li>チャット右上のメニューで「選んで」を押します。</li>
+          <li>「今夜何を食べる？」のように質問を入力します。</li>
+          <li>2つ以上の選択肢を入力して送信します。</li>
+        </ol>
+
+        <h2 id="ja-switch">5. どこで切り替えるか</h2>
+        <p>場所：<span class="guide-path">チャット → 会話を開く → 右上メニュー → チャットモード</span></p>
+        <p>キャラクター設定でも、キャラクターの既定チャットモードを変更できます。一時的に選択肢を選ばせたいだけなら、「選んで」を使うほうが直接的です。</p>
+      </article>
+
+      <article data-lang="en">
+        <h1>Chat Modes Guide</h1>
+        <p class="meta">Applies to version v2.7.0</p>
+        <p class="lead">Chat modes decide how a character replies after receiving a message. You can switch between open-ended chat, short judgment replies, and random choices depending on the conversation.</p>
+
+        <nav class="guide-toc" aria-label="Chat modes table of contents">
+          <a href="#en-modes">Overview</a>
+          <a href="#en-chat-mode">Chat Mode</a>
+          <a href="#en-yes-no">Yes/No Mode</a>
+          <a href="#en-choice">Choose for Me</a>
+          <a href="#en-switch">Where to Switch</a>
+        </nav>
+
+        <h2 id="en-modes">1. Three Common Uses</h2>
+        <ul>
+          <li>Chat Mode: chooses replies from the character's Chat Phrases, best for everyday chat, character voice, and fuller interactions.</li>
+          <li>Yes/No Mode: replies with short judgment answers, best for questions like "should we", "can you", or "is it".</li>
+          <li>Choose for Me: you enter a question and options, and DreamChat picks one option as the character's reply.</li>
+        </ul>
+
+        <h2 id="en-chat-mode">2. Chat Mode</h2>
+        <p>Chat Mode chooses replies from the current character's Chat Phrases. Phrase text, phrase set settings, context tags, and Smart Assist settings can all affect which set is easier to pick.</p>
+        <ul>
+          <li>At least one usable chat phrase is required. If the phrase library is empty, the character will not send an automatic text reply.</li>
+          <li>To begin quickly, open the Chat Phrases Export / Import menu and apply the default template.</li>
+          <li>For a stronger character voice, organize common tone, everyday replies, and situation-specific replies as chat phrases.</li>
+        </ul>
+
+        <h2 id="en-yes-no">3. Yes/No Mode</h2>
+        <p>Yes/No Mode does not pick sentences from Chat Phrases. It replies with fixed answer groups. There are three main reply directions:</p>
+        <ul>
+          <li>Positive: yes, OK, I do, here, have it, can do.</li>
+          <li>Negative: no, not OK, I don't, not here, don't have it, can't.</li>
+          <li>Unsure: not sure, hard to say, can't answer, no comment.</li>
+        </ul>
+        <p class="guide-note guide-note-subtle">There is also a low-probability hidden reply for you to discover while chatting.</p>
+
+        <h2 id="en-choice">4. Choose for Me</h2>
+        <p>Choose for Me is for letting a character pick from options you provide. It does not permanently change the chat mode; it sends this question and its options into the chat, then schedules the character to reply with one of the options.</p>
+        <ol class="guide-steps">
+          <li>Open the top-right menu in a chat and tap Choose for Me.</li>
+          <li>Enter a question, such as "What should we eat tonight?"</li>
+          <li>Enter at least two options and submit.</li>
+        </ol>
+
+        <h2 id="en-switch">5. Where to Switch</h2>
+        <p>Path: <span class="guide-path">Chat → Open a conversation → Top-right menu → Chat Mode</span></p>
+        <p>You can also change a character's default chat mode in character settings. If you only want a temporary choice question, Choose for Me is usually more direct.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="lang.js"></script>
+</body>
+</html>

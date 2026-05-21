@@ -58,6 +58,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 128px;
 }
 
 body {
@@ -784,6 +785,10 @@ a:focus {
   text-decoration: none;
 }
 
+.guide-page h2[id] {
+  scroll-margin-top: 128px;
+}
+
 .guide-page ol,
 .guide-steps {
   counter-reset: guide-step;
@@ -825,6 +830,13 @@ a:focus {
   border: 1px solid var(--border-hairline);
   border-left: 3px solid var(--accent);
   border-radius: var(--radius-sm);
+}
+
+.guide-note-subtle {
+  background: rgba(255, 255, 255, 0.34);
+  border-color: rgba(138, 111, 199, 0.1);
+  border-left-color: var(--accent-soft);
+  color: var(--muted);
 }
 
 .guide-path {
@@ -1145,8 +1157,16 @@ span[data-lang].active { display: inline; }
 /* Responsive                                                   */
 /* ============================================================ */
 @media (max-width: 920px) {
+  html {
+    scroll-padding-top: 212px;
+  }
+
   .container {
     padding-top: 158px;
+  }
+
+  .guide-page h2[id] {
+    scroll-margin-top: 212px;
   }
 
   .site-header {
@@ -1193,8 +1213,16 @@ span[data-lang].active { display: inline; }
 }
 
 @media (max-width: 640px) {
+  html {
+    scroll-padding-top: 226px;
+  }
+
   .container {
     padding: 170px 18px 36px;
+  }
+
+  .guide-page h2[id] {
+    scroll-margin-top: 226px;
   }
 
   .site-header {
