@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DreamChat 使用說明 v2.7.0</title>
+  <meta name="description" content="DreamChat v2.7.0 public user guide: learn the main tabs, chat, characters, chat phrases, scheduled messages, stickers, settings, and backup.">
+
+  <!-- Hreflang: language-specific entry URLs. -->
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/guide.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/guide.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/guide.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/guide.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/guide.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/guide.html">
+  <meta property="og:title" content="DreamChat 使用說明 v2.7.0">
+  <meta property="og:description" content="A beginner-friendly guide to DreamChat v2.7.0: chat, characters, chat phrases, scheduled messages, stickers, settings, and backup.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DreamChat 使用說明 v2.7.0">
+  <meta name="twitter:description" content="A beginner-friendly guide to DreamChat v2.7.0: chat, characters, chat phrases, scheduled messages, stickers, settings, and backup.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="assets/DreamChat_app_icon.png" alt="">
+        <a href="index.html">DreamChat</a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="zh-Hant">繁體中文</button>
+        <button type="button" data-lang-btn="zh-Hans">简体中文</button>
+        <button type="button" data-lang-btn="ja">日本語</button>
+        <button type="button" data-lang-btn="en">English</button>
+      </div>
+    </header>
+
+    <main class="page guide-page">
+
+      <!-- ============================================================ -->
+      <!-- 繁體中文                                                       -->
+      <!-- ============================================================ -->
+      <article data-lang="zh-Hant">
+        <h1>DreamChat 使用說明</h1>
+        <p class="meta">對應版本：v2.7.0</p>
+
+        <p class="lead">這份說明給第一次使用 DreamChat 的使用者。你可以先從聊天開始，再慢慢整理角色、字卡庫、定時來訊與貼圖。</p>
+
+        <nav class="guide-toc" aria-label="DreamChat 使用說明目錄">
+          <a href="#zh-start">快速開始</a>
+          <a href="#zh-chat">聊天</a>
+          <a href="#zh-characters">角色</a>
+          <a href="#zh-phrases">字卡庫</a>
+          <a href="#zh-scheduled">定時來訊</a>
+          <a href="#zh-stickers">貼圖</a>
+          <a href="#zh-settings">設定與備份</a>
+        </nav>
+
+        <h2 id="zh-start">1. 第一次打開 App</h2>
+        <ol class="guide-steps">
+          <li>DreamChat 會先建立一位預設角色與一個預設對話。</li>
+          <li>底部有三個主要分頁：「角色」、「聊天」、「設定」。</li>
+          <li>想立刻開始，進入「聊天」分頁，打開對話，在底部輸入訊息後按紙飛機送出。</li>
+        </ol>
+
+        <p class="guide-note">角色的自動回覆會從「字卡庫」抽取。聊天模式至少需要一張字卡，否則角色不會自動回覆。</p>
+
+        <h2 id="zh-chat">2. 聊天分頁怎麼用</h2>
+        <p>「聊天」分頁會列出最近對話。點進對話後，你可以：</p>
+        <ul>
+          <li>在底部輸入文字並送出。</li>
+          <li>按表情按鈕開啟貼圖與表情符號。</li>
+          <li>按放大鏡搜尋目前對話的訊息，或依日期跳轉。</li>
+          <li>長按訊息可回覆、複製、截圖或刪除。</li>
+          <li>上方選單可切換「聊天模式」與「是否模式」，也可以使用「幫我選」。</li>
+          <li>上方選單也能開啟角色設定、群組設定、目前情境，或暫停此對話的定時來訊。</li>
+        </ul>
+
+        <h2 id="zh-characters">3. 建立與管理角色</h2>
+        <p>到「角色」分頁，按右上角加號可以「新增角色」或「匯入角色」。點進角色後可調整：</p>
+        <ul>
+          <li>角色名稱、聊天室背景、是否顯示已讀與自己的頭像。</li>
+          <li>回覆時間，例如最短與最長延遲。</li>
+          <li>聊天模式：一般「聊天模式」或「是否模式」。</li>
+          <li>字卡庫、貼圖使用設定與定時來訊。</li>
+          <li>右上角分享按鈕可匯出角色分享檔。</li>
+        </ul>
+
+        <p>要新增對話，請到「聊天」分頁按加號，選擇「直接」或「群組」。群組對話至少需要兩位可用角色，且必須是目前方案支援的功能。</p>
+
+        <h2 id="zh-phrases">4. 設定字卡庫，讓角色會回覆</h2>
+        <p>路徑：<span class="guide-path">角色 → 角色設定 → 字卡庫</span></p>
+        <ul>
+          <li>「通用」是預設字卡組；你也可以新增自訂字卡組。</li>
+          <li>進入字卡組後，按「新增回覆字卡」，每行輸入一張字卡。</li>
+          <li>在字卡組設定中填寫「適用情境」與「觸發關鍵字」，能幫助系統在收到訊息時挑到更合適的字卡組。</li>
+          <li>「智慧輔助」會依照收到的訊息、字卡組名稱、適用情境、觸發關鍵字與字卡內容選擇字卡組；Apple Intelligence 可用時會加入裝置端分類判斷，但不會產生新的對話內容。</li>
+          <li>想讓回覆更穩定，可把「隨機性」調低；想讓變化更多，可調高。</li>
+        </ul>
+
+        <h2 id="zh-scheduled">5. 設定定時來訊</h2>
+        <p>路徑：<span class="guide-path">角色 → 角色設定 → 定時來訊</span></p>
+        <ol class="guide-steps">
+          <li>按加號新增定時來訊。</li>
+          <li>在「基本」設定名稱、來訊對話與是否啟用。</li>
+          <li>在「星期」選擇要觸發的日子。預設為每天，至少會保留一天。</li>
+          <li>在「時間」新增一個或多個來訊時間，也可以設定「時間浮動」。</li>
+          <li>在「來源」選擇手動輸入來訊內容，或從字卡庫隨機選擇。</li>
+          <li>如果手動輸入內容，請每一行放一則可能收到的訊息。</li>
+        </ol>
+
+        <p class="guide-note">定時來訊需要通知權限。可到「設定 → 通知」開啟角色來訊通知，或到 iOS 系統設定調整 DreamChat 的通知權限。</p>
+
+        <h2 id="zh-stickers">6. 貼圖與表情符號</h2>
+        <p>路徑：<span class="guide-path">設定 → 貼圖與表情符號</span></p>
+        <ul>
+          <li>在「貼圖管理」新增貼圖組，進入貼圖組後可從相簿或檔案加入圖片。</li>
+          <li>在「表情符號管理」整理可用的表情符號組。</li>
+          <li>回到角色設定，進入「貼圖」選擇角色可使用的貼圖組，並調整使用頻率。</li>
+          <li>聊天時按輸入列左側的表情按鈕，就能選擇貼圖或插入表情符號。</li>
+        </ul>
+
+        <h2 id="zh-settings">7. 設定、會員與備份</h2>
+        <ul>
+          <li>「設定 → 自己」可修改自己的顯示名稱。</li>
+          <li>「設定 → 會員」可查看目前方案、恢復購買與比較方案限制。</li>
+          <li>「設定 → 外觀」可切換主題顏色；「設定 → 語言」可切換 App 語言。</li>
+          <li>「設定 → 資料」可匯出完整備份、角色設定文字檔、聊天記錄文字檔，也可以匯入完整備份。</li>
+          <li>匯入完整備份會覆蓋目前 App 內資料，請先確認已保留需要的檔案。</li>
+        </ul>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- 简体中文                                                       -->
+      <!-- ============================================================ -->
+      <article data-lang="zh-Hans">
+        <h1>DreamChat 使用说明</h1>
+        <p class="meta">对应版本：v2.7.0</p>
+
+        <p class="lead">这份说明适合第一次使用 DreamChat 的用户。你可以先从聊天开始，再慢慢整理角色、字卡库、定时来信与表情包。</p>
+
+        <nav class="guide-toc" aria-label="DreamChat 使用说明目录">
+          <a href="#zh-hans-start">快速开始</a>
+          <a href="#zh-hans-chat">聊天</a>
+          <a href="#zh-hans-characters">角色</a>
+          <a href="#zh-hans-phrases">字卡库</a>
+          <a href="#zh-hans-scheduled">定时来信</a>
+          <a href="#zh-hans-stickers">表情包</a>
+          <a href="#zh-hans-settings">设置与备份</a>
+        </nav>
+
+        <h2 id="zh-hans-start">1. 第一次打开 App</h2>
+        <ol class="guide-steps">
+          <li>DreamChat 会先建立一位默认角色与一个默认对话。</li>
+          <li>底部有三个主要分页：「角色」、「聊天」、「设置」。</li>
+          <li>想立刻开始，进入「聊天」分页，打开对话，在底部输入消息后按纸飞机发送。</li>
+        </ol>
+
+        <p class="guide-note">角色的自动回复会从「字卡库」抽取。聊天模式至少需要一张字卡，否则角色不会自动回复。</p>
+
+        <h2 id="zh-hans-chat">2. 聊天分页怎么用</h2>
+        <p>「聊天」分页会列出最近对话。点进对话后，你可以：</p>
+        <ul>
+          <li>在底部输入文字并发送。</li>
+          <li>按表情按钮打开表情包与表情符号。</li>
+          <li>按放大镜搜索当前对话的消息，或按日期跳转。</li>
+          <li>长按消息可回复、复制、截图或删除。</li>
+          <li>上方菜单可切换「聊天模式」与「是否模式」，也可以使用「帮我选」。</li>
+          <li>上方菜单也能打开角色设置、群组设置、当前情境，或暂停此对话的定时来信。</li>
+        </ul>
+
+        <h2 id="zh-hans-characters">3. 建立与管理角色</h2>
+        <p>到「角色」分页，按右上角加号可以「新增角色」或「导入角色」。点进角色后可调整：</p>
+        <ul>
+          <li>角色名称、聊天室背景、是否显示已读与自己的头像。</li>
+          <li>回复时间，例如最短与最长延迟。</li>
+          <li>聊天模式：一般「聊天模式」或「是否模式」。</li>
+          <li>字卡库、表情包使用设置与定时来信。</li>
+          <li>右上角分享按钮可导出角色分享文件。</li>
+        </ul>
+
+        <p>要新增对话，请到「聊天」分页按加号，选择「直接」或「群组」。群组对话至少需要两位可用角色，且必须是当前方案支持的功能。</p>
+
+        <h2 id="zh-hans-phrases">4. 设置字卡库，让角色会回复</h2>
+        <p>路径：<span class="guide-path">角色 → 角色设置 → 字卡库</span></p>
+        <ul>
+          <li>「通用」是默认字卡组；你也可以新增自定义字卡组。</li>
+          <li>进入字卡组后，按「新增回复字卡」，每行输入一张字卡。</li>
+          <li>在字卡组设置中填写「适用情境」与「触发关键词」，能帮助系统在收到消息时挑到更合适的字卡组。</li>
+          <li>「智能辅助」会依据收到的消息、字卡组名称、适用情境、触发关键词与字卡内容选择字卡组；Apple Intelligence 可用时会加入设备端分类判断，但不会生成新的对话内容。</li>
+          <li>想让回复更稳定，可把「随机性」调低；想让变化更多，可调高。</li>
+        </ul>
+
+        <h2 id="zh-hans-scheduled">5. 设置定时来信</h2>
+        <p>路径：<span class="guide-path">角色 → 角色设置 → 定时来信</span></p>
+        <ol class="guide-steps">
+          <li>按加号新增定时来信。</li>
+          <li>在「基本」设置名称、来信对话与是否启用。</li>
+          <li>在「星期」选择要触发的日子。默认为每天，至少会保留一天。</li>
+          <li>在「时间」新增一个或多个来信时间，也可以设置「时间浮动」。</li>
+          <li>在「来源」选择手动输入来信内容，或从字卡库随机选择。</li>
+          <li>如果手动输入内容，请每一行放一条可能收到的消息。</li>
+        </ol>
+
+        <p class="guide-note">定时来信需要通知权限。可到「设置 → 通知」开启角色来信通知，或到 iOS 系统设置调整 DreamChat 的通知权限。</p>
+
+        <h2 id="zh-hans-stickers">6. 表情包与表情符号</h2>
+        <p>路径：<span class="guide-path">设置 → 表情包与表情符号</span></p>
+        <ul>
+          <li>在「表情包管理」新增表情包组，进入表情包组后可从相册或文件加入图片。</li>
+          <li>在「表情符号管理」整理可用的表情符号组。</li>
+          <li>回到角色设置，进入「表情包」选择角色可使用的表情包组，并调整使用频率。</li>
+          <li>聊天时按输入栏左侧的表情按钮，就能选择表情包或插入表情符号。</li>
+        </ul>
+
+        <h2 id="zh-hans-settings">7. 设置、会员与备份</h2>
+        <ul>
+          <li>「设置 → 自己」可修改自己的显示名称。</li>
+          <li>「设置 → 会员」可查看当前方案、恢复购买与比较方案限制。</li>
+          <li>「设置 → 外观」可切换主题颜色；「设置 → 语言」可切换 App 语言。</li>
+          <li>「设置 → 数据」可导出完整备份、角色设置文本、聊天记录文本，也可以导入完整备份。</li>
+          <li>导入完整备份会覆盖当前 App 内数据，请先确认已保留需要的文件。</li>
+        </ul>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- 日本語                                                         -->
+      <!-- ============================================================ -->
+      <article data-lang="ja">
+        <h1>DreamChat 使い方ガイド</h1>
+        <p class="meta">対応バージョン：v2.7.0</p>
+
+        <p class="lead">このガイドは、DreamChat を初めて使う方向けです。まずはチャットから始めて、必要に応じてキャラクター、定型文集、予約受信、スタンプを整えていけます。</p>
+
+        <nav class="guide-toc" aria-label="DreamChat 使い方ガイド目次">
+          <a href="#ja-start">はじめに</a>
+          <a href="#ja-chat">チャット</a>
+          <a href="#ja-characters">キャラクター</a>
+          <a href="#ja-phrases">定型文集</a>
+          <a href="#ja-scheduled">予約受信</a>
+          <a href="#ja-stickers">スタンプ</a>
+          <a href="#ja-settings">設定とバックアップ</a>
+        </nav>
+
+        <h2 id="ja-start">1. 初回起動時</h2>
+        <ol class="guide-steps">
+          <li>DreamChat は、初回起動時に既定のキャラクターと既定の会話を作成します。</li>
+          <li>画面下部には「キャラクター」「チャット」「設定」の3つのタブがあります。</li>
+          <li>すぐに始めるには、「チャット」タブで会話を開き、下部の入力欄にメッセージを入力して紙飛行機ボタンで送信します。</li>
+        </ol>
+
+        <p class="guide-note">キャラクターの自動返信は「定型文集」から選ばれます。チャットモードでは、少なくとも1件の定型文が必要です。</p>
+
+        <h2 id="ja-chat">2. チャットタブの使い方</h2>
+        <p>「チャット」タブには最近の会話が表示されます。会話を開くと、次の操作ができます。</p>
+        <ul>
+          <li>下部の入力欄からメッセージを送信する。</li>
+          <li>絵文字ボタンからスタンプと絵文字を開く。</li>
+          <li>虫眼鏡ボタンで現在の会話内のメッセージを検索し、日付で移動する。</li>
+          <li>メッセージを長押しして、返信、コピー、スクリーンショット、削除を行う。</li>
+          <li>上部メニューで「チャットモード」と「はい/いいえモード」を切り替えたり、「選んで」を使ったりする。</li>
+          <li>上部メニューからキャラクター設定、グループ設定、現在のコンテキスト、予約受信の一時停止を開く。</li>
+        </ul>
+
+        <h2 id="ja-characters">3. キャラクターの作成と管理</h2>
+        <p>「キャラクター」タブで右上の追加ボタンを押すと、キャラクターの追加や読み込みができます。キャラクターを開くと、次の項目を設定できます。</p>
+        <ul>
+          <li>キャラクター名、チャット背景、既読表示、自分のアイコン表示。</li>
+          <li>返信タイミング、最小・最大の待ち時間。</li>
+          <li>チャットモード：通常の「チャットモード」または「はい/いいえモード」。</li>
+          <li>定型文集、スタンプの使用設定、予約受信。</li>
+          <li>右上の共有ボタンからキャラクター共有ファイルを書き出せます。</li>
+        </ul>
+
+        <p>新しい会話を作るには、「チャット」タブで追加ボタンを押し、「直接」または「グループ」を選びます。グループ会話には利用可能なキャラクターが2人以上必要で、現在のプランで対応している必要があります。</p>
+
+        <h2 id="ja-phrases">4. 定型文集を設定して返信できるようにする</h2>
+        <p>場所：<span class="guide-path">キャラクター → キャラクター設定 → 定型文集</span></p>
+        <ul>
+          <li>「基本」は既定の定型文セットです。カスタム定型文セットも追加できます。</li>
+          <li>定型文セットを開き、「定型文を追加」を押して、1行につき1件ずつ入力します。</li>
+          <li>定型文セット設定で「使う場面」と「トリガーキーワード」を入力すると、受信メッセージに合う定型文セットを選びやすくなります。</li>
+          <li>「スマートアシスト」は、受信メッセージ、セット名、使う場面、トリガーキーワード、定型文の内容をもとに定型文セットを選びます。Apple Intelligence が使える場合は端末内の分類判断も加えますが、新しい会話文は生成しません。</li>
+          <li>返信を安定させたい場合は「ランダム性」を低くし、変化を増やしたい場合は高くします。</li>
+        </ul>
+
+        <h2 id="ja-scheduled">5. 予約受信を設定する</h2>
+        <p>場所：<span class="guide-path">キャラクター → キャラクター設定 → 予約受信</span></p>
+        <ol class="guide-steps">
+          <li>追加ボタンで予約受信を作成します。</li>
+          <li>「基本」で名前、受信する会話、有効状態を設定します。</li>
+          <li>「曜日」で受信する曜日を選びます。初期設定は毎日で、少なくとも1日は残ります。</li>
+          <li>「時間」で1つ以上の受信時刻を追加し、必要に応じて「時間のゆらぎ」を設定します。</li>
+          <li>「ソース」で、受信内容を手入力するか、定型文集からランダムに選ぶかを選択します。</li>
+          <li>手入力する場合は、1行につき1件のメッセージを入力します。</li>
+        </ol>
+
+        <p class="guide-note">予約受信には通知の許可が必要です。「設定 → 通知」でキャラクターからの通知を有効にするか、iOS の設定で DreamChat の通知権限を確認してください。</p>
+
+        <h2 id="ja-stickers">6. スタンプと絵文字</h2>
+        <p>場所：<span class="guide-path">設定 → スタンプと絵文字</span></p>
+        <ul>
+          <li>「スタンプ管理」でスタンプセットを追加し、セット内で写真またはファイルから画像を追加します。</li>
+          <li>「絵文字管理」で使用する絵文字セットを整理します。</li>
+          <li>キャラクター設定に戻り、「スタンプ」でそのキャラクターが使えるスタンプセットと使用頻度を選びます。</li>
+          <li>チャット中は入力欄左側の絵文字ボタンから、スタンプの送信や絵文字の挿入ができます。</li>
+        </ul>
+
+        <h2 id="ja-settings">7. 設定、メンバーシップ、バックアップ</h2>
+        <ul>
+          <li>「設定 → 自分」で自分の表示名を変更できます。</li>
+          <li>「設定 → メンバーシップ」で現在のプラン、購入の復元、プラン制限の比較を確認できます。</li>
+          <li>「設定 → 外観」でテーマ色を変更し、「設定 → 言語」でアプリの言語を切り替えられます。</li>
+          <li>「設定 → データ」では、完全バックアップ、キャラクター設定テキスト、チャット履歴テキストを書き出せます。完全バックアップの読み込みもできます。</li>
+          <li>完全バックアップの読み込みは現在のアプリ内データを上書きします。必要なファイルを保存してから実行してください。</li>
+        </ul>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- English                                                       -->
+      <!-- ============================================================ -->
+      <article data-lang="en">
+        <h1>DreamChat User Guide</h1>
+        <p class="meta">Applies to version v2.7.0</p>
+
+        <p class="lead">This guide is for people opening DreamChat for the first time. Start with chat, then shape your characters, chat phrases, scheduled messages, and stickers as you go.</p>
+
+        <nav class="guide-toc" aria-label="DreamChat user guide table of contents">
+          <a href="#en-start">Start</a>
+          <a href="#en-chat">Chat</a>
+          <a href="#en-characters">Characters</a>
+          <a href="#en-phrases">Chat Phrases</a>
+          <a href="#en-scheduled">Scheduled Messages</a>
+          <a href="#en-stickers">Stickers</a>
+          <a href="#en-settings">Settings & Backup</a>
+        </nav>
+
+        <h2 id="en-start">1. First Launch</h2>
+        <ol class="guide-steps">
+          <li>DreamChat creates one default character and one default chat.</li>
+          <li>The bottom tab bar has three main tabs: Characters, Chat, and Settings.</li>
+          <li>To begin right away, open the Chat tab, enter the chat, type in the bottom input field, and tap the paper plane button.</li>
+        </ol>
+
+        <p class="guide-note">Automatic character replies are chosen from Chat Phrases. Chat mode needs at least one chat phrase; otherwise the character will not auto-reply.</p>
+
+        <h2 id="en-chat">2. Using the Chat Tab</h2>
+        <p>The Chat tab lists recent chats. Inside a chat, you can:</p>
+        <ul>
+          <li>Type and send messages from the bottom input bar.</li>
+          <li>Tap the emoji button to open stickers and emoji.</li>
+          <li>Tap the search button to search messages in the current chat or jump by date.</li>
+          <li>Long-press a message to reply, copy, capture a screenshot, or delete it.</li>
+          <li>Use the top menu to switch between Chat Mode and Yes/No Mode, or use Choose for Me.</li>
+          <li>Use the top menu to open character settings, group settings, current context, or pause scheduled messages for this chat.</li>
+        </ul>
+
+        <h2 id="en-characters">3. Creating and Managing Characters</h2>
+        <p>Open the Characters tab and tap the plus button to add or import a character. Open a character to adjust:</p>
+        <ul>
+          <li>Character name, chat background, read receipts, and whether your own avatar is shown.</li>
+          <li>Reply timing, including minimum and maximum delay.</li>
+          <li>Chat mode: normal Chat Mode or Yes/No Mode.</li>
+          <li>Chat Phrases, sticker usage, and scheduled messages.</li>
+          <li>The share button in the top-right corner exports a character share file.</li>
+        </ul>
+
+        <p>To create a new chat, open the Chat tab, tap the plus button, and choose Direct or Group. Group chats need at least two available characters and must be supported by your current plan.</p>
+
+        <h2 id="en-phrases">4. Setting Up Chat Phrases for Replies</h2>
+        <p>Path: <span class="guide-path">Characters → Character Settings → Chat Phrases</span></p>
+        <ul>
+          <li>General is the default phrase set. You can also create custom phrase sets.</li>
+          <li>Open a phrase set, tap Add Chat Phrases, and enter one chat phrase per line.</li>
+          <li>In phrase set settings, add Usage Context and Trigger Keywords to help DreamChat pick the right set for incoming messages.</li>
+          <li>Smart Assist chooses a phrase set using the incoming message, set name, usage context, trigger keywords, and chat phrase text. When Apple Intelligence is available, on-device classification can help, but it does not generate new conversation text.</li>
+          <li>Lower Randomness for steadier replies; raise it for more variation.</li>
+        </ul>
+
+        <h2 id="en-scheduled">5. Setting Up Scheduled Messages</h2>
+        <p>Path: <span class="guide-path">Characters → Character Settings → Scheduled messages</span></p>
+        <ol class="guide-steps">
+          <li>Tap the plus button to add a scheduled message.</li>
+          <li>In Basic, set the name, target chat, and enabled state.</li>
+          <li>In Days, choose which days can send. The default is every day, and at least one day remains selected.</li>
+          <li>In Time, add one or more times and optionally set Time variation.</li>
+          <li>In Source, choose manual message content or random from Chat Phrase Library.</li>
+          <li>If entering message content manually, put one possible message per line.</li>
+        </ol>
+
+        <p class="guide-note">Scheduled messages need notification permission. You can enable Character Message Alerts in Settings → Notifications, or manage DreamChat notification permission in iOS Settings.</p>
+
+        <h2 id="en-stickers">6. Stickers and Emoji</h2>
+        <p>Path: <span class="guide-path">Settings → Stickers & Emoji</span></p>
+        <ul>
+          <li>In Sticker Management, create a sticker set, then add images from Photos or Files.</li>
+          <li>In Emoji Management, organize the emoji sets you want to use.</li>
+          <li>Return to Character Settings, open Stickers, choose which sticker sets the character can use, and adjust Frequency.</li>
+          <li>In chat, tap the emoji button on the left side of the input bar to send stickers or insert emoji.</li>
+        </ul>
+
+        <h2 id="en-settings">7. Settings, Membership, and Backup</h2>
+        <ul>
+          <li>Settings → Me lets you change your display name.</li>
+          <li>Settings → Membership shows your current plan, Restore Purchases, and plan limit comparison.</li>
+          <li>Settings → Appearance changes the theme color. Settings → Language changes the app language.</li>
+          <li>Settings → Data can export a full backup, character settings text, or chat history text, and can import a full backup.</li>
+          <li>Importing a full backup overwrites the current app data. Keep any files you need before continuing.</li>
+        </ul>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="lang.js"></script>
+</body>
+</html>

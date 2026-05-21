@@ -7,12 +7,14 @@ This repository contains the static website used for DreamChat's App Store suppo
 Live site:
 
 - Home: https://letitia-chiu.github.io/dreamchat-pages/
+- User Guide: https://letitia-chiu.github.io/dreamchat-pages/guide.html
 - Privacy Policy: https://letitia-chiu.github.io/dreamchat-pages/privacy.html
 - Support: https://letitia-chiu.github.io/dreamchat-pages/support.html
 
 ## Pages
 
 - `index.html` - DreamChat overview and links to support/privacy pages
+- `guide.html` - public user guide for first-time users
 - `privacy.html` - privacy policy in Traditional Chinese, Simplified Chinese, Japanese, and English
 - `support.html` - support and FAQ in the same four languages
 - `styles.css` - shared visual styling

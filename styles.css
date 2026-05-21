@@ -493,6 +493,84 @@ a:focus {
   opacity: 0.75;
 }
 
+.guide-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 34px;
+}
+
+.guide-toc a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-bg);
+  border: 1px solid var(--border-soft);
+  color: var(--accent-deep);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.guide-toc a:hover,
+.guide-toc a:focus {
+  background: var(--accent-bg-strong);
+  text-decoration: none;
+}
+
+.guide-page ol {
+  counter-reset: guide-step;
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 18px;
+  color: var(--text-soft);
+}
+
+.guide-page ol li {
+  counter-increment: guide-step;
+  position: relative;
+  padding-left: 42px;
+  margin-bottom: 10px;
+}
+
+.guide-page ol li::before {
+  content: counter(guide-step);
+  position: absolute;
+  left: 0;
+  top: 0.08em;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-bg-strong);
+  color: var(--accent-deep);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.guide-note {
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.52);
+  border: 1px solid var(--border-hairline);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+}
+
+.guide-path {
+  display: inline;
+  padding: 2px 7px;
+  border-radius: 7px;
+  background: var(--accent-bg);
+  color: var(--accent-deep);
+  font-weight: 600;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
 /* ============================================================ */
 /* FAQ items — refined card                                     */
 /* ============================================================ */
