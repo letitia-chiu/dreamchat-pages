@@ -42,11 +42,44 @@
         <img class="brand-mark" src="assets/DreamChat_app_icon.png" alt="">
         <a href="index.html">DreamChat</a>
       </div>
-      <div class="lang-switch" role="group" aria-label="Language">
-        <button type="button" data-lang-btn="zh-Hant">繁體中文</button>
-        <button type="button" data-lang-btn="zh-Hans">简体中文</button>
-        <button type="button" data-lang-btn="ja">日本語</button>
-        <button type="button" data-lang-btn="en">English</button>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="index.html">
+          <span data-lang="zh-Hant">首頁</span>
+          <span data-lang="zh-Hans">首页</span>
+          <span data-lang="ja">ホーム</span>
+          <span data-lang="en">Home</span>
+        </a>
+        <a href="guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="privacy.html" aria-current="page">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
       </div>
     </header>
 

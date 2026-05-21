@@ -7,6 +7,12 @@
   var SUPPORTED = ['zh-Hant', 'zh-Hans', 'ja', 'en'];
   var STORAGE_KEY = 'dreamchat-lang';
   var DEFAULT = 'zh-Hant';
+  var LABELS = {
+    'zh-Hant': '繁體中文',
+    'zh-Hans': '简体中文',
+    ja: '日本語',
+    en: 'English'
+  };
 
   // Read ?lang=... from the URL.
   // This lets hreflang links (e.g. ?lang=ja) and shared URLs open the page
@@ -64,9 +70,16 @@
     for (var j = 0; j < buttons.length; j++) {
       if (buttons[j].getAttribute('data-lang-btn') === lang) {
         buttons[j].classList.add('active');
+        buttons[j].setAttribute('aria-checked', 'true');
       } else {
         buttons[j].classList.remove('active');
+        buttons[j].setAttribute('aria-checked', 'false');
       }
+    }
+
+    var currentLabels = document.querySelectorAll('[data-current-lang]');
+    for (var k = 0; k < currentLabels.length; k++) {
+      currentLabels[k].textContent = LABELS[lang] || LABELS[DEFAULT];
     }
   }
 
@@ -83,13 +96,48 @@
     } catch (e) { /* History API may not be available; non-critical */ }
   }
 
+  function closeLanguageMenu(menu, toggle) {
+    if (!menu || !toggle) return;
+    menu.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  function toggleLanguageMenu(menu, toggle) {
+    if (!menu || !toggle) return;
+    var isOpen = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     applyLang(detectInitialLang());
 
     var buttons = document.querySelectorAll('[data-lang-btn]');
+    var languageMenu = document.querySelector('.language-menu');
+    var languageToggle = document.querySelector('.language-menu-toggle');
+
+    if (languageMenu && languageToggle) {
+      languageToggle.addEventListener('click', function () {
+        toggleLanguageMenu(languageMenu, languageToggle);
+      });
+
+      document.addEventListener('click', function (ev) {
+        if (!languageMenu.contains(ev.target)) {
+          closeLanguageMenu(languageMenu, languageToggle);
+        }
+      });
+
+      document.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Escape' && languageMenu.classList.contains('open')) {
+          closeLanguageMenu(languageMenu, languageToggle);
+          languageToggle.focus();
+        }
+      });
+    }
+
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].addEventListener('click', function (ev) {
         setLang(ev.currentTarget.getAttribute('data-lang-btn'));
+        closeLanguageMenu(languageMenu, languageToggle);
       });
     }
   });
