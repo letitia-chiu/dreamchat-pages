@@ -8,7 +8,10 @@ Live site:
 
 - Home: https://letitia-chiu.github.io/dreamchat-pages/
 - User Guide: https://letitia-chiu.github.io/dreamchat-pages/guide.html
+- Articles: https://letitia-chiu.github.io/dreamchat-pages/articles.html
+- Context Tags Guide: https://letitia-chiu.github.io/dreamchat-pages/context-tags.html
 - Chat Modes Guide: https://letitia-chiu.github.io/dreamchat-pages/chat-modes.html
+- Smart Assist Setup Tips: https://letitia-chiu.github.io/dreamchat-pages/smart-assist-keyword-guide.html
 - Phrase Library Format Converter: https://letitia-chiu.github.io/dreamchat-pages/card-library-converter.html
 - Privacy Policy: https://letitia-chiu.github.io/dreamchat-pages/privacy.html
 - Support: https://letitia-chiu.github.io/dreamchat-pages/support.html
@@ -17,7 +20,10 @@ Live site:
 
 - `index.html` - DreamChat overview and links to support/privacy pages
 - `guide.html` - public user guide for first-time users
+- `articles.html` - guide article index
+- `context-tags.html` - detailed guide for context tags
 - `chat-modes.html` - detailed guide for Chat Mode, Yes/No Mode, and Choose for Me
+- `smart-assist-keyword-guide.html` - Smart Assist trigger keyword setup tips
 - `card-library-converter.html` - browser-local converter for supported phrase backups
 - `card-library-converter.js` - converter logic for DreamChat phrase library JSON
 - `privacy.html` - privacy policy in Traditional Chinese, Simplified Chinese, Japanese, and English

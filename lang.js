@@ -77,10 +77,31 @@
         en: 'Detailed help pages for setup steps and behavior notes.'
       },
       text: {
-        'zh-Hant': '詳細說明 功能文章 字卡庫格式轉換 情境標籤',
-        'zh-Hans': '详细说明 功能文章 字卡库格式转换 情境标签',
-        ja: '詳しい説明 記事 定型文集フォーマット変換 コンテキストタグ',
-        en: 'detailed help articles phrase library converter context tags'
+        'zh-Hant': '詳細說明 功能文章 智慧輔助 字卡庫格式轉換 情境標籤',
+        'zh-Hans': '详细说明 功能文章 智能辅助 字卡库格式转换 情境标签',
+        ja: '詳しい説明 記事 スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
+        en: 'detailed help articles smart assist phrase library converter context tags'
+      }
+    },
+    {
+      url: 'smart-assist-keyword-guide.html',
+      title: {
+        'zh-Hant': '智慧輔助設定技巧',
+        'zh-Hans': '智能辅助设置技巧',
+        ja: 'スマートアシスト設定のコツ',
+        en: 'Smart Assist Setup Tips'
+      },
+      description: {
+        'zh-Hant': '調整字卡組名稱、適用情境與觸發關鍵字，讓智慧輔助更容易選到合適字卡組。',
+        'zh-Hans': '调整字卡组名称、适用情境与触发关键词，让智能辅助更容易选到合适字卡组。',
+        ja: 'セット名、使う場面、トリガーキーワードを整えて、スマートアシストが合う定型文セットを選びやすくします。',
+        en: 'Tune set names, usage context, and trigger keywords so Smart Assist can choose better phrase sets.'
+      },
+      text: {
+        'zh-Hant': '智慧輔助 自然 精準 多變 關閉 觸發關鍵字 適用情境 字卡組 Apple 語言處理 Foundation Models',
+        'zh-Hans': '智能辅助 自然 精准 多变 关闭 触发关键词 适用情境 字卡组 Apple 语言处理 Foundation Models',
+        ja: 'スマートアシスト 自然 精密 多彩 オフ トリガーキーワード 使う場面 定型文セット Apple 言語処理 Foundation Models',
+        en: 'smart assist natural precise varied off trigger keywords usage context phrase set Apple language processing Foundation Models'
       }
     },
     {

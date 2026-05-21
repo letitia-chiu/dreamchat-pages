@@ -151,14 +151,14 @@
         <p>若您選擇加入頭像、聊天室背景、貼圖圖片，或將訊息截圖儲存到相簿，DreamChat 可能會請求存取照片或新增照片到相簿的權限。</p>
         <p>此權限僅用於您主動選擇的圖片匯入、圖片顯示、圖片裁切或截圖儲存。DreamChat 不會將您的照片或圖片內容上傳至開發者伺服器，也不會將其用於廣告追蹤。</p>
 
-        <h2>6. 智慧輔助與 Apple Intelligence</h2>
-        <p>在支援 Apple Intelligence 與裝置端 Foundation Models 的系統上，若您開啟 DreamChat 的智慧輔助功能，App 可能會在裝置端使用收到的訊息與您建立的字卡組候選來選擇較合適的字卡分類。</p>
-        <p>此處理用於本機分類選擇，不用來產生對話內容，也不會將聊天訊息、字卡內容或分類結果上傳至開發者伺服器。若裝置或系統不支援此功能，DreamChat 會改用本機文字比對或一般字卡選擇方式。</p>
+        <h2>6. 智慧輔助與 Apple 語言處理</h2>
+        <p>若您開啟 DreamChat 的智慧輔助功能，App 可能會在裝置端使用 Apple 提供的語言處理框架，例如 Natural Language framework，以及在相容裝置上的 Apple Intelligence / Foundation Models，使用收到的訊息與您建立的字卡組候選來選擇較合適的字卡分類。</p>
+        <p>此處理用於本機分類選擇，不用來產生對話內容，也不會將聊天訊息、字卡文字、觸發關鍵字或分類結果上傳至開發者伺服器。若裝置或系統不支援 Apple Intelligence，DreamChat 仍會使用本機文字比對或一般字卡選擇方式。</p>
 
         <h2>7. 智慧輔助診斷資料</h2>
         <p>DreamChat 可能會在您的裝置本機保存智慧輔助診斷紀錄，用於排查智慧輔助分類、候選字卡縮減、逾時、排隊或略過等問題。</p>
-        <p>診斷資料可能包含分類名稱或識別碼、比對分數、信心程度、候選數量、資料大小、處理時間、逾時設定、隨機選擇模式、佇列或略過狀態，以及觸發文字的短雜湊值等中繼資料。</p>
-        <p>DreamChat 不會在診斷紀錄中記錄原始使用者訊息文字，也不會預設記錄完整觸發文字。診斷資料主要記錄數量、大小、狀態與去識別化線索，以協助排查問題並降低暴露私人內容的風險。</p>
+        <p>診斷資料可能包含分類名稱或識別碼、比對分數、信心程度、候選數量、資料大小、處理時間、逾時設定、隨機選擇模式、佇列或略過狀態、互動方向 metadata、方向懲罰摘要，以及觸發文字的短雜湊值等中繼資料。</p>
+        <p>DreamChat 不會在診斷紀錄中記錄原始使用者訊息文字，也不會預設記錄完整觸發文字、適用情境原文或字卡原文。診斷資料主要記錄數量、大小、狀態與去識別化線索，以協助排查問題並降低暴露私人內容的風險。</p>
         <p>診斷資料保存在此裝置，採用滾動紀錄並限制大小；大小上限約為 1 MB，達到上限時會優先移除較舊紀錄以保留近期脈絡。您可以在 App 設定中查看診斷資料大小、匯出智慧輔助診斷，或手動清除診斷資料。匯出前請確認願意分享其中的分類資訊。</p>
         <p>DreamChat 不會自動將智慧輔助診斷資料上傳至開發者伺服器；只有在您主動匯出並分享時，接收方才會取得該檔案內容。</p>
 
@@ -264,14 +264,14 @@
         <p>若您选择加入头像、聊天室背景、表情包图片，或将消息截图保存到相册，DreamChat 可能会请求访问照片或向相册添加照片的权限。</p>
         <p>此权限仅用于您主动选择的图片导入、图片显示、图片裁切或截图保存。DreamChat 不会将您的照片或图片内容上传至开发者服务器，也不会将其用于广告追踪。</p>
 
-        <h2>6. 智能辅助与 Apple Intelligence</h2>
-        <p>在支持 Apple Intelligence 与设备端 Foundation Models 的系统上，若您开启 DreamChat 的智能辅助功能，App 可能会在设备端使用收到的消息与您创建的字卡组候选来选择较合适的字卡分类。</p>
-        <p>此处理用于本地分类选择，不用于生成对话内容，也不会将聊天消息、字卡内容或分类结果上传至开发者服务器。若设备或系统不支持此功能，DreamChat 会改用本地文字匹配或一般字卡选择方式。</p>
+        <h2>6. 智能辅助与 Apple 语言处理</h2>
+        <p>若您开启 DreamChat 的智能辅助功能，App 可能会在设备端使用 Apple 提供的语言处理框架，例如 Natural Language framework，以及在兼容设备上的 Apple Intelligence / Foundation Models，使用收到的消息与您创建的字卡组候选来选择较合适的字卡分类。</p>
+        <p>此处理用于本地分类选择，不用于生成对话内容，也不会将聊天消息、字卡文字、触发关键字或分类结果上传至开发者服务器。若设备或系统不支持 Apple Intelligence，DreamChat 仍会使用本地文字匹配或一般字卡选择方式。</p>
 
         <h2>7. 智能辅助诊断数据</h2>
         <p>DreamChat 可能会在您的设备本地保存智能辅助诊断记录，用于排查智能辅助分类、候选字卡缩减、超时、排队或跳过等问题。</p>
-        <p>诊断数据可能包含分类名称或标识符、匹配分数、置信程度、候选数量、数据大小、处理时间、超时设置、随机选择模式、队列或跳过状态，以及触发文字的短哈希值等元数据。</p>
-        <p>DreamChat 不会在诊断记录中记录原始用户消息文字，也不会默认记录完整触发文字。诊断数据主要记录数量、大小、状态与去标识化线索，以协助排查问题并降低暴露私人内容的风险。</p>
+        <p>诊断数据可能包含分类名称或标识符、匹配分数、置信程度、候选数量、数据大小、处理时间、超时设置、随机选择模式、队列或跳过状态、互动方向 metadata、方向惩罚摘要，以及触发文字的短哈希值等元数据。</p>
+        <p>DreamChat 不会在诊断记录中记录原始用户消息文字，也不会默认记录完整触发文字、适用情境原文或字卡原文。诊断数据主要记录数量、大小、状态与去标识化线索，以协助排查问题并降低暴露私人内容的风险。</p>
         <p>诊断数据保存在此设备，采用滚动记录并限制大小；大小上限约为 1 MB，达到上限时会优先移除较旧记录以保留近期上下文。您可以在 App 设置中查看诊断数据大小、导出智能辅助诊断，或手动清除诊断数据。导出前请确认愿意分享其中的分类信息。</p>
         <p>DreamChat 不会自动将智能辅助诊断数据上传至开发者服务器；只有在您主动导出并分享时，接收方才会取得该文件内容。</p>
 
@@ -377,14 +377,14 @@
         <p>アバター、チャット背景、スタンプ画像を追加する場合、またはメッセージのスクリーンショットを写真に保存する場合、DreamChat は写真へのアクセスまたは写真への追加権限を求めることがあります。</p>
         <p>この権限は、ユーザーが選択した画像の読み込み、表示、切り抜き、スクリーンショットの保存にのみ使用されます。DreamChat は、写真や画像の内容を開発者のサーバーへアップロードすることはなく、広告トラッキングにも使用しません。</p>
 
-        <h2>6. スマートアシストと Apple Intelligence について</h2>
-        <p>Apple Intelligence と端末上の Foundation Models に対応した環境で、DreamChat のスマートアシストを有効にした場合、アプリは受信メッセージとユーザーが作成した定型文セット候補を端末上で処理し、より適した定型文カテゴリを選択することがあります。</p>
-        <p>この処理はローカルでの分類選択のために使用され、会話内容を生成するものではありません。また、チャットメッセージ、定型文の内容、分類結果を開発者のサーバーへアップロードすることはありません。端末またはシステムがこの機能に対応していない場合、DreamChat はローカルの文字照合または通常の定型文選択を使用します。</p>
+        <h2>6. スマートアシストと Apple の言語処理について</h2>
+        <p>DreamChat のスマートアシストを有効にした場合、アプリは Apple が提供する言語処理フレームワーク（Natural Language framework など）と、対応端末では Apple Intelligence / Foundation Models を使い、受信メッセージとユーザーが作成した定型文セット候補を端末上で処理して、より適した定型文カテゴリを選択することがあります。</p>
+        <p>この処理はローカルでの分類選択のために使用され、会話内容を生成するものではありません。また、チャットメッセージ、定型文の本文、トリガーキーワード、分類結果を開発者のサーバーへアップロードすることはありません。Apple Intelligence に対応していない端末またはシステムでは、DreamChat は引き続きローカルの文字照合または通常の定型文選択を使用します。</p>
 
         <h2>7. スマートアシストの診断データについて</h2>
         <p>DreamChat はスマートアシストの分類、候補となる定型文の絞り込み、タイムアウト、待機中またはスキップされた処理などの問題調査のため、スマートアシストの診断記録をお使いの端末内に保存する場合があります。</p>
-        <p>診断データには、カテゴリ名または識別子、照合スコア、信頼度、候補数、データサイズ、処理時間、タイムアウト設定、ランダム選択モード、待機中またはスキップされた状態、トリガー文字列の短いハッシュ値などのメタデータが含まれる場合があります。</p>
-        <p>DreamChat は、診断記録にユーザーの元のメッセージ本文を記録せず、既定では完全なトリガー文字列も記録しません。診断データは主に件数、サイズ、状態、識別しにくい手がかりを記録し、問題調査を助けながら個人的な内容が露出するリスクを下げるためのものです。</p>
+        <p>診断データには、カテゴリ名または識別子、照合スコア、信頼度、候補数、データサイズ、処理時間、タイムアウト設定、ランダム選択モード、待機中またはスキップされた状態、インタラクション方向のメタデータ、方向ペナルティの概要、トリガー文字列の短いハッシュ値などのメタデータが含まれる場合があります。</p>
+        <p>DreamChat は、診断記録にユーザーの元のメッセージ本文を記録せず、既定では完全なトリガー文字列、利用コンテキストの本文、定型文本文も記録しません。診断データは主に件数、サイズ、状態、識別しにくい手がかりを記録し、問題調査を助けながら個人的な内容が露出するリスクを下げるためのものです。</p>
         <p>診断データはこの端末に保存され、サイズ制限付きのローリングログとして管理されます。上限は約 1 MB で、上限に達した場合は最近の状況を残すため古い記録から削除します。アプリの設定で診断データのサイズを確認し、スマートアシスト診断を書き出すことや、手動で診断データを消去することができます。書き出す前に、含まれる分類情報を共有してよいかご確認ください。</p>
         <p>DreamChat がスマートアシスト診断データを開発者のサーバーへ自動的にアップロードすることはありません。ユーザーが明示的に書き出して共有した場合にのみ、受信者がそのファイルの内容を取得します。</p>
 
@@ -490,14 +490,14 @@
         <p>If you choose to add avatars, chat backgrounds, sticker images, or save message screenshots to Photos, DreamChat may request permission to access Photos or add images to your photo library.</p>
         <p>This permission is used only for image import, image display, image cropping, or screenshot saving that you actively choose. DreamChat does not upload your photos or image content to the developer's servers, nor does it use them for advertising tracking.</p>
 
-        <h2>6. Smart Assist and Apple Intelligence</h2>
-        <p>On systems that support Apple Intelligence and on-device Foundation Models, if you enable DreamChat's Smart Assist feature, the app may process incoming messages and your chat phrase group candidates on device to choose a more relevant phrase category.</p>
-        <p>This processing is used for local classification selection. It does not generate conversation content, and it does not upload chat messages, chat phrase content, or classification results to the developer's servers. If your device or system does not support this feature, DreamChat uses local text matching or the regular phrase selection behavior instead.</p>
+        <h2>6. Smart Assist and Apple Language Processing</h2>
+        <p>If you enable DreamChat's Smart Assist feature, the app may process incoming messages and your chat phrase group candidates on device using Apple-provided language processing frameworks, such as the Natural Language framework, and on compatible devices Apple Intelligence / Foundation Models, to choose a more relevant phrase category.</p>
+        <p>This processing is used for local classification selection. It does not generate conversation content, and it does not upload chat messages, chat phrase text, trigger text, or classification results to the developer's servers. If your device or system does not support Apple Intelligence, DreamChat still uses local text matching or the regular phrase selection behavior.</p>
 
         <h2>7. Smart Assist Diagnostic Data</h2>
         <p>DreamChat may store Smart Assist diagnostic logs locally on your device to help troubleshoot Smart Assist classification, candidate reduction, timeout, queued work, or skipped work issues.</p>
-        <p>Diagnostic data may include metadata such as category names or identifiers, matching scores, confidence levels, candidate counts, data sizes, processing time, timeout settings, random selection mode, queued or skipped status, and short hash values for matched trigger text.</p>
-        <p>DreamChat does not log raw user message text in diagnostic records and does not log full trigger text by default. Diagnostic data primarily records counts, sizes, states, and de-identified clues so issues can be investigated while reducing the risk of exposing private content.</p>
+        <p>Diagnostic data may include metadata such as category names or identifiers, matching scores, confidence levels, candidate counts, data sizes, processing time, timeout settings, random selection mode, queued or skipped status, interaction-direction metadata, direction-penalty summaries, and short hash values for matched trigger text.</p>
+        <p>DreamChat does not log raw user message text in diagnostic records and does not log full trigger text, usage-context text, or chat phrase text by default. Diagnostic data primarily records counts, sizes, states, and de-identified clues so issues can be investigated while reducing the risk of exposing private content.</p>
         <p>Diagnostic data is stored on this device as a rolling log with a size limit of approximately 1 MB. When the limit is reached, older records are trimmed first so recent context remains available. In the app settings, you can view the diagnostic data size, export Smart Assist diagnostics, or manually clear diagnostic data. Before exporting, please confirm that you are willing to share the classification information it contains.</p>
         <p>DreamChat does not automatically upload Smart Assist diagnostic data to the developer's servers. The recipient only receives the file contents if you actively export and share them.</p>
 
