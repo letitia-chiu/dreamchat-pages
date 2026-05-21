@@ -490,6 +490,18 @@ a:focus {
   outline-offset: 3px;
 }
 
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+  transform: none;
+}
+
+.btn:disabled:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.28) 100%);
+  border-color: rgba(122, 95, 184, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
 .btn-primary {
   background: linear-gradient(180deg, #a78bdc 0%, #7a5fb8 100%);
   color: #ffffff;
@@ -647,7 +659,8 @@ a:focus {
   text-decoration: none;
 }
 
-.guide-page ol {
+.guide-page ol,
+.guide-steps {
   counter-reset: guide-step;
   list-style: none;
   padding-left: 0;
@@ -655,14 +668,16 @@ a:focus {
   color: var(--text-soft);
 }
 
-.guide-page ol li {
+.guide-page ol li,
+.guide-steps li {
   counter-increment: guide-step;
   position: relative;
   padding-left: 42px;
   margin-bottom: 10px;
 }
 
-.guide-page ol li::before {
+.guide-page ol li::before,
+.guide-steps li::before {
   content: counter(guide-step);
   position: absolute;
   left: 0;
@@ -696,6 +711,130 @@ a:focus {
   font-weight: 600;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
+}
+
+/* ============================================================ */
+/* Converter tool                                               */
+/* ============================================================ */
+.converter-tool {
+  margin-top: 28px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-sm);
+}
+
+.converter-field {
+  margin-bottom: 18px;
+}
+
+.converter-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.converter-file {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--text-soft);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.converter-file:focus-visible,
+.converter-check input:focus-visible {
+  outline: 2px solid rgba(122, 95, 184, 0.7);
+  outline-offset: 2px;
+}
+
+.converter-file-name {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.converter-options {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 20px;
+}
+
+.converter-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--text-soft);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.converter-check input {
+  flex: 0 0 auto;
+  margin-top: 0.45em;
+  accent-color: var(--accent);
+}
+
+.converter-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.converter-tool .converter-status {
+  min-height: 1.7em;
+  margin: 24px 0 32px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.converter-tool .converter-status.error {
+  color: #9c2f47;
+}
+
+.converter-tool .converter-status.success {
+  color: #2e7253;
+}
+
+.converter-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.converter-summary div {
+  padding: 12px 14px;
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.54);
+}
+
+.converter-summary dt {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.converter-summary dd {
+  margin: 2px 0 0;
+  color: var(--text);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.converter-download-actions {
+  display: flex;
+  margin-top: 18px;
 }
 
 /* ============================================================ */
@@ -812,6 +951,7 @@ a:focus {
 [data-lang].active { display: block; }
 span[data-lang] { display: none; }
 span[data-lang].active { display: inline; }
+[hidden] { display: none !important; }
 
 /* ============================================================ */
 /* Responsive                                                   */
@@ -931,6 +1071,14 @@ span[data-lang].active { display: inline; }
 
   .faq-item {
     padding: 16px 18px;
+  }
+
+  .converter-tool {
+    padding: 18px;
+  }
+
+  .converter-summary {
+    grid-template-columns: 1fr;
   }
 
   .site-footer nav {

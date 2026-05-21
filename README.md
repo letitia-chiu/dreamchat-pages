@@ -8,6 +8,7 @@ Live site:
 
 - Home: https://letitia-chiu.github.io/dreamchat-pages/
 - User Guide: https://letitia-chiu.github.io/dreamchat-pages/guide.html
+- Phrase Library Format Converter: https://letitia-chiu.github.io/dreamchat-pages/card-library-converter.html
 - Privacy Policy: https://letitia-chiu.github.io/dreamchat-pages/privacy.html
 - Support: https://letitia-chiu.github.io/dreamchat-pages/support.html
 
@@ -15,6 +16,8 @@ Live site:
 
 - `index.html` - DreamChat overview and links to support/privacy pages
 - `guide.html` - public user guide for first-time users
+- `card-library-converter.html` - browser-local converter for supported phrase backups
+- `card-library-converter.js` - converter logic for DreamChat phrase library JSON
 - `privacy.html` - privacy policy in Traditional Chinese, Simplified Chinese, Japanese, and English
 - `support.html` - support and FAQ in the same four languages
 - `styles.css` - shared visual styling
@@ -35,6 +38,8 @@ Language variants live in the same HTML file and are switched with `data-lang` a
 ## Privacy
 
 This website uses `localStorage` only to remember the visitor's selected language under the key `dreamchat-lang`.
+
+The phrase library converter reads user-selected JSON files locally in the browser and downloads a converted JSON file. It does not upload, store, or transmit the selected file.
 
 It does not use:
 
