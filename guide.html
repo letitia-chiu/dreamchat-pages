@@ -43,17 +43,17 @@
         <a href="index.html">DreamChat</a>
       </div>
       <nav class="primary-nav" aria-label="Main navigation">
-        <a href="index.html">
-          <span data-lang="zh-Hant">首頁</span>
-          <span data-lang="zh-Hans">首页</span>
-          <span data-lang="ja">ホーム</span>
-          <span data-lang="en">Home</span>
-        </a>
         <a href="guide.html" aria-current="page">
           <span data-lang="zh-Hant">使用說明</span>
           <span data-lang="zh-Hans">使用说明</span>
           <span data-lang="ja">使い方</span>
           <span data-lang="en">Guide</span>
+        </a>
+        <a href="articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
         </a>
         <a href="privacy.html">
           <span data-lang="zh-Hant">隱私權</span>
@@ -68,6 +68,21 @@
           <span data-lang="en">Support</span>
         </a>
       </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
       <div class="language-menu">
         <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
           <span class="language-icon" aria-hidden="true">🌐</span>
@@ -99,6 +114,7 @@
           <a href="#zh-chat">聊天</a>
           <a href="#zh-characters">角色</a>
           <a href="#zh-phrases">字卡庫</a>
+          <a href="#zh-context-tags">情境標籤</a>
           <a href="#zh-scheduled">定時來訊</a>
           <a href="#zh-stickers">貼圖</a>
           <a href="#zh-settings">設定與備份</a>
@@ -147,7 +163,18 @@
           <li>想讓回覆更穩定，可把「隨機性」調低；想讓變化更多，可調高。</li>
         </ul>
 
-        <h2 id="zh-scheduled">5. 設定定時來訊</h2>
+        <h2 id="zh-context-tags">5. 用情境標籤指定目前對話脈絡</h2>
+        <p>路徑：<span class="guide-path">設定 → 情境 → 情境標籤</span></p>
+        <ul>
+          <li>先建立可重複使用的情境標籤，例如「睡前」、「旅行」、「安慰」。</li>
+          <li>到自訂字卡組的設定中勾選適用的情境標籤，讓 DreamChat 知道這組字卡適合哪些情境。</li>
+          <li>聊天時可從上方選單開啟「目前情境」，選擇此對話正在使用的情境標籤。</li>
+          <li>有指定目前情境時，DreamChat 會在符合標籤的自訂字卡組與通用字卡組中選回覆；沒有指定時，照一般字卡庫與智慧輔助規則選擇。</li>
+        </ul>
+
+        <p class="guide-note">情境標籤適合用來快速切換「現在在聊什麼」，不是用來撰寫回覆內容。完整設定方式與影響範圍請看 <a href="context-tags.html">情境標籤詳細說明</a>。</p>
+
+        <h2 id="zh-scheduled">6. 設定定時來訊</h2>
         <p>路徑：<span class="guide-path">角色 → 角色設定 → 定時來訊</span></p>
         <ol class="guide-steps">
           <li>按加號新增定時來訊。</li>
@@ -160,7 +187,7 @@
 
         <p class="guide-note">定時來訊需要通知權限。可到「設定 → 通知」開啟角色來訊通知，或到 iOS 系統設定調整 DreamChat 的通知權限。</p>
 
-        <h2 id="zh-stickers">6. 貼圖與表情符號</h2>
+        <h2 id="zh-stickers">7. 貼圖與表情符號</h2>
         <p>路徑：<span class="guide-path">設定 → 貼圖與表情符號</span></p>
         <ul>
           <li>在「貼圖管理」新增貼圖組，進入貼圖組後可從相簿或檔案加入圖片。</li>
@@ -169,7 +196,7 @@
           <li>聊天時按輸入列左側的表情按鈕，就能選擇貼圖或插入表情符號。</li>
         </ul>
 
-        <h2 id="zh-settings">7. 設定、會員與備份</h2>
+        <h2 id="zh-settings">8. 設定、會員與備份</h2>
         <ul>
           <li>「設定 → 自己」可修改自己的顯示名稱。</li>
           <li>「設定 → 會員」可查看目前方案、恢復購買與比較方案限制。</li>
@@ -193,6 +220,7 @@
           <a href="#zh-hans-chat">聊天</a>
           <a href="#zh-hans-characters">角色</a>
           <a href="#zh-hans-phrases">字卡库</a>
+          <a href="#zh-hans-context-tags">情境标签</a>
           <a href="#zh-hans-scheduled">定时来信</a>
           <a href="#zh-hans-stickers">表情包</a>
           <a href="#zh-hans-settings">设置与备份</a>
@@ -241,7 +269,18 @@
           <li>想让回复更稳定，可把「随机性」调低；想让变化更多，可调高。</li>
         </ul>
 
-        <h2 id="zh-hans-scheduled">5. 设置定时来信</h2>
+        <h2 id="zh-hans-context-tags">5. 用情境标签指定当前对话脉络</h2>
+        <p>路径：<span class="guide-path">设置 → 情境 → 情境标签</span></p>
+        <ul>
+          <li>先建立可重复使用的情境标签，例如「睡前」、「旅行」、「安慰」。</li>
+          <li>到自定义字卡组的设置中勾选适用的情境标签，让 DreamChat 知道这组字卡适合哪些情境。</li>
+          <li>聊天时可从上方菜单打开「当前情境」，选择此对话正在使用的情境标签。</li>
+          <li>有指定当前情境时，DreamChat 会在符合标签的自定义字卡组与通用字卡组中选择回复；没有指定时，按一般字卡库与智能辅助规则选择。</li>
+        </ul>
+
+        <p class="guide-note">情境标签适合用来快速切换「现在在聊什么」，不是用来撰写回复内容。完整设置方式与影响范围请看 <a href="context-tags.html">情境标签详细说明</a>。</p>
+
+        <h2 id="zh-hans-scheduled">6. 设置定时来信</h2>
         <p>路径：<span class="guide-path">角色 → 角色设置 → 定时来信</span></p>
         <ol class="guide-steps">
           <li>按加号新增定时来信。</li>
@@ -254,7 +293,7 @@
 
         <p class="guide-note">定时来信需要通知权限。可到「设置 → 通知」开启角色来信通知，或到 iOS 系统设置调整 DreamChat 的通知权限。</p>
 
-        <h2 id="zh-hans-stickers">6. 表情包与表情符号</h2>
+        <h2 id="zh-hans-stickers">7. 表情包与表情符号</h2>
         <p>路径：<span class="guide-path">设置 → 表情包与表情符号</span></p>
         <ul>
           <li>在「表情包管理」新增表情包组，进入表情包组后可从相册或文件加入图片。</li>
@@ -263,7 +302,7 @@
           <li>聊天时按输入栏左侧的表情按钮，就能选择表情包或插入表情符号。</li>
         </ul>
 
-        <h2 id="zh-hans-settings">7. 设置、会员与备份</h2>
+        <h2 id="zh-hans-settings">8. 设置、会员与备份</h2>
         <ul>
           <li>「设置 → 自己」可修改自己的显示名称。</li>
           <li>「设置 → 会员」可查看当前方案、恢复购买与比较方案限制。</li>
@@ -287,6 +326,7 @@
           <a href="#ja-chat">チャット</a>
           <a href="#ja-characters">キャラクター</a>
           <a href="#ja-phrases">定型文集</a>
+          <a href="#ja-context-tags">コンテキストタグ</a>
           <a href="#ja-scheduled">予約受信</a>
           <a href="#ja-stickers">スタンプ</a>
           <a href="#ja-settings">設定とバックアップ</a>
@@ -335,7 +375,18 @@
           <li>返信を安定させたい場合は「ランダム性」を低くし、変化を増やしたい場合は高くします。</li>
         </ul>
 
-        <h2 id="ja-scheduled">5. 予約受信を設定する</h2>
+        <h2 id="ja-context-tags">5. コンテキストタグで今の会話の状況を指定する</h2>
+        <p>場所：<span class="guide-path">設定 → コンテキスト → コンテキストタグ</span></p>
+        <ul>
+          <li>まず「寝る前」「旅行」「慰めてほしい」など、繰り返し使うコンテキストタグを作成します。</li>
+          <li>カスタム定型文セットの設定で、使う場面に合うコンテキストタグを選びます。</li>
+          <li>チャット中は上部メニューから「現在のコンテキスト」を開き、この会話で使うタグを選べます。</li>
+          <li>現在のコンテキストを指定している場合、DreamChat は一致するカスタム定型文セットと基本セットから返信を選びます。未指定の場合は、通常の定型文集とスマートアシストのルールで選びます。</li>
+        </ul>
+
+        <p class="guide-note">コンテキストタグは「今何について話しているか」を切り替えるためのもので、返信文そのものを書く機能ではありません。詳しい設定方法と影響範囲は <a href="context-tags.html">コンテキストタグの詳しい説明</a> をご覧ください。</p>
+
+        <h2 id="ja-scheduled">6. 予約受信を設定する</h2>
         <p>場所：<span class="guide-path">キャラクター → キャラクター設定 → 予約受信</span></p>
         <ol class="guide-steps">
           <li>追加ボタンで予約受信を作成します。</li>
@@ -348,7 +399,7 @@
 
         <p class="guide-note">予約受信には通知の許可が必要です。「設定 → 通知」でキャラクターからの通知を有効にするか、iOS の設定で DreamChat の通知権限を確認してください。</p>
 
-        <h2 id="ja-stickers">6. スタンプと絵文字</h2>
+        <h2 id="ja-stickers">7. スタンプと絵文字</h2>
         <p>場所：<span class="guide-path">設定 → スタンプと絵文字</span></p>
         <ul>
           <li>「スタンプ管理」でスタンプセットを追加し、セット内で写真またはファイルから画像を追加します。</li>
@@ -357,7 +408,7 @@
           <li>チャット中は入力欄左側の絵文字ボタンから、スタンプの送信や絵文字の挿入ができます。</li>
         </ul>
 
-        <h2 id="ja-settings">7. 設定、メンバーシップ、バックアップ</h2>
+        <h2 id="ja-settings">8. 設定、メンバーシップ、バックアップ</h2>
         <ul>
           <li>「設定 → 自分」で自分の表示名を変更できます。</li>
           <li>「設定 → メンバーシップ」で現在のプラン、購入の復元、プラン制限の比較を確認できます。</li>
@@ -381,6 +432,7 @@
           <a href="#en-chat">Chat</a>
           <a href="#en-characters">Characters</a>
           <a href="#en-phrases">Chat Phrases</a>
+          <a href="#en-context-tags">Context Tags</a>
           <a href="#en-scheduled">Scheduled Messages</a>
           <a href="#en-stickers">Stickers</a>
           <a href="#en-settings">Settings & Backup</a>
@@ -429,7 +481,18 @@
           <li>Lower Randomness for steadier replies; raise it for more variation.</li>
         </ul>
 
-        <h2 id="en-scheduled">5. Setting Up Scheduled Messages</h2>
+        <h2 id="en-context-tags">5. Using Context Tags for the Current Chat Context</h2>
+        <p>Path: <span class="guide-path">Settings → Context → Context Tags</span></p>
+        <ul>
+          <li>Create reusable context tags such as "bedtime", "travel", or "comfort".</li>
+          <li>In a custom phrase set's settings, select the context tags that fit that set.</li>
+          <li>While chatting, open Current Context from the top menu and choose the tags for this conversation.</li>
+          <li>When a current context is selected, DreamChat chooses replies from matching custom phrase sets and the General phrase set. When none is selected, it uses the usual phrase library and Smart Assist rules.</li>
+        </ul>
+
+        <p class="guide-note">Context tags are for switching what the chat is currently about. They do not write reply text. For setup details and behavior notes, see the <a href="context-tags.html">Context Tags guide</a>.</p>
+
+        <h2 id="en-scheduled">6. Setting Up Scheduled Messages</h2>
         <p>Path: <span class="guide-path">Characters → Character Settings → Scheduled messages</span></p>
         <ol class="guide-steps">
           <li>Tap the plus button to add a scheduled message.</li>
@@ -442,7 +505,7 @@
 
         <p class="guide-note">Scheduled messages need notification permission. You can enable Character Message Alerts in Settings → Notifications, or manage DreamChat notification permission in iOS Settings.</p>
 
-        <h2 id="en-stickers">6. Stickers and Emoji</h2>
+        <h2 id="en-stickers">7. Stickers and Emoji</h2>
         <p>Path: <span class="guide-path">Settings → Stickers & Emoji</span></p>
         <ul>
           <li>In Sticker Management, create a sticker set, then add images from Photos or Files.</li>
@@ -451,7 +514,7 @@
           <li>In chat, tap the emoji button on the left side of the input bar to send stickers or insert emoji.</li>
         </ul>
 
-        <h2 id="en-settings">7. Settings, Membership, and Backup</h2>
+        <h2 id="en-settings">8. Settings, Membership, and Backup</h2>
         <ul>
           <li>Settings → Me lets you change your display name.</li>
           <li>Settings → Membership shows your current plan, Restore Purchases, and plan limit comparison.</li>
@@ -469,6 +532,12 @@
           <span data-lang="zh-Hans">使用说明</span>
           <span data-lang="ja">使い方ガイド</span>
           <span data-lang="en">User Guide</span>
+        </a>
+        <a href="articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
         </a>
         <a href="privacy.html">
           <span data-lang="zh-Hant">隱私權政策</span>
