@@ -9,6 +9,8 @@ Live site:
 - Home: https://letitia-chiu.github.io/dreamchat-pages/
 - User Guide: https://letitia-chiu.github.io/dreamchat-pages/guide.html
 - Articles: https://letitia-chiu.github.io/dreamchat-pages/articles.html
+- v2.9.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/v2-9-0-update.html
+- Chatroom Screen Guide: https://letitia-chiu.github.io/dreamchat-pages/chatroom-screen-guide.html
 - Context Tags Guide: https://letitia-chiu.github.io/dreamchat-pages/context-tags.html
 - Chat Modes Guide: https://letitia-chiu.github.io/dreamchat-pages/chat-modes.html
 - Smart Assist Setup Tips: https://letitia-chiu.github.io/dreamchat-pages/smart-assist-keyword-guide.html
@@ -21,6 +23,8 @@ Live site:
 - `index.html` - DreamChat overview and links to support/privacy pages
 - `guide.html` - public user guide for first-time users
 - `articles.html` - guide article index
+- `v2-9-0-update.html` - v2.9.0 public update notes
+- `chatroom-screen-guide.html` - guide to chatroom menus and controls
 - `context-tags.html` - detailed guide for context tags
 - `chat-modes.html` - detailed guide for Chat Mode, Yes/No Mode, and Choose for Me
 - `smart-assist-keyword-guide.html` - Smart Assist trigger keyword setup tips

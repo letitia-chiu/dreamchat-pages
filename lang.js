@@ -50,16 +50,16 @@
         en: 'User Guide'
       },
       description: {
-        'zh-Hant': '快速了解聊天、角色、字卡庫、情境標籤、定時來訊與備份。',
-        'zh-Hans': '快速了解聊天、角色、字卡库、情境标签、定时来信与备份。',
-        ja: 'チャット、キャラクター、定型文集、コンテキストタグ、予約受信、バックアップをひと通り確認できます。',
-        en: 'Quickly learn chat, characters, phrase libraries, context tags, scheduled messages, and backup.'
+        'zh-Hant': '快速了解聊天、角色、字卡庫、情境標籤、定時來訊、權限與備份。',
+        'zh-Hans': '快速了解聊天、角色、字卡库、情境标签、定时来信、权限与备份。',
+        ja: 'チャット、キャラクター、定型文集、コンテキストタグ、予約受信、権限、バックアップをひと通り確認できます。',
+        en: 'Quickly learn chat, characters, phrase libraries, context tags, scheduled messages, permissions, and backup.'
       },
       text: {
-        'zh-Hant': '快速開始 聊天 角色 字卡庫 情境標籤 定時來訊 貼圖 設定 備份 智慧輔助',
-        'zh-Hans': '快速开始 聊天 角色 字卡库 情境标签 定时来信 表情包 设置 备份 智能辅助',
-        ja: 'はじめに チャット キャラクター 定型文集 コンテキストタグ 予約受信 スタンプ 設定 バックアップ スマートアシスト',
-        en: 'start chat characters chat phrases context tags scheduled messages stickers settings backup smart assist'
+        'zh-Hant': '快速開始 聊天 角色 字卡庫 情境標籤 定時來訊 貼圖 設定 權限 備份 智慧輔助 匿名截圖 追加 取代',
+        'zh-Hans': '快速开始 聊天 角色 字卡库 情境标签 定时来信 表情包 设置 权限 备份 智能辅助 匿名截图 追加 替换',
+        ja: 'はじめに チャット キャラクター 定型文集 コンテキストタグ 予約受信 スタンプ 設定 権限 バックアップ スマートアシスト 匿名スクリーンショット 追加 置き換え',
+        en: 'start chat characters chat phrases context tags scheduled messages stickers settings permissions backup smart assist anonymous screenshots append replace'
       }
     },
     {
@@ -77,10 +77,52 @@
         en: 'Detailed help pages for setup steps and behavior notes.'
       },
       text: {
-        'zh-Hant': '詳細說明 功能文章 智慧輔助 字卡庫格式轉換 情境標籤',
-        'zh-Hans': '详细说明 功能文章 智能辅助 字卡库格式转换 情境标签',
-        ja: '詳しい説明 記事 スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
-        en: 'detailed help articles smart assist phrase library converter context tags'
+        'zh-Hant': '詳細說明 功能文章 版本更新 聊天室導覽 智慧輔助 字卡庫格式轉換 情境標籤',
+        'zh-Hans': '详细说明 功能文章 版本更新 聊天室导览 智能辅助 字卡库格式转换 情境标签',
+        ja: '詳しい説明 記事 アップデート チャット画面ガイド スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
+        en: 'detailed help articles version update chatroom guide smart assist phrase library converter context tags'
+      }
+    },
+    {
+      url: 'v2-9-0-update.html',
+      title: {
+        'zh-Hant': '2.9.0 版本更新內容',
+        'zh-Hans': '2.9.0 版本更新内容',
+        ja: '2.9.0 アップデート内容',
+        en: "What's New in 2.9.0"
+      },
+      description: {
+        'zh-Hant': '匿名截圖、字卡庫追加／取代、系統權限頁、iOS 18 穩定性與夢行者試用提示。',
+        'zh-Hans': '匿名截图、字卡库追加／替换、系统权限页、iOS 18 稳定性与梦行者试用提示。',
+        ja: '匿名スクリーンショット、定型文集の追加／置き換え、システム権限、iOS 18 安定性、無料体験案内。',
+        en: 'Anonymous screenshots, append/replace phrase imports, system permissions, iOS 18 stability, and trial prompts.'
+      },
+      text: {
+        'zh-Hant': '2.9.0 版本更新 匿名截圖 原始 匿名 字卡庫 追加 取代 系統權限 通知 選取圖片 儲存截圖 Music 資料庫 iOS 18 夢行者 免費試用',
+        'zh-Hans': '2.9.0 版本更新 匿名截图 原始 匿名 字卡库 追加 替换 系统权限 通知 图片选择 截图保存 Music 资料库 iOS 18 梦行者 免费试用',
+        ja: '2.9.0 アップデート 匿名スクリーンショット オリジナル 匿名 定型文集 追加 置き換え システム権限 通知 画像選択 スクリーンショット保存 Music ライブラリ iOS 18 ドリームウォーカー 無料体験',
+        en: '2.9.0 update anonymous screenshots original anonymous phrase library append replace system permissions notifications photo selection screenshot saving Music library iOS 18 Dream Walker free trial'
+      }
+    },
+    {
+      url: 'chatroom-screen-guide.html',
+      title: {
+        'zh-Hant': '聊天室畫面導覽',
+        'zh-Hans': '聊天室画面导览',
+        ja: 'チャット画面ガイド',
+        en: 'Chatroom Screen Guide'
+      },
+      description: {
+        'zh-Hant': '認識聊天室工具列、搜尋、右上角選單、長按訊息操作、截圖、輸入列與播放器。',
+        'zh-Hans': '认识聊天室工具栏、搜索、右上角菜单、长按消息操作、截图、输入栏与播放器。',
+        ja: 'ツールバー、検索、右上メニュー、長押し操作、スクリーンショット、入力欄、音楽プレイヤーを確認できます。',
+        en: 'Learn the toolbar, search, top-right menu, long-press actions, screenshots, input bar, and music player.'
+      },
+      text: {
+        'zh-Hant': '聊天室 畫面 導覽 工具列 搜尋 右上角選單 聊天模式 是否模式 幫我選 角色設定 群組設定 目前情境 暫停定時來訊 回覆 複製 截圖 刪除 匿名 貼圖 表情 音樂播放器',
+        'zh-Hans': '聊天室 画面 导览 工具栏 搜索 右上角菜单 聊天模式 是否模式 帮我选 角色设置 群组设置 当前情境 暂停定时来信 回复 复制 截图 删除 匿名 表情包 表情 音乐播放器',
+        ja: 'チャット画面 ガイド ツールバー 検索 右上メニュー チャットモード はい いいえ 選んで キャラクター設定 グループ設定 現在のコンテキスト 予約受信 返信 コピー スクリーンショット 削除 匿名 スタンプ 絵文字 音楽プレイヤー',
+        en: 'chatroom screen guide toolbar search top-right menu chat mode yes no choose for me character settings group settings current context pause scheduled messages reply copy screenshot delete anonymous stickers emoji music player'
       }
     },
     {
