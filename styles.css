@@ -569,9 +569,153 @@ a:focus {
 
 .hero-actions {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  justify-content: center;
+}
+
+.hero-link-actions {
+  display: flex;
   gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.store-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+  width: 100%;
+}
+
+.app-store-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 148px;
+  min-height: 46px;
+  overflow: hidden;
+  padding: 7px 13px 7px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 11px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.04) 42%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(180deg, #171719 0%, #050505 100%);
+  -webkit-backdrop-filter: blur(10px) saturate(130%);
+  backdrop-filter: blur(10px) saturate(130%);
+  color: #ffffff;
+  box-shadow:
+    0 10px 24px rgba(18, 13, 28, 0.26),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.42);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.42);
+  transition: transform 0.18s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.app-store-button::after {
+  content: '';
+  position: absolute;
+  inset: 1px 2px auto;
+  height: 48%;
+  border-radius: 9px 9px 6px 6px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.08) 54%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+}
+
+.app-store-button::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  bottom: -40%;
+  left: -70%;
+  width: 54%;
+  background: linear-gradient(100deg, transparent 0%, rgba(255, 255, 255, 0.22) 42%, rgba(255, 255, 255, 0.76) 50%, rgba(255, 255, 255, 0.22) 58%, transparent 100%);
+  transform: skewX(-18deg);
+  animation: app-store-shine 5.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.app-store-button:hover,
+.app-store-button:focus {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.06) 42%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(180deg, #202023 0%, #070707 100%);
+  border-color: rgba(255, 255, 255, 0.38);
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow:
+    0 14px 30px rgba(18, 13, 28, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.26),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.46);
+}
+
+.app-store-button:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.82);
+  outline-offset: 3px;
+}
+
+.app-store-icon {
+  position: relative;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
+.app-store-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 1px;
+  justify-items: start;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.app-store-kicker {
+  min-height: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 8.5px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.app-store-name {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+.app-version-note {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-shadow: 0 1px 8px rgba(74, 58, 122, 0.32);
+}
+
+@keyframes app-store-shine {
+  0% { left: -70%; opacity: 0; }
+  20% { left: -70%; opacity: 0; }
+  26% { opacity: 1; }
+  47% { left: 122%; opacity: 1; }
+  55% { left: 122%; opacity: 0; }
+  100% { left: 122%; opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-store-button::before {
+    animation: none;
+    opacity: 0;
+  }
 }
 
 /* ============================================================ */
@@ -1368,6 +1512,10 @@ span[data-lang].active { display: inline; }
   .btn {
     padding: 12px 22px;
     font-size: 14px;
+  }
+
+  .app-store-button {
+    min-width: 148px;
   }
 
   .faq-item {
