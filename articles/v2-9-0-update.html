@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>2.9.0 版本更新內容 | DreamChat</title>
+  <meta name="description" content="DreamChat 2.9.0 update notes: anonymous message screenshots, safer phrase library imports, system permissions, iOS 18 stability, and Dream Walker trial prompts.">
+
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v2-9-0-update.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v2-9-0-update.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v2-9-0-update.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v2-9-0-update.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v2-9-0-update.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/articles/v2-9-0-update.html">
+  <meta property="og:title" content="2.9.0 版本更新內容 | DreamChat">
+  <meta property="og:description" content="Anonymous screenshots, safer phrase library imports, system permissions, iOS 18 stability, and Dream Walker trial prompts.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="2.9.0 版本更新內容 | DreamChat">
+  <meta name="twitter:description" content="Anonymous screenshots, safer phrase library imports, system permissions, iOS 18 stability, and Dream Walker trial prompts.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="">
+        <a href="../index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="../articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page guide-page">
+      <article data-lang="zh-Hant">
+        <h1>2.9.0 版本更新內容</h1>
+        <p class="meta">對應版本：v2.9.0</p>
+        <p class="lead">這次更新把幾個容易影響日常使用的地方整理得更安全、更清楚：截圖可以匿名化，字卡庫匯入不再只有覆蓋，權限狀態也集中到同一頁查看。</p>
+
+        <nav class="guide-toc" aria-label="2.9.0 版本更新目錄">
+          <a href="#zh-screenshot">匿名截圖</a>
+          <a href="#zh-import">字卡庫匯入</a>
+          <a href="#zh-permissions">系統權限</a>
+          <a href="#zh-stability">穩定性</a>
+          <a href="#zh-trial">免費試用</a>
+        </nav>
+
+        <h2 id="zh-screenshot">1. 訊息截圖新增匿名模式</h2>
+        <p>在聊天室長按訊息選擇「截圖」後，預覽畫面可切換「原始」與「匿名」。匿名模式會在裝置上替換參與者名稱與頭像，再儲存到相簿或分享出去。</p>
+        <ul>
+          <li>一對一聊天會以「我」與「對方」呈現。</li>
+          <li>群組聊天會以「對方 1」、「對方 2」這類標籤區分不同角色。</li>
+          <li>引用訊息中的發話者名稱與已知提及名稱也會一起替換。</li>
+        </ul>
+
+        <h2 id="zh-import">2. 字卡庫匯入可選擇追加或取代</h2>
+        <p>「匯入字卡庫」與「套用預設範本」現在會先詢問匯入方式，降低不小心覆蓋既有字卡的風險。</p>
+        <ul>
+          <li>追加：保留目前字卡庫，只補入未重複的新字卡與新字卡組。</li>
+          <li>取代：只取代同名字卡組，並加入新的字卡組；沒有匹配到的本機字卡組會保留。</li>
+          <li>確認視窗會顯示會處理幾個既有字卡組、會新增幾個字卡組。</li>
+        </ul>
+
+        <h2 id="zh-permissions">3. 新增系統權限頁</h2>
+        <p>設定中的「系統權限」現在可進入詳細頁，集中查看通知、選取圖片、儲存截圖與 Music 資料庫狀態。</p>
+        <p class="guide-note">DreamChat 只會在你按下「允許」或主動使用相關功能時請求權限。若已拒絕，App 會改提供前往系統設定的入口，不會一直重複跳出要求。</p>
+
+        <h2 id="zh-stability">4. iOS 18 聊天與設定穩定性改善</h2>
+        <p>本版改善 iOS 18 上長按訊息選單的穩定性；若系統原生選單不穩，會改用底部選單提供回覆、複製、截圖與刪除。外觀與語言設定也調整為更穩定的獨立頁面，減少切換主題或語言時的畫面重建問題。</p>
+
+        <h2 id="zh-trial">5. 夢行者年方案免費試用提示</h2>
+        <p>符合資格時，設定、會員頁與列表入口會提示可免費體驗夢行者一個月。點擊提示會進入會員頁查看夢行者年方案與試用資訊。</p>
+      </article>
+
+      <article data-lang="zh-Hans">
+        <h1>2.9.0 版本更新内容</h1>
+        <p class="meta">对应版本：v2.9.0</p>
+        <p class="lead">这次更新把几个会影响日常使用的地方整理得更安全、更清楚：截图可以匿名化，字卡库导入不再只有覆盖，权限状态也集中到同一页查看。</p>
+
+        <nav class="guide-toc" aria-label="2.9.0 版本更新目录">
+          <a href="#zh-hans-screenshot">匿名截图</a>
+          <a href="#zh-hans-import">字卡库导入</a>
+          <a href="#zh-hans-permissions">系统权限</a>
+          <a href="#zh-hans-stability">稳定性</a>
+          <a href="#zh-hans-trial">免费试用</a>
+        </nav>
+
+        <h2 id="zh-hans-screenshot">1. 消息截图新增匿名模式</h2>
+        <p>在聊天室长按消息选择「截图」后，预览画面可切换「原始」与「匿名」。匿名模式会在设备上替换参与者名称与头像，再保存到相册或分享出去。</p>
+        <ul>
+          <li>一对一聊天会以「我」与「对方」呈现。</li>
+          <li>群组聊天会以「对方 1」、「对方 2」这类标签区分不同角色。</li>
+          <li>引用消息中的发话者名称与已知提及名称也会一起替换。</li>
+        </ul>
+
+        <h2 id="zh-hans-import">2. 字卡库导入可选择追加或替换</h2>
+        <p>「导入字卡库」与「应用预设模板」现在会先询问导入方式，降低不小心覆盖既有字卡的风险。</p>
+        <ul>
+          <li>追加：保留当前字卡库，只补入未重复的新字卡与新字卡组。</li>
+          <li>替换：只替换同名字卡组，并加入新的字卡组；没有匹配到的本机字卡组会保留。</li>
+          <li>确认窗口会显示会处理几个既有字卡组、会新增几个字卡组。</li>
+        </ul>
+
+        <h2 id="zh-hans-permissions">3. 新增系统权限页</h2>
+        <p>设置中的「系统权限」现在可进入详细页，集中查看通知、图片选择、截图保存与 Music 资料库状态。</p>
+        <p class="guide-note">DreamChat 只会在你点「允许」或主动使用相关功能时请求权限。若已拒绝，App 会改提供前往系统设置的入口，不会一直重复弹出请求。</p>
+
+        <h2 id="zh-hans-stability">4. iOS 18 聊天与设置稳定性改善</h2>
+        <p>本版改善 iOS 18 上长按消息菜单的稳定性；若系统原生菜单不稳定，会改用底部菜单提供回复、复制、截图与删除。外观与语言设置也调整为更稳定的独立页面，减少切换主题或语言时的画面重建问题。</p>
+
+        <h2 id="zh-hans-trial">5. 梦行者年方案免费试用提示</h2>
+        <p>符合资格时，设置、会员页与列表入口会提示可免费体验梦行者一个月。点击提示会进入会员页查看梦行者年方案与试用信息。</p>
+      </article>
+
+      <article data-lang="ja">
+        <h1>2.9.0 アップデート内容</h1>
+        <p class="meta">対応バージョン：v2.9.0</p>
+        <p class="lead">この更新では、日常的に使う機能をより安全で分かりやすく整えました。スクリーンショットの匿名化、定型文集読み込みの追加/置き換え、権限状態の確認ページが主な変更です。</p>
+
+        <nav class="guide-toc" aria-label="2.9.0 アップデート目次">
+          <a href="#ja-screenshot">匿名スクリーンショット</a>
+          <a href="#ja-import">定型文集の読み込み</a>
+          <a href="#ja-permissions">システム権限</a>
+          <a href="#ja-stability">安定性</a>
+          <a href="#ja-trial">無料体験</a>
+        </nav>
+
+        <h2 id="ja-screenshot">1. メッセージスクリーンショットに匿名モードを追加</h2>
+        <p>チャットでメッセージを長押しして「スクリーンショット」を選ぶと、プレビュー画面で「オリジナル」と「匿名」を切り替えられます。匿名モードでは、端末上で参加者名とアイコンを置き換えてから保存または共有します。</p>
+        <ul>
+          <li>1対1のチャットでは「自分」と「相手」として表示されます。</li>
+          <li>グループチャットでは「相手 1」「相手 2」のように参加者を区別します。</li>
+          <li>引用内の送信者名や既知のメンション名も置き換えます。</li>
+        </ul>
+
+        <h2 id="ja-import">2. 定型文集の読み込みで追加または置き換えを選択</h2>
+        <p>「定型文集を読み込む」と「サンプルテンプレートを適用」では、実行前に読み込み方法を選べるようになりました。既存の定型文を誤って上書きしにくくなります。</p>
+        <ul>
+          <li>追加：現在の定型文集を残し、重複していない新しい定型文とセットだけを追加します。</li>
+          <li>置き換え：同じ名前のセットだけを置き換え、新しいセットも追加します。一致しない端末内のセットは残ります。</li>
+          <li>確認画面では、既存セットと新規セットの数を確認できます。</li>
+        </ul>
+
+        <h2 id="ja-permissions">3. システム権限ページを追加</h2>
+        <p>設定の「システム権限」から、通知、画像選択、スクリーンショット保存、Music ライブラリの状態をまとめて確認できます。</p>
+        <p class="guide-note">DreamChat は、許可ボタンを押したとき、または関連機能を使ったときだけ権限を求めます。拒否済みの場合は、繰り返し許可を求めず、システム設定への導線を表示します。</p>
+
+        <h2 id="ja-stability">4. iOS 18 のチャットと設定の安定性を改善</h2>
+        <p>iOS 18 でのメッセージ長押しメニューの安定性を改善しました。システムのメニューが不安定な場合は、返信、コピー、スクリーンショット、削除を下部メニューで表示します。外観と言語も独立した設定ページに整理し、テーマや言語の切り替え時の画面再構築を減らしました。</p>
+
+        <h2 id="ja-trial">5. ドリームウォーカー年間プランの無料体験案内</h2>
+        <p>対象ユーザーには、設定、メンバーシップ画面、一覧の入口で1か月無料体験の案内が表示されます。案内を押すと、ドリームウォーカー年間プランと無料体験の情報を確認できます。</p>
+      </article>
+
+      <article data-lang="en">
+        <h1>What's New in 2.9.0</h1>
+        <p class="meta">Applies to version v2.9.0</p>
+        <p class="lead">This update makes several everyday flows clearer and safer: message screenshots can be anonymized, phrase library imports no longer have to overwrite everything, and permissions are easier to review in one place.</p>
+
+        <nav class="guide-toc" aria-label="2.9.0 update table of contents">
+          <a href="#en-screenshot">Anonymous Screenshots</a>
+          <a href="#en-import">Phrase Imports</a>
+          <a href="#en-permissions">System Permissions</a>
+          <a href="#en-stability">Stability</a>
+          <a href="#en-trial">Free Trial</a>
+        </nav>
+
+        <h2 id="en-screenshot">1. Anonymous Mode for Message Screenshots</h2>
+        <p>After long-pressing a message and choosing Screenshot, the preview can switch between Original and Anonymous. Anonymous mode replaces participant names and avatars on device before you save to Photos or share.</p>
+        <ul>
+          <li>One-on-one chats use labels for me and the other person.</li>
+          <li>Group chats distinguish characters with labels such as Partner 1 and Partner 2.</li>
+          <li>Quoted sender names and known mention names are replaced as well.</li>
+        </ul>
+
+        <h2 id="en-import">2. Append or Replace Phrase Library Imports</h2>
+        <p>Import Phrase Library and Apply Default Template now ask how you want to import before changing the library, reducing the chance of overwriting existing phrases by mistake.</p>
+        <ul>
+          <li>Append keeps your current library and adds only non-duplicate phrases and new phrase sets.</li>
+          <li>Replace updates matching phrase sets by name and adds new sets. Local sets without a match are kept.</li>
+          <li>The confirmation shows how many existing sets and new sets will be handled.</li>
+        </ul>
+
+        <h2 id="en-permissions">3. System Permissions Page</h2>
+        <p>Settings now includes a detailed System Permissions page for notifications, photo selection, screenshot saving, and Music library access.</p>
+        <p class="guide-note">DreamChat asks only when you tap Allow or use a related feature. If access was denied, it shows the path to system Settings instead of repeatedly asking again.</p>
+
+        <h2 id="en-stability">4. iOS 18 Chat and Settings Stability</h2>
+        <p>This version improves message long-press menu stability on iOS 18. When the native system menu is unreliable, DreamChat uses a bottom action sheet for Reply, Copy, Screenshot, and Delete. Appearance and Language were also moved into a steadier detail page to reduce view rebuilding while changing theme or language.</p>
+
+        <h2 id="en-trial">5. Dream Walker Yearly Trial Prompts</h2>
+        <p>Eligible users can now see a one-month Dream Walker trial prompt in Settings, Membership, and list entry points. Tapping it opens Membership to review the yearly plan and trial details.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="../articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="../lang.js"></script>
+</body>
+</html>

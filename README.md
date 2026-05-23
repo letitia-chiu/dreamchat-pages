@@ -9,12 +9,12 @@ Live site:
 - Home: https://letitia-chiu.github.io/dreamchat-pages/
 - User Guide: https://letitia-chiu.github.io/dreamchat-pages/guide.html
 - Articles: https://letitia-chiu.github.io/dreamchat-pages/articles.html
-- v2.9.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/v2-9-0-update.html
-- Chatroom Screen Guide: https://letitia-chiu.github.io/dreamchat-pages/chatroom-screen-guide.html
-- Context Tags Guide: https://letitia-chiu.github.io/dreamchat-pages/context-tags.html
-- Chat Modes Guide: https://letitia-chiu.github.io/dreamchat-pages/chat-modes.html
-- Smart Assist Setup Tips: https://letitia-chiu.github.io/dreamchat-pages/smart-assist-keyword-guide.html
-- Phrase Library Format Converter: https://letitia-chiu.github.io/dreamchat-pages/card-library-converter.html
+- v2.9.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v2-9-0-update.html
+- Chatroom Screen Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/chatroom-screen-guide.html
+- Context Tags Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/context-tags.html
+- Chat Modes Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/chat-modes.html
+- Smart Assist Setup Tips: https://letitia-chiu.github.io/dreamchat-pages/articles/smart-assist-keyword-guide.html
+- Phrase Library Format Converter: https://letitia-chiu.github.io/dreamchat-pages/articles/card-library-converter.html
 - Privacy Policy: https://letitia-chiu.github.io/dreamchat-pages/privacy.html
 - Support: https://letitia-chiu.github.io/dreamchat-pages/support.html
 
@@ -23,18 +23,20 @@ Live site:
 - `index.html` - DreamChat overview and links to support/privacy pages
 - `guide.html` - public user guide for first-time users
 - `articles.html` - guide article index
-- `v2-9-0-update.html` - v2.9.0 public update notes
-- `chatroom-screen-guide.html` - guide to chatroom menus and controls
-- `context-tags.html` - detailed guide for context tags
-- `chat-modes.html` - detailed guide for Chat Mode, Yes/No Mode, and Choose for Me
-- `smart-assist-keyword-guide.html` - Smart Assist trigger keyword setup tips
-- `card-library-converter.html` - browser-local converter for supported phrase backups
+- `articles/v2-9-0-update.html` - v2.9.0 public update notes
+- `articles/chatroom-screen-guide.html` - guide to chatroom menus and controls
+- `articles/context-tags.html` - detailed guide for context tags
+- `articles/chat-modes.html` - detailed guide for Chat Mode, Yes/No Mode, and Choose for Me
+- `articles/smart-assist-keyword-guide.html` - Smart Assist trigger keyword setup tips
+- `articles/card-library-converter.html` - browser-local converter for supported phrase backups
 - `card-library-converter.js` - converter logic for DreamChat phrase library JSON
 - `privacy.html` - privacy policy in Traditional Chinese, Simplified Chinese, Japanese, and English
 - `support.html` - support and FAQ in the same four languages
 - `styles.css` - shared visual styling
 - `lang.js` - client-side language switching
 - `assets/` - app icon and social preview banner
+
+The old root-level article URLs, such as `chat-modes.html`, are kept as lightweight compatibility redirects to the matching `articles/*.html` pages.
 
 ## Languages
 

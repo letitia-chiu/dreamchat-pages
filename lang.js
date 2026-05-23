@@ -84,7 +84,7 @@
       }
     },
     {
-      url: 'v2-9-0-update.html',
+      url: 'articles/v2-9-0-update.html',
       title: {
         'zh-Hant': '2.9.0 版本更新內容',
         'zh-Hans': '2.9.0 版本更新内容',
@@ -105,7 +105,7 @@
       }
     },
     {
-      url: 'chatroom-screen-guide.html',
+      url: 'articles/chatroom-screen-guide.html',
       title: {
         'zh-Hant': '聊天室畫面導覽',
         'zh-Hans': '聊天室画面导览',
@@ -126,7 +126,7 @@
       }
     },
     {
-      url: 'smart-assist-keyword-guide.html',
+      url: 'articles/smart-assist-keyword-guide.html',
       title: {
         'zh-Hant': '智慧輔助設定技巧',
         'zh-Hans': '智能辅助设置技巧',
@@ -147,7 +147,7 @@
       }
     },
     {
-      url: 'context-tags.html',
+      url: 'articles/context-tags.html',
       title: {
         'zh-Hant': '情境標籤詳細說明',
         'zh-Hans': '情境标签详细说明',
@@ -168,7 +168,7 @@
       }
     },
     {
-      url: 'chat-modes.html',
+      url: 'articles/chat-modes.html',
       title: {
         'zh-Hant': '聊天模式詳細說明',
         'zh-Hans': '聊天模式详细说明',
@@ -189,7 +189,7 @@
       }
     },
     {
-      url: 'card-library-converter.html',
+      url: 'articles/card-library-converter.html',
       title: {
         'zh-Hant': '字卡庫格式轉換器',
         'zh-Hans': '字卡库格式转换器',
@@ -329,11 +329,20 @@
       .trim();
   }
 
+  function siteRootUrl() {
+    var path = window.location.pathname;
+    var articlesIndex = path.indexOf('/articles/');
+    var rootPath = articlesIndex === -1
+      ? path.slice(0, path.lastIndexOf('/') + 1)
+      : path.slice(0, articlesIndex + 1);
+    return new URL(rootPath || '/', window.location.origin);
+  }
+
   function urlWithLang(url, lang) {
     try {
-      var target = new URL(url, window.location.href);
+      var target = new URL(url, siteRootUrl());
       target.searchParams.set('lang', lang);
-      return target.pathname.split('/').pop() + target.search + target.hash;
+      return target.pathname + target.search + target.hash;
     } catch (e) {
       return url;
     }
