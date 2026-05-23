@@ -706,6 +706,90 @@ a:focus {
   text-shadow: 0 1px 8px rgba(74, 58, 122, 0.32);
 }
 
+.sns-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+}
+
+.sns-label {
+  color: #372552;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 1.3;
+  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.7);
+}
+
+.sns-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.sns-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 7px 14px 7px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: var(--radius-pill);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.06) 100%),
+    linear-gradient(180deg, rgba(52, 34, 85, 0.86) 0%, rgba(22, 16, 32, 0.86) 100%);
+  -webkit-backdrop-filter: blur(14px) saturate(145%);
+  backdrop-filter: blur(14px) saturate(145%);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  box-shadow:
+    0 12px 26px rgba(38, 29, 61, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.28);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.36);
+  transition: transform 0.18s ease, background 0.2s ease, border-color 0.2s ease, color 0.18s ease;
+}
+
+.sns-icon {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
+.sns-name {
+  color: #ffffff;
+}
+
+.sns-region {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+.sns-link:hover,
+.sns-link:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.07) 100%),
+    linear-gradient(180deg, rgba(67, 45, 108, 0.9) 0%, rgba(28, 19, 41, 0.9) 100%);
+  border-color: rgba(255, 255, 255, 0.56);
+  transform: translateY(-1px);
+}
+
+.sns-link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.82);
+  outline-offset: 3px;
+}
+
 @keyframes app-store-shine {
   0% { left: -70%; opacity: 0; }
   20% { left: -70%; opacity: 0; }
