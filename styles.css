@@ -1125,6 +1125,14 @@ a:focus {
   display: inline-flex;
 }
 
+.article-card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-self: start;
+}
+
 .article-card-label {
   align-items: center;
   justify-self: start;
@@ -1136,6 +1144,34 @@ a:focus {
   font-size: 12px;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  min-height: 24px;
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-text);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.status-tag [data-lang] {
+  display: none;
+}
+
+.status-tag [data-lang].active {
+  display: inline-flex;
+}
+
+.status-tag-upcoming {
+  color: #8a4a16;
+  background: rgba(255, 218, 177, 0.84);
+  border: 1px solid rgba(224, 139, 64, 0.34);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.66);
 }
 
 .article-card strong {
@@ -1153,6 +1189,22 @@ a:focus {
   color: var(--text-soft);
   font-size: 14px;
   line-height: 1.65;
+}
+
+.title-with-tag {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  margin: 0 0 6px;
+}
+
+.title-with-tag h1 {
+  margin: 0;
+}
+
+.title-with-tag .status-tag {
+  margin-top: 0;
 }
 
 .page code {

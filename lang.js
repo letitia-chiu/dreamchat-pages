@@ -84,6 +84,27 @@
       }
     },
     {
+      url: 'v2-9-0-update.html',
+      title: {
+        'zh-Hant': '2.9.0 版本更新內容',
+        'zh-Hans': '2.9.0 版本更新内容',
+        ja: '2.9.0 アップデート内容',
+        en: "What's New in 2.9.0"
+      },
+      description: {
+        'zh-Hant': '匿名截圖、字卡庫追加／取代、系統權限頁、iOS 18 穩定性與夢行者試用提示。',
+        'zh-Hans': '匿名截图、字卡库追加／替换、系统权限页、iOS 18 稳定性与梦行者试用提示。',
+        ja: '匿名スクリーンショット、定型文集の追加／置き換え、システム権限、iOS 18 安定性、無料体験案内。',
+        en: 'Anonymous screenshots, append/replace phrase imports, system permissions, iOS 18 stability, and trial prompts.'
+      },
+      text: {
+        'zh-Hant': '2.9.0 更新 即將推出 匿名截圖 字卡庫 追加 取代 系統權限 iOS 18 穩定性 夢行者 免費試用',
+        'zh-Hans': '2.9.0 更新 即将推出 匿名截图 字卡库 追加 替换 系统权限 iOS 18 稳定性 梦行者 免费试用',
+        ja: '2.9.0 更新 近日公開 匿名スクリーンショット 定型文集 追加 置き換え システム権限 iOS 18 安定性 無料体験',
+        en: '2.9.0 update coming soon anonymous screenshots phrase library append replace system permissions iOS 18 stability Dream Walker trial'
+      }
+    },
+    {
       url: 'smart-assist-keyword-guide.html',
       title: {
         'zh-Hant': '智慧輔助設定技巧',
