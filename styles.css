@@ -1178,6 +1178,13 @@ a:focus {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.66);
 }
 
+.status-tag-new {
+  color: #77501c;
+  background: rgba(255, 226, 185, 0.84);
+  border: 1px solid rgba(217, 145, 56, 0.34);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.66);
+}
+
 .article-card strong {
   color: var(--text);
   font-size: 18px;

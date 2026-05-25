@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>情境標籤詳細說明 | DreamChat</title>
+  <meta name="description" content="How DreamChat v2.7.0 context tags work: create tags, assign them to phrase sets, set the current chat context, and understand reply selection behavior.">
+
+  <!-- Hreflang: language-specific entry URLs. -->
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/articles/context-tags.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/articles/context-tags.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/articles/context-tags.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/articles/context-tags.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/articles/context-tags.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/articles/context-tags.html">
+  <meta property="og:title" content="情境標籤詳細說明 | DreamChat">
+  <meta property="og:description" content="Create context tags, assign them to phrase sets, and choose the current context in DreamChat v2.7.0.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="情境標籤詳細說明 | DreamChat">
+  <meta name="twitter:description" content="Create context tags, assign them to phrase sets, and choose the current context in DreamChat v2.7.0.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="">
+        <a href="../index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="../articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page guide-page">
+      <article data-lang="zh-Hant">
+        <h1>情境標籤詳細說明</h1>
+        <p class="meta">對應版本：v2.7.0</p>
+        <p class="lead">情境標籤是 DreamChat 用來標記「現在這段對話在什麼情境中」的輔助工具。它不會產生新的回覆文字，而是協助 App 從更合適的字卡組中選回覆。</p>
+
+        <nav class="guide-toc" aria-label="情境標籤目錄">
+          <a href="#zh-what">用途</a>
+          <a href="#zh-create">建立與管理</a>
+          <a href="#zh-assign">套用到字卡組</a>
+          <a href="#zh-current">設定目前情境</a>
+          <a href="#zh-behavior">回覆選擇</a>
+          <a href="#zh-import">備份與匯入</a>
+        </nav>
+
+        <h2 id="zh-what">1. 情境標籤是什麼</h2>
+        <p>你可以把情境標籤想成跨角色共用的短標籤，例如「睡前」、「旅行」、「吃醋」、「需要安慰」。標籤本身不是字卡，也不是觸發關鍵字；它主要用來連接「目前聊天情境」與「適合這個情境的字卡組」。</p>
+        <ul>
+          <li>情境標籤在設定中建立後，可被多個角色與多個字卡組使用。</li>
+          <li>每個標籤名稱最多 24 個字，最多可建立 200 個情境標籤。</li>
+          <li>同一次選擇中最多可勾選 8 個情境標籤。</li>
+        </ul>
+
+        <h2 id="zh-create">2. 建立與管理情境標籤</h2>
+        <p>路徑：<span class="guide-path">設定 → 情境 → 情境標籤</span></p>
+        <ol class="guide-steps">
+          <li>按右上角加號新增情境標籤。</li>
+          <li>輸入名稱後儲存。名稱不可空白，也不可和既有標籤重複。</li>
+          <li>點選既有標籤可編輯名稱；在列表中滑動可刪除。</li>
+        </ol>
+        <p class="guide-note">刪除情境標籤後，這個標籤會從所有字卡組與聊天室目前情境中移除。</p>
+
+        <h2 id="zh-assign">3. 套用到字卡組</h2>
+        <p>路徑：<span class="guide-path">角色 → 角色設定 → 字卡庫 → 自訂字卡組 → 字卡組設定 → 情境標籤</span></p>
+        <p>在自訂字卡組設定中，除了「適用情境」與「觸發關鍵字」，也可以選擇情境標籤。這代表這組字卡適合在那些情境中被選到。</p>
+        <ul>
+          <li>一個字卡組可以有多個情境標籤。</li>
+          <li>同一個情境標籤也可以套用在多個字卡組。</li>
+          <li>「通用」字卡組不需要設定情境標籤，會保留為可用的基本回覆來源。</li>
+        </ul>
+
+        <h2 id="zh-current">4. 在聊天室設定目前情境</h2>
+        <p>路徑：<span class="guide-path">聊天 → 開啟對話 → 上方選單 → 目前情境</span></p>
+        <p>目前情境是針對單一聊天室保存的脈絡。你可以在聊天途中選擇一個或多個情境標籤，讓 DreamChat 知道此刻應該偏向哪些字卡組。</p>
+        <ul>
+          <li>上方區塊會顯示已選標籤；點選已選標籤可移除。</li>
+          <li>下方區塊會顯示尚未選取的候選標籤；點選可加入目前情境。</li>
+          <li>沒有選任何標籤時，聊天室會顯示為沒有指定情境。</li>
+        </ul>
+
+        <h2 id="zh-behavior">5. 它怎麼影響回覆選擇</h2>
+        <p>情境標籤只影響字卡選擇，不會改寫字卡內容，也不會讓智慧輔助產生新的對話文字。</p>
+        <ul>
+          <li>沒有指定目前情境時，DreamChat 會照一般字卡庫與智慧輔助規則選擇字卡組。</li>
+          <li>有指定目前情境時，符合任一已選標籤的自訂字卡組會成為候選；不符合的自訂字卡組會被排除。</li>
+          <li>通用字卡組仍會保留為可用來源，適合放不限定情境的基本回覆。</li>
+          <li>如果目前情境沒有對應的自訂字卡組，回覆可能會改從通用字卡組選出；若沒有可用字卡，角色就不會自動回覆。</li>
+        </ul>
+
+        <h2 id="zh-import">6. 備份、匯出與匯入</h2>
+        <p>完整備份會還原備份中的情境標籤與關聯。角色分享檔與字卡庫匯入匯出也會保留情境標籤與字卡組的關聯；匯入時，若本機已有同名標籤，DreamChat 會接到既有標籤，沒有同名標籤時才新增。</p>
+        <p class="guide-note">如果你從外部整理字卡庫，建議先把情境標籤命名想清楚，再套用到字卡組。標籤越穩定，之後匯入與整理越不容易混亂。</p>
+      </article>
+
+      <article data-lang="zh-Hans">
+        <h1>情境标签详细说明</h1>
+        <p class="meta">对应版本：v2.7.0</p>
+        <p class="lead">情境标签是 DreamChat 用来标记「现在这段对话在什么情境中」的辅助工具。它不会生成新的回复文字，而是协助 App 从更合适的字卡组中选择回复。</p>
+
+        <nav class="guide-toc" aria-label="情境标签目录">
+          <a href="#zh-hans-what">用途</a>
+          <a href="#zh-hans-create">建立与管理</a>
+          <a href="#zh-hans-assign">套用到字卡组</a>
+          <a href="#zh-hans-current">设置当前情境</a>
+          <a href="#zh-hans-behavior">回复选择</a>
+          <a href="#zh-hans-import">备份与导入</a>
+        </nav>
+
+        <h2 id="zh-hans-what">1. 情境标签是什么</h2>
+        <p>你可以把情境标签想成跨角色共用的短标签，例如「睡前」、「旅行」、「吃醋」、「需要安慰」。标签本身不是字卡，也不是触发关键词；它主要用来连接「当前聊天情境」与「适合这个情境的字卡组」。</p>
+        <ul>
+          <li>情境标签在设置中建立后，可被多个角色与多个字卡组使用。</li>
+          <li>每个标签名称最多 24 个字，最多可建立 200 个情境标签。</li>
+          <li>同一次选择中最多可勾选 8 个情境标签。</li>
+        </ul>
+
+        <h2 id="zh-hans-create">2. 建立与管理情境标签</h2>
+        <p>路径：<span class="guide-path">设置 → 情境 → 情境标签</span></p>
+        <ol class="guide-steps">
+          <li>按右上角加号新增情境标签。</li>
+          <li>输入名称后保存。名称不可为空，也不可和已有标签重复。</li>
+          <li>点选已有标签可编辑名称；在列表中滑动可删除。</li>
+        </ol>
+        <p class="guide-note">删除情境标签后，这个标签会从所有字卡组与聊天室当前情境中移除。</p>
+
+        <h2 id="zh-hans-assign">3. 套用到字卡组</h2>
+        <p>路径：<span class="guide-path">角色 → 角色设置 → 字卡库 → 自定义字卡组 → 字卡组设置 → 情境标签</span></p>
+        <p>在自定义字卡组设置中，除了「适用情境」与「触发关键词」，也可以选择情境标签。这代表这组字卡适合在那些情境中被选到。</p>
+        <ul>
+          <li>一个字卡组可以有多个情境标签。</li>
+          <li>同一个情境标签也可以套用在多个字卡组。</li>
+          <li>「通用」字卡组不需要设置情境标签，会保留为可用的基本回复来源。</li>
+        </ul>
+
+        <h2 id="zh-hans-current">4. 在聊天室设置当前情境</h2>
+        <p>路径：<span class="guide-path">聊天 → 打开对话 → 上方菜单 → 当前情境</span></p>
+        <p>当前情境是针对单一聊天室保存的脉络。你可以在聊天途中选择一个或多个情境标签，让 DreamChat 知道此刻应该偏向哪些字卡组。</p>
+        <ul>
+          <li>上方区块会显示已选标签；点选已选标签可移除。</li>
+          <li>下方区块会显示尚未选取的候选标签；点选可加入当前情境。</li>
+          <li>没有选任何标签时，聊天室会显示为没有指定情境。</li>
+        </ul>
+
+        <h2 id="zh-hans-behavior">5. 它如何影响回复选择</h2>
+        <p>情境标签只影响字卡选择，不会改写字卡内容，也不会让智能辅助生成新的对话文字。</p>
+        <ul>
+          <li>没有指定当前情境时，DreamChat 会按一般字卡库与智能辅助规则选择字卡组。</li>
+          <li>有指定当前情境时，符合任一已选标签的自定义字卡组会成为候选；不符合的自定义字卡组会被排除。</li>
+          <li>通用字卡组仍会保留为可用来源，适合放不限定情境的基本回复。</li>
+          <li>如果当前情境没有对应的自定义字卡组，回复可能会改从通用字卡组选出；若没有可用字卡，角色就不会自动回复。</li>
+        </ul>
+
+        <h2 id="zh-hans-import">6. 备份、导出与导入</h2>
+        <p>完整备份会还原备份中的情境标签与关联。角色分享文件与字卡库导入导出也会保留情境标签与字卡组的关联；导入时，若本机已有同名标签，DreamChat 会接到已有标签，没有同名标签时才新增。</p>
+        <p class="guide-note">如果你从外部整理字卡库，建议先把情境标签命名想清楚，再套用到字卡组。标签越稳定，之后导入与整理越不容易混乱。</p>
+      </article>
+
+      <article data-lang="ja">
+        <h1>コンテキストタグの詳しい説明</h1>
+        <p class="meta">対応バージョン：v2.7.0</p>
+        <p class="lead">コンテキストタグは、「今の会話がどの状況にあるか」を DreamChat に伝えるための補助機能です。新しい返信文を生成するものではなく、より合う定型文セットから返信を選びやすくします。</p>
+
+        <nav class="guide-toc" aria-label="コンテキストタグ目次">
+          <a href="#ja-what">用途</a>
+          <a href="#ja-create">作成と管理</a>
+          <a href="#ja-assign">定型文セットに設定</a>
+          <a href="#ja-current">現在のコンテキスト</a>
+          <a href="#ja-behavior">返信選択</a>
+          <a href="#ja-import">バックアップ</a>
+        </nav>
+
+        <h2 id="ja-what">1. コンテキストタグとは</h2>
+        <p>コンテキストタグは、キャラクターをまたいで使える短いタグです。たとえば「寝る前」「旅行」「嫉妬」「慰めてほしい」などを作れます。タグ自体は定型文でもトリガーキーワードでもなく、「現在のチャット状況」と「その状況に合う定型文セット」をつなぐために使います。</p>
+        <ul>
+          <li>設定で作成したタグは、複数のキャラクターや定型文セットで使えます。</li>
+          <li>タグ名は最大 24 文字、作成できるタグは最大 200 個です。</li>
+          <li>一度に選べるコンテキストタグは最大 8 個です。</li>
+        </ul>
+
+        <h2 id="ja-create">2. コンテキストタグを作成・管理する</h2>
+        <p>場所：<span class="guide-path">設定 → コンテキスト → コンテキストタグ</span></p>
+        <ol class="guide-steps">
+          <li>右上の追加ボタンでコンテキストタグを作成します。</li>
+          <li>名前を入力して保存します。空の名前や、既存タグと同じ名前は使えません。</li>
+          <li>既存タグをタップすると名前を編集できます。リストでスワイプすると削除できます。</li>
+        </ol>
+        <p class="guide-note">タグを削除すると、すべての定型文セットとチャットの現在のコンテキストから外れます。</p>
+
+        <h2 id="ja-assign">3. 定型文セットに設定する</h2>
+        <p>場所：<span class="guide-path">キャラクター → キャラクター設定 → 定型文集 → カスタム定型文セット → 定型文セット設定 → コンテキストタグ</span></p>
+        <p>カスタム定型文セットの設定では、「使う場面」と「トリガーキーワード」に加えて、コンテキストタグも選べます。これは、その定型文セットがどの状況に合うかを示します。</p>
+        <ul>
+          <li>1つの定型文セットに複数のタグを付けられます。</li>
+          <li>同じタグを複数の定型文セットに使うこともできます。</li>
+          <li>基本の定型文セットにはタグ設定は不要で、基本的な返信元として残ります。</li>
+        </ul>
+
+        <h2 id="ja-current">4. チャットで現在のコンテキストを設定する</h2>
+        <p>場所：<span class="guide-path">チャット → 会話を開く → 上部メニュー → 現在のコンテキスト</span></p>
+        <p>現在のコンテキストは、1つのチャットごとに保存される状況指定です。会話中に1つ以上のタグを選ぶと、DreamChat がその状況に合う定型文セットを使いやすくなります。</p>
+        <ul>
+          <li>上の欄には選択済みタグが表示され、タップすると外せます。</li>
+          <li>下の欄には未選択の候補タグが表示され、タップすると追加できます。</li>
+          <li>何も選んでいない場合は、指定なしのコンテキストとして扱われます。</li>
+        </ul>
+
+        <h2 id="ja-behavior">5. 返信選択への影響</h2>
+        <p>コンテキストタグは定型文の選択にだけ影響します。定型文の内容を書き換えたり、スマートアシストに新しい会話文を生成させたりするものではありません。</p>
+        <ul>
+          <li>現在のコンテキストが未指定の場合、通常の定型文集とスマートアシストのルールで選ばれます。</li>
+          <li>現在のコンテキストを指定している場合、選択済みタグのいずれかに一致するカスタム定型文セットが候補になります。一致しないカスタムセットは候補から外れます。</li>
+          <li>基本の定型文セットは引き続き使用できます。状況を限定しない基本返信を入れておくのに向いています。</li>
+          <li>現在のコンテキストに一致するカスタムセットがない場合は、基本セットから返信が選ばれることがあります。使える定型文がなければ、自動返信は行われません。</li>
+        </ul>
+
+        <h2 id="ja-import">6. バックアップ、書き出し、読み込み</h2>
+        <p>完全バックアップでは、バックアップ内のコンテキストタグと関連が復元されます。キャラクター共有ファイルや定型文集の読み込み・書き出しでも、コンテキストタグと定型文セットの関連は保持されます。読み込み時に同名タグがすでにある場合は既存タグに接続され、ない場合だけ新しいタグが追加されます。</p>
+        <p class="guide-note">外部で定型文集を整理する場合は、先にタグ名を決めてから定型文セットに付けると、後から読み込むときも整理しやすくなります。</p>
+      </article>
+
+      <article data-lang="en">
+        <h1>Context Tags Guide</h1>
+        <p class="meta">Applies to version v2.7.0</p>
+        <p class="lead">Context tags help DreamChat understand what this chat is currently about. They do not generate new reply text; they help the app choose replies from better-fitting phrase sets.</p>
+
+        <nav class="guide-toc" aria-label="Context tags table of contents">
+          <a href="#en-what">Purpose</a>
+          <a href="#en-create">Create & Manage</a>
+          <a href="#en-assign">Phrase Sets</a>
+          <a href="#en-current">Current Context</a>
+          <a href="#en-behavior">Reply Selection</a>
+          <a href="#en-import">Import & Backup</a>
+        </nav>
+
+        <h2 id="en-what">1. What Context Tags Are</h2>
+        <p>Think of context tags as short shared labels, such as "bedtime", "travel", "jealousy", or "comfort". A tag is not a phrase and not a trigger keyword. It connects the current chat context with phrase sets that fit that context.</p>
+        <ul>
+          <li>Tags created in Settings can be reused across characters and phrase sets.</li>
+          <li>Each tag name can be up to 24 characters, and you can create up to 200 context tags.</li>
+          <li>You can select up to 8 context tags in one selection area.</li>
+        </ul>
+
+        <h2 id="en-create">2. Create and Manage Context Tags</h2>
+        <p>Path: <span class="guide-path">Settings → Context → Context Tags</span></p>
+        <ol class="guide-steps">
+          <li>Tap the plus button in the top-right corner to create a context tag.</li>
+          <li>Enter a name and save. The name cannot be empty or duplicate an existing tag.</li>
+          <li>Tap an existing tag to rename it. Swipe in the list to delete it.</li>
+        </ol>
+        <p class="guide-note">Deleting a context tag removes it from all phrase sets and from every chat's current context.</p>
+
+        <h2 id="en-assign">3. Assign Tags to Phrase Sets</h2>
+        <p>Path: <span class="guide-path">Characters → Character Settings → Chat Phrases → Custom Phrase Set → Phrase Set Settings → Context Tags</span></p>
+        <p>In custom phrase set settings, you can choose context tags alongside Usage Context and Trigger Keywords. This marks which situations the phrase set fits.</p>
+        <ul>
+          <li>One phrase set can have multiple context tags.</li>
+          <li>The same context tag can be used by multiple phrase sets.</li>
+          <li>The General phrase set does not need context tags and remains available as a basic reply source.</li>
+        </ul>
+
+        <h2 id="en-current">4. Set the Current Context in a Chat</h2>
+        <p>Path: <span class="guide-path">Chat → Open a conversation → Top menu → Current Context</span></p>
+        <p>The current context is saved per chat. While chatting, select one or more tags so DreamChat can lean toward phrase sets that fit the moment.</p>
+        <ul>
+          <li>The top section shows selected tags. Tap a selected tag to remove it.</li>
+          <li>The lower section shows available tags that are not selected. Tap one to add it.</li>
+          <li>When no tags are selected, the chat has no specified context.</li>
+        </ul>
+
+        <h2 id="en-behavior">5. How Tags Affect Reply Selection</h2>
+        <p>Context tags only affect phrase selection. They do not rewrite phrase text or make Smart Assist generate new conversation text.</p>
+        <ul>
+          <li>When no current context is selected, DreamChat uses the usual phrase library and Smart Assist rules.</li>
+          <li>When a current context is selected, custom phrase sets matching any selected tag become candidates. Custom sets that do not match are excluded.</li>
+          <li>The General phrase set remains available, which makes it a good place for replies that are not tied to a specific situation.</li>
+          <li>If the current context has no matching custom phrase set, DreamChat may choose from General instead. If no usable phrases exist, the character will not auto-reply.</li>
+        </ul>
+
+        <h2 id="en-import">6. Backup, Export, and Import</h2>
+        <p>Full backup restores the context tags and links stored in that backup. Character share files and phrase library import/export also preserve context tags and their phrase set links. During import, DreamChat connects to an existing local tag when the name already matches; otherwise it creates a new tag.</p>
+        <p class="guide-note">If you organize a phrase library outside the app, decide stable context tag names first, then apply them to phrase sets. Stable names make future imports easier to understand.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="../articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="../lang.js"></script>
+</body>
+</html>

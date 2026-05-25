@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>智慧輔助設定技巧 | DreamChat</title>
+  <meta name="description" content="DreamChat Smart Assist setup tips: write trigger keywords, usage context, and phrase sets so Smart Assist can choose more relevant chat phrases on device.">
+
+  <!-- Hreflang: language-specific entry URLs. -->
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/articles/smart-assist-keyword-guide.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/articles/smart-assist-keyword-guide.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/articles/smart-assist-keyword-guide.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/articles/smart-assist-keyword-guide.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/articles/smart-assist-keyword-guide.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/articles/smart-assist-keyword-guide.html">
+  <meta property="og:title" content="智慧輔助設定技巧 | DreamChat">
+  <meta property="og:description" content="Tips for writing trigger keywords and usage context so DreamChat Smart Assist can choose more relevant chat phrase sets.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="智慧輔助設定技巧 | DreamChat">
+  <meta name="twitter:description" content="Tips for writing trigger keywords and usage context so DreamChat Smart Assist can choose more relevant chat phrase sets.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="">
+        <a href="../index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="../articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page guide-page">
+
+      <!-- ============================================================ -->
+      <!-- 繁體中文                                                       -->
+      <!-- ============================================================ -->
+      <article data-lang="zh-Hant">
+        <h1>智慧輔助設定技巧</h1>
+        <p class="meta">對應版本：v2.8.0</p>
+
+        <p class="lead">這份說明給正在整理字卡庫、字卡組與觸發關鍵字的使用者。智慧輔助會依照收到的新訊息，從字卡組名稱、適用情境、觸發關鍵字與字卡內容中找出最適合的字卡組；其中「觸發關鍵字」是最明確、最適合用來引導話題的訊號。</p>
+
+        <nav class="guide-toc" aria-label="智慧輔助設定技巧目錄">
+          <a href="#zh-basics">先記住三件事</a>
+          <a href="#zh-modes">模式怎麼選</a>
+          <a href="#zh-keywords">關鍵字怎麼寫</a>
+          <a href="#zh-checklist">快速檢查</a>
+          <a href="#zh-faq">常見問題</a>
+        </nav>
+
+        <h2 id="zh-basics">1. 先記住三件事</h2>
+        <ol class="guide-steps">
+          <li>關鍵字要寫「你可能會傳給角色的話」，不是角色要回覆的話。</li>
+          <li>越獨特、越像一個完整情境的關鍵字，越容易接對字卡組。</li>
+          <li>太短、太常見、到處都會出現的字，容易讓判斷變模糊。</li>
+        </ol>
+
+        <p>智慧輔助主要用本次新收到的使用者輪次做判斷。若你連續傳出幾則短訊息，中間沒有角色回覆，系統會把短時間內的連續使用者訊息一起視為本輪脈絡；引用回覆或承接角色上一句話時，舊內容只會作為弱情境脈絡。</p>
+
+        <h2 id="zh-modes">2. 智慧輔助模式怎麼選</h2>
+        <ul>
+          <li>「關閉」：不做字卡組智慧判斷，回到一般字卡選擇。</li>
+          <li>「自然」：預設建議。明確命中會穩定選組；多個合理情境分數接近時，會自然分岔。</li>
+          <li>「精準」：優先固定選最高分字卡組，適合想要最穩定分類的角色。</li>
+          <li>「多變」：放寬合理候選範圍，讓同一句開放式訊息更容易出現不同情境。</li>
+        </ul>
+
+        <p class="guide-note">「智慧輔助」決定主要字卡組怎麼選；「隨機性」是在主要字卡組選定後，決定要不要混入通用或其他字卡。隨機性調低時，已選定主要字卡組之後仍只會從該組抽卡；但在自然或多變模式下，主要字卡組本身可能在多個合理字卡組之間分岔。</p>
+
+        <h2 id="zh-keywords">3. 關鍵字怎麼寫</h2>
+        <h3>用自然會出現在訊息裡的詞</h3>
+        <p>把自己代入聊天現場，想像使用者真的會怎麼說。比起只寫「安慰」，更適合寫「我今天好累」「壓力很大」「想哭」「被罵了」。比起只寫「睡覺」，更適合寫「晚安」「睡不著」「熬夜」「夢到你」。</p>
+
+        <h3>優先放獨特名詞與完整短句</h3>
+        <p>角色名、暱稱、作品名、地名、事件名，或只有某個字卡組才會用到的詞，都很適合放進觸發關鍵字。像 <code>你是不是吃醋</code>、<code>我夢到你</code>、<code>被主管罵</code>、<code>明天考試</code>，都比單獨的 <code>好</code>、<code>你</code>、<code>累</code> 更能判斷情境。</p>
+
+        <h3>一個字卡組放多個角度</h3>
+        <p>比起只放一條完整句子，通常更適合放 5 到 12 個會從不同角度碰到同一情境的關鍵字。例如「睡前陪伴」可以放 <code>晚安</code>、<code>睡不著</code>、<code>熬夜</code>、<code>想睡了</code>、<code>夢到你</code>、<code>今晚來夢裡</code>。</p>
+
+        <h3>相似字卡組要放差異點</h3>
+        <p>如果有「和你去旅行」與「和朋友去旅行」兩組，請把 <code>你</code>、<code>朋友</code>、<code>我們</code>、<code>同學</code> 這類能區分方向的詞寫清楚。中文互動句也建議把方向寫完整，因為 <code>你哄我</code> 和 <code>我哄你</code>、<code>你幫我</code> 和 <code>我幫你</code> 是完全不同的情境。</p>
+
+        <h3>適用情境補脈絡，觸發關鍵字放決定性線索</h3>
+        <p>「適用情境」適合寫一段人看得懂的說明，例如這組字卡在什麼情緒、什麼場景、什麼關係中使用。「觸發關鍵字」則適合放最可能直接命中的詞，例如你真的可能輸入的短句、名詞、暱稱與情境線索。</p>
+
+        <p class="guide-note">不要只靠字卡內容來觸發。字卡是「角色要回覆的話」，不一定等於「你會傳給角色的話」。重要字卡組請補上字卡組名稱、適用情境與觸發關鍵字。</p>
+
+        <h2 id="zh-checklist">4. 快速檢查清單</h2>
+        <ul>
+          <li>這些關鍵字是不是你或聊天者真的可能輸入的話？</li>
+          <li>有沒有至少幾個兩字以上、比較獨特的詞？</li>
+          <li>有沒有避開只用 <code>好</code>、<code>嗯</code>、<code>你</code>、<code>我</code>、<code>今天</code> 這類泛用詞？</li>
+          <li>相似字卡組之間，有沒有寫出真正的差異點？</li>
+          <li>字卡組本身有沒有足夠的字卡可抽？</li>
+        </ul>
+
+        <h2 id="zh-faq">5. 常見問題</h2>
+        <div class="faq-item">
+          <p class="q">明明有設定，卻沒有接到這組？</p>
+          <p class="a">先把實際觸發回覆的那句話加入觸發關鍵字，或拆成幾個更自然的短句。也可以檢查這組是否只有很泛的詞，像「累」「今天」「不開心」，需要補上更具體的情境。</p>
+        </div>
+        <div class="faq-item">
+          <p class="q">接到正確字卡組，但偶爾回覆還是偏題？</p>
+          <p class="a">這通常和「隨機性」有關。智慧輔助先選出最符合的字卡組，隨機性再決定要不要混入通用或其他字卡組。想讓回覆更穩定，可以把隨機性調低，並增加該字卡組裡可用的回覆。</p>
+        </div>
+        <div class="faq-item">
+          <p class="q">Apple Intelligence 會幫我生成回覆嗎？</p>
+          <p class="a">不會。智慧輔助只會選擇既有字卡組，再從字卡庫中抽取回覆。系統可能會在裝置端使用 Apple 提供的語言處理框架，例如 Natural Language framework，以及在相容裝置上的 Apple Intelligence / Foundation Models，協助選擇較合適的分類；它不會替角色生成新的對話內容，也不會把聊天訊息、字卡文字、觸發關鍵字或分類結果上傳至開發者伺服器。</p>
+        </div>
+
+        <p><a href="../guide.html">返回使用說明</a></p>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- 简体中文                                                       -->
+      <!-- ============================================================ -->
+      <article data-lang="zh-Hans">
+        <h1>智能辅助设置技巧</h1>
+        <p class="meta">对应版本：v2.8.0</p>
+
+        <p class="lead">这份说明适合正在整理字卡库、字卡组与触发关键词的用户。智能辅助会依据收到的新消息，从字卡组名称、适用情境、触发关键词与字卡内容中找出最适合的字卡组；其中「触发关键词」是最明确、最适合用来引导话题的信号。</p>
+
+        <nav class="guide-toc" aria-label="智能辅助设置技巧目录">
+          <a href="#zh-hans-basics">先记住三件事</a>
+          <a href="#zh-hans-modes">模式怎么选</a>
+          <a href="#zh-hans-keywords">关键词怎么写</a>
+          <a href="#zh-hans-checklist">快速检查</a>
+          <a href="#zh-hans-faq">常见问题</a>
+        </nav>
+
+        <h2 id="zh-hans-basics">1. 先记住三件事</h2>
+        <ol class="guide-steps">
+          <li>关键词要写「你可能会发给角色的话」，不是角色要回复的话。</li>
+          <li>越独特、越像一个完整情境的关键词，越容易接对字卡组。</li>
+          <li>太短、太常见、到处都会出现的字，容易让判断变模糊。</li>
+        </ol>
+
+        <p>智能辅助主要用本次新收到的用户轮次做判断。若你连续发出几条短消息，中间没有角色回复，系统会把短时间内的连续用户消息一起视为本轮上下文；引用回复或承接角色上一句话时，旧内容只会作为弱情境上下文。</p>
+
+        <h2 id="zh-hans-modes">2. 智能辅助模式怎么选</h2>
+        <ul>
+          <li>「关闭」：不做字卡组智能判断，回到一般字卡选择。</li>
+          <li>「自然」：默认建议。明确命中会稳定选组；多个合理情境分数接近时，会自然分岔。</li>
+          <li>「精准」：优先固定选最高分字卡组，适合想要最稳定分类的角色。</li>
+          <li>「多变」：放宽合理候选范围，让同一句开放式消息更容易出现不同情境。</li>
+        </ul>
+
+        <p class="guide-note">「智能辅助」决定主要字卡组怎么选；「随机性」是在主要字卡组选定后，决定要不要混入通用或其他字卡。随机性调低时，已选定主要字卡组之后仍只会从该组抽卡；但在自然或多变模式下，主要字卡组本身可能在多个合理字卡组之间分岔。</p>
+
+        <h2 id="zh-hans-keywords">3. 关键词怎么写</h2>
+        <h3>用自然会出现在消息里的词</h3>
+        <p>把自己代入聊天现场，想象用户真的会怎么说。比起只写「安慰」，更适合写「我今天好累」「压力很大」「想哭」「被骂了」。比起只写「睡觉」，更适合写「晚安」「睡不着」「熬夜」「梦到你」。</p>
+
+        <h3>优先放独特名词与完整短句</h3>
+        <p>角色名、昵称、作品名、地名、事件名，或只有某个字卡组才会用到的词，都很适合放进触发关键词。像 <code>你是不是吃醋</code>、<code>我梦到你</code>、<code>被主管骂</code>、<code>明天考试</code>，都比单独的 <code>好</code>、<code>你</code>、<code>累</code> 更能判断情境。</p>
+
+        <h3>一个字卡组放多个角度</h3>
+        <p>比起只放一条完整句子，通常更适合放 5 到 12 个会从不同角度碰到同一情境的关键词。例如「睡前陪伴」可以放 <code>晚安</code>、<code>睡不着</code>、<code>熬夜</code>、<code>想睡了</code>、<code>梦到你</code>、<code>今晚来梦里</code>。</p>
+
+        <h3>相似字卡组要放差异点</h3>
+        <p>如果有「和你去旅行」与「和朋友去旅行」两组，请把 <code>你</code>、<code>朋友</code>、<code>我们</code>、<code>同学</code> 这类能区分方向的词写清楚。中文互动句也建议把方向写完整，因为 <code>你哄我</code> 和 <code>我哄你</code>、<code>你帮我</code> 和 <code>我帮你</code> 是完全不同的情境。</p>
+
+        <h3>适用情境补上下文，触发关键词放决定性线索</h3>
+        <p>「适用情境」适合写一段人看得懂的说明，例如这组字卡在什么情绪、什么场景、什么关系中使用。「触发关键词」则适合放最可能直接命中的词，例如你真的可能输入的短句、名词、昵称与情境线索。</p>
+
+        <p class="guide-note">不要只靠字卡内容来触发。字卡是「角色要回复的话」，不一定等于「你会发给角色的话」。重要字卡组请补上字卡组名称、适用情境与触发关键词。</p>
+
+        <h2 id="zh-hans-checklist">4. 快速检查清单</h2>
+        <ul>
+          <li>这些关键词是不是你或聊天者真的可能输入的话？</li>
+          <li>有没有至少几个两字以上、比较独特的词？</li>
+          <li>有没有避开只用 <code>好</code>、<code>嗯</code>、<code>你</code>、<code>我</code>、<code>今天</code> 这类泛用词？</li>
+          <li>相似字卡组之间，有没有写出真正的差异点？</li>
+          <li>字卡组本身有没有足够的字卡可抽？</li>
+        </ul>
+
+        <h2 id="zh-hans-faq">5. 常见问题</h2>
+        <div class="faq-item">
+          <p class="q">明明有设置，却没有接到这组？</p>
+          <p class="a">先把实际触发回复的那句话加入触发关键词，或拆成几个更自然的短句。也可以检查这组是否只有很泛的词，像「累」「今天」「不开心」，需要补上更具体的情境。</p>
+        </div>
+        <div class="faq-item">
+          <p class="q">接到正确字卡组，但偶尔回复还是偏题？</p>
+          <p class="a">这通常和「随机性」有关。智能辅助先选出最符合的字卡组，随机性再决定要不要混入通用或其他字卡组。想让回复更稳定，可以把随机性调低，并增加该字卡组里可用的回复。</p>
+        </div>
+        <div class="faq-item">
+          <p class="q">Apple Intelligence 会帮我生成回复吗？</p>
+          <p class="a">不会。智能辅助只会选择既有字卡组，再从字卡库中抽取回复。系统可能会在设备端使用 Apple 提供的语言处理框架，例如 Natural Language framework，以及在兼容设备上的 Apple Intelligence / Foundation Models，协助选择较合适的分类；它不会替角色生成新的对话内容，也不会把聊天消息、字卡文字、触发关键词或分类结果上传至开发者服务器。</p>
+        </div>
+
+        <p><a href="../guide.html">返回使用说明</a></p>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- 日本語                                                         -->
+      <!-- ============================================================ -->
+      <article data-lang="ja">
+        <h1>スマートアシスト設定のコツ</h1>
+        <p class="meta">対応バージョン：v2.8.0</p>
+
+        <p class="lead">このページは、定型文集、定型文セット、トリガーキーワードを整理する方向けです。スマートアシストは、新しく受信したメッセージをもとに、セット名、使う場面、トリガーキーワード、定型文の内容から、より合う定型文セットを選びます。特に「トリガーキーワード」は、話題を導くためのもっとも明確な手がかりです。</p>
+
+        <nav class="guide-toc" aria-label="スマートアシスト設定のコツ目次">
+          <a href="#ja-basics">基本</a>
+          <a href="#ja-modes">モード</a>
+          <a href="#ja-keywords">キーワード</a>
+          <a href="#ja-checklist">チェック</a>
+          <a href="#ja-faq">よくある質問</a>
+        </nav>
+
+        <h2 id="ja-basics">1. まず覚えておきたいこと</h2>
+        <ol class="guide-steps">
+          <li>キーワードには「ユーザーがキャラクターに送りそうな言葉」を入れます。キャラクターが返す言葉ではありません。</li>
+          <li>具体的で、ひとつの場面が想像できるキーワードほど、合う定型文セットを選びやすくなります。</li>
+          <li>短すぎる言葉や、どこにでも出る言葉だけだと、判断があいまいになります。</li>
+        </ol>
+
+        <p>スマートアシストは主に、今回新しく届いたユーザー側の発話を見て判断します。キャラクターの返信をはさまず短いメッセージを続けて送った場合、その短時間の連続メッセージも同じ文脈として扱われます。引用返信や直前のキャラクター発話は、弱い文脈としてだけ使われます。</p>
+
+        <h2 id="ja-modes">2. モードの選び方</h2>
+        <ul>
+          <li>「オフ」：スマートな定型文セット選択を使わず、通常の選択に戻します。</li>
+          <li>「自然」：おすすめの初期設定です。明確な一致は安定して選び、複数の自然な場面が近いときは自然に分岐します。</li>
+          <li>「精密」：もっとも高いスコアのセットを優先します。安定した分類にしたいキャラクターに向いています。</li>
+          <li>「多彩」：妥当な候補を少し広げ、同じ開かれたメッセージでも違う場面が出やすくなります。</li>
+        </ul>
+
+        <p class="guide-note">スマートアシストは、どの primary 定型文セットを選ぶかを決めます。「ランダム性」は、その primary が決まった後に、基本セットや他のセットを混ぜるかどうかに影響します。</p>
+
+        <h2 id="ja-keywords">3. キーワードの書き方</h2>
+        <h3>実際のメッセージに出そうな言葉を使う</h3>
+        <p>チャットの場面を想像し、ユーザーが本当に送りそうな表現を書きます。「慰め」だけより、<code>今日すごく疲れた</code>、<code>つらい</code>、<code>泣きそう</code> のような言葉のほうが判断しやすくなります。</p>
+
+        <h3>固有名詞や短い文を優先する</h3>
+        <p>キャラクター名、あだ名、作品名、場所、イベント名、その定型文セットだけで使う言葉は良い手がかりです。<code>やきもち焼いてる？</code>、<code>夢に出てきた</code>、<code>明日テスト</code> のような短い文は、単語だけより場面を伝えやすくなります。</p>
+
+        <h3>ひとつのセットに複数の角度を入れる</h3>
+        <p>1つの長い文だけを入れるより、同じ場面に触れるキーワードを 5 から 12 個ほど入れるのがおすすめです。たとえば「寝る前の会話」なら、<code>おやすみ</code>、<code>眠れない</code>、<code>夜更かし</code>、<code>夢に出てきて</code> などを入れます。</p>
+
+        <h3>似たセットには違いが分かる言葉を入れる</h3>
+        <p>似た定型文セットがある場合は、違いを表す言葉を明確にします。日本語や中国語の会話では、誰が誰にするのかも大切です。たとえば「私をなぐさめて」と「あなたをなぐさめたい」は、別の場面として分けて書くと安定します。</p>
+
+        <h3>使う場面とトリガーキーワードを分ける</h3>
+        <p>「使う場面」には、人が読んで分かる説明を書きます。「トリガーキーワード」には、実際にメッセージに出そうな短い文、名詞、あだ名、場面の手がかりを入れます。</p>
+
+        <p class="guide-note">定型文の本文だけに頼らないでください。定型文は「キャラクターが返す言葉」であり、「ユーザーが送る言葉」とは限りません。大切なセットには、セット名、使う場面、トリガーキーワードを入れておくと安定します。</p>
+
+        <h2 id="ja-checklist">4. チェックリスト</h2>
+        <ul>
+          <li>そのキーワードは、ユーザーが実際に送りそうな言葉ですか？</li>
+          <li>具体的で、2文字以上の手がかりがいくつか入っていますか？</li>
+          <li>「うん」「はい」「私」「あなた」「今日」だけに頼っていませんか？</li>
+          <li>似たセット同士で、違いが分かる言葉を入れていますか？</li>
+          <li>その定型文セットには、十分な定型文がありますか？</li>
+        </ul>
+
+        <h2 id="ja-faq">5. よくある質問</h2>
+        <div class="faq-item">
+          <p class="q">設定したのに、そのセットが選ばれません。</p>
+          <p class="a">実際に送ったメッセージを、そのまま、またはいくつかの自然な短い言葉に分けてトリガーキーワードへ追加してください。一般的すぎる言葉だけになっていないかも確認します。</p>
+        </div>
+        <div class="faq-item">
+          <p class="q">正しいセットは選ばれるのに、たまに返信がずれます。</p>
+          <p class="a">多くの場合は「ランダム性」の影響です。より安定させたい場合はランダム性を下げ、そのセット内で使える定型文を増やしてください。</p>
+        </div>
+        <div class="faq-item">
+          <p class="q">Apple Intelligence が返信文を生成しますか？</p>
+          <p class="a">いいえ。スマートアシストは既存の定型文セットを選び、定型文集から返信を選ぶだけです。端末上で Apple の Natural Language framework や、対応端末では Apple Intelligence / Foundation Models を分類補助に使う場合がありますが、新しい会話文は生成せず、チャットメッセージ、定型文本文、トリガーキーワード、分類結果を開発者のサーバーへアップロードすることもありません。</p>
+        </div>
+
+        <p><a href="../guide.html">使い方ガイドへ戻る</a></p>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- English                                                       -->
+      <!-- ============================================================ -->
+      <article data-lang="en">
+        <h1>Smart Assist Setup Tips</h1>
+        <p class="meta">Applies to version v2.8.0</p>
+
+        <p class="lead">This page helps you tune chat phrase libraries, phrase sets, and trigger keywords. Smart Assist uses the latest incoming message, phrase set name, usage context, trigger keywords, and chat phrase text to choose the most relevant phrase set. Trigger keywords are the clearest signal for guiding a topic.</p>
+
+        <nav class="guide-toc" aria-label="Smart Assist setup tips table of contents">
+          <a href="#en-basics">Basics</a>
+          <a href="#en-modes">Modes</a>
+          <a href="#en-keywords">Keywords</a>
+          <a href="#en-checklist">Checklist</a>
+          <a href="#en-faq">FAQ</a>
+        </nav>
+
+        <h2 id="en-basics">1. Three Things to Remember</h2>
+        <ol class="guide-steps">
+          <li>Write what you might send to the character, not what the character should say back.</li>
+          <li>Specific keywords that feel like a complete situation are easier to match.</li>
+          <li>Very short or very common words can make the decision ambiguous.</li>
+        </ol>
+
+        <p>Smart Assist mainly evaluates the current user turn. If you send several short messages before the character replies, DreamChat treats those nearby user messages as the current context. Quoted replies or the character's previous message are used only as weaker context.</p>
+
+        <h2 id="en-modes">2. Choosing a Smart Assist Mode</h2>
+        <ul>
+          <li>Off: returns to regular phrase selection without Smart Assist phrase-set judgment.</li>
+          <li>Natural: the recommended default. Clear matches stay steady; close reasonable contexts can branch naturally.</li>
+          <li>Precise: favors the top-scoring phrase set, useful when you want the most stable classification.</li>
+          <li>Varied: allows a wider reasonable candidate pool so open-ended messages can vary more.</li>
+        </ul>
+
+        <p class="guide-note">Smart Assist decides which primary phrase set to use. Randomness applies after that choice, controlling whether replies can mix in General or other phrase sets. Lower randomness keeps replies steadier; Natural or Varied can still choose between several reasonable primary sets when their scores are close.</p>
+
+        <h2 id="en-keywords">3. Writing Better Keywords</h2>
+        <h3>Use words that would appear in a real message</h3>
+        <p>Think like the person chatting. Instead of only writing "comfort," use phrases like <code>I'm tired today</code>, <code>I'm stressed</code>, <code>I want to cry</code>, or <code>I got scolded</code>. Instead of only writing "sleep," use <code>good night</code>, <code>I can't sleep</code>, <code>stayed up late</code>, or <code>dreamed about you</code>.</p>
+
+        <h3>Prioritize unique nouns and short complete phrases</h3>
+        <p>Character names, nicknames, titles, places, events, and words that only belong to one phrase set are strong clues. Phrases like <code>are you jealous</code>, <code>I dreamed about you</code>, <code>my manager scolded me</code>, or <code>exam tomorrow</code> usually work better than single common words.</p>
+
+        <h3>Add several angles to one phrase set</h3>
+        <p>Instead of one long sentence, add 5 to 12 natural variations that point to the same situation. For a bedtime set, you might include <code>good night</code>, <code>I can't sleep</code>, <code>staying up late</code>, <code>I'm sleepy</code>, <code>dream about you</code>, and <code>come to my dream tonight</code>.</p>
+
+        <h3>Give similar sets clear differences</h3>
+        <p>If two sets are similar, write the words that separate them. For Chinese interaction direction, write the subject and object clearly: <code>you comfort me</code> and <code>I comfort you</code>, or <code>you help me</code> and <code>I help you</code>, are different situations.</p>
+
+        <h3>Use context for background and keywords for decisive clues</h3>
+        <p>Usage Context is best for a readable description of the emotion, scene, or relationship where a phrase set should be used. Trigger Keywords are best for short phrases, nouns, nicknames, and situation clues that may appear directly in a message.</p>
+
+        <p class="guide-note">Do not rely only on chat phrase text. Chat phrases are what the character says back; they may not match what you would send to the character. For important phrase sets, fill in the set name, usage context, and trigger keywords.</p>
+
+        <h2 id="en-checklist">4. Quick Checklist</h2>
+        <ul>
+          <li>Are these keywords things you or the other chatter might actually type?</li>
+          <li>Do you have several specific keywords longer than one character or word?</li>
+          <li>Are you avoiding relying only on common words like <code>okay</code>, <code>you</code>, <code>me</code>, or <code>today</code>?</li>
+          <li>Do similar phrase sets include the words that make them different?</li>
+          <li>Does the phrase set have enough chat phrases to draw from?</li>
+        </ul>
+
+        <h2 id="en-faq">5. FAQ</h2>
+        <div class="faq-item">
+          <p class="q">I set it up, but this phrase set was not chosen.</p>
+          <p class="a">Add the actual message that triggered the reply to Trigger Keywords, or split it into a few natural short phrases. Also check whether the set only uses broad words like "tired," "today," or "sad"; those usually need more specific context.</p>
+        </div>
+        <div class="faq-item">
+          <p class="q">The right phrase set is chosen, but some replies still drift.</p>
+          <p class="a">That is usually related to Randomness. Smart Assist chooses the best phrase set first; Randomness then decides whether General or other phrase sets can mix in. Lower Randomness and add more usable phrases inside the matched set for steadier replies.</p>
+        </div>
+        <div class="faq-item">
+          <p class="q">Does Apple Intelligence generate replies?</p>
+          <p class="a">No. Smart Assist only chooses from existing phrase sets, then DreamChat draws from your chat phrase library. The app may use Apple-provided language processing frameworks, such as the Natural Language framework, and on compatible devices Apple Intelligence / Foundation Models, on device to help choose a category. It does not generate new conversation text, and it does not upload chat messages, chat phrase text, trigger keywords, or classification results to the developer's servers.</p>
+        </div>
+
+        <p><a href="../guide.html">Back to User Guide</a></p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="../articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="../lang.js"></script>
+</body>
+</html>
