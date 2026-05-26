@@ -77,10 +77,31 @@
         en: 'Detailed help pages for setup steps and behavior notes.'
       },
       text: {
-        'zh-Hant': '詳細說明 功能文章 版本更新 聊天室導覽 智慧輔助 字卡庫格式轉換 情境標籤',
-        'zh-Hans': '详细说明 功能文章 版本更新 聊天室导览 智能辅助 字卡库格式转换 情境标签',
-        ja: '詳しい説明 記事 アップデート チャット画面ガイド スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
-        en: 'detailed help articles version update chatroom guide smart assist phrase library converter context tags'
+        'zh-Hant': '詳細說明 功能文章 版本更新 即將推出 視訊通話 天氣提醒 分享檔 備份檔 聊天室導覽 智慧輔助 字卡庫格式轉換 情境標籤',
+        'zh-Hans': '详细说明 功能文章 版本更新 即将推出 视频通话 天气提醒 分享文件 备份文件 聊天室导览 智能辅助 字卡库格式转换 情境标签',
+        ja: '詳しい説明 記事 アップデート 近日公開 ビデオ通話 天気リマインダー 共有ファイル バックアップ チャット画面ガイド スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
+        en: 'detailed help articles version update coming soon video calls weather reminders share files backup files chatroom guide smart assist phrase library converter context tags'
+      }
+    },
+    {
+      url: 'articles/v3-0-0-update.html',
+      title: {
+        'zh-Hant': '3.0.0 版本更新內容',
+        'zh-Hans': '3.0.0 版本更新内容',
+        ja: '3.0.0 アップデート内容',
+        en: "What's New in 3.0.0"
+      },
+      description: {
+        'zh-Hant': '模擬視訊通話、天氣提醒、情境包含 / 排除標籤、分享檔與備份檔格式更新、長範圍截圖穩定性。',
+        'zh-Hans': '模拟视频通话、天气提醒、情境包含 / 排除标签、分享文件与备份文件格式更新、长范围截图稳定性。',
+        ja: '模擬ビデオ通話、天気リマインダー、コンテキストタグの含める / 除外、共有ファイルとバックアップ形式の更新、長い範囲のスクリーンショット安定化。',
+        en: 'Simulated video calls, weather reminders, Include/Exclude context tags, updated share and backup file formats, and steadier long-range screenshots.'
+      },
+      text: {
+        'zh-Hant': '3.0.0 版本更新 即將推出 Build 37 視訊通話 讓他來電 本機通知 天氣提醒 WeatherKit 目前位置 聊天情境 包含情境 排除情境 情境標籤 字卡組 貼圖群組 分享檔 備份檔 格式更新 匯出 匯入 dreamchatstickers dreamchatcharacter dreamchatbackup 長範圍截圖 匿名截圖 通話背景 短影片',
+        'zh-Hans': '3.0.0 版本更新 即将推出 Build 37 视频通话 让他来电 本地通知 天气提醒 WeatherKit 当前位置 聊天情境 包含情境 排除情境 情境标签 字卡组 表情包群组 分享文件 备份文件 格式更新 导出 导入 dreamchatstickers dreamchatcharacter dreamchatbackup 长范围截图 匿名截图 通话背景 短视频',
+        ja: '3.0.0 アップデート 近日公開 Build 37 ビデオ通話 あとでかけて ローカル通知 天気リマインダー WeatherKit 現在地 チャット コンテキスト 含める 除外 タグ 定型文セット スタンプグループ 共有ファイル バックアップ 形式更新 書き出し 読み込み dreamchatstickers dreamchatcharacter dreamchatbackup 長い範囲 スクリーンショット 匿名 通話背景 動画',
+        en: '3.0.0 update coming soon Build 37 video calls ask them to call local notifications weather reminders WeatherKit current location chat context include exclude tags phrase groups sticker groups share files backup files format update export import dreamchatstickers dreamchatcharacter dreamchatbackup long-range screenshots anonymous call backgrounds short videos'
       }
     },
     {

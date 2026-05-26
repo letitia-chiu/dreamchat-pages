@@ -9,6 +9,7 @@ Live site:
 - Home: https://letitia-chiu.github.io/dreamchat-pages/
 - User Guide: https://letitia-chiu.github.io/dreamchat-pages/guide.html
 - Articles: https://letitia-chiu.github.io/dreamchat-pages/articles.html
+- v3.0.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v3-0-0-update.html
 - v2.9.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v2-9-0-update.html
 - Chatroom Screen Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/chatroom-screen-guide.html
 - Context Tags Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/context-tags.html
@@ -23,6 +24,7 @@ Live site:
 - `index.html` - DreamChat overview and links to support/privacy pages
 - `guide.html` - public user guide for first-time users
 - `articles.html` - guide article index
+- `articles/v3-0-0-update.html` - v3.0.0 public update notes
 - `articles/v2-9-0-update.html` - v2.9.0 public update notes
 - `articles/chatroom-screen-guide.html` - guide to chatroom menus and controls
 - `articles/context-tags.html` - detailed guide for context tags
