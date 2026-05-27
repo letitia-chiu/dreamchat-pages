@@ -239,16 +239,16 @@
         en: 'Privacy Policy'
       },
       description: {
-        'zh-Hant': '了解本機資料、權限、智慧輔助、診斷與備份如何處理。',
-        'zh-Hans': '了解本机数据、权限、智能辅助、诊断与备份如何处理。',
-        ja: '端末内データ、権限、スマートアシスト、診断、バックアップの扱いを確認できます。',
-        en: 'Learn how local data, permissions, Smart Assist, diagnostics, and backups are handled.'
+        'zh-Hant': '了解本機資料、權限、智慧輔助、語音訊息、診斷與備份如何處理。',
+        'zh-Hans': '了解本机数据、权限、智能辅助、语音消息、诊断与备份如何处理。',
+        ja: '端末内データ、権限、スマートアシスト、音声メッセージ、診断、バックアップの扱いを確認できます。',
+        en: 'Learn how local data, permissions, Smart Assist, voice messages, diagnostics, and backups are handled.'
       },
       text: {
-        'zh-Hant': '隱私 本機資料 Apple Music 照片 智慧輔助 診斷 備份 localStorage',
-        'zh-Hans': '隐私 本机数据 Apple Music 照片 智能辅助 诊断 备份 localStorage',
-        ja: 'プライバシー 端末内データ Apple Music 写真 スマートアシスト 診断 バックアップ localStorage',
-        en: 'privacy local data Apple Music Photos Smart Assist diagnostics backup localStorage'
+        'zh-Hant': '隱私 本機資料 Apple Music 照片 智慧輔助 語音訊息 語音包 診斷 備份 localStorage',
+        'zh-Hans': '隐私 本机数据 Apple Music 照片 智能辅助 语音消息 语音包 诊断 备份 localStorage',
+        ja: 'プライバシー 端末内データ Apple Music 写真 スマートアシスト 音声メッセージ 音声パッケージ 診断 バックアップ localStorage',
+        en: 'privacy local data Apple Music Photos Smart Assist voice messages voice packages diagnostics backup localStorage'
       }
     },
     {
@@ -260,16 +260,16 @@
         en: 'Support and FAQ'
       },
       description: {
-        'zh-Hant': '訂閱、恢復購買、權限、匯入匯出、資料刪除與聯絡方式。',
-        'zh-Hans': '订阅、恢复购买、权限、导入导出、数据删除与联系方式。',
-        ja: 'サブスクリプション、購入復元、権限、読み込み・書き出し、データ削除、連絡先。',
-        en: 'Subscriptions, restore purchases, permissions, import/export, data deletion, and contact.'
+        'zh-Hant': '訂閱、語音擴充購買、恢復購買、權限、匯入匯出、資料刪除與聯絡方式。',
+        'zh-Hans': '订阅、语音扩充购买、恢复购买、权限、导入导出、数据删除与联系方式。',
+        ja: 'サブスクリプション、音声拡張購入、購入復元、権限、読み込み・書き出し、データ削除、連絡先。',
+        en: 'Subscriptions, voice expansion purchases, restore purchases, permissions, import/export, data deletion, and contact.'
       },
       text: {
-        'zh-Hant': '支援 FAQ 訂閱 恢復購買 權限 智慧輔助 匯入 匯出 刪除資料 聯絡',
-        'zh-Hans': '支持 FAQ 订阅 恢复购买 权限 智能辅助 导入 导出 删除数据 联系',
-        ja: 'サポート FAQ サブスクリプション 購入復元 権限 スマートアシスト 読み込み 書き出し データ削除 連絡',
-        en: 'support FAQ subscription restore purchases permissions Smart Assist import export delete data contact'
+        'zh-Hant': '支援 FAQ 訂閱 語音擴充 恢復購買 權限 智慧輔助 語音訊息 匯入 匯出 刪除資料 聯絡',
+        'zh-Hans': '支持 FAQ 订阅 语音扩充 恢复购买 权限 智能辅助 语音消息 导入 导出 删除数据 联系',
+        ja: 'サポート FAQ サブスクリプション 音声拡張 購入復元 権限 スマートアシスト 音声メッセージ 読み込み 書き出し データ削除 連絡',
+        en: 'support FAQ subscription voice expansion restore purchases permissions Smart Assist voice messages import export delete data contact'
       }
     },
     {
