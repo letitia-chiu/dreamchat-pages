@@ -77,10 +77,10 @@
         en: 'Detailed help pages for setup steps and behavior notes.'
       },
       text: {
-        'zh-Hant': '詳細說明 功能文章 版本更新 即將推出 視訊通話 天氣提醒 分享檔 備份檔 聊天室導覽 智慧輔助 字卡庫格式轉換 情境標籤',
-        'zh-Hans': '详细说明 功能文章 版本更新 即将推出 视频通话 天气提醒 分享文件 备份文件 聊天室导览 智能辅助 字卡库格式转换 情境标签',
-        ja: '詳しい説明 記事 アップデート 近日公開 ビデオ通話 天気リマインダー 共有ファイル バックアップ チャット画面ガイド スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
-        en: 'detailed help articles version update coming soon video calls weather reminders share files backup files chatroom guide smart assist phrase library converter context tags'
+        'zh-Hant': '詳細說明 功能文章 版本更新 新推出 視訊通話 天氣提醒 分享檔 備份檔 聊天室導覽 智慧輔助 字卡庫格式轉換 情境標籤',
+        'zh-Hans': '详细说明 功能文章 版本更新 新推出 视频通话 天气提醒 分享文件 备份文件 聊天室导览 智能辅助 字卡库格式转换 情境标签',
+        ja: '詳しい説明 記事 アップデート 新着 ビデオ通話 天気リマインダー 共有ファイル バックアップ チャット画面ガイド スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
+        en: 'detailed help articles version update new video calls weather reminders share files backup files chatroom guide smart assist phrase library converter context tags'
       }
     },
     {
@@ -98,10 +98,73 @@
         en: 'Simulated video calls, weather reminders, Include/Exclude context tags, updated share and backup file formats, and steadier long-range screenshots.'
       },
       text: {
-        'zh-Hant': '3.0.0 版本更新 即將推出 Build 37 視訊通話 讓他來電 本機通知 天氣提醒 WeatherKit 目前位置 聊天情境 包含情境 排除情境 情境標籤 字卡組 貼圖群組 分享檔 備份檔 格式更新 匯出 匯入 dreamchatstickers dreamchatcharacter dreamchatbackup 長範圍截圖 匿名截圖 通話背景 短影片',
-        'zh-Hans': '3.0.0 版本更新 即将推出 Build 37 视频通话 让他来电 本地通知 天气提醒 WeatherKit 当前位置 聊天情境 包含情境 排除情境 情境标签 字卡组 表情包群组 分享文件 备份文件 格式更新 导出 导入 dreamchatstickers dreamchatcharacter dreamchatbackup 长范围截图 匿名截图 通话背景 短视频',
-        ja: '3.0.0 アップデート 近日公開 Build 37 ビデオ通話 あとでかけて ローカル通知 天気リマインダー WeatherKit 現在地 チャット コンテキスト 含める 除外 タグ 定型文セット スタンプグループ 共有ファイル バックアップ 形式更新 書き出し 読み込み dreamchatstickers dreamchatcharacter dreamchatbackup 長い範囲 スクリーンショット 匿名 通話背景 動画',
-        en: '3.0.0 update coming soon Build 37 video calls ask them to call local notifications weather reminders WeatherKit current location chat context include exclude tags phrase groups sticker groups share files backup files format update export import dreamchatstickers dreamchatcharacter dreamchatbackup long-range screenshots anonymous call backgrounds short videos'
+        'zh-Hant': '3.0.0 版本更新 新推出 Build 37 視訊通話 讓他來電 本機通知 天氣提醒 WeatherKit 目前位置 聊天情境 包含情境 排除情境 情境標籤 字卡組 貼圖群組 分享檔 備份檔 格式更新 匯出 匯入 dreamchatstickers dreamchatcharacter dreamchatbackup 長範圍截圖 匿名截圖 通話背景 短影片',
+        'zh-Hans': '3.0.0 版本更新 新推出 Build 37 视频通话 让他来电 本地通知 天气提醒 WeatherKit 当前位置 聊天情境 包含情境 排除情境 情境标签 字卡组 表情包群组 分享文件 备份文件 格式更新 导出 导入 dreamchatstickers dreamchatcharacter dreamchatbackup 长范围截图 匿名截图 通话背景 短视频',
+        ja: '3.0.0 アップデート 新着 Build 37 ビデオ通話 あとでかけて ローカル通知 天気リマインダー WeatherKit 現在地 チャット コンテキスト 含める 除外 タグ 定型文セット スタンプグループ 共有ファイル バックアップ 形式更新 書き出し 読み込み dreamchatstickers dreamchatcharacter dreamchatbackup 長い範囲 スクリーンショット 匿名 通話背景 動画',
+        en: '3.0.0 update new Build 37 video calls ask them to call local notifications weather reminders WeatherKit current location chat context include exclude tags phrase groups sticker groups share files backup files format update export import dreamchatstickers dreamchatcharacter dreamchatbackup long-range screenshots anonymous call backgrounds short videos'
+      }
+    },
+    {
+      url: 'articles/weather-reminder-guide.html',
+      title: {
+        'zh-Hant': '天氣提醒詳細說明',
+        'zh-Hans': '天气提醒详细说明',
+        ja: '天気リマインダー詳しい説明',
+        en: 'Weather Reminder Guide'
+      },
+      description: {
+        'zh-Hant': '設定每日天氣提醒、地區、聊天中詢問天氣與提醒字卡。',
+        'zh-Hans': '设置每日天气提醒、地区、聊天中询问天气与提醒字卡。',
+        ja: '毎日の天気リマインダー、地域、チャット内質問、定型文を設定します。',
+        en: 'Set up daily weather reminders, regions, in-chat weather questions, and phrases.'
+      },
+      text: {
+        'zh-Hant': '天氣提醒 功能說明 新功能 WeatherKit 手動地區 目前位置 定位權限 聊天中詢問 氣溫 天氣 提醒字卡 fallback default reminder',
+        'zh-Hans': '天气提醒 功能说明 新功能 WeatherKit 手动地区 当前位置 定位权限 聊天中询问 气温 天气 提醒字卡 fallback default reminder',
+        ja: '天気リマインダー 機能説明 新機能 WeatherKit 手動地域 現在地 位置情報 チャット内質問 気温 天気 定型文 fallback default reminder',
+        en: 'weather reminder feature guide new feature WeatherKit manual region current location permission ask in chat temperature weather phrases fallback default reminder'
+      }
+    },
+    {
+      url: 'articles/weather-reminder-phrase-tips.html',
+      title: {
+        'zh-Hant': '天氣提醒專用字卡設定技巧',
+        'zh-Hans': '天气提醒专用字卡设置技巧',
+        ja: '天気リマインダー専用定型文のコツ',
+        en: 'Weather Reminder Phrase Tips'
+      },
+      description: {
+        'zh-Hant': '了解氣溫狀況與天氣狀況如何組句，讓提醒文字更自然。',
+        'zh-Hans': '了解气温状况与天气状况如何组句，让提醒文字更自然。',
+        ja: '気温の状態と天気の状態を自然に組み合わせるコツ。',
+        en: 'Write temperature and weather condition phrases that combine naturally.'
+      },
+      text: {
+        'zh-Hant': '設定技巧 新功能 天氣提醒 字卡 氣溫狀況 天氣狀況 組句 炎熱 微涼 下雨 風大 溫差大',
+        'zh-Hans': '设置技巧 新功能 天气提醒 字卡 气温状况 天气状况 组句 炎热 微凉 下雨 风大 温差大',
+        ja: '設定のコツ 新機能 天気リマインダー 定型文 気温 天気 組み合わせ 暑い 涼しい 雨 風 寒暖差',
+        en: 'setup tips new feature weather reminder phrases temperature conditions weather conditions composition hot cool rain windy temperature swing'
+      }
+    },
+    {
+      url: 'articles/video-call-guide.html',
+      title: {
+        'zh-Hant': '視訊通話詳細說明',
+        'zh-Hans': '视频通话详细说明',
+        ja: 'ビデオ通話詳しい説明',
+        en: 'Video Call Guide'
+      },
+      description: {
+        'zh-Hant': '設定視訊通話、主動來電、重撥、通話事件與 App 外通知限制。',
+        'zh-Hans': '设置视频通话、主动来电、重拨、通话事件与 App 外通知限制。',
+        ja: 'ビデオ通話、自発着信、再着信、通話イベント、アプリ外通知の制限。',
+        en: 'Set up Video Calls, incoming calls, redials, call events, and outside-app notification limits.'
+      },
+      text: {
+        'zh-Hant': '視訊通話 功能說明 新功能 模擬通話 讓他來電 主動來電 重撥 本機通知 CallKit VoIP 相機 麥克風 通話背景 短影片',
+        'zh-Hans': '视频通话 功能说明 新功能 模拟通话 让他来电 主动来电 重拨 本地通知 CallKit VoIP 摄像头 麦克风 通话背景 短视频',
+        ja: 'ビデオ通話 機能説明 新機能 模擬通話 あとでかけて 自発着信 再着信 ローカル通知 CallKit VoIP カメラ マイク 通話背景 動画',
+        en: 'video call feature guide new feature simulated call ask them to call incoming redial local notification CallKit VoIP camera microphone call background short video'
       }
     },
     {

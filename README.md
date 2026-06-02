@@ -10,6 +10,9 @@ Live site:
 - User Guide: https://letitia-chiu.github.io/dreamchat-pages/guide.html
 - Articles: https://letitia-chiu.github.io/dreamchat-pages/articles.html
 - v3.0.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v3-0-0-update.html
+- Weather Reminder Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/weather-reminder-guide.html
+- Weather Reminder Phrase Tips: https://letitia-chiu.github.io/dreamchat-pages/articles/weather-reminder-phrase-tips.html
+- Video Call Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/video-call-guide.html
 - v2.9.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v2-9-0-update.html
 - Chatroom Screen Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/chatroom-screen-guide.html
 - Context Tags Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/context-tags.html
@@ -25,6 +28,9 @@ Live site:
 - `guide.html` - public user guide for first-time users
 - `articles.html` - guide article index
 - `articles/v3-0-0-update.html` - v3.0.0 public update notes
+- `articles/weather-reminder-guide.html` - detailed Weather Reminder guide
+- `articles/weather-reminder-phrase-tips.html` - Weather Reminder phrase-writing tips
+- `articles/video-call-guide.html` - detailed Video Call guide
 - `articles/v2-9-0-update.html` - v2.9.0 public update notes
 - `articles/chatroom-screen-guide.html` - guide to chatroom menus and controls
 - `articles/context-tags.html` - detailed guide for context tags

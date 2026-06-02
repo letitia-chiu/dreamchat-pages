@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>天氣提醒詳細說明 | DreamChat</title>
+  <meta name="description" content="DreamChat v3.0.0 Weather Reminder guide: setup, region selection, in-chat weather questions, reminder phrases, and fallback behavior.">
+
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/articles/weather-reminder-guide.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/articles/weather-reminder-guide.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/articles/weather-reminder-guide.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/articles/weather-reminder-guide.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/articles/weather-reminder-guide.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/articles/weather-reminder-guide.html">
+  <meta property="og:title" content="天氣提醒詳細說明 | DreamChat">
+  <meta property="og:description" content="DreamChat v3.0.0 Weather Reminder guide: setup, region selection, in-chat weather questions, reminder phrases, and fallback behavior.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="天氣提醒詳細說明 | DreamChat">
+  <meta name="twitter:description" content="DreamChat v3.0.0 Weather Reminder guide: setup, region selection, in-chat weather questions, reminder phrases, and fallback behavior.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="">
+        <a href="../index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="../articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page guide-page">
+
+      <article data-lang="zh-Hant">
+        <div class="title-with-tag"><h1>天氣提醒詳細說明</h1><span class="status-tag status-tag-new">新功能</span></div>
+        <p class="meta">對應版本：v3.0.0</p>
+        <p class="lead">天氣提醒可以讓角色每天用自己的語氣提醒天氣，也能在聊天中回覆目前天氣。設定保存在裝置本機，手動選地區不需要定位權限。</p>
+        <nav class="guide-toc" aria-label="天氣提醒目錄"><a href="#zh-setup">設定方式</a><a href="#zh-location">地區</a><a href="#zh-chat">聊天詢問</a><a href="#zh-cards">提醒字卡</a><a href="#zh-fallback">資料不可用</a></nav>
+        <h2 id="zh-setup">1. 開啟天氣提醒</h2>
+        <p>路徑：<span class="guide-path">角色 → 角色設定 → 天氣提醒</span></p>
+        <ol class="guide-steps"><li>開啟「啟用提醒」。</li><li>選擇提醒要送到哪一個一對一聊天室。</li><li>設定提醒時間；需要自然一點時，可加入時間浮動。</li><li>設定地區後儲存。沒有有效地區時，設定可先保存，但不會送出天氣提醒或聊天天氣回覆。</li></ol>
+        <h2 id="zh-location">2. 選擇手動地區或目前位置</h2>
+        <p>「手動選擇地區」適合固定查看城市或旅行地點，搜尋城市或地區後選取即可，不會要求定位權限。</p>
+        <p>「自動所在地區」會在你按下使用目前位置後，才請求「使用 App 期間」位置權限。若位置刷新失敗，App 會優先使用已保存的位置；沒有可用地區時會改用本地預設提醒。</p>
+        <h2 id="zh-chat">3. 在聊天中詢問目前天氣</h2>
+        <p>開啟「在聊天中詢問」後，角色可依關鍵字回覆目前天氣。你可以加入「天氣」、「氣溫」、「下雨」、「帶傘」這類關鍵字，也可以開啟「觸發天氣回覆時，不傳送其他回覆」，讓命中天氣詢問時只送天氣訊息。</p>
+        <h2 id="zh-cards">4. 調整提醒字卡</h2>
+        <p>天氣提醒會依氣溫狀況與天氣狀況選擇文字，例如炎熱、微涼、雨勢較明顯、風比較大。你可以進入各狀況修改角色會說的句子，每個狀況最多保留 5 句。</p>
+        <p class="guide-note">字卡怎麼寫會影響最後組句是否自然。溫度狀況與天氣狀況的組句技巧請看 <a href="weather-reminder-phrase-tips.html?lang=zh-Hant">天氣提醒專用字卡設定技巧</a>。</p>
+        <h2 id="zh-fallback">5. WeatherKit 或資料暫時不可用時</h2>
+        <p>DreamChat 會嘗試使用可用的天氣資料；若 WeatherKit、目前天氣或地區資料暫時不可用，會使用本地 fallback/default reminder，不承諾固定文句，也不會把天氣設定上傳到開發者伺服器。</p>
+      </article>
+      <article data-lang="zh-Hans">
+        <div class="title-with-tag"><h1>天气提醒详细说明</h1><span class="status-tag status-tag-new">新功能</span></div>
+        <p class="meta">对应版本：v3.0.0</p>
+        <p class="lead">天气提醒可以让角色每天用自己的语气提醒天气，也能在聊天中回复当前天气。设置保存在设备本机，手动选地区不需要定位权限。</p>
+        <nav class="guide-toc" aria-label="天气提醒目录"><a href="#zh-hans-setup">设置方式</a><a href="#zh-hans-location">地区</a><a href="#zh-hans-chat">聊天询问</a><a href="#zh-hans-cards">提醒字卡</a><a href="#zh-hans-fallback">资料不可用</a></nav>
+        <h2 id="zh-hans-setup">1. 开启天气提醒</h2><p>路径：<span class="guide-path">角色 → 角色设置 → 天气提醒</span></p>
+        <ol class="guide-steps"><li>开启「启用提醒」。</li><li>选择提醒要送到哪一个一对一聊天室。</li><li>设置提醒时间；需要自然一点时，可加入时间浮动。</li><li>设置地区后保存。没有有效地区时，设置可先保存，但不会发送天气提醒或聊天天气回复。</li></ol>
+        <h2 id="zh-hans-location">2. 选择手动地区或当前位置</h2><p>「手动选择地区」适合固定查看城市或旅行地点，搜索城市或地区后选取即可，不会要求定位权限。</p><p>「自动所在地」会在你点使用当前位置后，才请求「使用 App 期间」位置权限。若位置刷新失败，App 会优先使用已保存的位置；没有可用地区时会改用本地默认提醒。</p>
+        <h2 id="zh-hans-chat">3. 在聊天中询问当前天气</h2><p>开启「在聊天中询问」后，角色可依关键词回复当前天气。你可以加入「天气」、「气温」、「下雨」、「带伞」这类关键词，也可以开启「触发天气回复时，不发送其他回复」，让命中天气询问时只发送天气消息。</p>
+        <h2 id="zh-hans-cards">4. 调整提醒字卡</h2><p>天气提醒会依气温状况与天气状况选择文字，例如炎热、微凉、雨势较明显、风比较大。你可以进入各状况修改角色会说的句子，每个状况最多保留 5 句。</p><p class="guide-note">字卡怎么写会影响最后组句是否自然。温度状况与天气状况的组句技巧请看 <a href="weather-reminder-phrase-tips.html?lang=zh-Hans">天气提醒专用字卡设置技巧</a>。</p>
+        <h2 id="zh-hans-fallback">5. WeatherKit 或资料暂时不可用时</h2><p>DreamChat 会尝试使用可用的天气资料；若 WeatherKit、当前天气或地区资料暂时不可用，会使用本地 fallback/default reminder，不承诺固定文句，也不会把天气设置上传到开发者服务器。</p>
+      </article>
+      <article data-lang="ja">
+        <div class="title-with-tag"><h1>天気リマインダー詳しい説明</h1><span class="status-tag status-tag-new">新機能</span></div>
+        <p class="meta">対応バージョン：v3.0.0</p><p class="lead">天気リマインダーでは、キャラクターが毎日そのキャラクターらしい言葉で天気を知らせたり、チャット内で現在の天気に答えたりできます。設定は端末内に保存され、手動で地域を選ぶ場合は位置情報権限を使いません。</p>
+        <nav class="guide-toc" aria-label="天気リマインダー目次"><a href="#ja-setup">設定</a><a href="#ja-location">地域</a><a href="#ja-chat">チャット質問</a><a href="#ja-cards">定型文</a><a href="#ja-fallback">取得できない場合</a></nav>
+        <h2 id="ja-setup">1. 天気リマインダーをオンにする</h2><p>場所：<span class="guide-path">キャラクター → キャラクター設定 → 天気リマインダー</span></p><ol class="guide-steps"><li>「リマインダーをオン」を有効にします。</li><li>送信先の1対1チャットを選びます。</li><li>通知時刻を設定します。自然に見せたい場合は時間のゆらぎも設定できます。</li><li>地域を設定して保存します。有効な地域がない場合、設定は保存できますが、リマインダーやチャット内の天気返信は送信されません。</li></ol>
+        <h2 id="ja-location">2. 手動地域または現在地を選ぶ</h2><p>「地域を手動で選択」は、決まった都市や旅行先を見たいときに使います。都市や地域を検索して選ぶだけで、位置情報権限は不要です。</p><p>「現在地を自動判定」は、現在地を使う操作をした後にだけ「App の使用中」の位置情報権限を求めます。更新に失敗した場合は保存済みの位置を優先し、使える地域がなければ端末内の既定リマインダーに切り替わります。</p>
+        <h2 id="ja-chat">3. チャット内で現在の天気を聞く</h2><p>「チャット内で質問」をオンにすると、キャラクターはキーワードに応じて現在の天気を返せます。「天気」「気温」「雨」「傘」などのキーワードを追加できます。「天気の返信が発生したとき、他の返信を送らない」をオンにすると、天気に該当したときは天気メッセージだけを送ります。</p>
+        <h2 id="ja-cards">4. リマインダー定型文を調整する</h2><p>天気リマインダーは、暑い、少し涼しい、雨が強め、風が強めなど、気温の状態と天気の状態に合わせて文を選びます。各状態の文は編集でき、1つの状態につき最大5件まで保存できます。</p><p class="guide-note">定型文の書き方で、最後の文の自然さが変わります。気温と天気の組み合わせ方は <a href="weather-reminder-phrase-tips.html?lang=ja">天気リマインダー専用定型文のコツ</a>をご覧ください。</p>
+        <h2 id="ja-fallback">5. WeatherKit やデータが一時的に使えない場合</h2><p>DreamChat は利用できる天気データを使います。WeatherKit、現在の天気、地域データが一時的に使えない場合は、端末内の fallback/default reminder を使います。固定の文面は保証せず、天気設定を開発者サーバーへアップロードしません。</p>
+      </article>
+      <article data-lang="en">
+        <div class="title-with-tag"><h1>Weather Reminder Guide</h1><span class="status-tag status-tag-new">New Feature</span></div>
+        <p class="meta">Applies to version v3.0.0</p><p class="lead">Weather Reminder lets a character send a daily weather note in their own tone and answer current-weather questions in chat. Settings stay on your device, and manual region selection does not require location permission.</p>
+        <nav class="guide-toc" aria-label="Weather reminder table of contents"><a href="#en-setup">Setup</a><a href="#en-location">Region</a><a href="#en-chat">Ask in Chat</a><a href="#en-cards">Phrases</a><a href="#en-fallback">Unavailable Data</a></nav>
+        <h2 id="en-setup">1. Turn On Weather Reminder</h2><p>Path: <span class="guide-path">Characters → Character Settings → Weather Reminder</span></p><ol class="guide-steps"><li>Enable Reminder.</li><li>Choose the one-on-one chat where the reminder should be sent.</li><li>Set the reminder time. Add time variation if you want it to feel less exact.</li><li>Set a region and save. Without a valid region, the settings can be saved, but reminders and chat weather replies will not be sent.</li></ol>
+        <h2 id="en-location">2. Choose Manual Region or Current Location</h2><p>Manual region is for a fixed city or travel destination. Search for a city or region and select it; no location permission is requested.</p><p>Automatic uses your current location only after you explicitly choose to use it, then asks for When In Use location permission. If refresh fails, the app tries the saved coordinates first. If no usable region is available, it falls back to a local default reminder.</p>
+        <h2 id="en-chat">3. Ask About Current Weather in Chat</h2><p>When Ask in Chat is enabled, the character can answer current-weather prompts that match keywords. Add keywords such as weather, temperature, rain, or umbrella. You can also enable Send only the weather reply when triggered so a matched weather question sends only the weather message.</p>
+        <h2 id="en-cards">4. Adjust Weather Reminder Phrases</h2><p>Weather Reminder chooses phrases from temperature conditions and weather conditions, such as Hot, Cool, Rain, or Windy. You can edit the lines for each condition, with up to 5 phrases per condition.</p><p class="guide-note">Phrase wording affects how natural the final sentence feels. For temperature and weather phrase composition, see <a href="weather-reminder-phrase-tips.html?lang=en">Weather Reminder Phrase Tips</a>.</p>
+        <h2 id="en-fallback">5. When WeatherKit or Weather Data Is Unavailable</h2><p>DreamChat uses available weather data when it can. If WeatherKit, current weather, or region data is temporarily unavailable, it uses a local fallback/default reminder. It does not promise a fixed fallback sentence, and weather settings are not uploaded to the developer's servers.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="../articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="../lang.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>視訊通話詳細說明 | DreamChat</title>
+  <meta name="description" content="DreamChat v3.0.0 Video Call guide: setup, incoming-call logic, local notifications, call events, and background behavior.">
+
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/articles/video-call-guide.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/articles/video-call-guide.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/articles/video-call-guide.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/articles/video-call-guide.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/articles/video-call-guide.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/articles/video-call-guide.html">
+  <meta property="og:title" content="視訊通話詳細說明 | DreamChat">
+  <meta property="og:description" content="DreamChat v3.0.0 Video Call guide: setup, incoming-call logic, local notifications, call events, and background behavior.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="視訊通話詳細說明 | DreamChat">
+  <meta name="twitter:description" content="DreamChat v3.0.0 Video Call guide: setup, incoming-call logic, local notifications, call events, and background behavior.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="">
+        <a href="../index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="../articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page guide-page">
+
+      <article data-lang="zh-Hant"><div class="title-with-tag"><h1>視訊通話詳細說明</h1><span class="status-tag status-tag-new">新功能</span></div><p class="meta">對應版本：v3.0.0</p><p class="lead">視訊通話是 DreamChat 內的本機模擬互動，用來呈現角色來電、通話浮窗與通話事件。它不會開啟真實相機或麥克風，也不是實際電話或網路影音通話。</p><nav class="guide-toc" aria-label="視訊通話目錄"><a href="#zh-setup">設定方式</a><a href="#zh-call">撥打與來電</a><a href="#zh-incoming">主動來電</a><a href="#zh-notifications">App 外通知</a><a href="#zh-background">通話背景</a></nav><h2 id="zh-setup">1. 開啟角色視訊通話</h2><p>路徑：<span class="guide-path">角色 → 角色設定 → 視訊通話</span></p><ol class="guide-steps"><li>開啟角色的視訊通話功能。</li><li>需要角色主動來電時，開啟主動來電並選擇頻率。</li><li>到「設定 → 通知」調整視訊通話響鈴與全域勿擾時段。</li><li>設定通話背景。免費版可用靜態圖片，升級方案可用靜態圖片與短影片背景。</li></ol><h2 id="zh-call">2. 使用者撥打與「讓他來電」</h2><p>一對一聊天室可撥打角色；群組聊天第一版不顯示視訊通話入口。你也可以送出「讓他來電」請求，系統會依角色回應與本機排程決定是否安排一次來電。</p><p>接通、未接、拒接、逾時或使用者取消，都會在聊天紀錄中留下通話事件，方便回顧對話脈絡。</p><h2 id="zh-incoming">3. 角色主動來電邏輯</h2><p>角色可設定很少、普通、頻繁或不固定等頻率。候選時間到達後，系統會用自然延遲建立來電；接聽期限約 60 秒。一般主動來電未接、拒接或逾時後，約 30 到 60 分鐘後可能安排一次重撥，重撥仍未接後才回到原本頻率。</p><h2 id="zh-notifications">4. App 外不會像真實電話般響鈴</h2><p class="guide-note">DreamChat 不使用 CallKit、PushKit、VoIP push 或系統電話畫面。App 在背景或不適合顯示來電介面時，只會跳本機來電通知；不會像真實電話一樣持續全螢幕響鈴。</p><h2 id="zh-background">5. 通話背景與通話中切換</h2><p>回到原本一對一聊天室時，接通中的通話會顯示完整浮窗、計時與可用背景。切到聊天列表、設定、聯絡人或其他聊天室時，只顯示靜態 compact 狀態與返回 / 掛斷操作，不顯示秒數，也不播放短影片。</p></article>
+      <article data-lang="zh-Hans"><div class="title-with-tag"><h1>视频通话详细说明</h1><span class="status-tag status-tag-new">新功能</span></div><p class="meta">对应版本：v3.0.0</p><p class="lead">视频通话是 DreamChat 内的本地模拟互动，用来呈现角色来电、通话浮窗与通话事件。它不会开启真实摄像头或麦克风，也不是实际电话或网络视频通话。</p><nav class="guide-toc" aria-label="视频通话目录"><a href="#zh-hans-setup">设置方式</a><a href="#zh-hans-call">拨打与来电</a><a href="#zh-hans-incoming">主动来电</a><a href="#zh-hans-notifications">App 外通知</a><a href="#zh-hans-background">通话背景</a></nav><h2 id="zh-hans-setup">1. 开启角色视频通话</h2><p>路径：<span class="guide-path">角色 → 角色设置 → 视频通话</span></p><ol class="guide-steps"><li>开启角色的视频通话功能。</li><li>需要角色主动来电时，开启主动来电并选择频率。</li><li>到「设置 → 通知」调整视频通话铃声与全局勿扰时段。</li><li>设置通话背景。免费版可用静态图片，升级方案可用静态图片与短视频背景。</li></ol><h2 id="zh-hans-call">2. 用户拨打与「让他来电」</h2><p>一对一聊天室可拨打角色；群组聊天第一版不显示视频通话入口。你也可以发出「让他来电」请求，系统会依角色回应与本地排程决定是否安排一次来电。</p><p>接通、未接、拒接、超时或用户取消，都会在聊天记录中留下通话事件。</p><h2 id="zh-hans-incoming">3. 角色主动来电逻辑</h2><p>角色可设置很少、普通、频繁或不固定等频率。候选时间到达后，系统会用自然延迟建立来电；接听期限约 60 秒。一般主动来电未接、拒接或超时后，约 30 到 60 分钟后可能安排一次重拨，重拨仍未接后才回到原本频率。</p><h2 id="zh-hans-notifications">4. App 外不会像真实电话般响铃</h2><p class="guide-note">DreamChat 不使用 CallKit、PushKit、VoIP push 或系统电话画面。App 在后台或不适合显示来电界面时，只会跳本地来电通知；不会像真实电话一样持续全屏响铃。</p><h2 id="zh-hans-background">5. 通话背景与通话中切换</h2><p>回到原本一对一聊天室时，接通中的通话会显示完整浮窗、计时与可用背景。切到聊天列表、设置、联系人或其他聊天室时，只显示静态 compact 状态与返回 / 挂断操作，不显示秒数，也不播放短视频。</p></article>
+      <article data-lang="ja"><div class="title-with-tag"><h1>ビデオ通話詳しい説明</h1><span class="status-tag status-tag-new">新機能</span></div><p class="meta">対応バージョン：v3.0.0</p><p class="lead">ビデオ通話は DreamChat 内のローカルな模擬インタラクションです。キャラクターの着信、通話ウィンドウ、通話イベントを表現しますが、実際のカメラやマイクは使わず、電話やネットワーク通話でもありません。</p><nav class="guide-toc" aria-label="ビデオ通話目次"><a href="#ja-setup">設定</a><a href="#ja-call">発信と着信</a><a href="#ja-incoming">自発着信</a><a href="#ja-notifications">アプリ外通知</a><a href="#ja-background">背景</a></nav><h2 id="ja-setup">1. キャラクターのビデオ通話をオンにする</h2><p>場所：<span class="guide-path">キャラクター → キャラクター設定 → ビデオ通話</span></p><ol class="guide-steps"><li>キャラクターのビデオ通話を有効にします。</li><li>キャラクターからの着信を使う場合は、自発着信をオンにして頻度を選びます。</li><li>「設定 → 通知」でビデオ通話の着信音と全体のサイレント時間を調整します。</li><li>通話背景を設定します。無料版は静止画、アップグレード済みプランは静止画と短い動画背景を使えます。</li></ol><h2 id="ja-call">2. 発信と「あとでかけて」</h2><p>1対1チャットからキャラクターに発信できます。グループチャットには初回版の入口は表示されません。「あとでかけて」と依頼すると、キャラクターの反応とローカルスケジュールに応じて一度だけ着信が予定されます。</p><p>応答、未応答、拒否、タイムアウト、キャンセルはチャット履歴の通話イベントとして残ります。</p><h2 id="ja-incoming">3. キャラクターからの着信ロジック</h2><p>頻度は、少なめ、普通、多め、不定期から選べます。候補時刻になると自然な遅延の後に着信が作られ、応答期限は約60秒です。通常の着信で未応答、拒否、タイムアウトになった場合、30〜60分後に一度だけ再着信することがあります。</p><h2 id="ja-notifications">4. アプリ外では本物の電話のようには鳴りません</h2><p class="guide-note">DreamChat は CallKit、PushKit、VoIP push、システム電話画面を使いません。アプリがバックグラウンドにある場合や着信画面を出せない場合は、ローカル通知で知らせます。本物の電話のように全画面で鳴り続けることはありません。</p><h2 id="ja-background">5. 通話背景と画面移動</h2><p>元の1対1チャットに戻ると、接続中の通話は通常のウィンドウ、タイマー、利用可能な背景を表示します。チャット一覧、設定、連絡先、他のチャットでは静的な compact 表示と戻る / 終了操作だけを表示し、秒数や動画背景は再生しません。</p></article>
+      <article data-lang="en"><div class="title-with-tag"><h1>Video Call Guide</h1><span class="status-tag status-tag-new">New Feature</span></div><p class="meta">Applies to version v3.0.0</p><p class="lead">Video Call is a local simulated interaction inside DreamChat. It presents character calls, a call window, and call events. It does not use the real camera or microphone, and it is not a real phone or network video call.</p><nav class="guide-toc" aria-label="Video call table of contents"><a href="#en-setup">Setup</a><a href="#en-call">Calling</a><a href="#en-incoming">Incoming Logic</a><a href="#en-notifications">Outside App</a><a href="#en-background">Backgrounds</a></nav><h2 id="en-setup">1. Enable Video Call for a Character</h2><p>Path: <span class="guide-path">Characters → Character Settings → Video Call</span></p><ol class="guide-steps"><li>Enable Video Call for the character.</li><li>If you want character-initiated calls, enable incoming calls and choose a frequency.</li><li>Open Settings → Notifications to adjust Video Call ringtone and global quiet hours.</li><li>Set a call background. The free plan supports still images. Upgraded plans support still images and short video backgrounds.</li></ol><h2 id="en-call">2. Calling and Ask Them to Call Later</h2><p>You can call a character from a one-on-one chat. Group chats do not show the first-version Video Call entry point. You can also ask a character to call later; the app decides whether to schedule a one-time call using local reply and scheduling logic.</p><p>Answered, missed, declined, timed-out, and canceled calls are saved as chat events.</p><h2 id="en-incoming">3. Character Incoming Call Logic</h2><p>Each character can use Rare, Normal, Frequent, or Irregular frequency. When a candidate time arrives, the app creates the call after a natural delay. The answer window is about 60 seconds. If a normal incoming call is missed, declined, or times out, one redial may be scheduled about 30 to 60 minutes later.</p><h2 id="en-notifications">4. Outside the App, It Does Not Ring Like a Real Phone</h2><p class="guide-note">DreamChat does not use CallKit, PushKit, VoIP push, or the system phone UI. When the app is in the background or cannot safely show the in-app call prompt, it only sends a local incoming-call notification. It will not keep ringing full-screen like a real phone call.</p><h2 id="en-background">5. Call Backgrounds and Moving Around the App</h2><p>In the original one-on-one chat, a connected call shows the full call window, timer, and available background. In chat list, settings, contacts, or another chat, the app shows only a static compact state with return / hang up actions. It does not show seconds or play short video backgrounds there.</p></article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="../articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="../lang.js"></script>
+</body>
+</html>
