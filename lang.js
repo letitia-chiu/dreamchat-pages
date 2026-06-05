@@ -92,16 +92,16 @@
         en: "What's New in 3.1.0"
       },
       description: {
-        'zh-Hant': '角色語音訊息、獨立語音包、語音容量摘要、語音擴充包，以及基於 3.0.1 hotfix 的穩定性修復。',
-        'zh-Hans': '角色语音消息、独立语音包、语音容量摘要、语音扩展包，以及基于 3.0.1 hotfix 的稳定性修复。',
-        ja: 'キャラクターのボイスメッセージ、独立した音声パッケージ、容量概要、追加パック、3.0.1 hotfix を基準にした安定性修正。',
-        en: 'Character Voice Messages, standalone voice packages, capacity summaries, expansion packs, and stability fixes built on the 3.0.1 hotfix.'
+        'zh-Hant': '角色語音訊息、獨立語音包、語音容量摘要、語音擴充包，以及音樂、語音與視訊通話狀態修復。',
+        'zh-Hans': '角色语音消息、独立语音包、语音容量摘要、语音扩展包，以及音乐、语音与视频通话状态修复。',
+        ja: 'キャラクターのボイスメッセージ、独立した音声パッケージ、容量概要、追加パック、音楽・ボイス・ビデオ通話状態の修正。',
+        en: 'Character Voice Messages, standalone voice packages, capacity summaries, expansion packs, and fixes for music, voice, and Video Call states.'
       },
       text: {
-        'zh-Hant': '3.1.0 版本更新 即將推出 語音訊息 角色語音 短音檔 顯示文字 字卡組 語音包 dreamchatvoices 語音容量 擴充包 備份 角色分享 3.0.1 hotfix 修復',
-        'zh-Hans': '3.1.0 版本更新 即将推出 语音消息 角色语音 短音频 显示文字 字卡组 语音包 dreamchatvoices 语音容量 扩展包 备份 角色分享 3.0.1 hotfix 修复',
-        ja: '3.1.0 アップデート 近日公開 ボイスメッセージ キャラクター音声 短い音声 表示テキスト 定型文セット 音声パッケージ dreamchatvoices 容量 追加パック バックアップ キャラクター共有 3.0.1 hotfix 修正',
-        en: '3.1.0 update coming soon character voice messages short audio display text phrase sets voice packages dreamchatvoices voice capacity expansion packs backup character sharing 3.0.1 hotfix fixes'
+        'zh-Hant': '3.1.0 版本更新 即將推出 語音訊息 角色語音 短音檔 顯示文字 字卡組 語音包 dreamchatvoices 語音容量 擴充包 備份 角色分享 音樂播放 視訊通話 修復',
+        'zh-Hans': '3.1.0 版本更新 即将推出 语音消息 角色语音 短音频 显示文字 字卡组 语音包 dreamchatvoices 语音容量 扩展包 备份 角色分享 音乐播放 视频通话 修复',
+        ja: '3.1.0 アップデート 近日公開 ボイスメッセージ キャラクター音声 短い音声 表示テキスト 定型文セット 音声パッケージ dreamchatvoices 容量 追加パック バックアップ キャラクター共有 音楽再生 ビデオ通話 修正',
+        en: '3.1.0 update coming soon character voice messages short audio display text phrase sets voice packages dreamchatvoices voice capacity expansion packs backup character sharing music playback video call fixes'
       }
     },
     {
@@ -119,9 +119,9 @@
         en: 'Set up voice messages and understand plan limits, expansion packs, capacity calculation, packages, backups, and character sharing.'
       },
       text: {
-        'zh-Hant': '語音訊息 功能說明 即將推出 角色設定 短音檔 顯示文字 字卡組 方案限制 免費 Single Dream Lite Multi Dream Lite Dream Walker 擴充包 +10 +20 +30 120 容量計算 封存 dreamchatvoices 備份 角色分享',
-        'zh-Hans': '语音消息 功能说明 即将推出 角色设置 短音频 显示文字 字卡组 方案限制 免费 Single Dream Lite Multi Dream Lite Dream Walker 扩展包 +10 +20 +30 120 容量计算 封存 dreamchatvoices 备份 角色分享',
-        ja: 'ボイスメッセージ 機能説明 近日公開 キャラクター設定 短い音声 表示テキスト 定型文セット プラン制限 無料 Single Dream Lite Multi Dream Lite Dream Walker 追加パック +10 +20 +30 120 容量計算 アーカイブ dreamchatvoices バックアップ キャラクター共有',
+        'zh-Hant': '語音訊息 功能說明 即將推出 角色設定 短音檔 顯示文字 字卡組 方案限制 免費版 單夢輕量版 多夢輕量版 夢行者 擴充包 +10 +20 +30 120 容量計算 封存 dreamchatvoices 備份 角色分享',
+        'zh-Hans': '语音消息 功能说明 即将推出 角色设置 短音频 显示文字 字卡组 方案限制 免费版 单梦轻量版 多梦轻量版 梦行者 扩展包 +10 +20 +30 120 容量计算 封存 dreamchatvoices 备份 角色分享',
+        ja: 'ボイスメッセージ 機能説明 近日公開 キャラクター設定 短い音声 表示テキスト 定型文セット プラン制限 無料版 一途 Lite グループ Lite ドリームウォーカー 追加パック +10 +20 +30 120 容量計算 アーカイブ dreamchatvoices バックアップ キャラクター共有',
         en: 'voice messages feature guide coming soon character settings short audio display text phrase sets plan limits free Single Dream Lite Multi Dream Lite Dream Walker expansion packs +10 +20 +30 120 capacity calculation archived dreamchatvoices backup character sharing'
       }
     },
@@ -161,10 +161,10 @@
         en: 'Set up daily weather reminders, regions, in-chat weather questions, and phrases.'
       },
       text: {
-        'zh-Hant': '天氣提醒 功能說明 新功能 WeatherKit 手動地區 目前位置 定位權限 聊天中詢問 氣溫 天氣 提醒字卡 fallback default reminder',
-        'zh-Hans': '天气提醒 功能说明 新功能 WeatherKit 手动地区 当前位置 定位权限 聊天中询问 气温 天气 提醒字卡 fallback default reminder',
-        ja: '天気リマインダー 機能説明 新機能 WeatherKit 手動地域 現在地 位置情報 チャット内質問 気温 天気 定型文 fallback default reminder',
-        en: 'weather reminder feature guide new feature WeatherKit manual region current location permission ask in chat temperature weather phrases fallback default reminder'
+        'zh-Hant': '天氣提醒 功能說明 新功能 WeatherKit 手動地區 目前位置 定位權限 聊天中詢問 氣溫 天氣 提醒字卡 備用內容 預設提醒',
+        'zh-Hans': '天气提醒 功能说明 新功能 WeatherKit 手动地区 当前位置 定位权限 聊天中询问 气温 天气 提醒字卡 备用内容 默认提醒',
+        ja: '天気リマインダー 機能説明 新機能 WeatherKit 手動地域 現在地 位置情報 チャット内質問 気温 天気 定型文 予備内容 既定リマインダー',
+        en: 'weather reminder feature guide new feature WeatherKit manual region current location permission ask in chat temperature weather phrases backup content default reminder'
       }
     },
     {
