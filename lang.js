@@ -77,10 +77,52 @@
         en: 'Detailed help pages for setup steps and behavior notes.'
       },
       text: {
-        'zh-Hant': '詳細說明 功能文章 版本更新 新推出 視訊通話 天氣提醒 分享檔 備份檔 聊天室導覽 智慧輔助 字卡庫格式轉換 情境標籤',
-        'zh-Hans': '详细说明 功能文章 版本更新 新推出 视频通话 天气提醒 分享文件 备份文件 聊天室导览 智能辅助 字卡库格式转换 情境标签',
-        ja: '詳しい説明 記事 アップデート 新着 ビデオ通話 天気リマインダー 共有ファイル バックアップ チャット画面ガイド スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
-        en: 'detailed help articles version update new video calls weather reminders share files backup files chatroom guide smart assist phrase library converter context tags'
+        'zh-Hant': '詳細說明 功能文章 版本更新 即將推出 語音訊息 語音包 擴充包 視訊通話 天氣提醒 分享檔 備份檔 聊天室導覽 智慧輔助 字卡庫格式轉換 情境標籤',
+        'zh-Hans': '详细说明 功能文章 版本更新 即将推出 语音消息 语音包 扩展包 视频通话 天气提醒 分享文件 备份文件 聊天室导览 智能辅助 字卡库格式转换 情境标签',
+        ja: '詳しい説明 記事 アップデート 近日公開 ボイスメッセージ 音声パッケージ 追加パック ビデオ通話 天気リマインダー 共有ファイル バックアップ チャット画面ガイド スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
+        en: 'detailed help articles version update coming soon voice messages voice packages expansion packs video calls weather reminders share files backup files chatroom guide smart assist phrase library converter context tags'
+      }
+    },
+    {
+      url: 'articles/v3-1-0-update.html',
+      title: {
+        'zh-Hant': '3.1.0 版本更新內容',
+        'zh-Hans': '3.1.0 版本更新内容',
+        ja: '3.1.0 アップデート内容',
+        en: "What's New in 3.1.0"
+      },
+      description: {
+        'zh-Hant': '角色語音訊息、獨立語音包、語音容量摘要、語音擴充包，以及基於 3.0.1 hotfix 的穩定性修復。',
+        'zh-Hans': '角色语音消息、独立语音包、语音容量摘要、语音扩展包，以及基于 3.0.1 hotfix 的稳定性修复。',
+        ja: 'キャラクターのボイスメッセージ、独立した音声パッケージ、容量概要、追加パック、3.0.1 hotfix を基準にした安定性修正。',
+        en: 'Character Voice Messages, standalone voice packages, capacity summaries, expansion packs, and stability fixes built on the 3.0.1 hotfix.'
+      },
+      text: {
+        'zh-Hant': '3.1.0 版本更新 即將推出 語音訊息 角色語音 短音檔 顯示文字 字卡組 語音包 dreamchatvoices 語音容量 擴充包 備份 角色分享 3.0.1 hotfix 修復',
+        'zh-Hans': '3.1.0 版本更新 即将推出 语音消息 角色语音 短音频 显示文字 字卡组 语音包 dreamchatvoices 语音容量 扩展包 备份 角色分享 3.0.1 hotfix 修复',
+        ja: '3.1.0 アップデート 近日公開 ボイスメッセージ キャラクター音声 短い音声 表示テキスト 定型文セット 音声パッケージ dreamchatvoices 容量 追加パック バックアップ キャラクター共有 3.0.1 hotfix 修正',
+        en: '3.1.0 update coming soon character voice messages short audio display text phrase sets voice packages dreamchatvoices voice capacity expansion packs backup character sharing 3.0.1 hotfix fixes'
+      }
+    },
+    {
+      url: 'articles/voice-messages-guide.html',
+      title: {
+        'zh-Hant': '語音訊息詳細說明',
+        'zh-Hans': '语音消息详细说明',
+        ja: 'ボイスメッセージ詳しい説明',
+        en: 'Voice Messages Guide'
+      },
+      description: {
+        'zh-Hant': '設定角色語音訊息、了解方案限制、語音擴充包、容量計算、語音包、備份與角色分享差異。',
+        'zh-Hans': '设置角色语音消息、了解方案限制、语音扩展包、容量计算、语音包、备份与角色分享差异。',
+        ja: 'ボイスメッセージの設定、プラン制限、追加パック、容量計算、音声パッケージ、バックアップと共有の違い。',
+        en: 'Set up voice messages and understand plan limits, expansion packs, capacity calculation, packages, backups, and character sharing.'
+      },
+      text: {
+        'zh-Hant': '語音訊息 功能說明 即將推出 角色設定 短音檔 顯示文字 字卡組 方案限制 免費 Single Dream Lite Multi Dream Lite Dream Walker 擴充包 +10 +20 +30 120 容量計算 封存 dreamchatvoices 備份 角色分享',
+        'zh-Hans': '语音消息 功能说明 即将推出 角色设置 短音频 显示文字 字卡组 方案限制 免费 Single Dream Lite Multi Dream Lite Dream Walker 扩展包 +10 +20 +30 120 容量计算 封存 dreamchatvoices 备份 角色分享',
+        ja: 'ボイスメッセージ 機能説明 近日公開 キャラクター設定 短い音声 表示テキスト 定型文セット プラン制限 無料 Single Dream Lite Multi Dream Lite Dream Walker 追加パック +10 +20 +30 120 容量計算 アーカイブ dreamchatvoices バックアップ キャラクター共有',
+        en: 'voice messages feature guide coming soon character settings short audio display text phrase sets plan limits free Single Dream Lite Multi Dream Lite Dream Walker expansion packs +10 +20 +30 120 capacity calculation archived dreamchatvoices backup character sharing'
       }
     },
     {

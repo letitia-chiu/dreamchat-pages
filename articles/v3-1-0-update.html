@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>3.1.0 版本更新內容 | DreamChat</title>
+  <meta name="description" content="DreamChat 3.1.0 adds Character Voice Messages, standalone .dreamchatvoices packages, voice capacity summaries, and voice expansion packs. Coming soon.">
+
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v3-1-0-update.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v3-1-0-update.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v3-1-0-update.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v3-1-0-update.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v3-1-0-update.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/articles/v3-1-0-update.html">
+  <meta property="og:title" content="3.1.0 版本更新內容 | DreamChat">
+  <meta property="og:description" content="Character Voice Messages, voice packages, capacity summaries, and expansion packs are coming in DreamChat 3.1.0.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="3.1.0 版本更新內容 | DreamChat">
+  <meta name="twitter:description" content="Character Voice Messages, voice packages, capacity summaries, and expansion packs are coming in DreamChat 3.1.0.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="">
+        <a href="../index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="../articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page guide-page">
+      <article data-lang="zh-Hant">
+        <div class="title-with-tag"><h1>3.1.0 版本更新內容</h1><span class="status-tag status-tag-upcoming">即將推出</span></div>
+        <p class="meta">對應版本：v3.1.0</p>
+        <p class="lead">3.1.0 讓角色能送出可播放的語音訊息，也補上語音包、容量摘要與擴充容量，讓你可以更清楚管理每個角色的語音互動。</p>
+        <nav class="guide-toc" aria-label="3.1.0 版本更新目錄"><a href="#zh-voice">語音訊息</a><a href="#zh-package">語音包</a><a href="#zh-capacity">容量與擴充包</a><a href="#zh-backup">備份與分享</a><a href="#zh-fixes">修復</a></nav>
+        <h2 id="zh-voice">1. 角色語音訊息</h2>
+        <p>你可以在角色設定中新增短音檔、顯示文字與字卡組。角色在聊天中抽到該語音訊息時，會送出可播放的語音泡泡；若音檔暫時不可用，聊天仍會保留顯示文字。</p>
+        <h2 id="zh-package">2. 獨立語音包</h2>
+        <p>語音訊息可匯出為 <code>.dreamchatvoices</code>，再匯入到另一個角色。匯入前可以預覽內容並選擇要加入的項目。</p>
+        <h2 id="zh-capacity">3. 方案容量與語音擴充包</h2>
+        <p>角色語音訊息會依目前方案計算可使用的角色數與每個角色的方案內語音數。若需要更多語音，可透過一次性語音擴充包增加全角色共用的額外容量。</p>
+        <p class="guide-note">語音擴充包只增加本機容量，不提供下載音訊內容，也不會改變目前訂閱方案。</p>
+        <h2 id="zh-backup">4. 完整備份與角色分享檔</h2>
+        <p>完整備份可包含語音訊息 metadata 與 App 管理的語音音檔；角色分享檔仍維持輕量，不包含角色語音訊息或語音音檔。</p>
+        <h2 id="zh-fixes">5. 修復與穩定性</h2>
+        <p>本版基於 3.0.1 hotfix 重修，並修復語音擴充購買 / 恢復後容量保存、語音匯入與完整備份還原穩定性，以及部分通話音訊與聊天室切換問題。</p>
+      </article>
+
+      <article data-lang="zh-Hans">
+        <div class="title-with-tag"><h1>3.1.0 版本更新内容</h1><span class="status-tag status-tag-upcoming">即将推出</span></div>
+        <p class="meta">对应版本：v3.1.0</p>
+        <p class="lead">3.1.0 让角色能发送可播放的语音消息，也补上语音包、容量摘要与扩展容量，让你可以更清楚管理每个角色的语音互动。</p>
+        <nav class="guide-toc" aria-label="3.1.0 版本更新目录"><a href="#zh-hans-voice">语音消息</a><a href="#zh-hans-package">语音包</a><a href="#zh-hans-capacity">容量与扩展包</a><a href="#zh-hans-backup">备份与分享</a><a href="#zh-hans-fixes">修复</a></nav>
+        <h2 id="zh-hans-voice">1. 角色语音消息</h2>
+        <p>你可以在角色设置中新增短音频、显示文字与字卡组。角色在聊天中抽到该语音消息时，会发送可播放的语音气泡；若音频暂时不可用，聊天仍会保留显示文字。</p>
+        <h2 id="zh-hans-package">2. 独立语音包</h2>
+        <p>语音消息可导出为 <code>.dreamchatvoices</code>，再导入到另一个角色。导入前可以预览内容并选择要加入的项目。</p>
+        <h2 id="zh-hans-capacity">3. 方案容量与语音扩展包</h2>
+        <p>角色语音消息会依当前方案计算可使用的角色数与每个角色的方案内语音数。若需要更多语音，可通过一次性语音扩展包增加全角色共用的额外容量。</p>
+        <p class="guide-note">语音扩展包只增加本地容量，不提供下载音频内容，也不会改变当前订阅方案。</p>
+        <h2 id="zh-hans-backup">4. 完整备份与角色分享文件</h2>
+        <p>完整备份可包含语音消息 metadata 与 App 管理的语音音频文件；角色分享文件仍保持轻量，不包含角色语音消息或语音音频文件。</p>
+        <h2 id="zh-hans-fixes">5. 修复与稳定性</h2>
+        <p>本版基于 3.0.1 hotfix 重修，并修复语音扩展购买 / 恢复后容量保存、语音导入与完整备份还原稳定性，以及部分通话音频与聊天室切换问题。</p>
+      </article>
+
+      <article data-lang="ja">
+        <div class="title-with-tag"><h1>3.1.0 アップデート内容</h1><span class="status-tag status-tag-upcoming">近日公開</span></div>
+        <p class="meta">対応バージョン：v3.1.0</p>
+        <p class="lead">3.1.0 では、キャラクターが再生できるボイスメッセージを送れるようになります。音声パッケージ、容量の概要、追加容量も加わり、キャラクターごとの音声を管理しやすくなります。</p>
+        <nav class="guide-toc" aria-label="3.1.0 アップデート目次"><a href="#ja-voice">ボイスメッセージ</a><a href="#ja-package">音声パッケージ</a><a href="#ja-capacity">容量と追加パック</a><a href="#ja-backup">バックアップと共有</a><a href="#ja-fixes">修正</a></nav>
+        <h2 id="ja-voice">1. キャラクターのボイスメッセージ</h2>
+        <p>キャラクター設定で短い音声、表示テキスト、定型文セットを追加できます。チャットでそのボイスメッセージが選ばれると、再生できる音声バブルとして送信されます。音声を再生できない場合でも、表示テキストはチャットに残ります。</p>
+        <h2 id="ja-package">2. 独立した音声パッケージ</h2>
+        <p>ボイスメッセージは <code>.dreamchatvoices</code> として書き出し、別のキャラクターへ読み込めます。読み込み前に内容をプレビューし、追加する項目を選べます。</p>
+        <h2 id="ja-capacity">3. プラン容量と追加パック</h2>
+        <p>キャラクターのボイスメッセージは、現在のプランに応じて使えるキャラクター数と、各キャラクターのプラン内音声数が計算されます。さらに必要な場合は、一度だけ購入する追加パックで全キャラクター共通の容量を増やせます。</p>
+        <p class="guide-note">追加パックはローカル容量を増やすだけで、ダウンロード音声を提供せず、現在のサブスクリプションプランも変更しません。</p>
+        <h2 id="ja-backup">4. 完全バックアップとキャラクター共有</h2>
+        <p>完全バックアップにはボイスメッセージの metadata とアプリ管理の音声ファイルを含められます。キャラクター共有ファイルは軽量なままで、ボイスメッセージや音声ファイルは含みません。</p>
+        <h2 id="ja-fixes">5. 修正と安定性</h2>
+        <p>このバージョンは 3.0.1 hotfix を基準に再構成し、ボイス追加容量の購入 / 復元後の保持、ボイス読み込みと完全バックアップ復元の安定性、一部の通話音声とチャット切り替えの問題を修正します。</p>
+      </article>
+
+      <article data-lang="en">
+        <div class="title-with-tag"><h1>What's New in 3.1.0</h1><span class="status-tag status-tag-upcoming">Coming Soon</span></div>
+        <p class="meta">Applies to version v3.1.0</p>
+        <p class="lead">3.1.0 lets characters send playable voice messages, with standalone voice packages, capacity summaries, and optional expansion capacity for clearer voice-message management.</p>
+        <nav class="guide-toc" aria-label="3.1.0 update table of contents"><a href="#en-voice">Voice Messages</a><a href="#en-package">Voice Packages</a><a href="#en-capacity">Capacity and Packs</a><a href="#en-backup">Backup and Sharing</a><a href="#en-fixes">Fixes</a></nav>
+        <h2 id="en-voice">1. Character Voice Messages</h2>
+        <p>Add short audio, display text, and phrase-set assignments in character settings. When a character selects that voice message in chat, it is sent as a playable voice bubble. If audio is unavailable, the chat still keeps the display text.</p>
+        <h2 id="en-package">2. Standalone Voice Packages</h2>
+        <p>Voice messages can be exported as <code>.dreamchatvoices</code> files and imported into another character. Before import, you can preview the package and choose which items to add.</p>
+        <h2 id="en-capacity">3. Plan Capacity and Expansion Packs</h2>
+        <p>Character voice messages are counted by your current plan, including how many characters can use voice messages and how many included voice messages each character can keep active. Optional one-time expansion packs add shared extra capacity across all characters.</p>
+        <p class="guide-note">Expansion packs only add local capacity. They do not provide downloadable audio content and do not change your current subscription plan.</p>
+        <h2 id="en-backup">4. Complete Backups and Character Sharing</h2>
+        <p>Complete backups can include voice message metadata and app-managed voice audio files. Character share files stay lightweight and do not include character voice messages or voice audio files.</p>
+        <h2 id="en-fixes">5. Fixes and Stability</h2>
+        <p>This version is rebuilt on top of the 3.0.1 hotfix and fixes voice expansion capacity preservation after purchase or restore, voice import and complete-backup restore stability, plus some call audio and room-switching issues.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="../articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="../lang.js"></script>
+</body>
+</html>
