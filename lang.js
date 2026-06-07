@@ -50,16 +50,16 @@
         en: 'User Guide'
       },
       description: {
-        'zh-Hant': '快速了解聊天、角色、字卡庫、情境標籤、定時來訊、權限與備份。',
-        'zh-Hans': '快速了解聊天、角色、字卡库、情境标签、定时来信、权限与备份。',
-        ja: 'チャット、キャラクター、定型文集、コンテキストタグ、予約受信、権限、バックアップをひと通り確認できます。',
-        en: 'Quickly learn chat, characters, phrase libraries, context tags, scheduled messages, permissions, and backup.'
+        'zh-Hant': '快速了解聊天、角色、字卡庫、語音訊息、情境標籤、定時來訊、權限與備份。',
+        'zh-Hans': '快速了解聊天、角色、字卡库、语音消息、情境标签、定时来信、权限与备份。',
+        ja: 'チャット、キャラクター、定型文集、ボイスメッセージ、コンテキストタグ、予約受信、権限、バックアップをひと通り確認できます。',
+        en: 'Quickly learn chat, characters, phrase libraries, voice messages, context tags, scheduled messages, permissions, and backup.'
       },
       text: {
-        'zh-Hant': '快速開始 聊天 角色 字卡庫 情境標籤 定時來訊 貼圖 設定 權限 備份 智慧輔助 匿名截圖 追加 取代',
-        'zh-Hans': '快速开始 聊天 角色 字卡库 情境标签 定时来信 表情包 设置 权限 备份 智能辅助 匿名截图 追加 替换',
-        ja: 'はじめに チャット キャラクター 定型文集 コンテキストタグ 予約受信 スタンプ 設定 権限 バックアップ スマートアシスト 匿名スクリーンショット 追加 置き換え',
-        en: 'start chat characters chat phrases context tags scheduled messages stickers settings permissions backup smart assist anonymous screenshots append replace'
+        'zh-Hant': '快速開始 聊天 角色 字卡庫 語音訊息 情境標籤 定時來訊 貼圖 設定 權限 備份 智慧輔助 匿名截圖 追加 取代',
+        'zh-Hans': '快速开始 聊天 角色 字卡库 语音消息 情境标签 定时来信 表情包 设置 权限 备份 智能辅助 匿名截图 追加 替换',
+        ja: 'はじめに チャット キャラクター 定型文集 ボイスメッセージ コンテキストタグ 予約受信 スタンプ 設定 権限 バックアップ スマートアシスト 匿名スクリーンショット 追加 置き換え',
+        en: 'start chat characters chat phrases voice messages context tags scheduled messages stickers settings permissions backup smart assist anonymous screenshots append replace'
       }
     },
     {
@@ -77,10 +77,10 @@
         en: 'Detailed help pages for setup steps and behavior notes.'
       },
       text: {
-        'zh-Hant': '詳細說明 功能文章 版本更新 即將推出 語音訊息 語音包 擴充包 視訊通話 天氣提醒 分享檔 備份檔 聊天室導覽 智慧輔助 字卡庫格式轉換 情境標籤',
-        'zh-Hans': '详细说明 功能文章 版本更新 即将推出 语音消息 语音包 扩展包 视频通话 天气提醒 分享文件 备份文件 聊天室导览 智能辅助 字卡库格式转换 情境标签',
-        ja: '詳しい説明 記事 アップデート 近日公開 ボイスメッセージ 音声パッケージ 追加パック ビデオ通話 天気リマインダー 共有ファイル バックアップ チャット画面ガイド スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
-        en: 'detailed help articles version update coming soon voice messages voice packages expansion packs video calls weather reminders share files backup files chatroom guide smart assist phrase library converter context tags'
+        'zh-Hant': '詳細說明 功能文章 版本更新 新推出 語音訊息 語音包 擴充包 視訊通話 天氣提醒 分享檔 備份檔 聊天室導覽 智慧輔助 字卡庫格式轉換 情境標籤',
+        'zh-Hans': '详细说明 功能文章 版本更新 新推出 语音消息 语音包 扩展包 视频通话 天气提醒 分享文件 备份文件 聊天室导览 智能辅助 字卡库格式转换 情境标签',
+        ja: '詳しい説明 記事 アップデート 新着 ボイスメッセージ 音声パッケージ 追加パック ビデオ通話 天気リマインダー 共有ファイル バックアップ チャット画面ガイド スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
+        en: 'detailed help articles version update new voice messages voice packages expansion packs video calls weather reminders share files backup files chatroom guide smart assist phrase library converter context tags'
       }
     },
     {
@@ -98,10 +98,10 @@
         en: 'Character Voice Messages, standalone voice packages, capacity summaries, expansion packs, and fixes for music, voice, and Video Call states.'
       },
       text: {
-        'zh-Hant': '3.1.0 版本更新 即將推出 語音訊息 角色語音 短音檔 顯示文字 字卡組 語音包 dreamchatvoices 語音容量 擴充包 備份 角色分享 音樂播放 視訊通話 修復',
-        'zh-Hans': '3.1.0 版本更新 即将推出 语音消息 角色语音 短音频 显示文字 字卡组 语音包 dreamchatvoices 语音容量 扩展包 备份 角色分享 音乐播放 视频通话 修复',
-        ja: '3.1.0 アップデート 近日公開 ボイスメッセージ キャラクター音声 短い音声 表示テキスト 定型文セット 音声パッケージ dreamchatvoices 容量 追加パック バックアップ キャラクター共有 音楽再生 ビデオ通話 修正',
-        en: '3.1.0 update coming soon character voice messages short audio display text phrase sets voice packages dreamchatvoices voice capacity expansion packs backup character sharing music playback video call fixes'
+        'zh-Hant': '3.1.0 版本更新 新推出 語音訊息 角色語音 短音檔 顯示文字 字卡組 語音包 dreamchatvoices 語音容量 擴充包 備份 角色分享 音樂播放 視訊通話 修復',
+        'zh-Hans': '3.1.0 版本更新 新推出 语音消息 角色语音 短音频 显示文字 字卡组 语音包 dreamchatvoices 语音容量 扩展包 备份 角色分享 音乐播放 视频通话 修复',
+        ja: '3.1.0 アップデート 新着 ボイスメッセージ キャラクター音声 短い音声 表示テキスト 定型文セット 音声パッケージ dreamchatvoices 容量 追加パック バックアップ キャラクター共有 音楽再生 ビデオ通話 修正',
+        en: '3.1.0 update new character voice messages short audio display text phrase sets voice packages dreamchatvoices voice capacity expansion packs backup character sharing music playback video call fixes'
       }
     },
     {
@@ -119,10 +119,10 @@
         en: 'Set up voice messages and understand plan limits, expansion packs, capacity calculation, packages, backups, and character sharing.'
       },
       text: {
-        'zh-Hant': '語音訊息 功能說明 即將推出 角色設定 短音檔 顯示文字 字卡組 方案限制 免費版 單夢輕量版 多夢輕量版 夢行者 擴充包 +10 +20 +30 120 容量計算 封存 dreamchatvoices 備份 角色分享',
-        'zh-Hans': '语音消息 功能说明 即将推出 角色设置 短音频 显示文字 字卡组 方案限制 免费版 单梦轻量版 多梦轻量版 梦行者 扩展包 +10 +20 +30 120 容量计算 封存 dreamchatvoices 备份 角色分享',
-        ja: 'ボイスメッセージ 機能説明 近日公開 キャラクター設定 短い音声 表示テキスト 定型文セット プラン制限 無料版 一途 Lite グループ Lite ドリームウォーカー 追加パック +10 +20 +30 120 容量計算 アーカイブ dreamchatvoices バックアップ キャラクター共有',
-        en: 'voice messages feature guide coming soon character settings short audio display text phrase sets plan limits free Single Dream Lite Multi Dream Lite Dream Walker expansion packs +10 +20 +30 120 capacity calculation archived dreamchatvoices backup character sharing'
+        'zh-Hant': '語音訊息 功能說明 新推出 角色設定 短音檔 顯示文字 字卡組 方案限制 免費版 單夢輕量版 多夢輕量版 夢行者 擴充包 +10 +20 +30 120 容量計算 封存 dreamchatvoices 備份 角色分享',
+        'zh-Hans': '语音消息 功能说明 新推出 角色设置 短音频 显示文字 字卡组 方案限制 免费版 单梦轻量版 多梦轻量版 梦行者 扩展包 +10 +20 +30 120 容量计算 封存 dreamchatvoices 备份 角色分享',
+        ja: 'ボイスメッセージ 機能説明 新着 キャラクター設定 短い音声 表示テキスト 定型文セット プラン制限 無料版 一途 Lite グループ Lite ドリームウォーカー 追加パック +10 +20 +30 120 容量計算 アーカイブ dreamchatvoices バックアップ キャラクター共有',
+        en: 'voice messages feature guide new character settings short audio display text phrase sets plan limits free Single Dream Lite Multi Dream Lite Dream Walker expansion packs +10 +20 +30 120 capacity calculation archived dreamchatvoices backup character sharing'
       }
     },
     {

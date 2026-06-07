@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#b9a3e0">
 
-  <title>DreamChat 使用說明 v3.0.0</title>
-  <meta name="description" content="DreamChat v3.0.0 public user guide: learn the main tabs, chat, characters, chat phrases, Smart Assist, scheduled messages, stickers, permissions, settings, and backup.">
+  <title>DreamChat 使用說明 v3.1.0</title>
+  <meta name="description" content="DreamChat v3.1.0 public user guide: learn the main tabs, chat, characters, chat phrases, voice messages, Smart Assist, scheduled messages, stickers, permissions, settings, and backup.">
 
   <!-- Hreflang: language-specific entry URLs. -->
   <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/guide.html?lang=zh-Hant">
@@ -18,8 +18,8 @@
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/guide.html">
-  <meta property="og:title" content="DreamChat 使用說明 v3.0.0">
-  <meta property="og:description" content="A beginner-friendly guide to DreamChat v3.0.0: chat, characters, chat phrases, Smart Assist, scheduled messages, stickers, permissions, settings, and backup.">
+  <meta property="og:title" content="DreamChat 使用說明 v3.1.0">
+  <meta property="og:description" content="A beginner-friendly guide to DreamChat v3.1.0: chat, characters, chat phrases, voice messages, Smart Assist, scheduled messages, stickers, permissions, settings, and backup.">
   <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:locale:alternate" content="zh_CN">
@@ -28,8 +28,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DreamChat 使用說明 v3.0.0">
-  <meta name="twitter:description" content="A beginner-friendly guide to DreamChat v3.0.0: chat, characters, chat phrases, Smart Assist, scheduled messages, stickers, permissions, settings, and backup.">
+  <meta name="twitter:title" content="DreamChat 使用說明 v3.1.0">
+  <meta name="twitter:description" content="A beginner-friendly guide to DreamChat v3.1.0: chat, characters, chat phrases, voice messages, Smart Assist, scheduled messages, stickers, permissions, settings, and backup.">
   <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
@@ -106,15 +106,16 @@
       <!-- ============================================================ -->
       <article data-lang="zh-Hant">
         <h1>DreamChat 使用說明</h1>
-        <p class="meta">對應版本：v3.0.0</p>
+        <p class="meta">對應版本：v3.1.0</p>
 
-        <p class="lead">這份說明給第一次使用 DreamChat 的使用者。你可以先從聊天開始，再慢慢整理角色、字卡庫、定時來訊與貼圖。</p>
+        <p class="lead">這份說明給第一次使用 DreamChat 的使用者。你可以先從聊天開始，再慢慢整理角色、字卡庫、語音訊息、定時來訊與貼圖。</p>
 
         <nav class="guide-toc" aria-label="DreamChat 使用說明目錄">
           <a href="#zh-start">快速開始</a>
           <a href="#zh-chat">聊天</a>
           <a href="#zh-characters">角色</a>
           <a href="#zh-phrases">字卡庫</a>
+          <a href="#zh-voice-messages">語音訊息</a>
           <a href="#zh-context-tags">情境標籤</a>
           <a href="#zh-scheduled">定時來訊</a>
           <a href="#zh-weather-reminder">天氣提醒</a>
@@ -152,7 +153,7 @@
           <li>角色名稱、聊天室背景、是否顯示已讀與自己的頭像。</li>
           <li>回覆時間，例如最短與最長延遲。</li>
           <li><a href="articles/chat-modes.html?lang=zh-Hant#zh-modes">聊天模式</a>：一般「聊天模式」或「是否模式」。</li>
-          <li>字卡庫、貼圖使用設定、定時來訊、天氣提醒與視訊通話。</li>
+          <li>字卡庫、語音訊息、貼圖使用設定、定時來訊、天氣提醒與視訊通話。</li>
           <li>右上角分享按鈕可匯出角色分享檔。</li>
         </ul>
 
@@ -171,7 +172,16 @@
         </ul>
         <p class="guide-highlight">「智慧輔助」在角色設定的字卡庫區塊中設定，可選「關閉、自然、精準、多變」。它會依照收到的訊息、字卡組名稱、適用情境、觸發關鍵字與字卡內容選擇字卡組；Apple 語言處理可用時會加入裝置端判斷，但不會產生新的對話內容。想讓關鍵字更容易接對話題，可查看 <a href="articles/smart-assist-keyword-guide.html">智慧輔助設定技巧</a>。</p>
 
-        <h2 id="zh-context-tags">5. 用情境標籤指定目前對話脈絡</h2>
+        <h2 id="zh-voice-messages">5. 設定角色語音訊息</h2>
+        <p>路徑：<span class="guide-path">角色 → 角色設定 → 語音訊息</span></p>
+        <ul>
+          <li>每則語音訊息需要短音檔、顯示文字與要套用的字卡組；啟用後會和同字卡組的文字字卡一起進入回覆候選。</li>
+          <li>聊天抽到語音訊息時會送出可播放的語音泡泡；列表、搜尋、通知與文字匯出會使用顯示文字。</li>
+          <li>語音容量會依目前方案與已購買的語音擴充包計算，超出容量的語音會封存，不會進入回覆候選。</li>
+        </ul>
+        <p class="guide-note">完整設定、方案限制、語音包與備份差異請看 <a href="articles/voice-messages-guide.html?lang=zh-Hant">語音訊息詳細說明</a>。</p>
+
+        <h2 id="zh-context-tags">6. 用情境標籤指定目前對話脈絡</h2>
         <p>路徑：<span class="guide-path">設定 → 情境 → 情境標籤</span></p>
         <ul>
           <li>先建立可重複使用的情境標籤，例如「睡前」、「旅行」、「安慰」。</li>
@@ -183,7 +193,7 @@
 
         <p class="guide-note">情境標籤適合用來快速切換「現在在聊什麼」，不是用來撰寫回覆內容。完整設定方式與影響範圍請看 <a href="articles/context-tags.html">情境標籤詳細說明</a>。</p>
 
-        <h2 id="zh-scheduled">6. 設定定時來訊</h2>
+        <h2 id="zh-scheduled">7. 設定定時來訊</h2>
         <p>路徑：<span class="guide-path">角色 → 角色設定 → 定時來訊</span></p>
         <ol class="guide-steps">
           <li>按加號新增定時來訊。</li>
@@ -196,7 +206,7 @@
 
         <p class="guide-note">定時來訊需要通知權限。可到「設定 → 通知」開啟角色來訊通知，並在「設定 → 通知 → 系統權限」查看或調整通知狀態。</p>
 
-        <h2 id="zh-weather-reminder">7. 天氣提醒</h2>
+        <h2 id="zh-weather-reminder">8. 天氣提醒</h2>
         <p>路徑：<span class="guide-path">角色 → 角色設定 → 天氣提醒</span></p>
         <ul>
           <li>可為角色設定每日天氣提醒，選擇一對一聊天室、提醒時間、時間浮動與地區。</li>
@@ -205,7 +215,7 @@
         </ul>
         <p class="guide-note">完整設定方式與字卡撰寫方式請看 <a href="articles/weather-reminder-guide.html?lang=zh-Hant">天氣提醒詳細說明</a>。</p>
 
-        <h2 id="zh-video-call">8. 視訊通話</h2>
+        <h2 id="zh-video-call">9. 視訊通話</h2>
         <p>路徑：<span class="guide-path">角色 → 角色設定 → 視訊通話</span></p>
         <ul>
           <li>一對一聊天可撥打角色，或送出「讓他來電」請求。</li>
@@ -214,7 +224,7 @@
         </ul>
         <p class="guide-note">來電邏輯、重撥與 App 外通知限制請看 <a href="articles/video-call-guide.html?lang=zh-Hant">視訊通話詳細說明</a>。</p>
 
-        <h2 id="zh-stickers">9. 貼圖與表情符號</h2>
+        <h2 id="zh-stickers">10. 貼圖與表情符號</h2>
         <p>路徑：<span class="guide-path">設定 → 貼圖與表情符號</span></p>
         <ul>
           <li>在「貼圖管理」新增貼圖組，進入貼圖組後可從相簿或檔案加入圖片。</li>
@@ -223,7 +233,7 @@
           <li>聊天時按輸入列左側的表情按鈕，就能選擇貼圖或插入表情符號。</li>
         </ul>
 
-        <h2 id="zh-permissions">10. 系統權限</h2>
+        <h2 id="zh-permissions">11. 系統權限</h2>
         <p>路徑：<span class="guide-path">設定 → 通知 → 系統權限</span></p>
         <ul>
           <li>可查看通知、選取圖片、儲存截圖與 Music 資料庫狀態。</li>
@@ -231,7 +241,7 @@
           <li>若權限已拒絕，DreamChat 會顯示「前往系統設定」，不會反覆跳出系統要求。</li>
         </ul>
 
-        <h2 id="zh-settings">11. 設定、會員與備份</h2>
+        <h2 id="zh-settings">12. 設定、會員與備份</h2>
         <ul>
           <li>「設定 → 自己」可修改自己的顯示名稱。</li>
           <li>「設定 → 會員」可查看目前方案、恢復購買與比較方案限制；符合資格時會顯示夢行者年方案一個月免費試用提示。</li>
@@ -239,7 +249,7 @@
           <li>「設定 → 資料」可匯出完整備份、角色設定文字檔、聊天記錄文字檔，也可以匯入完整備份。</li>
           <li>匯入完整備份會覆蓋目前 App 內資料，請先確認已保留需要的檔案。</li>
         </ul>
-        <p class="guide-highlight">想快速看本版新增功能，請看 <a href="articles/v3-0-0-update.html?lang=zh-Hant">3.0.0 版本更新內容</a>。</p>
+        <p class="guide-highlight">想快速看本版新增功能，請看 <a href="articles/v3-1-0-update.html?lang=zh-Hant">3.1.0 版本更新內容</a>。</p>
       </article>
 
       <!-- ============================================================ -->
@@ -247,15 +257,16 @@
       <!-- ============================================================ -->
       <article data-lang="zh-Hans">
         <h1>DreamChat 使用说明</h1>
-        <p class="meta">对应版本：v3.0.0</p>
+        <p class="meta">对应版本：v3.1.0</p>
 
-        <p class="lead">这份说明适合第一次使用 DreamChat 的用户。你可以先从聊天开始，再慢慢整理角色、字卡库、定时来信与表情包。</p>
+        <p class="lead">这份说明适合第一次使用 DreamChat 的用户。你可以先从聊天开始，再慢慢整理角色、字卡库、语音消息、定时来信与表情包。</p>
 
         <nav class="guide-toc" aria-label="DreamChat 使用说明目录">
           <a href="#zh-hans-start">快速开始</a>
           <a href="#zh-hans-chat">聊天</a>
           <a href="#zh-hans-characters">角色</a>
           <a href="#zh-hans-phrases">字卡库</a>
+          <a href="#zh-hans-voice-messages">语音消息</a>
           <a href="#zh-hans-context-tags">情境标签</a>
           <a href="#zh-hans-scheduled">定时来信</a>
           <a href="#zh-hans-weather-reminder">天气提醒</a>
@@ -293,7 +304,7 @@
           <li>角色名称、聊天室背景、是否显示已读与自己的头像。</li>
           <li>回复时间，例如最短与最长延迟。</li>
           <li><a href="articles/chat-modes.html?lang=zh-Hans#zh-hans-modes">聊天模式</a>：一般「聊天模式」或「是否模式」。</li>
-          <li>字卡库、表情包使用设置、定时来信、天气提醒与视频通话。</li>
+          <li>字卡库、语音消息、表情包使用设置、定时来信、天气提醒与视频通话。</li>
           <li>右上角分享按钮可导出角色分享文件。</li>
         </ul>
 
@@ -312,7 +323,16 @@
         </ul>
         <p class="guide-highlight">「智能辅助」在角色设置的字卡库区块中设置，可选「关闭、自然、精准、多变」。它会依据收到的消息、字卡组名称、适用情境、触发关键词与字卡内容选择字卡组；Apple 语言处理可用时会加入设备端判断，但不会生成新的对话内容。想让关键词更容易接对话题，可查看 <a href="articles/smart-assist-keyword-guide.html">智能辅助设置技巧</a>。</p>
 
-        <h2 id="zh-hans-context-tags">5. 用情境标签指定当前对话脉络</h2>
+        <h2 id="zh-hans-voice-messages">5. 设置角色语音消息</h2>
+        <p>路径：<span class="guide-path">角色 → 角色设置 → 语音消息</span></p>
+        <ul>
+          <li>每条语音消息需要短音频、显示文字与要套用的字卡组；启用后会和同字卡组的文字字卡一起进入回复候选。</li>
+          <li>聊天抽到语音消息时会发送可播放的语音气泡；列表、搜索、通知与文字导出会使用显示文字。</li>
+          <li>语音容量会依当前方案与已购买的语音扩展包计算，超出容量的语音会封存，不会进入回复候选。</li>
+        </ul>
+        <p class="guide-note">完整设置、方案限制、语音包与备份差异请看 <a href="articles/voice-messages-guide.html?lang=zh-Hans">语音消息详细说明</a>。</p>
+
+        <h2 id="zh-hans-context-tags">6. 用情境标签指定当前对话脉络</h2>
         <p>路径：<span class="guide-path">设置 → 情境 → 情境标签</span></p>
         <ul>
           <li>先建立可重复使用的情境标签，例如「睡前」、「旅行」、「安慰」。</li>
@@ -324,7 +344,7 @@
 
         <p class="guide-note">情境标签适合用来快速切换「现在在聊什么」，不是用来撰写回复内容。完整设置方式与影响范围请看 <a href="articles/context-tags.html">情境标签详细说明</a>。</p>
 
-        <h2 id="zh-hans-scheduled">6. 设置定时来信</h2>
+        <h2 id="zh-hans-scheduled">7. 设置定时来信</h2>
         <p>路径：<span class="guide-path">角色 → 角色设置 → 定时来信</span></p>
         <ol class="guide-steps">
           <li>按加号新增定时来信。</li>
@@ -337,17 +357,17 @@
 
         <p class="guide-note">定时来信需要通知权限。可到「设置 → 通知」开启角色来信通知，并在「设置 → 通知 → 系统权限」查看或调整通知状态。</p>
 
-        <h2 id="zh-hans-weather-reminder">7. 天气提醒</h2>
+        <h2 id="zh-hans-weather-reminder">8. 天气提醒</h2>
         <p>路径：<span class="guide-path">角色 → 角色设置 → 天气提醒</span></p>
         <ul><li>可为角色设置每日天气提醒，选择一对一聊天室、提醒时间、时间浮动与地区。</li><li>手动选择地区不需要定位权限；使用当前位置只会在你明确操作后请求「使用 App 期间」位置权限。</li><li>开启「在聊天中询问」后，可用关键词让角色回复当前天气，也可选择命中时只发送天气回复。</li></ul>
         <p class="guide-note">完整设置方式与字卡撰写方式请看 <a href="articles/weather-reminder-guide.html?lang=zh-Hans">天气提醒详细说明</a>。</p>
 
-        <h2 id="zh-hans-video-call">8. 视频通话</h2>
+        <h2 id="zh-hans-video-call">9. 视频通话</h2>
         <p>路径：<span class="guide-path">角色 → 角色设置 → 视频通话</span></p>
         <ul><li>一对一聊天可拨打角色，或发出「让他来电」请求。</li><li>每个角色可设置是否启用主动来电、来电频率与通话背景；设置中的通知页可调整铃声与全局勿扰时段。</li><li>这是本地模拟通话，不使用真实摄像头、麦克风或系统电话画面；App 外只会跳本地通知。</li></ul>
         <p class="guide-note">来电逻辑、重拨与 App 外通知限制请看 <a href="articles/video-call-guide.html?lang=zh-Hans">视频通话详细说明</a>。</p>
 
-        <h2 id="zh-hans-stickers">9. 表情包与表情符号</h2>
+        <h2 id="zh-hans-stickers">10. 表情包与表情符号</h2>
         <p>路径：<span class="guide-path">设置 → 表情包与表情符号</span></p>
         <ul>
           <li>在「表情包管理」新增表情包组，进入表情包组后可从相册或文件加入图片。</li>
@@ -356,7 +376,7 @@
           <li>聊天时按输入栏左侧的表情按钮，就能选择表情包或插入表情符号。</li>
         </ul>
 
-        <h2 id="zh-hans-permissions">10. 系统权限</h2>
+        <h2 id="zh-hans-permissions">11. 系统权限</h2>
         <p>路径：<span class="guide-path">设置 → 通知 → 系统权限</span></p>
         <ul>
           <li>可查看通知、图片选择、截图保存与 Music 资料库状态。</li>
@@ -364,7 +384,7 @@
           <li>若权限已拒绝，DreamChat 会显示「前往系统设置」，不会反复弹出系统请求。</li>
         </ul>
 
-        <h2 id="zh-hans-settings">11. 设置、会员与备份</h2>
+        <h2 id="zh-hans-settings">12. 设置、会员与备份</h2>
         <ul>
           <li>「设置 → 自己」可修改自己的显示名称。</li>
           <li>「设置 → 会员」可查看当前方案、恢复购买与比较方案限制；符合资格时会显示梦行者年方案一个月免费试用提示。</li>
@@ -372,7 +392,7 @@
           <li>「设置 → 数据」可导出完整备份、角色设置文本、聊天记录文本，也可以导入完整备份。</li>
           <li>导入完整备份会覆盖当前 App 内数据，请先确认已保留需要的文件。</li>
         </ul>
-        <p class="guide-highlight">想快速看本版新增功能，请看 <a href="articles/v3-0-0-update.html?lang=zh-Hans">3.0.0 版本更新内容</a>。</p>
+        <p class="guide-highlight">想快速看本版新增功能，请看 <a href="articles/v3-1-0-update.html?lang=zh-Hans">3.1.0 版本更新内容</a>。</p>
       </article>
 
       <!-- ============================================================ -->
@@ -380,15 +400,16 @@
       <!-- ============================================================ -->
       <article data-lang="ja">
         <h1>DreamChat 使い方ガイド</h1>
-        <p class="meta">対応バージョン：v3.0.0</p>
+        <p class="meta">対応バージョン：v3.1.0</p>
 
-        <p class="lead">このガイドは、DreamChat を初めて使う方向けです。まずはチャットから始めて、必要に応じてキャラクター、定型文集、予約受信、スタンプを整えていけます。</p>
+        <p class="lead">このガイドは、DreamChat を初めて使う方向けです。まずはチャットから始めて、必要に応じてキャラクター、定型文集、ボイスメッセージ、予約受信、スタンプを整えていけます。</p>
 
         <nav class="guide-toc" aria-label="DreamChat 使い方ガイド目次">
           <a href="#ja-start">はじめに</a>
           <a href="#ja-chat">チャット</a>
           <a href="#ja-characters">キャラクター</a>
           <a href="#ja-phrases">定型文集</a>
+          <a href="#ja-voice-messages">ボイスメッセージ</a>
           <a href="#ja-context-tags">コンテキストタグ</a>
           <a href="#ja-scheduled">予約受信</a>
           <a href="#ja-weather-reminder">天気</a>
@@ -426,7 +447,7 @@
           <li>キャラクター名、チャット背景、既読表示、自分のアイコン表示。</li>
           <li>返信タイミング、最小・最大の待ち時間。</li>
           <li><a href="articles/chat-modes.html?lang=ja#ja-modes">チャットモード</a>：通常の「チャットモード」または「はい/いいえモード」。</li>
-          <li>定型文集、スタンプの使用設定、予約受信、天気リマインダー、ビデオ通話。</li>
+          <li>定型文集、ボイスメッセージ、スタンプの使用設定、予約受信、天気リマインダー、ビデオ通話。</li>
           <li>右上の共有ボタンからキャラクター共有ファイルを書き出せます。</li>
         </ul>
 
@@ -445,7 +466,16 @@
         </ul>
         <p class="guide-highlight">「スマートアシスト」はキャラクター設定の定型文集セクションで設定でき、「オフ、自然、精密、多彩」から選べます。受信メッセージ、セット名、使う場面、トリガーキーワード、定型文の内容をもとに定型文セットを選びます。Apple の言語処理が利用できる場合は端末内の判断も使いますが、新しい会話文は生成しません。キーワードを合わせやすくするには、<a href="articles/smart-assist-keyword-guide.html">スマートアシスト設定のコツ</a>をご覧ください。</p>
 
-        <h2 id="ja-context-tags">5. コンテキストタグで今の会話の状況を指定する</h2>
+        <h2 id="ja-voice-messages">5. ボイスメッセージを設定する</h2>
+        <p>場所：<span class="guide-path">キャラクター → キャラクター設定 → ボイスメッセージ</span></p>
+        <ul>
+          <li>各ボイスメッセージには短い音声、表示テキスト、割り当てる定型文セットが必要です。有効にすると、同じ定型文セットのテキスト定型文と一緒に返信候補に入ります。</li>
+          <li>チャットで選ばれると、再生できる音声バブルとして送信されます。一覧、検索、通知、テキスト書き出しでは表示テキストが使われます。</li>
+          <li>ボイス容量は現在のプランと購入済みの追加パックで計算されます。容量を超えたボイスはアーカイブされ、返信候補には入りません。</li>
+        </ul>
+        <p class="guide-note">詳しい設定、プラン制限、音声パッケージ、バックアップとの違いは <a href="articles/voice-messages-guide.html?lang=ja">ボイスメッセージ詳しい説明</a> をご覧ください。</p>
+
+        <h2 id="ja-context-tags">6. コンテキストタグで今の会話の状況を指定する</h2>
         <p>場所：<span class="guide-path">設定 → コンテキスト → コンテキストタグ</span></p>
         <ul>
           <li>まず「寝る前」「旅行」「慰めてほしい」など、繰り返し使うコンテキストタグを作成します。</li>
@@ -457,7 +487,7 @@
 
         <p class="guide-note">コンテキストタグは「今何について話しているか」を切り替えるためのもので、返信文そのものを書く機能ではありません。詳しい設定方法と影響範囲は <a href="articles/context-tags.html">コンテキストタグの詳しい説明</a> をご覧ください。</p>
 
-        <h2 id="ja-scheduled">6. 予約受信を設定する</h2>
+        <h2 id="ja-scheduled">7. 予約受信を設定する</h2>
         <p>場所：<span class="guide-path">キャラクター → キャラクター設定 → 予約受信</span></p>
         <ol class="guide-steps">
           <li>追加ボタンで予約受信を作成します。</li>
@@ -470,17 +500,17 @@
 
         <p class="guide-note">予約受信には通知の許可が必要です。「設定 → 通知」でキャラクターからの通知を有効にし、「設定 → 通知 → システム権限」で通知状態を確認または変更できます。</p>
 
-        <h2 id="ja-weather-reminder">7. 天気リマインダー</h2>
+        <h2 id="ja-weather-reminder">8. 天気リマインダー</h2>
         <p>場所：<span class="guide-path">キャラクター → キャラクター設定 → 天気リマインダー</span></p>
         <ul><li>キャラクターごとに毎日の天気リマインダーを設定し、1対1チャット、時刻、時間のゆらぎ、地域を選べます。</li><li>手動で地域を選ぶ場合は位置情報権限を使いません。現在地は明示的に選んだ後にだけ「App の使用中」の権限を求めます。</li><li>「チャット内で質問」をオンにすると、キーワードで現在の天気に答えられます。</li></ul>
         <p class="guide-note">詳しい設定と定型文の書き方は <a href="articles/weather-reminder-guide.html?lang=ja">天気リマインダー詳しい説明</a>をご覧ください。</p>
 
-        <h2 id="ja-video-call">8. ビデオ通話</h2>
+        <h2 id="ja-video-call">9. ビデオ通話</h2>
         <p>場所：<span class="guide-path">キャラクター → キャラクター設定 → ビデオ通話</span></p>
         <ul><li>1対1チャットからキャラクターに発信したり、「あとでかけて」と依頼したりできます。</li><li>キャラクターごとに自発着信、着信頻度、通話背景を設定できます。通知設定では着信音と全体のサイレント時間を調整できます。</li><li>これはローカルの模擬通話です。実際のカメラ、マイク、システム電話画面は使わず、アプリ外ではローカル通知だけを表示します。</li></ul>
         <p class="guide-note">着信ロジック、再着信、アプリ外通知の制限は <a href="articles/video-call-guide.html?lang=ja">ビデオ通話詳しい説明</a>をご覧ください。</p>
 
-        <h2 id="ja-stickers">9. スタンプと絵文字</h2>
+        <h2 id="ja-stickers">10. スタンプと絵文字</h2>
         <p>場所：<span class="guide-path">設定 → スタンプと絵文字</span></p>
         <ul>
           <li>「スタンプ管理」でスタンプセットを追加し、セット内で写真またはファイルから画像を追加します。</li>
@@ -489,7 +519,7 @@
           <li>チャット中は入力欄左側の絵文字ボタンから、スタンプの送信や絵文字の挿入ができます。</li>
         </ul>
 
-        <h2 id="ja-permissions">10. システム権限</h2>
+        <h2 id="ja-permissions">11. システム権限</h2>
         <p>場所：<span class="guide-path">設定 → 通知 → システム権限</span></p>
         <ul>
           <li>通知、画像選択、スクリーンショット保存、Music ライブラリの状態を確認できます。</li>
@@ -497,7 +527,7 @@
           <li>拒否済みの場合、DreamChat はシステム設定への導線を表示し、同じ許可を繰り返し求めません。</li>
         </ul>
 
-        <h2 id="ja-settings">11. 設定、メンバーシップ、バックアップ</h2>
+        <h2 id="ja-settings">12. 設定、メンバーシップ、バックアップ</h2>
         <ul>
           <li>「設定 → 自分」で自分の表示名を変更できます。</li>
           <li>「設定 → メンバーシップ」で現在のプラン、購入の復元、プラン制限の比較を確認できます。対象ユーザーにはドリームウォーカー年間プランの1か月無料体験案内も表示されます。</li>
@@ -505,7 +535,7 @@
           <li>「設定 → データ」では、完全バックアップ、キャラクター設定テキスト、チャット履歴テキストを書き出せます。完全バックアップの読み込みもできます。</li>
           <li>完全バックアップの読み込みは現在のアプリ内データを上書きします。必要なファイルを保存してから実行してください。</li>
         </ul>
-        <p class="guide-highlight">このバージョンの主な変更は、<a href="articles/v3-0-0-update.html?lang=ja">3.0.0 アップデート内容</a>で確認できます。</p>
+        <p class="guide-highlight">このバージョンの主な変更は、<a href="articles/v3-1-0-update.html?lang=ja">3.1.0 アップデート内容</a>で確認できます。</p>
       </article>
 
       <!-- ============================================================ -->
@@ -513,15 +543,16 @@
       <!-- ============================================================ -->
       <article data-lang="en">
         <h1>DreamChat User Guide</h1>
-        <p class="meta">Applies to version v3.0.0</p>
+        <p class="meta">Applies to version v3.1.0</p>
 
-        <p class="lead">This guide is for people opening DreamChat for the first time. Start with chat, then shape your characters, chat phrases, scheduled messages, and stickers as you go.</p>
+        <p class="lead">This guide is for people opening DreamChat for the first time. Start with chat, then shape your characters, chat phrases, voice messages, scheduled messages, and stickers as you go.</p>
 
         <nav class="guide-toc" aria-label="DreamChat user guide table of contents">
           <a href="#en-start">Start</a>
           <a href="#en-chat">Chat</a>
           <a href="#en-characters">Characters</a>
           <a href="#en-phrases">Chat Phrases</a>
+          <a href="#en-voice-messages">Voice Messages</a>
           <a href="#en-context-tags">Context Tags</a>
           <a href="#en-scheduled">Scheduled Messages</a>
           <a href="#en-weather-reminder">Weather</a>
@@ -559,7 +590,7 @@
           <li>Character name, chat background, read receipts, and whether your own avatar is shown.</li>
           <li>Reply timing, including minimum and maximum delay.</li>
           <li><a href="articles/chat-modes.html?lang=en#en-modes">Chat mode</a>: normal Chat Mode or Yes/No Mode.</li>
-          <li>Chat Phrases, sticker usage, scheduled messages, Weather Reminder, and Video Call.</li>
+          <li>Chat Phrases, Voice Messages, sticker usage, scheduled messages, Weather Reminder, and Video Call.</li>
           <li>The share button in the top-right corner exports a character share file.</li>
         </ul>
 
@@ -578,7 +609,16 @@
         </ul>
         <p class="guide-highlight">Smart Assist is set in the Chat Phrases section of Character Settings, with Off, Natural, Precise, and Varied modes. It chooses a phrase set using the incoming message, set name, usage context, trigger keywords, and chat phrase text. When Apple language processing is available, on-device judgment can help, but it does not generate new conversation text. For better trigger keywords, see the <a href="articles/smart-assist-keyword-guide.html">Smart Assist setup tips</a>.</p>
 
-        <h2 id="en-context-tags">5. Using Context Tags for the Current Chat Context</h2>
+        <h2 id="en-voice-messages">5. Setting Up Character Voice Messages</h2>
+        <p>Path: <span class="guide-path">Characters → Character Settings → Voice Messages</span></p>
+        <ul>
+          <li>Each voice message needs a short audio file, display text, and the phrase sets it should use. When enabled, it joins the reply pool with text phrases from the same phrase sets.</li>
+          <li>When a voice message is selected in chat, DreamChat sends a playable voice bubble. Lists, search, notifications, and text exports use the display text.</li>
+          <li>Voice capacity is calculated from your current plan and purchased Voice Expansion Packs. Voice messages beyond capacity are archived and do not enter the reply pool.</li>
+        </ul>
+        <p class="guide-note">For full setup, plan limits, voice packages, and backup differences, see the <a href="articles/voice-messages-guide.html?lang=en">Voice Messages Guide</a>.</p>
+
+        <h2 id="en-context-tags">6. Using Context Tags for the Current Chat Context</h2>
         <p>Path: <span class="guide-path">Settings → Context → Context Tags</span></p>
         <ul>
           <li>Create reusable context tags such as "bedtime", "travel", or "comfort".</li>
@@ -590,7 +630,7 @@
 
         <p class="guide-note">Context tags are for switching what the chat is currently about. They do not write reply text. For setup details and behavior notes, see the <a href="articles/context-tags.html">Context Tags guide</a>.</p>
 
-        <h2 id="en-scheduled">6. Setting Up Scheduled Messages</h2>
+        <h2 id="en-scheduled">7. Setting Up Scheduled Messages</h2>
         <p>Path: <span class="guide-path">Characters → Character Settings → Scheduled messages</span></p>
         <ol class="guide-steps">
           <li>Tap the plus button to add a scheduled message.</li>
@@ -603,17 +643,17 @@
 
         <p class="guide-note">Scheduled messages need notification permission. You can enable Character Message Alerts in Settings → Notifications, and review the status in Settings → Notifications → System Permissions.</p>
 
-        <h2 id="en-weather-reminder">7. Weather Reminder</h2>
+        <h2 id="en-weather-reminder">8. Weather Reminder</h2>
         <p>Path: <span class="guide-path">Characters → Character Settings → Weather Reminder</span></p>
         <ul><li>Set a daily weather reminder for a character, including the target one-on-one chat, reminder time, time variation, and region.</li><li>Manual region selection does not require location permission. Current location is requested only after you explicitly choose to use it.</li><li>When Ask in Chat is enabled, keywords can trigger current-weather replies, with an option to send only the weather reply.</li></ul>
         <p class="guide-note">For full setup and phrase-writing guidance, see the <a href="articles/weather-reminder-guide.html?lang=en">Weather Reminder Guide</a>.</p>
 
-        <h2 id="en-video-call">8. Video Call</h2>
+        <h2 id="en-video-call">9. Video Call</h2>
         <p>Path: <span class="guide-path">Characters → Character Settings → Video Call</span></p>
         <ul><li>In one-on-one chats, you can call a character or ask them to call later.</li><li>Each character can control incoming calls, frequency, and call background. Notification settings control ringtone and global quiet hours.</li><li>This is a local simulated call. It does not use the real camera, microphone, or system phone UI. Outside the app, it only shows local notifications.</li></ul>
         <p class="guide-note">For incoming-call logic, redials, and outside-app notification limits, see the <a href="articles/video-call-guide.html?lang=en">Video Call Guide</a>.</p>
 
-        <h2 id="en-stickers">9. Stickers and Emoji</h2>
+        <h2 id="en-stickers">10. Stickers and Emoji</h2>
         <p>Path: <span class="guide-path">Settings → Stickers &amp; Emoji</span></p>
         <ul>
           <li>In Sticker Management, create a sticker set, then add images from Photos or Files.</li>
@@ -622,7 +662,7 @@
           <li>In chat, tap the emoji button on the left side of the input bar to send stickers or insert emoji.</li>
         </ul>
 
-        <h2 id="en-permissions">10. System Permissions</h2>
+        <h2 id="en-permissions">11. System Permissions</h2>
         <p>Path: <span class="guide-path">Settings → Notifications → System Permissions</span></p>
         <ul>
           <li>Review notifications, photo selection, screenshot saving, and Music library access.</li>
@@ -630,7 +670,7 @@
           <li>If access was denied, DreamChat shows Open Settings instead of repeatedly asking again.</li>
         </ul>
 
-        <h2 id="en-settings">11. Settings, Membership, and Backup</h2>
+        <h2 id="en-settings">12. Settings, Membership, and Backup</h2>
         <ul>
           <li>Settings → Me lets you change your display name.</li>
           <li>Settings → Membership shows your current plan, Restore Purchases, and plan limit comparison. Eligible users also see the one-month Dream Walker yearly trial prompt.</li>
@@ -638,7 +678,7 @@
           <li>Settings → Data can export a full backup, character settings text, or chat history text, and can import a full backup.</li>
           <li>Importing a full backup overwrites the current app data. Keep any files you need before continuing.</li>
         </ul>
-        <p class="guide-highlight">For a quick overview of this release, see <a href="articles/v3-0-0-update.html?lang=en">What's New in 3.0.0</a>.</p>
+        <p class="guide-highlight">For a quick overview of this release, see <a href="articles/v3-1-0-update.html?lang=en">What's New in 3.1.0</a>.</p>
       </article>
     </main>
 
