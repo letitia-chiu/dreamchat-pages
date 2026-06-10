@@ -33,10 +33,16 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">
+    <span data-lang="zh-Hant">跳至主要內容</span>
+    <span data-lang="zh-Hans">跳至主要内容</span>
+    <span data-lang="ja">本文へスキップ</span>
+    <span data-lang="en">Skip to main content</span>
+  </a>
   <div class="container">
     <header class="site-header">
       <div class="brand">
-        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="DreamChat">
         <a href="../index.html">DreamChat</a>
       </div>
       <nav class="primary-nav" aria-label="Main navigation">
@@ -95,12 +101,12 @@
       </div>
     </header>
 
-    <main class="page guide-page">
+    <main id="main-content" class="page guide-page">
       <article data-lang="zh-Hant">
         <div class="title-with-tag"><h1>4.0.0 版本更新內容</h1><span class="status-tag status-tag-upcoming">即將推出</span></div>
         <p class="meta">對應版本：v4.0.0</p>
         <p class="lead">4.0.0 新增「日常」分頁，把紀念日、圖片小物件與角色狀態整理在一起，並加入塔羅解讀、裝置端 Apple Intelligence 綜合解讀與素材與授權頁，音樂不推薦清單也更好管理。</p>
-        <nav class="guide-toc" aria-label="4.0.0 版本更新目錄"><a href="#zh-daily">日常分頁</a><a href="#zh-tarot">塔羅</a><a href="#zh-ai">Apple Intelligence</a><a href="#zh-licenses">素材與授權</a><a href="#zh-music">音樂</a><a href="#zh-fixes">修復</a></nav>
+        <nav class="guide-toc" aria-label="4.0.0 版本更新目錄"><a href="#zh-daily">日常分頁</a><a href="#zh-tarot">塔羅</a><a href="#zh-licenses">素材與授權</a><a href="#zh-music">音樂</a><a href="#zh-fixes">修復</a></nav>
         <h2 id="zh-daily">1. 日常分頁</h2>
         <p>新增「日常」分頁，可切換目前角色，整理紀念日卡、圖片小物件、角色狀態與我的狀態。日常主頁支援自訂背景，紀念日可固定顯示或輪播多組，也可管理角色心情與短句模板。</p>
         <p>日常資料保存在裝置本機，完整備份可一併包含；角色分享檔不包含日常私人關係、狀態或背景資料。</p>
@@ -108,14 +114,13 @@
         <p>日常中新增「塔羅」入口。你可以輸入問題（也可以留空），選擇單張或三張牌陣，查看內建卡圖與四語靜態牌義。塔羅卡圖隨 App 內建，不會遠端下載。</p>
         <p>塔羅結果可保存、搜尋、刪除、分享至聊天，也可整理成圖片保存或分享。分享訊息會保留當下內容，即使之後刪除歷史紀錄仍可閱讀。</p>
         <p class="guide-note">塔羅每日使用次數依目前方案在本機計算：免費版每日 1 次，單夢輕量版與多夢輕量版每日 3 次，夢行者無限制。刪除歷史紀錄不會重置當日已使用次數。</p>
-        <h2 id="zh-ai">3. 裝置端 Apple Intelligence 綜合解讀</h2>
-        <p>在支援的裝置與系統版本（iOS 26 以上且裝置支援 Apple Intelligence）上，可以手動使用裝置端 Apple Intelligence 為當次解讀產生綜合解讀。輸入僅限當次解讀的問題、牌陣、抽出的牌與牌義，不會傳送至開發者伺服器或第三方 AI 服務。</p>
+        <p>在支援的裝置與系統版本（iOS 26 以上且裝置支援 Apple Intelligence）上，還可以手動使用裝置端 Apple Intelligence 為當次解讀產生綜合解讀。輸入僅限當次解讀的問題、牌陣、抽出的牌與牌義，不會傳送至開發者伺服器或第三方 AI 服務。</p>
         <p class="guide-note">若模型不可用、產生失敗或取消，會保留靜態牌義，不額外消耗塔羅使用次數。不使用 Apple Intelligence 時，靜態牌義仍完整可用。</p>
-        <h2 id="zh-licenses">4. 素材與授權頁</h2>
+        <h2 id="zh-licenses">3. 素材與授權頁</h2>
         <p>設定中新增「素材與授權」頁，說明塔羅卡圖來源、打包方式、本機資料處理與使用提醒。</p>
-        <h2 id="zh-music">5. 音樂不推薦清單</h2>
+        <h2 id="zh-music">4. 音樂不推薦清單</h2>
         <p>「不推薦清單」支援搜尋與排序，並顯示專輯資訊；在待播清單長按歌曲也能直接加入不推薦清單。</p>
-        <h2 id="zh-fixes">6. 修復與穩定性</h2>
+        <h2 id="zh-fixes">5. 修復與穩定性</h2>
         <p>修復了一些備份還原、搜尋、截圖、音樂選擇與穩定性問題。</p>
       </article>
 
@@ -123,7 +128,7 @@
         <div class="title-with-tag"><h1>4.0.0 版本更新内容</h1><span class="status-tag status-tag-upcoming">即将推出</span></div>
         <p class="meta">对应版本：v4.0.0</p>
         <p class="lead">4.0.0 新增“日常”分页，把纪念日、图片小组件与角色状态整理在一起，并加入塔罗解读、设备端 Apple Intelligence 综合解读与素材与授权页，音乐不推荐清单也更好管理。</p>
-        <nav class="guide-toc" aria-label="4.0.0 版本更新目录"><a href="#zh-hans-daily">日常分页</a><a href="#zh-hans-tarot">塔罗</a><a href="#zh-hans-ai">Apple Intelligence</a><a href="#zh-hans-licenses">素材与授权</a><a href="#zh-hans-music">音乐</a><a href="#zh-hans-fixes">修复</a></nav>
+        <nav class="guide-toc" aria-label="4.0.0 版本更新目录"><a href="#zh-hans-daily">日常分页</a><a href="#zh-hans-tarot">塔罗</a><a href="#zh-hans-licenses">素材与授权</a><a href="#zh-hans-music">音乐</a><a href="#zh-hans-fixes">修复</a></nav>
         <h2 id="zh-hans-daily">1. 日常分页</h2>
         <p>新增“日常”分页，可切换当前角色，整理纪念日卡、图片小组件、角色状态与我的状态。日常主页支持自定义背景，纪念日可固定显示或轮播多组，也可管理角色情绪与短句模板。</p>
         <p>日常数据保存在设备本地，完整备份可一并包含；角色分享文件不包含日常私人关系、状态或背景数据。</p>
@@ -131,14 +136,13 @@
         <p>日常中新增“塔罗”入口。你可以输入问题（也可以留空），选择单张或三张牌阵，查看内置卡图与四语静态牌义。塔罗卡图随 App 内置，不会远程下载。</p>
         <p>塔罗结果可保存、搜索、删除、分享到聊天，也可整理成图片保存或分享。分享消息会保留当时内容，即使之后删除历史记录仍可阅读。</p>
         <p class="guide-note">塔罗每日使用次数依当前方案在本地计算：免费版每日 1 次，单梦轻量版与多梦轻量版每日 3 次，梦行者无限制。删除历史记录不会重置当日已使用次数。</p>
-        <h2 id="zh-hans-ai">3. 设备端 Apple Intelligence 综合解读</h2>
-        <p>在支持的设备与系统版本（iOS 26 以上且设备支持 Apple Intelligence）上，可以手动使用设备端 Apple Intelligence 为当次解读生成综合解读。输入仅限当次解读的问题、牌阵、抽出的牌与牌义，不会发送至开发者服务器或第三方 AI 服务。</p>
+        <p>在支持的设备与系统版本（iOS 26 以上且设备支持 Apple Intelligence）上，还可以手动使用设备端 Apple Intelligence 为当次解读生成综合解读。输入仅限当次解读的问题、牌阵、抽出的牌与牌义，不会发送至开发者服务器或第三方 AI 服务。</p>
         <p class="guide-note">若模型不可用、生成失败或取消，会保留静态牌义，不额外消耗塔罗使用次数。不使用 Apple Intelligence 时，静态牌义仍完整可用。</p>
-        <h2 id="zh-hans-licenses">4. 素材与授权页</h2>
+        <h2 id="zh-hans-licenses">3. 素材与授权页</h2>
         <p>设置中新增“素材与授权”页，说明塔罗卡图来源、打包方式、本地数据处理与使用提醒。</p>
-        <h2 id="zh-hans-music">5. 音乐不推荐清单</h2>
+        <h2 id="zh-hans-music">4. 音乐不推荐清单</h2>
         <p>“不推荐清单”支持搜索与排序，并显示专辑信息；在待播清单长按歌曲也能直接加入不推荐清单。</p>
-        <h2 id="zh-hans-fixes">6. 修复与稳定性</h2>
+        <h2 id="zh-hans-fixes">5. 修复与稳定性</h2>
         <p>修复了一些备份还原、搜索、截图、音乐选择与稳定性问题。</p>
       </article>
 
@@ -146,22 +150,21 @@
         <div class="title-with-tag"><h1>4.0.0 アップデート内容</h1><span class="status-tag status-tag-upcoming">近日公開</span></div>
         <p class="meta">対応バージョン：v4.0.0</p>
         <p class="lead">4.0.0 では「日常」タブが加わり、記念日、写真ウィジェット、キャラクターのステータスをまとめて管理できます。タロットリーディング、端末上の Apple Intelligence による総合解釈、「素材とライセンス」ページも追加され、ミュージックのおすすめ除外リストも使いやすくなります。</p>
-        <nav class="guide-toc" aria-label="4.0.0 アップデート目次"><a href="#ja-daily">日常タブ</a><a href="#ja-tarot">タロット</a><a href="#ja-ai">Apple Intelligence</a><a href="#ja-licenses">素材とライセンス</a><a href="#ja-music">ミュージック</a><a href="#ja-fixes">修正</a></nav>
+        <nav class="guide-toc" aria-label="4.0.0 アップデート目次"><a href="#ja-daily">日常タブ</a><a href="#ja-tarot">タロット</a><a href="#ja-licenses">素材とライセンス</a><a href="#ja-music">ミュージック</a><a href="#ja-fixes">修正</a></nav>
         <h2 id="ja-daily">1. 日常タブ</h2>
         <p>「日常」タブを追加しました。現在のキャラクターを切り替え、記念日カード、写真ウィジェット、キャラクターのステータス、自分のステータスをまとめられます。日常ホームでは背景を設定でき、記念日は固定表示または複数のローテーションに対応し、キャラクターの気分とひとことテンプレートも管理できます。</p>
-        <p>Daily データは端末内に保存され、完全バックアップに含めることができます。キャラクター共有ファイルには、日常の私的な関係、ステータス、背景データは含まれません。</p>
+        <p>日常のデータは端末内に保存され、完全バックアップに含めることができます。キャラクター共有ファイルには、日常の私的な関係、ステータス、背景データは含まれません。</p>
         <h2 id="ja-tarot">2. タロットリーディング</h2>
         <p>日常の中に「タロット」機能を追加しました。質問を入力し（空欄でも可）、1枚または3枚のスプレッドを選んで、内蔵カード画像と4言語のカード解説を確認できます。タロットカード画像はアプリに同梱されており、リモートからダウンロードされません。</p>
         <p>タロット結果は保存、検索、削除、チャット共有ができ、画像としてまとめて保存・共有することもできます。共有メッセージには当時の内容が残るため、履歴を削除しても読み返せます。</p>
         <p class="guide-note">タロットの1日の使用回数は、現在のプランに基づいて端末内で計算されます。無料版は1日1回、一途 Lite とグループ Lite は1日3回、ドリームウォーカーは無制限です。履歴を削除しても当日の使用回数はリセットされません。</p>
-        <h2 id="ja-ai">3. 端末上の Apple Intelligence 総合解釈</h2>
-        <p>対応する端末と OS（iOS 26 以降で Apple Intelligence に対応した端末）では、端末上の Apple Intelligence を使って、そのリーディングの総合解釈を手動で生成できます。入力はそのリーディングの質問、スプレッド、引いたカード、カード解説に限定され、開発者のサーバーや第三者 AI サービスへ送信されることはありません。</p>
+        <p>対応する端末と OS（iOS 26 以降で Apple Intelligence に対応した端末）では、端末上の Apple Intelligence を使って、そのリーディングの総合解釈を手動で生成することもできます。入力はそのリーディングの質問、スプレッド、引いたカード、カード解説に限定され、開発者のサーバーや第三者 AI サービスへ送信されることはありません。</p>
         <p class="guide-note">モデルが利用できない場合や、生成の失敗・キャンセル時は基本のカード解説が残り、タロットの使用回数も追加で消費されません。Apple Intelligence を使わなくても、基本のカード解説はすべて利用できます。</p>
-        <h2 id="ja-licenses">4. 素材とライセンス</h2>
+        <h2 id="ja-licenses">3. 素材とライセンス</h2>
         <p>設定に「素材とライセンス」ページを追加しました。タロットカード画像の出典、同梱方法、ローカルデータの扱い、利用上の注意を確認できます。</p>
-        <h2 id="ja-music">5. ミュージックのおすすめ除外リスト</h2>
+        <h2 id="ja-music">4. ミュージックのおすすめ除外リスト</h2>
         <p>「おすすめ除外リスト」が検索と並べ替えに対応し、アルバム情報も表示されます。再生待ちリストの曲を長押しして、そのまま除外リストへ追加することもできます。</p>
-        <h2 id="ja-fixes">6. 修正と安定性</h2>
+        <h2 id="ja-fixes">5. 修正と安定性</h2>
         <p>バックアップ復元、検索、スクリーンショット、音楽選択、安定性に関する問題を修正しました。</p>
       </article>
 
@@ -169,7 +172,7 @@
         <div class="title-with-tag"><h1>What's New in 4.0.0</h1><span class="status-tag status-tag-upcoming">Coming Soon</span></div>
         <p class="meta">Applies to version v4.0.0</p>
         <p class="lead">4.0.0 adds the Daily tab to keep anniversaries, the photo widget, and character status in one place, plus Tarot readings, on-device Apple Intelligence summaries, an Assets &amp; Licenses page, and easier music exclusion management.</p>
-        <nav class="guide-toc" aria-label="4.0.0 update table of contents"><a href="#en-daily">Daily Tab</a><a href="#en-tarot">Tarot</a><a href="#en-ai">Apple Intelligence</a><a href="#en-licenses">Assets &amp; Licenses</a><a href="#en-music">Music</a><a href="#en-fixes">Fixes</a></nav>
+        <nav class="guide-toc" aria-label="4.0.0 update table of contents"><a href="#en-daily">Daily Tab</a><a href="#en-tarot">Tarot</a><a href="#en-licenses">Assets &amp; Licenses</a><a href="#en-music">Music</a><a href="#en-fixes">Fixes</a></nav>
         <h2 id="en-daily">1. The Daily Tab</h2>
         <p>The new Daily tab lets you switch the current character and keep anniversary cards, the photo widget, character status, and your own status in one place. Daily supports a custom home background, fixed or rotating anniversaries, and character mood and phrase templates.</p>
         <p>Daily data is stored locally on your device and can be included in complete backups. Character share files do not include Daily private relationship, status, or background data.</p>
@@ -177,14 +180,13 @@
         <p>Tarot is now available inside Daily. Enter an optional question, choose a one-card or three-card spread, and view bundled card art with four-language static meanings. Tarot card art is bundled with the app and is not downloaded remotely.</p>
         <p>Readings can be saved, searched, deleted, shared to chat, and turned into an image to save or share. Shared messages keep the reading content, so they stay readable even after the history item is deleted.</p>
         <p class="guide-note">Daily Tarot usage is counted locally based on your current plan: Free allows 1 reading per day, Single Dream Lite and Multi Dream Lite allow 3 per day, and Dream Walker is unlimited. Deleting history does not reset the day's usage.</p>
-        <h2 id="en-ai">3. On-Device Apple Intelligence Summaries</h2>
-        <p>On supported devices and OS versions (iOS 26 or later with Apple Intelligence support), you can manually generate a summary for the current reading using on-device Apple Intelligence. The input is limited to that reading's question, spread, drawn cards, and meanings, and is never sent to developer servers or third-party AI services.</p>
+        <p>On supported devices and OS versions (iOS 26 or later with Apple Intelligence support), you can also manually generate a summary for the current reading using on-device Apple Intelligence. The input is limited to that reading's question, spread, drawn cards, and meanings, and is never sent to developer servers or third-party AI services.</p>
         <p class="guide-note">If the model is unavailable, fails, or is cancelled, the static meanings remain and no extra Tarot usage is consumed. Static meanings stay fully available without Apple Intelligence.</p>
-        <h2 id="en-licenses">4. Assets &amp; Licenses</h2>
+        <h2 id="en-licenses">3. Assets &amp; Licenses</h2>
         <p>A new Assets &amp; Licenses page in Settings explains the tarot card art sources, how assets are packaged, local data handling, and a use notice.</p>
-        <h2 id="en-music">5. Music Do Not Recommend List</h2>
+        <h2 id="en-music">4. Music Do Not Recommend List</h2>
         <p>The Do Not Recommend list now supports search and sorting and shows album info. You can also long-press a track in Up Next to add it to the list directly.</p>
-        <h2 id="en-fixes">6. Fixes and Stability</h2>
+        <h2 id="en-fixes">5. Fixes and Stability</h2>
         <p>Fixed issues around backup restore, search, screenshots, music selection, and stability.</p>
       </article>
     </main>

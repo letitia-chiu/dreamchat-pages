@@ -9,6 +9,9 @@ Live site:
 - Home: https://letitia-chiu.github.io/dreamchat-pages/
 - User Guide: https://letitia-chiu.github.io/dreamchat-pages/guide.html
 - Articles: https://letitia-chiu.github.io/dreamchat-pages/articles.html
+- v4.0.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v4-0-0-update.html
+- v3.1.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v3-1-0-update.html
+- Voice Messages Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/voice-messages-guide.html
 - v3.0.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v3-0-0-update.html
 - Weather Reminder Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/weather-reminder-guide.html
 - Weather Reminder Phrase Tips: https://letitia-chiu.github.io/dreamchat-pages/articles/weather-reminder-phrase-tips.html
@@ -27,6 +30,9 @@ Live site:
 - `index.html` - DreamChat overview and links to support/privacy pages
 - `guide.html` - public user guide for first-time users
 - `articles.html` - guide article index
+- `articles/v4-0-0-update.html` - v4.0.0 public update notes
+- `articles/v3-1-0-update.html` - v3.1.0 public update notes
+- `articles/voice-messages-guide.html` - detailed Voice Messages guide
 - `articles/v3-0-0-update.html` - v3.0.0 public update notes
 - `articles/weather-reminder-guide.html` - detailed Weather Reminder guide
 - `articles/weather-reminder-phrase-tips.html` - Weather Reminder phrase-writing tips

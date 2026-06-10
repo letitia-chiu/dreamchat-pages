@@ -37,10 +37,16 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">
+    <span data-lang="zh-Hant">跳至主要內容</span>
+    <span data-lang="zh-Hans">跳至主要内容</span>
+    <span data-lang="ja">本文へスキップ</span>
+    <span data-lang="en">Skip to main content</span>
+  </a>
   <div class="container">
     <header class="site-header">
       <div class="brand">
-        <img class="brand-mark" src="assets/DreamChat_app_icon.png" alt="">
+        <img class="brand-mark" src="assets/DreamChat_app_icon.png" alt="DreamChat">
         <a href="index.html">DreamChat</a>
       </div>
       <nav class="primary-nav" aria-label="Main navigation">
@@ -99,7 +105,7 @@
       </div>
     </header>
 
-    <main class="page">
+    <main id="main-content" class="page">
 
       <!-- ============================================================ -->
       <!-- 繁體中文                                                       -->
@@ -111,6 +117,9 @@
 
         <h2>Email</h2>
         <p><a class="email-line" href="mailto:dreamchat.app.support@gmail.com">dreamchat.app.support@gmail.com</a></p>
+
+        <h2>使用授權（EULA）</h2>
+        <p>DreamChat 採用 Apple 標準使用者授權合約。完整條款請參閱 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Apple 標準 EULA</a>。</p>
 
         <h2>系統需求</h2>
         <p>DreamChat 最低支援 iOS 18。為獲得較完整且穩定的體驗，建議使用 iOS 26 或更新版本。</p>
@@ -190,6 +199,9 @@
         <h2>Email</h2>
         <p><a class="email-line" href="mailto:dreamchat.app.support@gmail.com">dreamchat.app.support@gmail.com</a></p>
 
+        <h2>使用授权（EULA）</h2>
+        <p>DreamChat 采用 Apple 标准用户许可协议。完整条款请参阅 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Apple 标准 EULA</a>。</p>
+
         <h2>系统要求</h2>
         <p>DreamChat 最低支持 iOS 18。为获得较完整且稳定的体验，建议使用 iOS 26 或更新版本。</p>
         <p>我们会持续维护 iOS 18 兼容性；如果您在 iOS 18 上遇到显示、通知、媒体权限或其他问题，请提供 iOS 版本、设备型号与发生步骤，方便我们确认。</p>
@@ -268,6 +280,9 @@
         <h2>Email</h2>
         <p><a class="email-line" href="mailto:dreamchat.app.support@gmail.com">dreamchat.app.support@gmail.com</a></p>
 
+        <h2>使用許諾契約（EULA）</h2>
+        <p>DreamChat は Apple の標準エンドユーザー使用許諾契約を採用しています。全文は <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Apple 標準 EULA</a> をご覧ください。</p>
+
         <h2>システム要件</h2>
         <p>DreamChat は iOS 18 以降に対応しています。より完全で安定した体験のため、iOS 26 以降でのご利用をおすすめします。</p>
         <p>iOS 18 での互換性も継続して維持します。iOS 18 で表示、通知、メディア権限、その他の問題が発生した場合は、iOS のバージョン、端末モデル、発生手順をお知らせください。確認の参考にいたします。</p>
@@ -276,12 +291,12 @@
 
         <div class="faq-item">
           <p class="q">Q1：DreamChat はアカウント登録が必要ですか？</p>
-          <p class="a">A1：DreamChat はアカウント登録なしでご利用いただけます。作成されたチャットの内容、キャラクター・グループ設定、定型文、Daily、タロット、予約受信などの個人設定は、主にお使いの端末内に保存されます。</p>
+          <p class="a">A1：DreamChat はアカウント登録なしでご利用いただけます。作成されたチャットの内容、キャラクター・グループ設定、定型文、日常、タロット、予約受信などの個人設定は、主にお使いの端末内に保存されます。</p>
         </div>
 
         <div class="faq-item">
           <p class="q">Q2：私のデータは開発者のサーバーにアップロードされますか？</p>
-          <p class="a">A2：通常のご利用において、DreamChat はチャットの内容、キャラクター・グループ設定、定型文、キャラクター音声メッセージ、音声ファイル、Daily データ、タロットの質問と記録、予約受信、天気リマインダー設定、スタンプ、ビデオ通話設定、通話背景メディア、その他の個人設定を開発者のサーバーへアップロードすることはありません。</p>
+          <p class="a">A2：通常のご利用において、DreamChat はチャットの内容、キャラクター・グループ設定、定型文、キャラクター音声メッセージ、音声ファイル、日常のデータ、タロットの質問と記録、予約受信、天気リマインダー設定、スタンプ、ビデオ通話設定、通話背景メディア、その他の個人設定を開発者のサーバーへアップロードすることはありません。</p>
         </div>
 
         <div class="faq-item">
@@ -310,8 +325,8 @@
         </div>
 
         <div class="faq-item">
-          <p class="q">Q8：Daily、タロット、Apple Intelligence はデータをアップロードしますか？</p>
-          <p class="a">A8：いいえ。Daily データ、タロットの質問と記録、カードスナップショット、使用回数記録、共有スナップショットは端末内に保存されます。タロットカード画像はアプリに同梱されており、リモートからダウンロードされません。対応環境では、端末上の Apple Intelligence / Foundation Models を使ってタロット総合解釈を任意で生成できます。入力はそのリーディング内容に限定され、Apple Intelligence を使用しなくても静的なカード意味は完全に利用できます。</p>
+          <p class="q">Q8：日常、タロット、Apple Intelligence はデータをアップロードしますか？</p>
+          <p class="a">A8：いいえ。日常のデータ、タロットの質問と記録、カードスナップショット、使用回数記録、共有スナップショットは端末内に保存されます。タロットカード画像はアプリに同梱されており、リモートからダウンロードされません。対応環境では、端末上の Apple Intelligence / Foundation Models を使ってタロット総合解釈を任意で生成できます。入力はそのリーディング内容に限定され、Apple Intelligence を使用しなくても基本のカード解説はすべて利用できます。</p>
         </div>
 
         <div class="faq-item">
@@ -321,7 +336,7 @@
 
         <div class="faq-item">
           <p class="q">Q10：書き出したバックアップやチャット履歴には何が含まれますか？</p>
-          <p class="a">A10：書き出されたファイルには、チャットメッセージ、キャラクター設定、アバター、背景、定型文、定型文カテゴリ、トリガー内容、キャラクター音声メッセージ、音声ファイル、Daily 設定とメディア、タロットの質問と記録、カードスナップショット、タロット使用回数記録、保存済みの Apple Intelligence 総合解釈、スタンプ、絵文字、予約受信設定、天気リマインダー設定、選択した地域名と座標、ビデオ通話設定、通話イベント、通話背景メディア、音楽おすすめの除外リスト、診断データが含まれる場合があります。キャラクター共有ファイルにはキャラクター音声メッセージや音声ファイルは含まれません。独立した音声パッケージには、ユーザーが選択した音声メッセージとアプリ管理の音声ファイルのみが含まれます。ファイルはユーザーが選択した保存先または共有先で管理されます。読み込み・書き出しによって内容が開発者のサーバーへ自動的にアップロードされることはありません。</p>
+          <p class="a">A10：書き出されたファイルには、チャットメッセージ、キャラクター設定、アバター、背景、定型文、定型文カテゴリ、トリガー内容、キャラクター音声メッセージ、音声ファイル、日常の設定とメディア、タロットの質問と記録、カードスナップショット、タロット使用回数記録、保存済みの Apple Intelligence 総合解釈、スタンプ、絵文字、予約受信設定、天気リマインダー設定、選択した地域名と座標、ビデオ通話設定、通話イベント、通話背景メディア、音楽おすすめの除外リスト、診断データが含まれる場合があります。キャラクター共有ファイルにはキャラクター音声メッセージや音声ファイルは含まれません。独立した音声パッケージには、ユーザーが選択した音声メッセージとアプリ管理の音声ファイルのみが含まれます。ファイルはユーザーが選択した保存先または共有先で管理されます。読み込み・書き出しによって内容が開発者のサーバーへ自動的にアップロードされることはありません。</p>
         </div>
 
         <div class="faq-item">
@@ -345,6 +360,9 @@
 
         <h2>Email</h2>
         <p><a class="email-line" href="mailto:dreamchat.app.support@gmail.com">dreamchat.app.support@gmail.com</a></p>
+
+        <h2>License (EULA)</h2>
+        <p>DreamChat uses Apple's standard end user license agreement. See the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">Apple standard EULA</a> for the full terms.</p>
 
         <h2>System Requirements</h2>
         <p>DreamChat requires iOS 18 or later. For a more complete and stable experience, iOS 26 or later is recommended.</p>

@@ -33,10 +33,16 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">
+    <span data-lang="zh-Hant">跳至主要內容</span>
+    <span data-lang="zh-Hans">跳至主要内容</span>
+    <span data-lang="ja">本文へスキップ</span>
+    <span data-lang="en">Skip to main content</span>
+  </a>
   <div class="container">
     <header class="site-header">
       <div class="brand">
-        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="DreamChat">
         <a href="../index.html">DreamChat</a>
       </div>
       <nav class="primary-nav" aria-label="Main navigation">
@@ -95,7 +101,7 @@
       </div>
     </header>
 
-    <main class="page guide-page">
+    <main id="main-content" class="page guide-page">
 
       <article data-lang="zh-Hant"><div class="title-with-tag"><h1>視訊通話詳細說明</h1><span class="status-tag status-tag-new">新功能</span></div><p class="meta">對應版本：v3.0.0</p><p class="lead">視訊通話是 DreamChat 內的本機模擬互動，用來呈現角色來電、通話浮窗與通話事件。它不會開啟真實相機或麥克風，也不是實際電話或網路影音通話。</p><nav class="guide-toc" aria-label="視訊通話目錄"><a href="#zh-setup">設定方式</a><a href="#zh-call">撥打與來電</a><a href="#zh-incoming">主動來電</a><a href="#zh-notifications">App 外通知</a><a href="#zh-background">通話背景</a></nav><h2 id="zh-setup">1. 開啟角色視訊通話</h2><p>路徑：<span class="guide-path">角色 → 角色設定 → 視訊通話</span></p><ol class="guide-steps"><li>開啟角色的視訊通話功能。</li><li>需要角色主動來電時，開啟主動來電並選擇頻率。</li><li>到「設定 → 通知」調整視訊通話響鈴與全域勿擾時段。</li><li>設定通話背景。免費版可用靜態圖片，升級方案可用靜態圖片與短影片背景。</li></ol><h2 id="zh-call">2. 使用者撥打與「讓他來電」</h2><p>一對一聊天室可撥打角色；群組聊天第一版不顯示視訊通話入口。你也可以送出「讓他來電」請求，系統會依角色回應與本機排程決定是否安排一次來電。</p><p>接通、未接、拒接、逾時或使用者取消，都會在聊天紀錄中留下通話事件，方便回顧對話脈絡。</p><h2 id="zh-incoming">3. 角色主動來電邏輯</h2><p>角色可設定很少、普通、頻繁或不固定等頻率。候選時間到達後，系統會用自然延遲建立來電；接聽期限約 60 秒。一般主動來電未接、拒接或逾時後，約 30 到 60 分鐘後可能安排一次重撥，重撥仍未接後才回到原本頻率。</p><h2 id="zh-notifications">4. App 外不會像真實電話般響鈴</h2><p class="guide-note">DreamChat 不使用 CallKit、PushKit、VoIP push 或系統電話畫面。App 在背景或不適合顯示來電介面時，只會跳本機來電通知；不會像真實電話一樣持續全螢幕響鈴。</p><h2 id="zh-background">5. 通話背景與通話中切換</h2><p>回到原本一對一聊天室時，接通中的通話會顯示完整浮窗、計時與可用背景。切到聊天列表、設定、聯絡人或其他聊天室時，只顯示靜態 compact 狀態與返回 / 掛斷操作，不顯示秒數，也不播放短影片。</p></article>
       <article data-lang="zh-Hans"><div class="title-with-tag"><h1>视频通话详细说明</h1><span class="status-tag status-tag-new">新功能</span></div><p class="meta">对应版本：v3.0.0</p><p class="lead">视频通话是 DreamChat 内的本地模拟互动，用来呈现角色来电、通话浮窗与通话事件。它不会开启真实摄像头或麦克风，也不是实际电话或网络视频通话。</p><nav class="guide-toc" aria-label="视频通话目录"><a href="#zh-hans-setup">设置方式</a><a href="#zh-hans-call">拨打与来电</a><a href="#zh-hans-incoming">主动来电</a><a href="#zh-hans-notifications">App 外通知</a><a href="#zh-hans-background">通话背景</a></nav><h2 id="zh-hans-setup">1. 开启角色视频通话</h2><p>路径：<span class="guide-path">角色 → 角色设置 → 视频通话</span></p><ol class="guide-steps"><li>开启角色的视频通话功能。</li><li>需要角色主动来电时，开启主动来电并选择频率。</li><li>到「设置 → 通知」调整视频通话铃声与全局勿扰时段。</li><li>设置通话背景。免费版可用静态图片，升级方案可用静态图片与短视频背景。</li></ol><h2 id="zh-hans-call">2. 用户拨打与「让他来电」</h2><p>一对一聊天室可拨打角色；群组聊天第一版不显示视频通话入口。你也可以发出「让他来电」请求，系统会依角色回应与本地排程决定是否安排一次来电。</p><p>接通、未接、拒接、超时或用户取消，都会在聊天记录中留下通话事件。</p><h2 id="zh-hans-incoming">3. 角色主动来电逻辑</h2><p>角色可设置很少、普通、频繁或不固定等频率。候选时间到达后，系统会用自然延迟建立来电；接听期限约 60 秒。一般主动来电未接、拒接或超时后，约 30 到 60 分钟后可能安排一次重拨，重拨仍未接后才回到原本频率。</p><h2 id="zh-hans-notifications">4. App 外不会像真实电话般响铃</h2><p class="guide-note">DreamChat 不使用 CallKit、PushKit、VoIP push 或系统电话画面。App 在后台或不适合显示来电界面时，只会跳本地来电通知；不会像真实电话一样持续全屏响铃。</p><h2 id="zh-hans-background">5. 通话背景与通话中切换</h2><p>回到原本一对一聊天室时，接通中的通话会显示完整浮窗、计时与可用背景。切到聊天列表、设置、联系人或其他聊天室时，只显示静态 compact 状态与返回 / 挂断操作，不显示秒数，也不播放短视频。</p></article>
