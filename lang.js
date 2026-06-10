@@ -84,6 +84,27 @@
       }
     },
     {
+      url: 'articles/v4-0-0-update.html',
+      title: {
+        'zh-Hant': '4.0.0 版本更新內容',
+        'zh-Hans': '4.0.0 版本更新内容',
+        ja: '4.0.0 アップデート内容',
+        en: "What's New in 4.0.0"
+      },
+      description: {
+        'zh-Hant': '日常分頁、紀念日卡與圖片小物件、塔羅解讀、裝置端 Apple Intelligence 綜合解讀、素材與授權頁與音樂不推薦清單改進。',
+        'zh-Hans': '日常分页、纪念日卡与图片小组件、塔罗解读、设备端 Apple Intelligence 综合解读、素材与授权页与音乐不推荐清单改进。',
+        ja: '日常タブ、記念日カードと写真ウィジェット、タロットリーディング、端末上の Apple Intelligence 総合解釈、素材とライセンス、おすすめ除外リストの改善。',
+        en: 'The Daily tab, anniversary cards and the photo widget, Tarot readings, on-device Apple Intelligence summaries, Assets & Licenses, and music exclusion improvements.'
+      },
+      text: {
+        'zh-Hant': '4.0.0 版本更新 即將推出 日常 紀念日 圖片小物件 角色狀態 我的狀態 背景 塔羅 牌陣 牌義 歷史 搜尋 分享 截圖 Apple Intelligence 綜合解讀 素材與授權 音樂 不推薦清單 待播清單 修復',
+        'zh-Hans': '4.0.0 版本更新 即将推出 日常 纪念日 图片小组件 角色状态 我的状态 背景 塔罗 牌阵 牌义 历史 搜索 分享 截图 Apple Intelligence 综合解读 素材与授权 音乐 不推荐清单 待播清单 修复',
+        ja: '4.0.0 アップデート 近日公開 日常 記念日 写真ウィジェット キャラクターステータス 自分のステータス 背景 タロット スプレッド カード解説 履歴 検索 共有 スクリーンショット Apple Intelligence 総合解釈 素材とライセンス ミュージック おすすめ除外リスト 再生待ち 修正',
+        en: "4.0.0 update coming soon Daily anniversaries photo widget character status my status background Tarot spread meanings history search share screenshot Apple Intelligence summary assets licenses music do not recommend up next fixes"
+      }
+    },
+    {
       url: 'articles/v3-1-0-update.html',
       title: {
         'zh-Hant': '3.1.0 版本更新內容',
