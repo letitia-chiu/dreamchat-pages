@@ -729,11 +729,17 @@ a:focus {
 }
 
 .app-version-note {
-  color: rgba(255, 255, 255, 0.86);
+  display: inline-block;
+  padding: 4px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-pill);
+  background: rgba(38, 29, 61, 0.68);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(12px) saturate(140%);
+  color: rgba(255, 255, 255, 0.95);
   font-size: 12px;
   font-weight: 500;
   line-height: 1.4;
-  text-shadow: 0 1px 8px rgba(74, 58, 122, 0.32);
 }
 
 .sns-actions {
