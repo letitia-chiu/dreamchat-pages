@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>日常詳細說明 | DreamChat</title>
+  <meta name="description" content="How the DreamChat Daily tab works: switch the current character and set up anniversaries, the photo widget, character status (with a random or custom intensity), your own status, mood and phrase templates, and local storage.">
+
+  <!-- Hreflang: language-specific entry URLs. -->
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/articles/daily-guide.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/articles/daily-guide.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/articles/daily-guide.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/articles/daily-guide.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/articles/daily-guide.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/articles/daily-guide.html">
+  <meta property="og:title" content="日常詳細說明 | DreamChat">
+  <meta property="og:description" content="Switch the current character and set up anniversaries, the photo widget, character status, your own status, mood and phrase templates in the DreamChat Daily tab.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="日常詳細說明 | DreamChat">
+  <meta name="twitter:description" content="Switch the current character and set up anniversaries, the photo widget, character status, your own status, mood and phrase templates in the DreamChat Daily tab.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">
+    <span data-lang="zh-Hant">跳至主要內容</span>
+    <span data-lang="zh-Hans">跳至主要内容</span>
+    <span data-lang="ja">本文へスキップ</span>
+    <span data-lang="en">Skip to main content</span>
+  </a>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="DreamChat">
+        <a href="../index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="../articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page guide-page">
+      <article data-lang="zh-Hant">
+        <h1>日常詳細說明</h1>
+        <p class="meta">對應版本：v4.1.0</p>
+        <p class="lead">「日常」分頁集中管理目前角色的紀念日、圖片小物件、角色狀態與我的狀態，也可以管理角色心情與短句模板，並自訂日常主頁背景。每個角色都有各自的日常內容。</p>
+
+        <nav class="guide-toc" aria-label="日常目錄">
+          <a href="#zh-overview">日常總覽</a>
+          <a href="#zh-anniversary">紀念日</a>
+          <a href="#zh-widget">圖片小物件</a>
+          <a href="#zh-char-status">角色狀態</a>
+          <a href="#zh-my-status">我的狀態</a>
+          <a href="#zh-mood">心情與短句模板</a>
+          <a href="#zh-storage">本機保存與備份</a>
+        </nav>
+
+        <h2 id="zh-overview">1. 日常總覽</h2>
+        <p>日常分頁上方可以切換目前角色，下方則整理該角色的紀念日、圖片小物件、角色狀態與我的狀態。日常主頁支援自訂背景，讓每個角色的日常呈現都不一樣。</p>
+        <p class="guide-note">塔羅也在日常中提供，玩法請看 <a href="tarot-guide.html?lang=zh-Hant">塔羅詳細說明</a>。</p>
+
+        <h2 id="zh-anniversary">2. 紀念日</h2>
+        <p>紀念日卡用來記錄與目前角色相關的重要日子。你可以固定顯示一組紀念日，也可以加入多組並讓它們輪播。</p>
+
+        <h2 id="zh-widget">3. 圖片小物件</h2>
+        <p>圖片小物件讓你在日常主頁放上喜歡的圖片，點綴目前角色的日常頁面。圖片以本機為主保存。</p>
+
+        <h2 id="zh-char-status">4. 角色狀態</h2>
+        <p>角色狀態顯示目前角色（對方）現在的狀態。角色狀態可包含一個「強度」：你可以讓強度隨機顯示，也可以自己設定固定值，依你喜歡的方式運用。</p>
+
+        <h2 id="zh-my-status">5. 我的狀態</h2>
+        <p>我的狀態用來記錄你自己現在的狀態，與角色狀態分開設定，讓日常同時呈現你和角色雙方的近況。</p>
+
+        <h2 id="zh-mood">6. 角色心情與短句模板</h2>
+        <p>你也可以在日常管理角色的心情與短句模板，讓日常呈現更貼近你想要的樣子。</p>
+
+        <h2 id="zh-storage">7. 本機保存與備份</h2>
+        <p>日常資料（紀念日、角色狀態、我的狀態、日常背景與圖片小物件）保存在你的裝置本機。你主動匯出的完整備份可能包含日常設定、媒體與日常狀態資料；角色分享檔不包含日常私人關係、狀態或背景資料。</p>
+        <p class="guide-note">更多資料處理說明請看 <a href="../privacy.html?lang=zh-Hant">隱私權政策</a>。</p>
+      </article>
+
+      <article data-lang="zh-Hans">
+        <h1>日常详细说明</h1>
+        <p class="meta">对应版本：v4.1.0</p>
+        <p class="lead">“日常”分页集中管理当前角色的纪念日、图片小组件、角色状态与我的状态，也可以管理角色情绪与短句模板，并自定义日常主页背景。每个角色都有各自的日常内容。</p>
+
+        <nav class="guide-toc" aria-label="日常目录">
+          <a href="#zh-hans-overview">日常总览</a>
+          <a href="#zh-hans-anniversary">纪念日</a>
+          <a href="#zh-hans-widget">图片小组件</a>
+          <a href="#zh-hans-char-status">角色状态</a>
+          <a href="#zh-hans-my-status">我的状态</a>
+          <a href="#zh-hans-mood">情绪与短句模板</a>
+          <a href="#zh-hans-storage">本地保存与备份</a>
+        </nav>
+
+        <h2 id="zh-hans-overview">1. 日常总览</h2>
+        <p>日常分页上方可以切换当前角色，下方则整理该角色的纪念日、图片小组件、角色状态与我的状态。日常主页支持自定义背景，让每个角色的日常呈现都不一样。</p>
+        <p class="guide-note">塔罗也在日常中提供，玩法请看 <a href="tarot-guide.html?lang=zh-Hans">塔罗详细说明</a>。</p>
+
+        <h2 id="zh-hans-anniversary">2. 纪念日</h2>
+        <p>纪念日卡用来记录与当前角色相关的重要日子。你可以固定显示一组纪念日，也可以加入多组并让它们轮播。</p>
+
+        <h2 id="zh-hans-widget">3. 图片小组件</h2>
+        <p>图片小组件让你在日常主页放上喜欢的图片，点缀当前角色的日常页面。图片以本地为主保存。</p>
+
+        <h2 id="zh-hans-char-status">4. 角色状态</h2>
+        <p>角色状态显示当前角色（对方）现在的状态。角色状态可包含一个“强度”：你可以让强度随机显示，也可以自己设定固定值，依你喜欢的方式运用。</p>
+
+        <h2 id="zh-hans-my-status">5. 我的状态</h2>
+        <p>我的状态用来记录你自己现在的状态，与角色状态分开设定，让日常同时呈现你和角色双方的近况。</p>
+
+        <h2 id="zh-hans-mood">6. 角色情绪与短句模板</h2>
+        <p>你也可以在日常管理角色的情绪与短句模板，让日常呈现更贴近你想要的样子。</p>
+
+        <h2 id="zh-hans-storage">7. 本地保存与备份</h2>
+        <p>日常数据（纪念日、角色状态、我的状态、日常背景与图片小组件）保存在你的设备本地。你主动导出的完整备份可能包含日常设置、媒体与日常状态数据；角色分享文件不包含日常私人关系、状态或背景数据。</p>
+        <p class="guide-note">更多数据处理说明请看 <a href="../privacy.html?lang=zh-Hans">隐私权政策</a>。</p>
+      </article>
+
+      <article data-lang="ja">
+        <h1>日常 詳しい説明</h1>
+        <p class="meta">対応バージョン：v4.1.0</p>
+        <p class="lead">「日常」タブでは、現在のキャラクターの記念日、写真ウィジェット、キャラクターのステータス、自分のステータスをまとめて管理できます。気分とひとことテンプレートの管理や、日常ホームの背景設定も可能です。キャラクターごとに別々の日常内容を持てます。</p>
+
+        <nav class="guide-toc" aria-label="日常 目次">
+          <a href="#ja-overview">概要</a>
+          <a href="#ja-anniversary">記念日</a>
+          <a href="#ja-widget">写真ウィジェット</a>
+          <a href="#ja-char-status">キャラクターのステータス</a>
+          <a href="#ja-my-status">自分のステータス</a>
+          <a href="#ja-mood">気分とひとことテンプレート</a>
+          <a href="#ja-storage">端末内保存とバックアップ</a>
+        </nav>
+
+        <h2 id="ja-overview">1. 概要</h2>
+        <p>日常タブの上部で現在のキャラクターを切り替え、下部でそのキャラクターの記念日、写真ウィジェット、キャラクターのステータス、自分のステータスを整理します。日常ホームは背景を設定でき、キャラクターごとに違った見た目にできます。</p>
+        <p class="guide-note">タロットも日常の中で利用できます。使い方は <a href="tarot-guide.html?lang=ja">タロット詳しい説明</a> をご覧ください。</p>
+
+        <h2 id="ja-anniversary">2. 記念日</h2>
+        <p>記念日カードは、現在のキャラクターに関する大切な日を記録します。1組を固定で表示することも、複数組を追加してローテーション表示することもできます。</p>
+
+        <h2 id="ja-widget">3. 写真ウィジェット</h2>
+        <p>写真ウィジェットを使うと、日常ホームに好きな画像を置いて、現在のキャラクターの日常ページを彩れます。画像は端末内を基本に保存されます。</p>
+
+        <h2 id="ja-char-status">4. キャラクターのステータス</h2>
+        <p>キャラクターのステータスは、現在のキャラクター（相手）の今の状態を表示します。ステータスには「強さ」を含めることができます。強さはランダムに表示することも、自分で固定の値を設定することもでき、お好みの使い方ができます。</p>
+
+        <h2 id="ja-my-status">5. 自分のステータス</h2>
+        <p>自分のステータスは、あなた自身の今の状態を記録します。キャラクターのステータスとは別に設定でき、日常にあなたとキャラクター双方の近況を並べて表示できます。</p>
+
+        <h2 id="ja-mood">6. 気分とひとことテンプレート</h2>
+        <p>日常では、キャラクターの気分とひとことテンプレートも管理でき、日常の見せ方を好みに近づけられます。</p>
+
+        <h2 id="ja-storage">7. 端末内保存とバックアップ</h2>
+        <p>日常のデータ（記念日、キャラクターのステータス、自分のステータス、日常の背景、写真ウィジェット）は端末内に保存されます。ユーザーが書き出す完全バックアップには、日常の設定、メディア、日常のステータスデータが含まれる場合があります。キャラクター共有ファイルには、日常の私的な関係、ステータス、背景データは含まれません。</p>
+        <p class="guide-note">データの扱いについて詳しくは <a href="../privacy.html?lang=ja">プライバシーポリシー</a> をご覧ください。</p>
+      </article>
+
+      <article data-lang="en">
+        <h1>Daily Guide</h1>
+        <p class="meta">Applies to version v4.1.0</p>
+        <p class="lead">The Daily tab keeps the current character's anniversaries, photo widget, character status, and your own status in one place. You can also manage mood and phrase templates and set a custom Daily home background. Each character has its own Daily content.</p>
+
+        <nav class="guide-toc" aria-label="Daily table of contents">
+          <a href="#en-overview">Overview</a>
+          <a href="#en-anniversary">Anniversaries</a>
+          <a href="#en-widget">Photo Widget</a>
+          <a href="#en-char-status">Character Status</a>
+          <a href="#en-my-status">Your Status</a>
+          <a href="#en-mood">Mood and Phrase Templates</a>
+          <a href="#en-storage">Local Storage and Backup</a>
+        </nav>
+
+        <h2 id="en-overview">1. Overview</h2>
+        <p>Switch the current character at the top of the Daily tab; below it, Daily organizes that character's anniversaries, photo widget, character status, and your own status. The Daily home supports a custom background, so each character's Daily can look different.</p>
+        <p class="guide-note">Tarot is also available inside Daily. For how it works, see the <a href="tarot-guide.html?lang=en">Tarot Guide</a>.</p>
+
+        <h2 id="en-anniversary">2. Anniversaries</h2>
+        <p>Anniversary cards record the dates that matter for the current character. You can keep one anniversary fixed, or add several and let them rotate.</p>
+
+        <h2 id="en-widget">3. Photo Widget</h2>
+        <p>The photo widget lets you place favorite images on the Daily home to decorate the current character's Daily page. Images are kept primarily on your device.</p>
+
+        <h2 id="en-char-status">4. Character Status</h2>
+        <p>Character status shows the current character's (the other side's) status right now. Character status can include an intensity: you can let the intensity show randomly, or set a fixed value yourself — use it however you like.</p>
+
+        <h2 id="en-my-status">5. Your Status</h2>
+        <p>Your status records your own current state. It is set separately from character status, so Daily can show both your and the character's latest state side by side.</p>
+
+        <h2 id="en-mood">6. Mood and Phrase Templates</h2>
+        <p>In Daily you can also manage the character's mood and phrase templates, bringing the Daily presentation closer to what you want.</p>
+
+        <h2 id="en-storage">7. Local Storage and Backup</h2>
+        <p>Daily data (anniversaries, character status, your status, the Daily background, and photo widget images) is stored locally on your device. Complete backups that you export may include Daily settings, media, and Daily status data. Character share files do not include Daily private relationship, status, or background data.</p>
+        <p class="guide-note">For more on data handling, see the <a href="../privacy.html?lang=en">Privacy Policy</a>.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="../articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="../lang.js"></script>
+</body>
+</html>

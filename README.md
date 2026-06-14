@@ -9,7 +9,11 @@ Live site:
 - Home: https://letitia-chiu.github.io/dreamchat-pages/
 - User Guide: https://letitia-chiu.github.io/dreamchat-pages/guide.html
 - Articles: https://letitia-chiu.github.io/dreamchat-pages/articles.html
-- v4.0.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v4-0-0-update.html
+- v4.1.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v4-1-0-update.html
+- Chat Image Messages Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/chat-images-guide.html
+- Daily and Group Photo Albums Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/photo-albums-guide.html
+- Daily Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/daily-guide.html
+- Tarot Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/tarot-guide.html
 - v3.1.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v3-1-0-update.html
 - Voice Messages Guide: https://letitia-chiu.github.io/dreamchat-pages/articles/voice-messages-guide.html
 - v3.0.0 Update Notes: https://letitia-chiu.github.io/dreamchat-pages/articles/v3-0-0-update.html
@@ -30,7 +34,11 @@ Live site:
 - `index.html` - DreamChat overview and links to support/privacy pages
 - `guide.html` - public user guide for first-time users
 - `articles.html` - guide article index
-- `articles/v4-0-0-update.html` - v4.0.0 public update notes
+- `articles/v4-1-0-update.html` - v4.1.0 public update notes
+- `articles/chat-images-guide.html` - detailed Chat Image Messages guide
+- `articles/photo-albums-guide.html` - detailed Daily and group photo albums guide
+- `articles/daily-guide.html` - detailed Daily tab guide
+- `articles/tarot-guide.html` - detailed Tarot guide
 - `articles/v3-1-0-update.html` - v3.1.0 public update notes
 - `articles/voice-messages-guide.html` - detailed Voice Messages guide
 - `articles/v3-0-0-update.html` - v3.0.0 public update notes

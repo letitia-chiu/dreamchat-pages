@@ -84,24 +84,108 @@
       }
     },
     {
-      url: 'articles/v4-0-0-update.html',
+      url: 'articles/v4-1-0-update.html',
       title: {
-        'zh-Hant': '4.0.0 版本更新內容',
-        'zh-Hans': '4.0.0 版本更新内容',
-        ja: '4.0.0 アップデート内容',
-        en: "What's New in 4.0.0"
+        'zh-Hant': '4.1.0 版本更新內容',
+        'zh-Hans': '4.1.0 版本更新内容',
+        ja: '4.1.0 アップデート内容',
+        en: "What's New in 4.1.0"
       },
       description: {
-        'zh-Hant': '日常分頁、紀念日卡與圖片小物件、塔羅解讀、裝置端 Apple Intelligence 綜合解讀、素材與授權頁與音樂不推薦清單改進。',
-        'zh-Hans': '日常分页、纪念日卡与图片小组件、塔罗解读、设备端 Apple Intelligence 综合解读、素材与授权页与音乐不推荐清单改进。',
-        ja: '日常タブ、記念日カードと写真ウィジェット、タロットリーディング、端末上の Apple Intelligence 総合解釈、素材とライセンス、おすすめ除外リストの改善。',
-        en: 'The Daily tab, anniversary cards and the photo widget, Tarot readings, on-device Apple Intelligence summaries, Assets & Licenses, and music exclusion improvements.'
+        'zh-Hant': '聊天圖片訊息、日常與群組相簿、「幫我選」單選與多選、日常分頁、塔羅、素材與授權頁與音樂改善，完整備份也含聊天圖片與日常狀態資料。',
+        'zh-Hans': '聊天图片消息、日常与群组相册、“帮我选”单选与多选、日常分页、塔罗、素材与授权页与音乐改进，完整备份也含聊天图片与日常状态数据。',
+        ja: 'チャット画像メッセージ、日常とグループの写真、「選んで」の単一・複数選択、日常タブ、タロット、素材とライセンス、ミュージックの改善。完全バックアップはチャット画像と日常のステータスデータも含みます。',
+        en: 'Chat image messages, Daily and group photo albums, single and multiple Choose for Me, the Daily tab, Tarot, Assets & Licenses, and music improvements; backups now include chat images and Daily status data.'
       },
       text: {
-        'zh-Hant': '4.0.0 版本更新 即將推出 日常 紀念日 圖片小物件 角色狀態 我的狀態 背景 塔羅 牌陣 牌義 歷史 搜尋 分享 截圖 Apple Intelligence 綜合解讀 素材與授權 音樂 不推薦清單 待播清單 修復',
-        'zh-Hans': '4.0.0 版本更新 即将推出 日常 纪念日 图片小组件 角色状态 我的状态 背景 塔罗 牌阵 牌义 历史 搜索 分享 截图 Apple Intelligence 综合解读 素材与授权 音乐 不推荐清单 待播清单 修复',
-        ja: '4.0.0 アップデート 近日公開 日常 記念日 写真ウィジェット キャラクターステータス 自分のステータス 背景 タロット スプレッド カード解説 履歴 検索 共有 スクリーンショット Apple Intelligence 総合解釈 素材とライセンス ミュージック おすすめ除外リスト 再生待ち 修正',
-        en: "4.0.0 update coming soon Daily anniversaries photo widget character status my status background Tarot spread meanings history search share screenshot Apple Intelligence summary assets licenses music do not recommend up next fixes"
+        'zh-Hant': '4.1.0 版本更新 即將推出 聊天圖片 訊息圖片 縮圖 原圖 日常相簿 群組相簿 幫我選 單選 多選 群組聊天 日常 紀念日 圖片小物件 角色狀態 背景 塔羅 牌陣 牌義 Apple Intelligence 綜合解讀 素材與授權 音樂 不推薦清單 待播清單 完整備份 還原 修復',
+        'zh-Hans': '4.1.0 版本更新 即将推出 聊天图片 消息图片 缩略图 原图 日常相册 群组相册 帮我选 单选 多选 群组聊天 日常 纪念日 图片小组件 角色状态 背景 塔罗 牌阵 牌义 Apple Intelligence 综合解读 素材与授权 音乐 不推荐清单 待播清单 完整备份 还原 修复',
+        ja: '4.1.0 アップデート 近日公開 チャット画像 メッセージ画像 サムネイル 元画像 日常の写真 グループの写真 選んで 単一選択 複数選択 グループチャット 日常 記念日 写真ウィジェット キャラクターステータス 背景 タロット スプレッド カード解説 Apple Intelligence 総合解釈 素材とライセンス ミュージック おすすめ除外リスト 再生待ち 完全バックアップ 復元 修正',
+        en: "4.1.0 update coming soon chat image messages thumbnail full image Daily albums group albums Choose for Me single multiple selection group chat Daily anniversaries photo widget character status background Tarot spread meanings Apple Intelligence summary assets licenses music do not recommend up next complete backup restore fixes"
+      }
+    },
+    {
+      url: 'articles/chat-images-guide.html',
+      title: {
+        'zh-Hant': '聊天圖片訊息詳細說明',
+        'zh-Hans': '聊天图片消息详细说明',
+        ja: 'チャット画像メッセージ詳しい説明',
+        en: 'Chat Image Messages Guide'
+      },
+      description: {
+        'zh-Hant': '從本機相簿選圖、以縮圖傳送、點開檢視原圖，以及圖片本機保存與納入備份的說明。',
+        'zh-Hans': '从本地相册选图、以缩略图发送、点开查看原图，以及图片本地保存与纳入备份的说明。',
+        ja: 'ローカルから画像を選びサムネイルで送信、元画像の表示、画像の端末内保存とバックアップの説明。',
+        en: 'Pick a local image, send it as a thumbnail, open the full image, and how images are stored locally and included in backups.'
+      },
+      text: {
+        'zh-Hant': '聊天圖片 訊息圖片 功能說明 本機相簿 選圖 縮圖 原圖 檢視 直接聊天 群組聊天 照片權限 本機保存 匯出 分享 完整備份 還原 刪除 相簿',
+        'zh-Hans': '聊天图片 消息图片 功能说明 本地相册 选图 缩略图 原图 查看 直接聊天 群组聊天 照片权限 本地保存 导出 分享 完整备份 还原 删除 相册',
+        ja: 'チャット画像 メッセージ画像 機能説明 ローカル写真 画像選択 サムネイル 元画像 表示 個別チャット グループチャット 写真権限 端末内保存 書き出し 共有 完全バックアップ 復元 削除 写真',
+        en: 'chat image messages feature guide local photos pick image thumbnail full image viewer direct chat group chat Photos permission local storage export share complete backup restore delete albums'
+      }
+    },
+    {
+      url: 'articles/photo-albums-guide.html',
+      title: {
+        'zh-Hant': '日常與群組相簿詳細說明',
+        'zh-Hans': '日常与群组相册详细说明',
+        ja: '日常とグループの写真 詳しい説明',
+        en: 'Daily and Group Photo Albums Guide'
+      },
+      description: {
+        'zh-Hant': '把聊天圖片依角色或群組整理成相簿、跳回原訊息，以及刪除原圖時聊天保留縮圖與脈絡的行為。',
+        'zh-Hans': '把聊天图片依角色或群组整理成相册、跳回原消息，以及删除原图时聊天保留缩略图与脉络的行为。',
+        ja: 'チャット画像をキャラクターやグループごとに整理、元のメッセージへ戻る、元画像削除時の挙動を説明。',
+        en: 'Organize chat images by character or group, jump back to the original message, and what happens when you delete a full image.'
+      },
+      text: {
+        'zh-Hant': '日常相簿 群組相簿 功能說明 聊天圖片 整理 角色 群組 跳回 原訊息 刪除 原圖 縮圖 脈絡 本機保存 完整備份 日常狀態資料 還原',
+        'zh-Hans': '日常相册 群组相册 功能说明 聊天图片 整理 角色 群组 跳回 原消息 删除 原图 缩略图 脉络 本地保存 完整备份 日常状态数据 还原',
+        ja: '日常の写真 グループの写真 機能説明 チャット画像 整理 キャラクター グループ 戻る 元のメッセージ 削除 元画像 サムネイル 文脈 端末内保存 完全バックアップ 日常のステータスデータ 復元',
+        en: 'Daily albums group albums feature guide chat images organize character group jump back original message delete full image thumbnail context local storage complete backup Daily status data restore'
+      }
+    },
+    {
+      url: 'articles/daily-guide.html',
+      title: {
+        'zh-Hant': '日常詳細說明',
+        'zh-Hans': '日常详细说明',
+        ja: '日常 詳しい説明',
+        en: 'Daily Guide'
+      },
+      description: {
+        'zh-Hant': '切換目前角色，設定紀念日、圖片小物件、角色狀態（含強度隨機或自訂）、我的狀態，以及心情與短句模板。',
+        'zh-Hans': '切换当前角色，设定纪念日、图片小组件、角色状态（含强度随机或自定义）、我的状态，以及情绪与短句模板。',
+        ja: '現在のキャラクターを切り替え、記念日、写真ウィジェット、キャラクターのステータス（強さはランダムまたは自分で設定）、自分のステータス、気分とひとことテンプレートを設定。',
+        en: 'Switch the current character and set anniversaries, the photo widget, character status (with random or custom intensity), your status, and mood and phrase templates.'
+      },
+      text: {
+        'zh-Hant': '日常 功能說明 切換目前角色 紀念日 固定 輪播 圖片小物件 角色狀態 強度 隨機 自訂 我的狀態 角色心情 短句模板 日常背景 自訂背景 本機保存 完整備份 日常狀態資料 塔羅',
+        'zh-Hans': '日常 功能说明 切换当前角色 纪念日 固定 轮播 图片小组件 角色状态 强度 随机 自定义 我的状态 角色情绪 短句模板 日常背景 自定义背景 本地保存 完整备份 日常状态数据 塔罗',
+        ja: '日常 機能説明 現在のキャラクター 切り替え 記念日 固定 ローテーション 写真ウィジェット キャラクターのステータス 強さ ランダム 自分で設定 自分のステータス 気分 ひとことテンプレート 日常の背景 端末内保存 完全バックアップ 日常のステータスデータ タロット',
+        en: 'Daily feature guide switch current character anniversaries fixed rotate photo widget character status intensity random custom your status my status mood phrase templates Daily background custom background local storage complete backup Daily status data Tarot'
+      }
+    },
+    {
+      url: 'articles/tarot-guide.html',
+      title: {
+        'zh-Hant': '塔羅詳細說明',
+        'zh-Hans': '塔罗详细说明',
+        ja: 'タロット詳しい説明',
+        en: 'Tarot Guide'
+      },
+      description: {
+        'zh-Hant': '在日常中抽單張或三張牌、查看內建卡圖與四語牌義、保存與分享，以及裝置端 Apple Intelligence 綜合解讀與每日使用次數說明。',
+        'zh-Hans': '在日常中抽单张或三张牌、查看内置卡图与四语牌义、保存与分享，以及设备端 Apple Intelligence 综合解读与每日使用次数说明。',
+        ja: '日常で1枚・3枚のカードを引き、内蔵カード画像と4言語の解説を確認、保存・共有、端末上の Apple Intelligence 総合解釈と1日の使用回数を説明。',
+        en: 'Draw one or three cards in Daily, view bundled card art with four-language meanings, save and share, plus on-device Apple Intelligence summaries and daily usage.'
+      },
+      text: {
+        'zh-Hant': '塔羅 功能說明 日常 問題 單張 三張 牌陣 內建卡圖 四語牌義 保存 搜尋 刪除 分享到聊天 整理成圖片 裝置端 Apple Intelligence 綜合解讀 每日使用次數 免費版 單夢輕量版 多夢輕量版 夢行者 素材與授權 本機',
+        'zh-Hans': '塔罗 功能说明 日常 问题 单张 三张 牌阵 内置卡图 四语牌义 保存 搜索 删除 分享到聊天 整理成图片 设备端 Apple Intelligence 综合解读 每日使用次数 免费版 单梦轻量版 多梦轻量版 梦行者 素材与授权 本地',
+        ja: 'タロット 機能説明 日常 質問 1枚 3枚 スプレッド 内蔵カード画像 4言語 カード解説 保存 検索 削除 チャット共有 画像化 端末上 Apple Intelligence 総合解釈 1日の使用回数 無料版 一途 Lite グループ Lite ドリームウォーカー 素材とライセンス 端末内',
+        en: 'Tarot feature guide Daily question one card three card spread bundled card art four-language meanings save search delete share to chat turn into image on-device Apple Intelligence summary daily usage Free Single Dream Lite Multi Dream Lite Dream Walker assets licenses local'
       }
     },
     {

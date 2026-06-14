@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>日常與群組相簿詳細說明 | DreamChat</title>
+  <meta name="description" content="How DreamChat Daily and group photo albums work: collect chat images by character or group, jump back to the original message, and what happens when you delete a full image.">
+
+  <!-- Hreflang: language-specific entry URLs. -->
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/articles/photo-albums-guide.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/articles/photo-albums-guide.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/articles/photo-albums-guide.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/articles/photo-albums-guide.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/articles/photo-albums-guide.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/articles/photo-albums-guide.html">
+  <meta property="og:title" content="日常與群組相簿詳細說明 | DreamChat">
+  <meta property="og:description" content="Collect chat images into Daily and group photo albums, jump back to the original message, and learn what happens when you delete a full image.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="日常與群組相簿詳細說明 | DreamChat">
+  <meta name="twitter:description" content="Collect chat images into Daily and group photo albums, jump back to the original message, and learn what happens when you delete a full image.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">
+    <span data-lang="zh-Hant">跳至主要內容</span>
+    <span data-lang="zh-Hans">跳至主要内容</span>
+    <span data-lang="ja">本文へスキップ</span>
+    <span data-lang="en">Skip to main content</span>
+  </a>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="DreamChat">
+        <a href="../index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="../articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page guide-page">
+      <article data-lang="zh-Hant">
+        <h1>日常與群組相簿詳細說明</h1>
+        <p class="meta">對應版本：v4.1.0</p>
+        <p class="lead">日常相簿與群組相簿會把聊天裡的圖片依角色或群組整理收藏，方便回顧，也可以從相簿跳回原本的聊天訊息。相簿資料以本機為主保存。</p>
+
+        <nav class="guide-toc" aria-label="日常與群組相簿目錄">
+          <a href="#zh-overview">相簿總覽</a>
+          <a href="#zh-organize">整理圖片</a>
+          <a href="#zh-jump">跳回原訊息</a>
+          <a href="#zh-delete">刪除原圖的行為</a>
+          <a href="#zh-storage">本機保存與備份</a>
+        </nav>
+
+        <h2 id="zh-overview">1. 相簿總覽</h2>
+        <p>相簿分為兩種：日常相簿依角色整理，群組相簿依群組整理。兩者都收集聊天中傳送的圖片，讓你集中瀏覽某個角色或群組的圖片。</p>
+
+        <h2 id="zh-organize">2. 整理圖片</h2>
+        <p>相簿中的圖片來自你在聊天室傳送的聊天圖片。你可以在相簿中瀏覽與整理這些圖片。</p>
+        <p class="guide-note">如何傳送聊天圖片，請看 <a href="chat-images-guide.html?lang=zh-Hant">聊天圖片訊息詳細說明</a>。</p>
+
+        <h2 id="zh-jump">3. 跳回原訊息</h2>
+        <p>在相簿中選擇一張圖片，可以跳回它在聊天串中的原本位置，方便回到當時的對話脈絡。</p>
+
+        <h2 id="zh-delete">4. 刪除原圖的行為</h2>
+        <p>刪除相簿中的原圖時，聊天仍會保留該訊息的縮圖與上下文，不會破壞對話脈絡。也就是說，整理或清掉相簿原圖，不會讓聊天紀錄變得難以閱讀。</p>
+
+        <h2 id="zh-storage">5. 本機保存與備份</h2>
+        <p>相簿與其中的圖片以本機為主保存，沒有開發者端的蒐集。完整備份與還原現在會包含可用的聊天圖片與日常狀態資料，還原後對話與圖片脈絡保持一致。備份是你主動建立的本機檔案，請妥善保管。</p>
+      </article>
+
+      <article data-lang="zh-Hans">
+        <h1>日常与群组相册详细说明</h1>
+        <p class="meta">对应版本：v4.1.0</p>
+        <p class="lead">日常相册与群组相册会把聊天里的图片依角色或群组整理收藏，方便回顾，也可以从相册跳回原本的聊天消息。相册数据以本地为主保存。</p>
+
+        <nav class="guide-toc" aria-label="日常与群组相册目录">
+          <a href="#zh-hans-overview">相册总览</a>
+          <a href="#zh-hans-organize">整理图片</a>
+          <a href="#zh-hans-jump">跳回原消息</a>
+          <a href="#zh-hans-delete">删除原图的行为</a>
+          <a href="#zh-hans-storage">本地保存与备份</a>
+        </nav>
+
+        <h2 id="zh-hans-overview">1. 相册总览</h2>
+        <p>相册分为两种：日常相册依角色整理，群组相册依群组整理。两者都收集聊天中发送的图片，让你集中浏览某个角色或群组的图片。</p>
+
+        <h2 id="zh-hans-organize">2. 整理图片</h2>
+        <p>相册中的图片来自你在聊天室发送的聊天图片。你可以在相册中浏览与整理这些图片。</p>
+        <p class="guide-note">如何发送聊天图片，请看 <a href="chat-images-guide.html?lang=zh-Hans">聊天图片消息详细说明</a>。</p>
+
+        <h2 id="zh-hans-jump">3. 跳回原消息</h2>
+        <p>在相册中选择一张图片，可以跳回它在聊天串中的原本位置，方便回到当时的对话脉络。</p>
+
+        <h2 id="zh-hans-delete">4. 删除原图的行为</h2>
+        <p>删除相册中的原图时，聊天仍会保留该消息的缩略图与上下文，不会破坏对话脉络。也就是说，整理或清掉相册原图，不会让聊天记录变得难以阅读。</p>
+
+        <h2 id="zh-hans-storage">5. 本地保存与备份</h2>
+        <p>相册与其中的图片以本地为主保存，没有开发者端的收集。完整备份与还原现在会包含可用的聊天图片与日常状态数据，还原后对话与图片脉络保持一致。备份是你主动创建的本地文件，请妥善保管。</p>
+      </article>
+
+      <article data-lang="ja">
+        <h1>日常とグループの写真 詳しい説明</h1>
+        <p class="meta">対応バージョン：v4.1.0</p>
+        <p class="lead">日常とグループの写真は、チャットの画像をキャラクターやグループごとにまとめて整理でき、振り返りに便利です。写真から元のメッセージへ戻ることもできます。写真のデータは端末内を基本に保存されます。</p>
+
+        <nav class="guide-toc" aria-label="日常とグループの写真 目次">
+          <a href="#ja-overview">概要</a>
+          <a href="#ja-organize">画像を整理する</a>
+          <a href="#ja-jump">元のメッセージへ戻る</a>
+          <a href="#ja-delete">元画像を削除したとき</a>
+          <a href="#ja-storage">端末内保存とバックアップ</a>
+        </nav>
+
+        <h2 id="ja-overview">1. 概要</h2>
+        <p>写真は2種類あります。日常の写真はキャラクターごと、グループの写真はグループごとに整理されます。どちらもチャットで送った画像を集め、特定のキャラクターやグループの画像をまとめて見られます。</p>
+
+        <h2 id="ja-organize">2. 画像を整理する</h2>
+        <p>写真の中の画像は、あなたがチャットで送ったチャット画像から集められます。写真の中でこれらの画像を閲覧・整理できます。</p>
+        <p class="guide-note">チャット画像の送り方は <a href="chat-images-guide.html?lang=ja">チャット画像メッセージ詳しい説明</a> をご覧ください。</p>
+
+        <h2 id="ja-jump">3. 元のメッセージへ戻る</h2>
+        <p>写真の中で画像を選ぶと、チャット内の元の位置へ戻れます。当時の会話の流れにすぐ戻れて便利です。</p>
+
+        <h2 id="ja-delete">4. 元画像を削除したとき</h2>
+        <p>写真から元画像を削除しても、チャットにはそのメッセージのサムネイルと文脈が残り、会話の流れを損ないません。つまり、写真の元画像を整理・削除しても、チャットの記録が読みにくくなることはありません。</p>
+
+        <h2 id="ja-storage">5. 端末内保存とバックアップ</h2>
+        <p>写真とその中の画像は端末内を基本に保存され、開発者側での収集はありません。完全バックアップと復元は、利用可能なチャット画像と日常のステータスデータも含むようになりました。復元後も会話と画像の文脈が保たれます。バックアップはユーザーが自ら作成する端末内のファイルです。大切に保管してください。</p>
+      </article>
+
+      <article data-lang="en">
+        <h1>Daily and Group Photo Albums Guide</h1>
+        <p class="meta">Applies to version v4.1.0</p>
+        <p class="lead">Daily and group photo albums collect chat images by character or group so they are easy to revisit, and you can jump back to the original chat message from an album. Album data is kept primarily on your device.</p>
+
+        <nav class="guide-toc" aria-label="Daily and group photo albums table of contents">
+          <a href="#en-overview">Overview</a>
+          <a href="#en-organize">Organizing Images</a>
+          <a href="#en-jump">Jump Back to a Message</a>
+          <a href="#en-delete">Deleting a Full Image</a>
+          <a href="#en-storage">Local Storage and Backup</a>
+        </nav>
+
+        <h2 id="en-overview">1. Overview</h2>
+        <p>There are two kinds of albums: Daily albums organized by character, and group albums organized by group. Both collect the images sent in chat, so you can browse one character's or group's images in one place.</p>
+
+        <h2 id="en-organize">2. Organizing Images</h2>
+        <p>The images in an album come from the chat images you send in a conversation. You can browse and organize them inside the album.</p>
+        <p class="guide-note">For how to send chat images, see the <a href="chat-images-guide.html?lang=en">Chat Image Messages Guide</a>.</p>
+
+        <h2 id="en-jump">3. Jump Back to a Message</h2>
+        <p>Select an image in an album to jump back to its original spot in the chat, so you can return to the context of that conversation.</p>
+
+        <h2 id="en-delete">4. Deleting a Full Image</h2>
+        <p>When you delete a full image from an album, the chat keeps that message's thumbnail and context, so the conversation stays intact. In other words, tidying or clearing album images does not make your chat history harder to read.</p>
+
+        <h2 id="en-storage">5. Local Storage and Backup</h2>
+        <p>Albums and the images in them are kept primarily on your device, with no developer-side collection. Complete backup and restore now include available chat images and Daily status data, so conversations and image context stay consistent after restoring. Backups are local files you create yourself, so please keep them secure.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="../articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="../lang.js"></script>
+</body>
+</html>

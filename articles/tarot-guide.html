@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>塔羅詳細說明 | DreamChat</title>
+  <meta name="description" content="How DreamChat Tarot works: enter an optional question, draw one or three cards, view bundled card art with four-language meanings, save and share readings, on-device Apple Intelligence summaries, and daily usage limits.">
+
+  <!-- Hreflang: language-specific entry URLs. -->
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/articles/tarot-guide.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/articles/tarot-guide.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/articles/tarot-guide.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/articles/tarot-guide.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/articles/tarot-guide.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/articles/tarot-guide.html">
+  <meta property="og:title" content="塔羅詳細說明 | DreamChat">
+  <meta property="og:description" content="Enter an optional question, draw one or three cards, view bundled card art with four-language meanings, and optionally use on-device Apple Intelligence summaries in DreamChat Tarot.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="塔羅詳細說明 | DreamChat">
+  <meta name="twitter:description" content="Enter an optional question, draw one or three cards, view bundled card art with four-language meanings, and optionally use on-device Apple Intelligence summaries in DreamChat Tarot.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">
+    <span data-lang="zh-Hant">跳至主要內容</span>
+    <span data-lang="zh-Hans">跳至主要内容</span>
+    <span data-lang="ja">本文へスキップ</span>
+    <span data-lang="en">Skip to main content</span>
+  </a>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="DreamChat">
+        <a href="../index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="../articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page guide-page">
+      <article data-lang="zh-Hant">
+        <h1>塔羅詳細說明</h1>
+        <p class="meta">對應版本：v4.1.0</p>
+        <p class="lead">塔羅在「日常」中提供。你可以輸入問題、抽單張或三張牌，查看內建卡圖與四語牌義；結果可保存、搜尋、刪除、分享到聊天，也可整理成圖片。在支援的裝置上，還能選用裝置端 Apple Intelligence 產生綜合解讀。</p>
+
+        <nav class="guide-toc" aria-label="塔羅目錄">
+          <a href="#zh-start">開始解讀</a>
+          <a href="#zh-spreads">牌陣與牌義</a>
+          <a href="#zh-save">保存與分享</a>
+          <a href="#zh-ai">Apple Intelligence</a>
+          <a href="#zh-limit">每日使用次數</a>
+          <a href="#zh-assets">素材、授權與隱私</a>
+        </nav>
+
+        <h2 id="zh-start">1. 開始一次塔羅解讀</h2>
+        <p>塔羅入口位於日常分頁。</p>
+        <ol class="guide-steps">
+          <li>開啟「日常」分頁，進入塔羅。</li>
+          <li>輸入想問的問題，也可以留空。</li>
+          <li>選擇單張或三張牌陣，抽牌。</li>
+        </ol>
+
+        <h2 id="zh-spreads">2. 牌陣與牌義</h2>
+        <p>塔羅支援單張與三張牌陣。每張牌都有內建卡圖與四語靜態牌義（繁體中文、簡體中文、日文、英文）。塔羅卡圖隨 App 內建，不會遠端下載。</p>
+
+        <h2 id="zh-save">3. 保存、搜尋與分享</h2>
+        <p>解讀結果可以保存、搜尋與刪除，也可以分享到聊天，或整理成圖片保存或分享。分享到聊天的訊息會保留當下的解讀內容，即使之後刪除歷史紀錄仍可閱讀。</p>
+
+        <h2 id="zh-ai">4. 裝置端 Apple Intelligence 綜合解讀</h2>
+        <p>在支援的裝置與系統版本（iOS 26 以上且裝置支援 Apple Intelligence）上，你可以手動為當次解讀產生綜合解讀。輸入僅限當次解讀的問題、牌陣、抽出的牌與牌義，不會傳送至開發者伺服器或第三方 AI 服務。</p>
+        <p class="guide-note">若模型不可用、產生失敗或取消，會保留靜態牌義，不額外消耗塔羅使用次數。不使用 Apple Intelligence 時，靜態牌義仍完整可用。</p>
+
+        <h2 id="zh-limit">5. 每日使用次數</h2>
+        <p>塔羅每日使用次數依目前方案在裝置本機計算：免費版每日 1 次，單夢輕量版與多夢輕量版每日 3 次，夢行者無限制。成功完成解讀才會記錄一次使用；刪除歷史紀錄不會重置當日已使用次數。塔羅不是獨立的購買項目，方案變更或恢復購買後會以目前方案計算。</p>
+
+        <h2 id="zh-assets">6. 素材、授權與隱私</h2>
+        <p>設定中的「素材與授權」頁說明塔羅卡圖來源、打包方式與本機資料處理。塔羅問題、紀錄、牌面快照與使用次數紀錄都保存在裝置本機；你主動匯出的完整備份可能包含塔羅紀錄與已保存的綜合解讀。</p>
+        <p class="guide-note">更多資料處理說明請看 <a href="../privacy.html?lang=zh-Hant">隱私權政策</a>。</p>
+      </article>
+
+      <article data-lang="zh-Hans">
+        <h1>塔罗详细说明</h1>
+        <p class="meta">对应版本：v4.1.0</p>
+        <p class="lead">塔罗在“日常”中提供。你可以输入问题、抽单张或三张牌，查看内置卡图与四语牌义；结果可保存、搜索、删除、分享到聊天，也可整理成图片。在支持的设备上，还能选用设备端 Apple Intelligence 生成综合解读。</p>
+
+        <nav class="guide-toc" aria-label="塔罗目录">
+          <a href="#zh-hans-start">开始解读</a>
+          <a href="#zh-hans-spreads">牌阵与牌义</a>
+          <a href="#zh-hans-save">保存与分享</a>
+          <a href="#zh-hans-ai">Apple Intelligence</a>
+          <a href="#zh-hans-limit">每日使用次数</a>
+          <a href="#zh-hans-assets">素材、授权与隐私</a>
+        </nav>
+
+        <h2 id="zh-hans-start">1. 开始一次塔罗解读</h2>
+        <p>塔罗入口位于日常分页。</p>
+        <ol class="guide-steps">
+          <li>打开“日常”分页，进入塔罗。</li>
+          <li>输入想问的问题，也可以留空。</li>
+          <li>选择单张或三张牌阵，抽牌。</li>
+        </ol>
+
+        <h2 id="zh-hans-spreads">2. 牌阵与牌义</h2>
+        <p>塔罗支持单张与三张牌阵。每张牌都有内置卡图与四语静态牌义（繁体中文、简体中文、日文、英文）。塔罗卡图随 App 内置，不会远程下载。</p>
+
+        <h2 id="zh-hans-save">3. 保存、搜索与分享</h2>
+        <p>解读结果可以保存、搜索与删除，也可以分享到聊天，或整理成图片保存或分享。分享到聊天的消息会保留当时的解读内容，即使之后删除历史记录仍可阅读。</p>
+
+        <h2 id="zh-hans-ai">4. 设备端 Apple Intelligence 综合解读</h2>
+        <p>在支持的设备与系统版本（iOS 26 以上且设备支持 Apple Intelligence）上，你可以手动为当次解读生成综合解读。输入仅限当次解读的问题、牌阵、抽出的牌与牌义，不会发送至开发者服务器或第三方 AI 服务。</p>
+        <p class="guide-note">若模型不可用、生成失败或取消，会保留静态牌义，不额外消耗塔罗使用次数。不使用 Apple Intelligence 时，静态牌义仍完整可用。</p>
+
+        <h2 id="zh-hans-limit">5. 每日使用次数</h2>
+        <p>塔罗每日使用次数依当前方案在设备本地计算：免费版每日 1 次，单梦轻量版与多梦轻量版每日 3 次，梦行者无限制。成功完成解读才会记录一次使用；删除历史记录不会重置当日已使用次数。塔罗不是独立的购买项目，方案变更或恢复购买后会以当前方案计算。</p>
+
+        <h2 id="zh-hans-assets">6. 素材、授权与隐私</h2>
+        <p>设置中的“素材与授权”页说明塔罗卡图来源、打包方式与本地数据处理。塔罗问题、记录、牌面快照与使用次数记录都保存在设备本地；你主动导出的完整备份可能包含塔罗记录与已保存的综合解读。</p>
+        <p class="guide-note">更多数据处理说明请看 <a href="../privacy.html?lang=zh-Hans">隐私权政策</a>。</p>
+      </article>
+
+      <article data-lang="ja">
+        <h1>タロット詳しい説明</h1>
+        <p class="meta">対応バージョン：v4.1.0</p>
+        <p class="lead">タロットは「日常」の中で利用できます。質問を入力し、1枚または3枚のカードを引いて、内蔵カード画像と4言語の解説を確認できます。結果は保存・検索・削除・チャット共有ができ、画像にまとめることもできます。対応端末では、端末上の Apple Intelligence で総合解釈を生成することもできます。</p>
+
+        <nav class="guide-toc" aria-label="タロット目次">
+          <a href="#ja-start">リーディングを始める</a>
+          <a href="#ja-spreads">スプレッドと解説</a>
+          <a href="#ja-save">保存と共有</a>
+          <a href="#ja-ai">Apple Intelligence</a>
+          <a href="#ja-limit">1日の使用回数</a>
+          <a href="#ja-assets">素材・ライセンス・プライバシー</a>
+        </nav>
+
+        <h2 id="ja-start">1. タロットリーディングを始める</h2>
+        <p>タロットの入口は日常タブにあります。</p>
+        <ol class="guide-steps">
+          <li>「日常」タブを開き、タロットに入ります。</li>
+          <li>聞きたい質問を入力します（空欄でも構いません）。</li>
+          <li>1枚または3枚のスプレッドを選んでカードを引きます。</li>
+        </ol>
+
+        <h2 id="ja-spreads">2. スプレッドと解説</h2>
+        <p>タロットは1枚と3枚のスプレッドに対応しています。各カードには内蔵のカード画像と4言語の静的な解説（繁体中文・簡体中文・日本語・英語）があります。タロットカード画像はアプリに同梱されており、リモートからダウンロードされません。</p>
+
+        <h2 id="ja-save">3. 保存・検索・共有</h2>
+        <p>リーディング結果は保存・検索・削除ができ、チャットへ共有したり、画像にまとめて保存・共有したりできます。チャットへ共有したメッセージには当時のリーディング内容が残るため、履歴を削除しても読み返せます。</p>
+
+        <h2 id="ja-ai">4. 端末上の Apple Intelligence による総合解釈</h2>
+        <p>対応する端末と OS（iOS 26 以降で Apple Intelligence に対応した端末）では、そのリーディングの総合解釈を手動で生成できます。入力はそのリーディングの質問、スプレッド、引いたカード、カード解説に限定され、開発者のサーバーや第三者 AI サービスへ送信されることはありません。</p>
+        <p class="guide-note">モデルが利用できない場合や、生成の失敗・キャンセル時は基本のカード解説が残り、タロットの使用回数も追加で消費されません。Apple Intelligence を使わなくても、基本のカード解説はすべて利用できます。</p>
+
+        <h2 id="ja-limit">5. 1日の使用回数</h2>
+        <p>タロットの1日の使用回数は、現在のプランに基づいて端末内で計算されます。無料版は1日1回、一途 Lite とグループ Lite は1日3回、ドリームウォーカーは無制限です。リーディングが成功した場合にのみ1回として記録され、履歴を削除しても当日の使用回数はリセットされません。タロットは独立した購入項目ではなく、プランの変更や購入の復元後は現在のプランで計算されます。</p>
+
+        <h2 id="ja-assets">6. 素材・ライセンス・プライバシー</h2>
+        <p>設定の「素材とライセンス」ページでは、タロットカード画像の出典、同梱方法、ローカルデータの扱いを確認できます。タロットの質問、記録、カードスナップショット、使用回数記録は端末内に保存されます。ユーザーが書き出す完全バックアップには、タロット記録や保存済みの総合解釈が含まれる場合があります。</p>
+        <p class="guide-note">データの扱いについて詳しくは <a href="../privacy.html?lang=ja">プライバシーポリシー</a> をご覧ください。</p>
+      </article>
+
+      <article data-lang="en">
+        <h1>Tarot Guide</h1>
+        <p class="meta">Applies to version v4.1.0</p>
+        <p class="lead">Tarot is available inside Daily. Enter an optional question, draw one or three cards, and view bundled card art with four-language meanings. Readings can be saved, searched, deleted, shared to chat, and turned into an image. On supported devices, you can also use on-device Apple Intelligence to generate a summary.</p>
+
+        <nav class="guide-toc" aria-label="Tarot table of contents">
+          <a href="#en-start">Start a Reading</a>
+          <a href="#en-spreads">Spreads and Meanings</a>
+          <a href="#en-save">Save and Share</a>
+          <a href="#en-ai">Apple Intelligence</a>
+          <a href="#en-limit">Daily Usage</a>
+          <a href="#en-assets">Assets, Licenses, and Privacy</a>
+        </nav>
+
+        <h2 id="en-start">1. Start a Tarot Reading</h2>
+        <p>Tarot is entered from the Daily tab.</p>
+        <ol class="guide-steps">
+          <li>Open the Daily tab and enter Tarot.</li>
+          <li>Enter a question, or leave it blank.</li>
+          <li>Choose a one-card or three-card spread and draw.</li>
+        </ol>
+
+        <h2 id="en-spreads">2. Spreads and Meanings</h2>
+        <p>Tarot supports one-card and three-card spreads. Every card has bundled card art and four-language static meanings (Traditional Chinese, Simplified Chinese, Japanese, and English). Tarot card art is bundled with the app and is not downloaded remotely.</p>
+
+        <h2 id="en-save">3. Save, Search, and Share</h2>
+        <p>Readings can be saved, searched, and deleted, shared to chat, or turned into an image to save or share. A reading shared to chat keeps its content, so it stays readable even after you delete the history item.</p>
+
+        <h2 id="en-ai">4. On-Device Apple Intelligence Summary</h2>
+        <p>On supported devices and OS versions (iOS 26 or later with Apple Intelligence support), you can manually generate a summary for the current reading. The input is limited to that reading's question, spread, drawn cards, and meanings, and is never sent to developer servers or third-party AI services.</p>
+        <p class="guide-note">If the model is unavailable, fails, or is cancelled, the static meanings remain and no extra Tarot usage is consumed. Static meanings stay fully available without Apple Intelligence.</p>
+
+        <h2 id="en-limit">5. Daily Usage</h2>
+        <p>Daily Tarot usage is counted locally based on your current plan: Free allows 1 reading per day, Single Dream Lite and Multi Dream Lite allow 3 per day, and Dream Walker is unlimited. A reading counts toward usage only when it completes successfully, and deleting history does not reset the day's usage. Tarot is not a separate purchase; after a plan change or Restore Purchases, the limit follows your current plan.</p>
+
+        <h2 id="en-assets">6. Assets, Licenses, and Privacy</h2>
+        <p>The Assets &amp; Licenses page in Settings explains the tarot card art sources, how assets are packaged, and local data handling. Tarot questions, records, card snapshots, and usage ledger records are stored locally on your device. Complete backups that you export may include Tarot records and saved summaries.</p>
+        <p class="guide-note">For more on data handling, see the <a href="../privacy.html?lang=en">Privacy Policy</a>.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="../articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="../lang.js"></script>
+</body>
+</html>

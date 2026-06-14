@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>聊天圖片訊息詳細說明 | DreamChat</title>
+  <meta name="description" content="How DreamChat chat image messages work: pick a local image, send it as a thumbnail, open the full image, and how images are stored locally and included in backups.">
+
+  <!-- Hreflang: language-specific entry URLs. -->
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/articles/chat-images-guide.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/articles/chat-images-guide.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/articles/chat-images-guide.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/articles/chat-images-guide.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/articles/chat-images-guide.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/articles/chat-images-guide.html">
+  <meta property="og:title" content="聊天圖片訊息詳細說明 | DreamChat">
+  <meta property="og:description" content="Pick a local image, send it as a thumbnail, open the full image viewer, and learn how chat images are stored locally in DreamChat.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="聊天圖片訊息詳細說明 | DreamChat">
+  <meta name="twitter:description" content="Pick a local image, send it as a thumbnail, open the full image viewer, and learn how chat images are stored locally in DreamChat.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">
+    <span data-lang="zh-Hant">跳至主要內容</span>
+    <span data-lang="zh-Hans">跳至主要内容</span>
+    <span data-lang="ja">本文へスキップ</span>
+    <span data-lang="en">Skip to main content</span>
+  </a>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="DreamChat">
+        <a href="../index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="../articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page guide-page">
+      <article data-lang="zh-Hant">
+        <h1>聊天圖片訊息詳細說明</h1>
+        <p class="meta">對應版本：v4.1.0</p>
+        <p class="lead">你可以在聊天室從本機相簿選擇圖片，以縮圖傳送，再點開檢視原圖。圖片以本機為主保存，只有在你主動匯出、分享或備份時才可能離開裝置。</p>
+
+        <nav class="guide-toc" aria-label="聊天圖片訊息目錄">
+          <a href="#zh-send">傳送圖片</a>
+          <a href="#zh-view">檢視原圖</a>
+          <a href="#zh-storage">圖片保存在哪裡</a>
+          <a href="#zh-delete">刪除與相簿</a>
+          <a href="#zh-backup">備份</a>
+        </nav>
+
+        <h2 id="zh-send">1. 傳送聊天圖片</h2>
+        <p>直接聊天與群組聊天都可以傳送圖片。</p>
+        <ol class="guide-steps">
+          <li>開啟一個對話，點輸入列旁的加入圖片功能。</li>
+          <li>從本機相簿選擇一張圖片。</li>
+          <li>送出後，訊息會以縮圖呈現在聊天串中。</li>
+        </ol>
+        <p class="guide-note">選擇圖片時，系統可能會要求照片取用權限。此權限僅用於你主動選擇的圖片，DreamChat 不會將圖片上傳至開發者伺服器。詳見 <a href="../privacy.html?lang=zh-Hant">隱私權政策</a>。</p>
+
+        <h2 id="zh-view">2. 檢視原圖</h2>
+        <p>點一下聊天串中的圖片縮圖，即可開啟原圖檢視。離開檢視畫面後會回到原本的對話位置。</p>
+
+        <h2 id="zh-storage">3. 圖片保存在哪裡</h2>
+        <p>你傳送的聊天圖片、產生的縮圖與訊息圖片狀態都保存在你的裝置本機，沒有開發者端的蒐集。只有在你主動匯出、分享或建立完整備份時，圖片才可能離開裝置。</p>
+
+        <h2 id="zh-delete">4. 刪除與相簿</h2>
+        <p>你可以把聊天圖片整理成日常相簿或群組相簿。刪除相簿中的原圖時，聊天仍會保留縮圖與上下文，不會破壞對話脈絡。</p>
+        <p class="guide-note">相簿的整理與跳轉方式請看 <a href="photo-albums-guide.html?lang=zh-Hant">日常與群組相簿詳細說明</a>。</p>
+
+        <h2 id="zh-backup">5. 備份</h2>
+        <p>完整備份與還原現在會包含可用的聊天圖片，還原後對話與圖片脈絡保持一致。備份是你主動建立的本機檔案，由你選擇儲存或分享的位置管理，請妥善保管。</p>
+      </article>
+
+      <article data-lang="zh-Hans">
+        <h1>聊天图片消息详细说明</h1>
+        <p class="meta">对应版本：v4.1.0</p>
+        <p class="lead">你可以在聊天室从本地相册选择图片，以缩略图发送，再点开查看原图。图片以本地为主保存，只有在你主动导出、分享或备份时才可能离开设备。</p>
+
+        <nav class="guide-toc" aria-label="聊天图片消息目录">
+          <a href="#zh-hans-send">发送图片</a>
+          <a href="#zh-hans-view">查看原图</a>
+          <a href="#zh-hans-storage">图片保存在哪里</a>
+          <a href="#zh-hans-delete">删除与相册</a>
+          <a href="#zh-hans-backup">备份</a>
+        </nav>
+
+        <h2 id="zh-hans-send">1. 发送聊天图片</h2>
+        <p>直接聊天与群组聊天都可以发送图片。</p>
+        <ol class="guide-steps">
+          <li>打开一个对话，点输入栏旁的添加图片功能。</li>
+          <li>从本地相册选择一张图片。</li>
+          <li>发送后，消息会以缩略图呈现在聊天串中。</li>
+        </ol>
+        <p class="guide-note">选择图片时，系统可能会请求照片访问权限。此权限仅用于你主动选择的图片，DreamChat 不会将图片上传至开发者服务器。详见 <a href="../privacy.html?lang=zh-Hans">隐私权政策</a>。</p>
+
+        <h2 id="zh-hans-view">2. 查看原图</h2>
+        <p>点一下聊天串中的图片缩略图，即可打开原图查看。离开查看画面后会回到原本的对话位置。</p>
+
+        <h2 id="zh-hans-storage">3. 图片保存在哪里</h2>
+        <p>你发送的聊天图片、生成的缩略图与消息图片状态都保存在你的设备本地，没有开发者端的收集。只有在你主动导出、分享或创建完整备份时，图片才可能离开设备。</p>
+
+        <h2 id="zh-hans-delete">4. 删除与相册</h2>
+        <p>你可以把聊天图片整理成日常相册或群组相册。删除相册中的原图时，聊天仍会保留缩略图与上下文，不会破坏对话脉络。</p>
+        <p class="guide-note">相册的整理与跳转方式请看 <a href="photo-albums-guide.html?lang=zh-Hans">日常与群组相册详细说明</a>。</p>
+
+        <h2 id="zh-hans-backup">5. 备份</h2>
+        <p>完整备份与还原现在会包含可用的聊天图片，还原后对话与图片脉络保持一致。备份是你主动创建的本地文件，由你选择保存或分享的位置管理，请妥善保管。</p>
+      </article>
+
+      <article data-lang="ja">
+        <h1>チャット画像メッセージ詳しい説明</h1>
+        <p class="meta">対応バージョン：v4.1.0</p>
+        <p class="lead">チャットでローカルの写真から画像を選び、サムネイルで送信して、タップで元画像を表示できます。画像は端末内を基本に保存され、ユーザーが自ら書き出し・共有・バックアップしたときにのみ端末から出る可能性があります。</p>
+
+        <nav class="guide-toc" aria-label="チャット画像メッセージ目次">
+          <a href="#ja-send">画像を送る</a>
+          <a href="#ja-view">元画像を表示</a>
+          <a href="#ja-storage">画像の保存場所</a>
+          <a href="#ja-delete">削除と写真</a>
+          <a href="#ja-backup">バックアップ</a>
+        </nav>
+
+        <h2 id="ja-send">1. チャット画像を送る</h2>
+        <p>個別チャットとグループチャットの両方で画像を送れます。</p>
+        <ol class="guide-steps">
+          <li>会話を開き、入力欄の横にある画像追加の機能をタップします。</li>
+          <li>ローカルの写真から画像を1枚選びます。</li>
+          <li>送信すると、メッセージはチャットにサムネイルで表示されます。</li>
+        </ol>
+        <p class="guide-note">画像を選ぶ際、写真へのアクセス権限を求められることがあります。この権限はユーザーが自ら選んだ画像にのみ使用され、DreamChat が画像を開発者のサーバーへアップロードすることはありません。詳しくは <a href="../privacy.html?lang=ja">プライバシーポリシー</a> をご覧ください。</p>
+
+        <h2 id="ja-view">2. 元画像を表示</h2>
+        <p>チャット内の画像サムネイルをタップすると、元画像を表示できます。表示を閉じると、元の会話の位置に戻ります。</p>
+
+        <h2 id="ja-storage">3. 画像の保存場所</h2>
+        <p>送信したチャット画像、生成されたサムネイル、メッセージ画像の状態は端末内に保存され、開発者側での収集はありません。ユーザーが自ら書き出し・共有・完全バックアップを行ったときにのみ、画像が端末から出る可能性があります。</p>
+
+        <h2 id="ja-delete">4. 削除と写真</h2>
+        <p>チャット画像は日常やグループの写真にまとめて整理できます。写真から元画像を削除しても、チャットにはサムネイルと文脈が残り、会話の流れを損ないません。</p>
+        <p class="guide-note">写真の整理と移動の方法は <a href="photo-albums-guide.html?lang=ja">日常とグループの写真 詳しい説明</a> をご覧ください。</p>
+
+        <h2 id="ja-backup">5. バックアップ</h2>
+        <p>完全バックアップと復元が、利用可能なチャット画像も含むようになりました。復元後も会話と画像の文脈が保たれます。バックアップはユーザーが自ら作成する端末内のファイルで、保存先や共有先はユーザーが管理します。大切に保管してください。</p>
+      </article>
+
+      <article data-lang="en">
+        <h1>Chat Image Messages Guide</h1>
+        <p class="meta">Applies to version v4.1.0</p>
+        <p class="lead">In a chat, pick a local image, send it as a thumbnail, and tap to open the full image. Images are kept locally on your device and can only leave it when you choose to export, share, or back them up.</p>
+
+        <nav class="guide-toc" aria-label="Chat image messages table of contents">
+          <a href="#en-send">Send an Image</a>
+          <a href="#en-view">Open the Full Image</a>
+          <a href="#en-storage">Where Images Are Stored</a>
+          <a href="#en-delete">Deleting and Albums</a>
+          <a href="#en-backup">Backup</a>
+        </nav>
+
+        <h2 id="en-send">1. Send a Chat Image</h2>
+        <p>You can send images in both direct and group chats.</p>
+        <ol class="guide-steps">
+          <li>Open a conversation and tap the add-image control next to the input bar.</li>
+          <li>Pick an image from your local photos.</li>
+          <li>After sending, the message appears as a thumbnail in the chat.</li>
+        </ol>
+        <p class="guide-note">When you pick an image, the system may ask for Photos permission. This permission is used only for images you actively choose, and DreamChat does not upload images to the developer's servers. See the <a href="../privacy.html?lang=en">Privacy Policy</a> for details.</p>
+
+        <h2 id="en-view">2. Open the Full Image</h2>
+        <p>Tap an image thumbnail in the chat to open the full image viewer. When you close it, you return to your place in the conversation.</p>
+
+        <h2 id="en-storage">3. Where Images Are Stored</h2>
+        <p>The chat images you send, the generated thumbnails, and the message image state are stored locally on your device, with no developer-side collection. Images can only leave the device when you choose to export, share, or create a complete backup.</p>
+
+        <h2 id="en-delete">4. Deleting and Albums</h2>
+        <p>You can organize chat images into Daily or group photo albums. Deleting a full image from an album keeps the chat thumbnail and context, so the conversation stays intact.</p>
+        <p class="guide-note">For how to organize and navigate albums, see the <a href="photo-albums-guide.html?lang=en">Daily and Group Photo Albums Guide</a>.</p>
+
+        <h2 id="en-backup">5. Backup</h2>
+        <p>Complete backup and restore now include available chat images, so conversations and image context stay consistent after restoring. Backups are local files you create yourself and manage wherever you choose to save or share them, so please keep them secure.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="../articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="../lang.js"></script>
+</body>
+</html>
