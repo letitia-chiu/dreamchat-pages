@@ -8,3 +8,6 @@
 Thumbs.db
 *.swp
 *.swo
+
+# Editor workspace settings (per-machine, not for the repo)
+.vscode/
