@@ -163,7 +163,7 @@
 
         <h2>5. 照片與相簿權限</h2>
         <p>若您選擇加入頭像、聊天室背景、貼圖圖片、聊天圖片訊息、模擬視訊通話背景圖片或短影片，或將訊息截圖儲存到相簿，DreamChat 可能會請求存取照片或新增照片到相簿的權限。</p>
-        <p>此權限僅用於您主動選擇的圖片或短影片匯入、顯示、裁切、處理、聊天圖片傳送或截圖儲存。聊天圖片會在裝置上壓縮成 App 管理的 full image 與縮圖，並盡可能移除來源 metadata；日常相簿與群組相簿只是聊天圖片訊息的索引，不會把圖片寫回系統相簿。DreamChat 不會將您的照片、影片、聊天圖片、貼圖或視訊通話背景內容上傳至開發者伺服器，也不會將其用於廣告追蹤。</p>
+        <p>此權限僅用於您主動選擇的圖片或短影片匯入、顯示、裁切、處理、聊天圖片傳送或截圖儲存。聊天圖片會在裝置上壓縮成 App 管理的 full image 與縮圖，並透過裝置端重新編碼移除來源 metadata（EXIF/GPS）；日常相簿與群組相簿只是聊天圖片訊息的索引，不會把圖片寫回系統相簿。DreamChat 不會將您的照片、影片、聊天圖片、貼圖或視訊通話背景內容上傳至開發者伺服器，也不會將其用於廣告追蹤。</p>
 
         <h2>6. 天氣提醒與位置</h2>
         <p>若您啟用天氣提醒，DreamChat 可能會使用 Apple WeatherKit 依您選擇的地區準備本機天氣提醒。</p>
@@ -298,7 +298,7 @@
 
         <h2>5. 照片与相册权限</h2>
         <p>若您选择加入头像、聊天室背景、表情包图片、聊天图片消息、模拟视频通话背景图片或短视频，或将消息截图保存到相册，DreamChat 可能会请求访问照片或向相册添加照片的权限。</p>
-        <p>此权限仅用于您主动选择的图片或短视频导入、显示、裁切、处理、聊天图片发送或截图保存。聊天图片会在设备上压缩成 App 管理的 full image 与缩略图，并尽可能移除来源 metadata；日常相册与群组相册只是聊天图片消息的索引，不会把图片写回系统相册。DreamChat 不会将您的照片、视频、聊天图片、表情包或视频通话背景内容上传至开发者服务器，也不会将其用于广告追踪。</p>
+        <p>此权限仅用于您主动选择的图片或短视频导入、显示、裁切、处理、聊天图片发送或截图保存。聊天图片会在设备上压缩成 App 管理的 full image 与缩略图，并透过设备端重新编码移除来源 metadata（EXIF/GPS）；日常相册与群组相册只是聊天图片消息的索引，不会把图片写回系统相册。DreamChat 不会将您的照片、视频、聊天图片、表情包或视频通话背景内容上传至开发者服务器，也不会将其用于广告追踪。</p>
 
         <h2>6. 天气提醒与位置</h2>
         <p>若您启用天气提醒，DreamChat 可能会使用 Apple WeatherKit 根据您选择的地区准备本地天气提醒。</p>
@@ -433,7 +433,7 @@
 
         <h2>5. 写真・フォトライブラリの権限について</h2>
         <p>アバター、チャット背景、スタンプ画像、チャット画像メッセージ、模擬ビデオ通話の背景画像または短い動画を追加したり、メッセージのスクリーンショットを写真に保存したりする場合、DreamChat は写真へのアクセスまたは写真の追加権限を求めることがあります。</p>
-        <p>この権限は、ユーザーが自ら選択した画像または短い動画の読み込み、表示、切り抜き、処理、チャット画像の送信、またはスクリーンショット保存にのみ使用されます。チャット画像は端末上でアプリ管理の full image とサムネイルに圧縮され、可能な範囲で元の metadata が削除されます。日常の写真とグループ写真はチャット画像メッセージのインデックスであり、システムの写真ライブラリへ画像を書き戻すものではありません。DreamChat は写真、動画、チャット画像、スタンプ、ビデオ通話背景の内容を開発者のサーバーへアップロードせず、広告トラッキングにも使用しません。</p>
+        <p>この権限は、ユーザーが自ら選択した画像または短い動画の読み込み、表示、切り抜き、処理、チャット画像の送信、またはスクリーンショット保存にのみ使用されます。チャット画像は端末上でアプリ管理の full image とサムネイルに圧縮され、端末側での再エンコードにより元の metadata（EXIF/GPS）が削除されます。日常の写真とグループ写真はチャット画像メッセージのインデックスであり、システムの写真ライブラリへ画像を書き戻すものではありません。DreamChat は写真、動画、チャット画像、スタンプ、ビデオ通話背景の内容を開発者のサーバーへアップロードせず、広告トラッキングにも使用しません。</p>
 
         <h2>6. 天気リマインダーと位置情報について</h2>
         <p>天気リマインダーを有効にした場合、DreamChat は Apple WeatherKit を使用して、選択した地域に基づくローカルの天気リマインダーを準備することがあります。</p>
@@ -568,7 +568,7 @@
 
         <h2>5. Photos Permission</h2>
         <p>If you choose to add avatars, chat backgrounds, sticker images, chat image messages, simulated video call background images or short videos, or save message screenshots to Photos, DreamChat may request permission to access Photos or add images to your photo library.</p>
-        <p>This permission is used only for image or short-video import, display, cropping, processing, chat image sending, or screenshot saving that you actively choose. Chat images are compressed on device into app-managed full images and thumbnails, with source metadata removed where possible. Daily Photos and Group Photos are indexes of chat image messages and do not write images back to your system Photos library. DreamChat does not upload your photos, videos, chat images, stickers, or video call background content to the developer's servers, nor does it use them for advertising tracking.</p>
+        <p>This permission is used only for image or short-video import, display, cropping, processing, chat image sending, or screenshot saving that you actively choose. Chat images are compressed on device into app-managed full images and thumbnails, with source metadata (EXIF/GPS) removed by re-encoding on device. Daily Photos and Group Photos are indexes of chat image messages and do not write images back to your system Photos library. DreamChat does not upload your photos, videos, chat images, stickers, or video call background content to the developer's servers, nor does it use them for advertising tracking.</p>
 
         <h2>6. Weather Reminders and Location</h2>
         <p>If you enable Weather Reminder, DreamChat may use Apple's WeatherKit to prepare local weather reminders for the region you choose.</p>
