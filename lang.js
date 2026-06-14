@@ -365,16 +365,16 @@
         en: 'Privacy Policy'
       },
       description: {
-        'zh-Hant': '了解本機資料、權限、智慧輔助、語音訊息、日常、塔羅、診斷與備份如何處理。',
-        'zh-Hans': '了解本机数据、权限、智能辅助、语音消息、日常、塔罗、诊断与备份如何处理。',
-        ja: '端末内データ、権限、スマートアシスト、音声メッセージ、日常、タロット、診断、バックアップの扱いを確認できます。',
-        en: 'Learn how local data, permissions, Smart Assist, voice messages, Daily, Tarot, diagnostics, and backups are handled.'
+        'zh-Hant': '了解本機資料、權限、智慧輔助、語音訊息、日常、塔羅、聊天圖片、相簿、診斷與備份如何處理。',
+        'zh-Hans': '了解本机数据、权限、智能辅助、语音消息、日常、塔罗、聊天图片、相册、诊断与备份如何处理。',
+        ja: '端末内データ、権限、スマートアシスト、音声メッセージ、日常、タロット、チャット画像、写真、診断、バックアップの扱いを確認できます。',
+        en: 'Learn how local data, permissions, Smart Assist, voice messages, Daily, Tarot, chat images, albums, diagnostics, and backups are handled.'
       },
       text: {
-        'zh-Hant': '隱私 本機資料 Apple Music 照片 智慧輔助 Apple Intelligence 語音訊息 語音包 日常 塔羅 診斷 備份 localStorage',
-        'zh-Hans': '隐私 本机数据 Apple Music 照片 智能辅助 Apple Intelligence 语音消息 语音包 日常 塔罗 诊断 备份 localStorage',
-        ja: 'プライバシー 端末内データ Apple Music 写真 スマートアシスト Apple Intelligence 音声メッセージ 音声パッケージ 日常 タロット 診断 バックアップ localStorage',
-        en: 'privacy local data Apple Music Photos Smart Assist Apple Intelligence voice messages voice packages Daily Tarot diagnostics backup localStorage'
+        'zh-Hant': '隱私 本機資料 Apple Music 照片 智慧輔助 Apple Intelligence 語音訊息 語音包 日常 塔羅 聊天圖片 相簿 診斷 備份 localStorage',
+        'zh-Hans': '隐私 本机数据 Apple Music 照片 智能辅助 Apple Intelligence 语音消息 语音包 日常 塔罗 聊天图片 相册 诊断 备份 localStorage',
+        ja: 'プライバシー 端末内データ Apple Music 写真 スマートアシスト Apple Intelligence 音声メッセージ 音声パッケージ 日常 タロット チャット画像 写真 診断 バックアップ localStorage',
+        en: 'privacy local data Apple Music Photos Smart Assist Apple Intelligence voice messages voice packages Daily Tarot chat images albums diagnostics backup localStorage'
       }
     },
     {
@@ -386,16 +386,16 @@
         en: 'Support and FAQ'
       },
       description: {
-        'zh-Hant': '訂閱、語音擴充購買、恢復購買、權限、日常、塔羅、匯入匯出、資料刪除與聯絡方式。',
-        'zh-Hans': '订阅、语音扩充购买、恢复购买、权限、日常、塔罗、导入导出、数据删除与联系方式。',
-        ja: 'サブスクリプション、音声拡張購入、購入復元、権限、日常、タロット、読み込み・書き出し、データ削除、連絡先。',
-        en: 'Subscriptions, voice expansion purchases, restore purchases, permissions, Daily, Tarot, import/export, data deletion, and contact.'
+        'zh-Hant': '訂閱、語音擴充購買、恢復購買、權限、日常、塔羅、聊天圖片、相簿、匯入匯出、資料刪除與聯絡方式。',
+        'zh-Hans': '订阅、语音扩充购买、恢复购买、权限、日常、塔罗、聊天图片、相册、导入导出、数据删除与联系方式。',
+        ja: 'サブスクリプション、音声拡張購入、購入復元、権限、日常、タロット、チャット画像、写真、読み込み・書き出し、データ削除、連絡先。',
+        en: 'Subscriptions, voice expansion purchases, restore purchases, permissions, Daily, Tarot, chat images, albums, import/export, data deletion, and contact.'
       },
       text: {
-        'zh-Hant': '支援 FAQ 訂閱 語音擴充 恢復購買 權限 智慧輔助 Apple Intelligence 語音訊息 日常 塔羅 匯入 匯出 刪除資料 聯絡',
-        'zh-Hans': '支持 FAQ 订阅 语音扩充 恢复购买 权限 智能辅助 Apple Intelligence 语音消息 日常 塔罗 导入 导出 删除数据 联系',
-        ja: 'サポート FAQ サブスクリプション 音声拡張 購入復元 権限 スマートアシスト Apple Intelligence 音声メッセージ 日常 タロット 読み込み 書き出し データ削除 連絡',
-        en: 'support FAQ subscription voice expansion restore purchases permissions Smart Assist Apple Intelligence voice messages Daily Tarot import export delete data contact'
+        'zh-Hant': '支援 FAQ 訂閱 語音擴充 恢復購買 權限 智慧輔助 Apple Intelligence 語音訊息 日常 塔羅 聊天圖片 相簿 匯入 匯出 刪除資料 聯絡',
+        'zh-Hans': '支持 FAQ 订阅 语音扩充 恢复购买 权限 智能辅助 Apple Intelligence 语音消息 日常 塔罗 聊天图片 相册 导入 导出 删除数据 联系',
+        ja: 'サポート FAQ サブスクリプション 音声拡張 購入復元 権限 スマートアシスト Apple Intelligence 音声メッセージ 日常 タロット チャット画像 写真 読み込み 書き出し データ削除 連絡',
+        en: 'support FAQ subscription voice expansion restore purchases permissions Smart Assist Apple Intelligence voice messages Daily Tarot chat images albums import export delete data contact'
       }
     },
     {
