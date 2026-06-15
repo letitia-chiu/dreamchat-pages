@@ -98,10 +98,10 @@
         en: 'Chat image messages, Daily and group photo albums, single and multiple Choose for Me, the Daily tab, Tarot, Assets & Licenses, and music improvements; backups now include chat images and Daily status data.'
       },
       text: {
-        'zh-Hant': '4.1.0 版本更新 即將推出 聊天圖片 訊息圖片 縮圖 原圖 日常相簿 群組相簿 幫我選 單選 多選 群組聊天 日常 紀念日 圖片小物件 角色狀態 背景 塔羅 牌陣 牌義 Apple Intelligence 綜合解讀 素材與授權 音樂 不推薦清單 待播清單 完整備份 還原 修復',
-        'zh-Hans': '4.1.0 版本更新 即将推出 聊天图片 消息图片 缩略图 原图 日常相册 群组相册 帮我选 单选 多选 群组聊天 日常 纪念日 图片小组件 角色状态 背景 塔罗 牌阵 牌义 Apple Intelligence 综合解读 素材与授权 音乐 不推荐清单 待播清单 完整备份 还原 修复',
-        ja: '4.1.0 アップデート 近日公開 チャット画像 メッセージ画像 サムネイル 元画像 日常の写真 グループの写真 選んで 単一選択 複数選択 グループチャット 日常 記念日 写真ウィジェット キャラクターステータス 背景 タロット スプレッド カード解説 Apple Intelligence 総合解釈 素材とライセンス ミュージック おすすめ除外リスト 再生待ち 完全バックアップ 復元 修正',
-        en: "4.1.0 update coming soon chat image messages thumbnail full image Daily albums group albums Choose for Me single multiple selection group chat Daily anniversaries photo widget character status background Tarot spread meanings Apple Intelligence summary assets licenses music do not recommend up next complete backup restore fixes"
+        'zh-Hant': '4.1.0 版本更新 新推出 聊天圖片 訊息圖片 縮圖 原圖 日常相簿 群組相簿 幫我選 單選 多選 群組聊天 日常 紀念日 圖片小物件 角色狀態 背景 塔羅 牌陣 牌義 Apple Intelligence 綜合解讀 素材與授權 音樂 不推薦清單 待播清單 完整備份 還原 修復',
+        'zh-Hans': '4.1.0 版本更新 新推出 聊天图片 消息图片 缩略图 原图 日常相册 群组相册 帮我选 单选 多选 群组聊天 日常 纪念日 图片小组件 角色状态 背景 塔罗 牌阵 牌义 Apple Intelligence 综合解读 素材与授权 音乐 不推荐清单 待播清单 完整备份 还原 修复',
+        ja: '4.1.0 アップデート 新着 チャット画像 メッセージ画像 サムネイル 元画像 日常の写真 グループの写真 選んで 単一選択 複数選択 グループチャット 日常 記念日 写真ウィジェット キャラクターステータス 背景 タロット スプレッド カード解説 Apple Intelligence 総合解釈 素材とライセンス ミュージック おすすめ除外リスト 再生待ち 完全バックアップ 復元 修正',
+        en: "4.1.0 update new chat image messages thumbnail full image Daily albums group albums Choose for Me single multiple selection group chat Daily anniversaries photo widget character status background Tarot spread meanings Apple Intelligence summary assets licenses music do not recommend up next complete backup restore fixes"
       }
     },
     {
