@@ -119,10 +119,10 @@
         en: 'Pick a local image, send it as a thumbnail, open the full image, and how images are stored locally and included in backups.'
       },
       text: {
-        'zh-Hant': '聊天圖片 訊息圖片 功能說明 本機相簿 選圖 縮圖 原圖 檢視 直接聊天 群組聊天 照片權限 本機保存 匯出 分享 完整備份 還原 刪除 相簿',
-        'zh-Hans': '聊天图片 消息图片 功能说明 本地相册 选图 缩略图 原图 查看 直接聊天 群组聊天 照片权限 本地保存 导出 分享 完整备份 还原 删除 相册',
-        ja: 'チャット画像 メッセージ画像 機能説明 ローカル写真 画像選択 サムネイル 元画像 表示 個別チャット グループチャット 写真権限 端末内保存 書き出し 共有 完全バックアップ 復元 削除 写真',
-        en: 'chat image messages feature guide local photos pick image thumbnail full image viewer direct chat group chat Photos permission local storage export share complete backup restore delete albums'
+        'zh-Hant': '聊天圖片 訊息圖片 功能說明 新推出 本機相簿 選圖 縮圖 原圖 檢視 直接聊天 群組聊天 照片權限 本機保存 匯出 分享 完整備份 還原 刪除 相簿',
+        'zh-Hans': '聊天图片 消息图片 功能说明 新推出 本地相册 选图 缩略图 原图 查看 直接聊天 群组聊天 照片权限 本地保存 导出 分享 完整备份 还原 删除 相册',
+        ja: 'チャット画像 メッセージ画像 機能説明 新着 ローカル写真 画像選択 サムネイル 元画像 表示 個別チャット グループチャット 写真権限 端末内保存 書き出し 共有 完全バックアップ 復元 削除 写真',
+        en: 'chat image messages feature guide new local photos pick image thumbnail full image viewer direct chat group chat Photos permission local storage export share complete backup restore delete albums'
       }
     },
     {
@@ -140,10 +140,10 @@
         en: 'Organize chat images by character or group, jump back to the original message, and what happens when you delete a full image.'
       },
       text: {
-        'zh-Hant': '日常相簿 群組相簿 功能說明 聊天圖片 整理 角色 群組 跳回 原訊息 刪除 原圖 縮圖 脈絡 本機保存 完整備份 日常狀態資料 還原',
-        'zh-Hans': '日常相册 群组相册 功能说明 聊天图片 整理 角色 群组 跳回 原消息 删除 原图 缩略图 脉络 本地保存 完整备份 日常状态数据 还原',
-        ja: '日常の写真 グループの写真 機能説明 チャット画像 整理 キャラクター グループ 戻る 元のメッセージ 削除 元画像 サムネイル 文脈 端末内保存 完全バックアップ 日常のステータスデータ 復元',
-        en: 'Daily albums group albums feature guide chat images organize character group jump back original message delete full image thumbnail context local storage complete backup Daily status data restore'
+        'zh-Hant': '日常相簿 群組相簿 功能說明 新推出 聊天圖片 整理 角色 群組 跳回 原訊息 刪除 原圖 縮圖 脈絡 本機保存 完整備份 日常狀態資料 還原',
+        'zh-Hans': '日常相册 群组相册 功能说明 新推出 聊天图片 整理 角色 群组 跳回 原消息 删除 原图 缩略图 脉络 本地保存 完整备份 日常状态数据 还原',
+        ja: '日常の写真 グループの写真 機能説明 新着 チャット画像 整理 キャラクター グループ 戻る 元のメッセージ 削除 元画像 サムネイル 文脈 端末内保存 完全バックアップ 日常のステータスデータ 復元',
+        en: 'Daily albums group albums feature guide new chat images organize character group jump back original message delete full image thumbnail context local storage complete backup Daily status data restore'
       }
     },
     {
@@ -161,10 +161,10 @@
         en: 'Switch the current character and set anniversaries, the photo widget, character status (with random or custom intensity), your status, and mood and phrase templates.'
       },
       text: {
-        'zh-Hant': '日常 功能說明 切換目前角色 紀念日 固定 輪播 圖片小物件 角色狀態 強度 隨機 自訂 我的狀態 角色心情 短句模板 日常背景 自訂背景 本機保存 完整備份 日常狀態資料 塔羅',
-        'zh-Hans': '日常 功能说明 切换当前角色 纪念日 固定 轮播 图片小组件 角色状态 强度 随机 自定义 我的状态 角色情绪 短句模板 日常背景 自定义背景 本地保存 完整备份 日常状态数据 塔罗',
-        ja: '日常 機能説明 現在のキャラクター 切り替え 記念日 固定 ローテーション 写真ウィジェット キャラクターのステータス 強さ ランダム 自分で設定 自分のステータス 気分 ひとことテンプレート 日常の背景 端末内保存 完全バックアップ 日常のステータスデータ タロット',
-        en: 'Daily feature guide switch current character anniversaries fixed rotate photo widget character status intensity random custom your status my status mood phrase templates Daily background custom background local storage complete backup Daily status data Tarot'
+        'zh-Hant': '日常 功能說明 新推出 切換目前角色 紀念日 固定 輪播 圖片小物件 角色狀態 強度 隨機 自訂 我的狀態 角色心情 短句模板 日常背景 自訂背景 本機保存 完整備份 日常狀態資料 塔羅',
+        'zh-Hans': '日常 功能说明 新推出 切换当前角色 纪念日 固定 轮播 图片小组件 角色状态 强度 随机 自定义 我的状态 角色情绪 短句模板 日常背景 自定义背景 本地保存 完整备份 日常状态数据 塔罗',
+        ja: '日常 機能説明 新着 現在のキャラクター 切り替え 記念日 固定 ローテーション 写真ウィジェット キャラクターのステータス 強さ ランダム 自分で設定 自分のステータス 気分 ひとことテンプレート 日常の背景 端末内保存 完全バックアップ 日常のステータスデータ タロット',
+        en: 'Daily feature guide new switch current character anniversaries fixed rotate photo widget character status intensity random custom your status my status mood phrase templates Daily background custom background local storage complete backup Daily status data Tarot'
       }
     },
     {
@@ -182,10 +182,10 @@
         en: 'Draw one or three cards in Daily, view bundled card art with four-language meanings, save and share, plus on-device Apple Intelligence summaries and daily usage.'
       },
       text: {
-        'zh-Hant': '塔羅 功能說明 日常 問題 單張 三張 牌陣 內建卡圖 四語牌義 保存 搜尋 刪除 分享到聊天 整理成圖片 裝置端 Apple Intelligence 綜合解讀 每日使用次數 免費版 單夢輕量版 多夢輕量版 夢行者 素材與授權 本機',
-        'zh-Hans': '塔罗 功能说明 日常 问题 单张 三张 牌阵 内置卡图 四语牌义 保存 搜索 删除 分享到聊天 整理成图片 设备端 Apple Intelligence 综合解读 每日使用次数 免费版 单梦轻量版 多梦轻量版 梦行者 素材与授权 本地',
-        ja: 'タロット 機能説明 日常 質問 1枚 3枚 スプレッド 内蔵カード画像 4言語 カード解説 保存 検索 削除 チャット共有 画像化 端末上 Apple Intelligence 総合解釈 1日の使用回数 無料版 一途 Lite グループ Lite ドリームウォーカー 素材とライセンス 端末内',
-        en: 'Tarot feature guide Daily question one card three card spread bundled card art four-language meanings save search delete share to chat turn into image on-device Apple Intelligence summary daily usage Free Single Dream Lite Multi Dream Lite Dream Walker assets licenses local'
+        'zh-Hant': '塔羅 功能說明 新推出 日常 問題 單張 三張 牌陣 內建卡圖 四語牌義 保存 搜尋 刪除 分享到聊天 整理成圖片 裝置端 Apple Intelligence 綜合解讀 每日使用次數 免費版 單夢輕量版 多夢輕量版 夢行者 素材與授權 本機',
+        'zh-Hans': '塔罗 功能说明 新推出 日常 问题 单张 三张 牌阵 内置卡图 四语牌义 保存 搜索 删除 分享到聊天 整理成图片 设备端 Apple Intelligence 综合解读 每日使用次数 免费版 单梦轻量版 多梦轻量版 梦行者 素材与授权 本地',
+        ja: 'タロット 機能説明 新着 日常 質問 1枚 3枚 スプレッド 内蔵カード画像 4言語 カード解説 保存 検索 削除 チャット共有 画像化 端末上 Apple Intelligence 総合解釈 1日の使用回数 無料版 一途 Lite グループ Lite ドリームウォーカー 素材とライセンス 端末内',
+        en: 'Tarot feature guide new Daily question one card three card spread bundled card art four-language meanings save search delete share to chat turn into image on-device Apple Intelligence summary daily usage Free Single Dream Lite Multi Dream Lite Dream Walker assets licenses local'
       }
     },
     {
@@ -203,10 +203,10 @@
         en: 'Character Voice Messages, standalone voice packages, capacity summaries, expansion packs, and fixes for music, voice, and Video Call states.'
       },
       text: {
-        'zh-Hant': '3.1.0 版本更新 新推出 語音訊息 角色語音 短音檔 顯示文字 字卡組 語音包 dreamchatvoices 語音容量 擴充包 備份 角色分享 音樂播放 視訊通話 修復',
-        'zh-Hans': '3.1.0 版本更新 新推出 语音消息 角色语音 短音频 显示文字 字卡组 语音包 dreamchatvoices 语音容量 扩展包 备份 角色分享 音乐播放 视频通话 修复',
-        ja: '3.1.0 アップデート 新着 ボイスメッセージ キャラクター音声 短い音声 表示テキスト 定型文セット 音声パッケージ dreamchatvoices 容量 追加パック バックアップ キャラクター共有 音楽再生 ビデオ通話 修正',
-        en: '3.1.0 update new character voice messages short audio display text phrase sets voice packages dreamchatvoices voice capacity expansion packs backup character sharing music playback video call fixes'
+        'zh-Hant': '3.1.0 版本更新 語音訊息 角色語音 短音檔 顯示文字 字卡組 語音包 dreamchatvoices 語音容量 擴充包 備份 角色分享 音樂播放 視訊通話 修復',
+        'zh-Hans': '3.1.0 版本更新 语音消息 角色语音 短音频 显示文字 字卡组 语音包 dreamchatvoices 语音容量 扩展包 备份 角色分享 音乐播放 视频通话 修复',
+        ja: '3.1.0 アップデート ボイスメッセージ キャラクター音声 短い音声 表示テキスト 定型文セット 音声パッケージ dreamchatvoices 容量 追加パック バックアップ キャラクター共有 音楽再生 ビデオ通話 修正',
+        en: '3.1.0 update character voice messages short audio display text phrase sets voice packages dreamchatvoices voice capacity expansion packs backup character sharing music playback video call fixes'
       }
     },
     {
@@ -224,10 +224,10 @@
         en: 'Set up voice messages and understand plan limits, expansion packs, capacity calculation, packages, backups, and character sharing.'
       },
       text: {
-        'zh-Hant': '語音訊息 功能說明 新推出 角色設定 短音檔 顯示文字 字卡組 方案限制 免費版 單夢輕量版 多夢輕量版 夢行者 擴充包 +10 +20 +30 120 容量計算 封存 dreamchatvoices 備份 角色分享',
-        'zh-Hans': '语音消息 功能说明 新推出 角色设置 短音频 显示文字 字卡组 方案限制 免费版 单梦轻量版 多梦轻量版 梦行者 扩展包 +10 +20 +30 120 容量计算 封存 dreamchatvoices 备份 角色分享',
-        ja: 'ボイスメッセージ 機能説明 新着 キャラクター設定 短い音声 表示テキスト 定型文セット プラン制限 無料版 一途 Lite グループ Lite ドリームウォーカー 追加パック +10 +20 +30 120 容量計算 アーカイブ dreamchatvoices バックアップ キャラクター共有',
-        en: 'voice messages feature guide new character settings short audio display text phrase sets plan limits free Single Dream Lite Multi Dream Lite Dream Walker expansion packs +10 +20 +30 120 capacity calculation archived dreamchatvoices backup character sharing'
+        'zh-Hant': '語音訊息 功能說明 角色設定 短音檔 顯示文字 字卡組 方案限制 免費版 單夢輕量版 多夢輕量版 夢行者 擴充包 +10 +20 +30 120 容量計算 封存 dreamchatvoices 備份 角色分享',
+        'zh-Hans': '语音消息 功能说明 角色设置 短音频 显示文字 字卡组 方案限制 免费版 单梦轻量版 多梦轻量版 梦行者 扩展包 +10 +20 +30 120 容量计算 封存 dreamchatvoices 备份 角色分享',
+        ja: 'ボイスメッセージ 機能説明 キャラクター設定 短い音声 表示テキスト 定型文セット プラン制限 無料版 一途 Lite グループ Lite ドリームウォーカー 追加パック +10 +20 +30 120 容量計算 アーカイブ dreamchatvoices バックアップ キャラクター共有',
+        en: 'voice messages feature guide character settings short audio display text phrase sets plan limits free Single Dream Lite Multi Dream Lite Dream Walker expansion packs +10 +20 +30 120 capacity calculation archived dreamchatvoices backup character sharing'
       }
     },
     {
