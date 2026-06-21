@@ -77,10 +77,31 @@
         en: 'Detailed help pages for setup steps and behavior notes.'
       },
       text: {
-        'zh-Hant': '詳細說明 功能文章 版本更新 新推出 語音訊息 語音包 擴充包 視訊通話 天氣提醒 分享檔 備份檔 聊天室導覽 智慧輔助 字卡庫格式轉換 情境標籤',
-        'zh-Hans': '详细说明 功能文章 版本更新 新推出 语音消息 语音包 扩展包 视频通话 天气提醒 分享文件 备份文件 聊天室导览 智能辅助 字卡库格式转换 情境标签',
-        ja: '詳しい説明 記事 アップデート 新着 ボイスメッセージ 音声パッケージ 追加パック ビデオ通話 天気リマインダー 共有ファイル バックアップ チャット画面ガイド スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
-        en: 'detailed help articles version update new voice messages voice packages expansion packs video calls weather reminders share files backup files chatroom guide smart assist phrase library converter context tags'
+        'zh-Hant': '詳細說明 功能文章 版本更新 即將推出 新推出 日記 儲存空間 塔羅牌陣 語音訊息 語音包 擴充包 視訊通話 天氣提醒 分享檔 備份檔 聊天室導覽 智慧輔助 字卡庫格式轉換 情境標籤',
+        'zh-Hans': '详细说明 功能文章 版本更新 即将推出 新推出 日记 存储空间 塔罗牌阵 语音消息 语音包 扩展包 视频通话 天气提醒 分享文件 备份文件 聊天室导览 智能辅助 字卡库格式转换 情境标签',
+        ja: '詳しい説明 記事 アップデート 近日公開 新着 日記 ストレージ タロット スプレッド ボイスメッセージ 音声パッケージ 追加パック ビデオ通話 天気リマインダー 共有ファイル バックアップ チャット画面ガイド スマートアシスト 定型文集フォーマット変換 コンテキストタグ',
+        en: 'detailed help articles version update coming soon new diary storage capacity tarot spread voice messages voice packages expansion packs video calls weather reminders share files backup files chatroom guide smart assist phrase library converter context tags'
+      }
+    },
+    {
+      url: 'articles/v4-2-0-update.html',
+      title: {
+        'zh-Hant': '4.2.0 版本更新內容',
+        'zh-Hans': '4.2.0 版本更新内容',
+        ja: '4.2.0 アップデート内容',
+        en: "What's New in 4.2.0"
+      },
+      description: {
+        'zh-Hant': '日記、日記圖片與權限群組、儲存空間管理、日記備份還原、字卡組刪除選項、塔羅牌陣自訂與穩定性改善。',
+        'zh-Hans': '日记、日记图片与权限群组、存储空间管理、日记备份还原、字卡组删除选项、塔罗牌阵自定义与稳定性改进。',
+        ja: '日記、日記画像と権限グループ、ストレージ管理、日記のバックアップと復元、定型文セット削除時の選択肢、タロットのスプレッド設定、安定性向上。',
+        en: 'Diary, diary images and permission groups, Storage Capacity, diary backup and restore, phrase group deletion choices, Tarot spread customization, and stability improvements.'
+      },
+      text: {
+        'zh-Hant': '4.2.0 版本更新 即將推出 日記 日常 日記圖片 日記背景 權限群組 可回應角色 本機字卡回應 儲存空間 本機用量 孤兒檔案 聊天圖片 原圖 刪除 警告 完整備份 還原 字卡組 通用 一併刪除 塔羅 牌陣 位置意義 自訂 修復 穩定性',
+        'zh-Hans': '4.2.0 版本更新 即将推出 日记 日常 日记图片 日记背景 权限群组 可回应角色 本地字卡回应 存储空间 本地用量 孤立文件 聊天图片 原图 删除 警告 完整备份 还原 字卡组 通用 一并删除 塔罗 牌阵 位置意义 自定义 修复 稳定性',
+        ja: '4.2.0 アップデート 近日公開 日記 日常 日記画像 日記背景 権限グループ 返信できるキャラクター ローカル定型文返信 ストレージ 使用量 孤立ファイル チャット画像 元ファイル 削除 警告 完全バックアップ 復元 定型文セット 基本セット 削除 タロット スプレッド 位置 意味 カスタマイズ 修正 安定性',
+        en: '4.2.0 update coming soon diary Daily diary images diary backgrounds permission groups responding characters local phrase card replies Storage Capacity local usage orphaned files chat image source files delete warning complete backup restore phrase groups General delete cards Tarot spread position meanings customization fixes stability'
       }
     },
     {

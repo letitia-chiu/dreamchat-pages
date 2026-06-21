@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>4.2.0 版本更新內容 | DreamChat</title>
+  <meta name="description" content="DreamChat v4.2.0 preview: Diary in Daily, local image entries, permission groups, Storage Capacity, backup and restore for diary data, phrase group deletion choices, Tarot spread customization, and stability improvements.">
+
+  <link rel="alternate" hreflang="zh-Hant" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v4-2-0-update.html?lang=zh-Hant">
+  <link rel="alternate" hreflang="zh-Hans" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v4-2-0-update.html?lang=zh-Hans">
+  <link rel="alternate" hreflang="ja" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v4-2-0-update.html?lang=ja">
+  <link rel="alternate" hreflang="en" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v4-2-0-update.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://letitia-chiu.github.io/dreamchat-pages/articles/v4-2-0-update.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://letitia-chiu.github.io/dreamchat-pages/articles/v4-2-0-update.html">
+  <meta property="og:title" content="4.2.0 版本更新內容 | DreamChat">
+  <meta property="og:description" content="Diary, Storage Capacity, diary backup and restore, phrase group deletion choices, Tarot spread customization, and stability improvements are coming to DreamChat v4.2.0.">
+  <meta property="og:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="4.2.0 版本更新內容 | DreamChat">
+  <meta name="twitter:description" content="Diary, Storage Capacity, diary backup and restore, phrase group deletion choices, Tarot spread customization, and stability improvements are coming to DreamChat v4.2.0.">
+  <meta name="twitter:image" content="https://letitia-chiu.github.io/dreamchat-pages/assets/DreamChat_banner.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">
+    <span data-lang="zh-Hant">跳至主要內容</span>
+    <span data-lang="zh-Hans">跳至主要内容</span>
+    <span data-lang="ja">本文へスキップ</span>
+    <span data-lang="en">Skip to main content</span>
+  </a>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <img class="brand-mark" src="../assets/DreamChat_app_icon.png" alt="DreamChat">
+        <a href="../index.html">DreamChat</a>
+      </div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方</span>
+          <span data-lang="en">Guide</span>
+        </a>
+        <a href="../articles.html" aria-current="location">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權</span>
+          <span data-lang="zh-Hans">隐私权</span>
+          <span data-lang="ja">プライバシー</span>
+          <span data-lang="en">Privacy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div class="site-search" data-site-search>
+        <form class="site-search-form" role="search" data-site-search-form>
+          <label class="visually-hidden" for="site-search-input">
+            <span data-lang="zh-Hant">搜尋說明</span>
+            <span data-lang="zh-Hans">搜索说明</span>
+            <span data-lang="ja">ヘルプを検索</span>
+            <span data-lang="en">Search help</span>
+          </label>
+          <input id="site-search-input" class="site-search-input" type="search" autocomplete="off" data-site-search-input aria-controls="site-search-results" aria-expanded="false">
+          <button class="site-search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true">⌕</span>
+          </button>
+        </form>
+        <div class="site-search-results" id="site-search-results" data-site-search-results hidden></div>
+      </div>
+      <div class="language-menu">
+        <button class="language-menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="language-menu" aria-label="Language">
+          <span class="language-icon" aria-hidden="true">🌐</span>
+          <span class="current-language" data-current-lang>繁體中文</span>
+          <span class="language-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="lang-switch" id="language-menu" role="menu" aria-label="Language">
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hant">繁體中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="zh-Hans">简体中文</button>
+          <button type="button" role="menuitemradio" data-lang-btn="ja">日本語</button>
+          <button type="button" role="menuitemradio" data-lang-btn="en">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="page guide-page">
+      <article data-lang="zh-Hant">
+        <div class="title-with-tag"><h1>4.2.0 版本更新內容</h1><span class="status-tag status-tag-upcoming">即將推出</span></div>
+        <p class="meta">對應版本：v4.2.0</p>
+        <p class="lead">v4.2.0 讓「日常」多了一個可以慢慢整理心情的地方：新增日記、日記圖片、可回應角色與權限群組，也加入儲存空間管理、日記備份還原、字卡組刪除選項與塔羅牌陣自訂。以下內容為版本預告，實際可用時間以 App Store 上架為準。</p>
+        <nav class="guide-toc" aria-label="4.2.0 版本更新目錄"><a href="#zh-diary">日記</a><a href="#zh-storage">儲存空間</a><a href="#zh-backup">備份還原</a><a href="#zh-phrases">字卡組</a><a href="#zh-tarot">塔羅</a><a href="#zh-fixes">修復</a></nav>
+
+        <h2 id="zh-diary">1. 在日常中撰寫日記</h2>
+        <p>日常會加入新的日記區域。你可以撰寫日記、保存草稿、發佈與整理內容，並為日記加入本機圖片與日記背景。</p>
+        <p>每篇日記可設定哪些角色或權限群組可以回應。允許回應的角色會在之後以本機字卡留下回應；日記內容、圖片與回應資料都保存在你的裝置本機。</p>
+
+        <h2 id="zh-storage">2. 查看與整理本機儲存空間</h2>
+        <p>設定頁會新增儲存空間總覽，讓你查看聊天圖片、日記、語音、日常、塔羅、貼圖與其他 App 內資料的大致用量。</p>
+        <p>你也可以清理孤兒檔案；如果要刪除指定時間範圍內的聊天圖片原圖，DreamChat 會先顯示明確警告，讓你確認後再進行。</p>
+
+        <h2 id="zh-backup">3. 日記也納入備份與還原</h2>
+        <p>完整備份與還原會涵蓋日記內容、日記圖片與日記背景。備份仍是你主動建立、保存或分享的本機檔案，請妥善保管，只分享給信任的對象。</p>
+
+        <h2 id="zh-phrases">4. 刪除字卡組時有更清楚的選擇</h2>
+        <p>刪除自訂字卡組時，可以選擇把該組字卡移到通用，或連同字卡一起刪除。這能讓整理字卡庫時更不容易誤刪想保留的內容。</p>
+
+        <h2 id="zh-tarot">5. 自訂塔羅牌陣位置意義</h2>
+        <p>塔羅的單張與三張牌陣位置意義可以自訂。新的抽牌會保存當下使用的牌位名稱，之後即使你改了設定，已保存的解讀也能保留當時的脈絡。</p>
+
+        <h2 id="zh-fixes">6. 修復與穩定性改善</h2>
+        <p>日常紀念日卡片背景的淡化效果更自然，也修復了一些問題並改善整體穩定性。</p>
+        <p class="guide-note">資料處理與本機保存範圍請看 <a href="../privacy.html?lang=zh-Hant">隱私權政策</a>。</p>
+      </article>
+
+      <article data-lang="zh-Hans">
+        <div class="title-with-tag"><h1>4.2.0 版本更新内容</h1><span class="status-tag status-tag-upcoming">即将推出</span></div>
+        <p class="meta">对应版本：v4.2.0</p>
+        <p class="lead">v4.2.0 让“日常”多了一个可以慢慢整理心情的地方：新增日记、日记图片、可回应角色与权限群组，也加入存储空间管理、日记备份还原、字卡组删除选项与塔罗牌阵自定义。以下内容为版本预告，实际可用时间以 App Store 上架为准。</p>
+        <nav class="guide-toc" aria-label="4.2.0 版本更新目录"><a href="#zh-hans-diary">日记</a><a href="#zh-hans-storage">存储空间</a><a href="#zh-hans-backup">备份还原</a><a href="#zh-hans-phrases">字卡组</a><a href="#zh-hans-tarot">塔罗</a><a href="#zh-hans-fixes">修复</a></nav>
+
+        <h2 id="zh-hans-diary">1. 在日常中撰写日记</h2>
+        <p>日常会加入新的日记区域。你可以撰写日记、保存草稿、发布与整理内容，并为日记加入本地图片与日记背景。</p>
+        <p>每篇日记可设置哪些角色或权限群组可以回应。允许回应的角色会在之后以本地字卡留下回应；日记内容、图片与回应数据都保存在你的设备本地。</p>
+
+        <h2 id="zh-hans-storage">2. 查看与整理本地存储空间</h2>
+        <p>设置页会新增存储空间总览，让你查看聊天图片、日记、语音、日常、塔罗、表情包与其他 App 内数据的大致用量。</p>
+        <p>你也可以清理孤立文件；如果要删除指定时间范围内的聊天图片原图，DreamChat 会先显示明确警告，让你确认后再进行。</p>
+
+        <h2 id="zh-hans-backup">3. 日记也纳入备份与还原</h2>
+        <p>完整备份与还原会涵盖日记内容、日记图片与日记背景。备份仍是你主动创建、保存或分享的本地文件，请妥善保管，只分享给信任的对象。</p>
+
+        <h2 id="zh-hans-phrases">4. 删除字卡组时有更清楚的选择</h2>
+        <p>删除自定义字卡组时，可以选择把该组字卡移到通用，或连同字卡一起删除。这能让整理字卡库时更不容易误删想保留的内容。</p>
+
+        <h2 id="zh-hans-tarot">5. 自定义塔罗牌阵位置意义</h2>
+        <p>塔罗的单张与三张牌阵位置意义可以自定义。新的抽牌会保存当时使用的牌位名称，之后即使你改了设置，已保存的解读也能保留当时的上下文。</p>
+
+        <h2 id="zh-hans-fixes">6. 修复与稳定性改进</h2>
+        <p>日常纪念日卡片背景的淡化效果更自然，也修复了一些问题并改善整体稳定性。</p>
+        <p class="guide-note">数据处理与本地保存范围请看 <a href="../privacy.html?lang=zh-Hans">隐私权政策</a>。</p>
+      </article>
+
+      <article data-lang="ja">
+        <div class="title-with-tag"><h1>4.2.0 アップデート内容</h1><span class="status-tag status-tag-upcoming">近日公開</span></div>
+        <p class="meta">対応バージョン：v4.2.0</p>
+        <p class="lead">v4.2.0 では、「日常」の中に気持ちをゆっくり残せる日記が加わります。日記、日記画像、返信できるキャラクターと権限グループに加え、ストレージ管理、日記のバックアップと復元、定型文セット削除時の選択肢、タロットのスプレッド設定も追加されます。以下はアップデート予告です。実際に利用できる時期は App Store での公開後になります。</p>
+        <nav class="guide-toc" aria-label="4.2.0 アップデート目次"><a href="#ja-diary">日記</a><a href="#ja-storage">ストレージ</a><a href="#ja-backup">バックアップ</a><a href="#ja-phrases">定型文セット</a><a href="#ja-tarot">タロット</a><a href="#ja-fixes">修正</a></nav>
+
+        <h2 id="ja-diary">1. 日常の中で日記を書く</h2>
+        <p>日常に新しい日記エリアが追加されます。日記を書き、下書きを保存し、公開・整理でき、ローカル画像や日記背景も追加できます。</p>
+        <p>それぞれの日記には、返信できるキャラクターや権限グループを設定できます。許可されたキャラクターは、後からローカルの定型文カードで返信します。日記本文、画像、返信データは端末内に保存されます。</p>
+
+        <h2 id="ja-storage">2. ローカルストレージを確認して整理</h2>
+        <p>設定にストレージの概要が加わり、チャット画像、日記、音声、日常、タロット、スタンプ、その他のアプリ内データのおおよその使用量を確認できます。</p>
+        <p>孤立ファイルの整理にも対応します。期間を選んでチャット画像の元ファイルを削除する場合は、先に明確な警告を表示し、確認後に実行します。</p>
+
+        <h2 id="ja-backup">3. 日記もバックアップと復元の対象に</h2>
+        <p>完全バックアップと復元が、日記本文、日記画像、日記背景にも対応します。バックアップはユーザーが自分で作成・保存・共有するローカルファイルです。大切に保管し、信頼できる相手にのみ共有してください。</p>
+
+        <h2 id="ja-phrases">4. 定型文セットを削除するときの選択肢</h2>
+        <p>カスタム定型文セットを削除するとき、カードを基本セットへ移動するか、カードごと削除するかを選べます。定型文集を整理するとき、残したい内容を誤って消しにくくなります。</p>
+
+        <h2 id="ja-tarot">5. タロットのスプレッド位置をカスタマイズ</h2>
+        <p>1枚引きと3枚引きの位置の意味をカスタマイズできます。新しいリーディングには、その時点で使った位置名が保存されるため、後で設定を変えても保存済みのリーディングは当時の文脈を保てます。</p>
+
+        <h2 id="ja-fixes">6. 修正と安定性の向上</h2>
+        <p>日常の記念日カード背景のフェード表示がより自然になり、いくつかの問題を修正して全体的な安定性を向上します。</p>
+        <p class="guide-note">データの扱いと端末内保存について詳しくは <a href="../privacy.html?lang=ja">プライバシーポリシー</a> をご覧ください。</p>
+      </article>
+
+      <article data-lang="en">
+        <div class="title-with-tag"><h1>What's New in 4.2.0</h1><span class="status-tag status-tag-upcoming">Coming Soon</span></div>
+        <p class="meta">Applies to version v4.2.0</p>
+        <p class="lead">v4.2.0 gives Daily a quieter place to keep personal notes: Diary, diary images, responding characters, and permission groups. It also adds Storage Capacity, diary backup and restore, clearer phrase group deletion choices, Tarot spread customization, and stability improvements. This is a preview; availability depends on the App Store release.</p>
+        <nav class="guide-toc" aria-label="4.2.0 update table of contents"><a href="#en-diary">Diary</a><a href="#en-storage">Storage</a><a href="#en-backup">Backup</a><a href="#en-phrases">Phrase Groups</a><a href="#en-tarot">Tarot</a><a href="#en-fixes">Fixes</a></nav>
+
+        <h2 id="en-diary">1. Write Diary Entries Inside Daily</h2>
+        <p>Daily is getting a new Diary area. You can write entries, keep a draft, publish and organize posts, and add a local image and diary background.</p>
+        <p>Each diary entry can choose which characters or permission groups may respond. Allowed characters can leave later replies from local phrase cards; diary text, images, and reply data stay on your device.</p>
+
+        <h2 id="en-storage">2. Review and Clean Local Storage</h2>
+        <p>Settings will include a Storage Capacity overview for approximate local usage across chat images, diary, voice, Daily, Tarot, stickers, and other in-app data.</p>
+        <p>You can also clean orphaned files. If you choose to delete chat-image source files by time range, DreamChat shows a clear warning first and continues only after you confirm.</p>
+
+        <h2 id="en-backup">3. Diary Is Included in Backup and Restore</h2>
+        <p>Complete backup and restore will cover diary entries, diary images, and diary backgrounds. Backups remain local files you create, save, or share yourself, so keep them secure and share them only with people you trust.</p>
+
+        <h2 id="en-phrases">4. Clearer Choices When Deleting Phrase Groups</h2>
+        <p>When deleting a custom phrase group, you can move its cards to General or delete the cards too. This makes it easier to organize your phrase library without accidentally removing something you meant to keep.</p>
+
+        <h2 id="en-tarot">5. Customize Tarot Spread Position Meanings</h2>
+        <p>You can customize the position meanings for one-card and three-card Tarot spreads. New readings save the position titles used at draw time, so saved readings keep their context even if you change the settings later.</p>
+
+        <h2 id="en-fixes">6. Fixes and Stability</h2>
+        <p>Daily anniversary card background fading is smoother, with issue fixes and overall stability improvements.</p>
+        <p class="guide-note">For data handling and local storage details, see the <a href="../privacy.html?lang=en">Privacy Policy</a>.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <nav>
+        <a href="../guide.html">
+          <span data-lang="zh-Hant">使用說明</span>
+          <span data-lang="zh-Hans">使用说明</span>
+          <span data-lang="ja">使い方ガイド</span>
+          <span data-lang="en">User Guide</span>
+        </a>
+        <a href="../articles.html">
+          <span data-lang="zh-Hant">專欄</span>
+          <span data-lang="zh-Hans">专栏</span>
+          <span data-lang="ja">記事</span>
+          <span data-lang="en">Articles</span>
+        </a>
+        <a href="../privacy.html">
+          <span data-lang="zh-Hant">隱私權政策</span>
+          <span data-lang="zh-Hans">隐私权政策</span>
+          <span data-lang="ja">プライバシーポリシー</span>
+          <span data-lang="en">Privacy Policy</span>
+        </a>
+        <a href="../support.html">
+          <span data-lang="zh-Hant">支援</span>
+          <span data-lang="zh-Hans">支持</span>
+          <span data-lang="ja">サポート</span>
+          <span data-lang="en">Support</span>
+        </a>
+      </nav>
+      <div>© 2026 DreamChat | All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script src="../lang.js"></script>
+</body>
+</html>
